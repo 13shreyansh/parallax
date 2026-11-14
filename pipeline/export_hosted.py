@@ -1,5 +1,5 @@
 """Export only the active theme. Full documents travel privately, never as public assets."""
-import gzip,json,base64,datetime
+import gzip,json,base64,datetime,argparse
 import pymysql
 from .common import db,WORK
 
@@ -16,15 +16,20 @@ QUERIES={
  'judgment':'SELECT * FROM judgment',
  'flag':'SELECT * FROM flag',
  'revision':'SELECT lang,page_id,qid,rev_id,title,text,comment,row_start,row_end FROM revision FOR SYSTEM_TIME ALL',
- 'evaluation':'SELECT * FROM evaluation'}
+ 'evaluation':'SELECT * FROM evaluation',
+ 'quality_exclusion':'SELECT * FROM quality_exclusion'}
 def encode(o):
  if isinstance(o,(datetime.datetime,datetime.date)):return {'$datetime':o.isoformat()}
  if isinstance(o,bytes):return {'$bytes':base64.b64encode(o).decode()}
  raise TypeError(type(o).__name__)
 def main():
+ parser=argparse.ArgumentParser();parser.add_argument('--tables');parser.add_argument('--output',default=str(WORK/'hosted-data.jsonl.gz'));args=parser.parse_args()
+ selected=args.tables.split(',') if args.tables else list(QUERIES)
+ if not set(selected).issubset(QUERIES):raise ValueError('Unknown export table')
  c=db();counts={}
- with gzip.open(WORK/'hosted-data.jsonl.gz','wt',encoding='utf-8',compresslevel=5) as out:
-  for table,sql in QUERIES.items():
+ with gzip.open(args.output,'wt',encoding='utf-8',compresslevel=5) as out:
+  for table in selected:
+   sql=QUERIES[table]
    count=0
    with c.cursor(pymysql.cursors.SSDictCursor) as cur:
     cur.execute(sql)

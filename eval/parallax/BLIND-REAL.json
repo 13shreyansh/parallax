@@ -1,0 +1,1525 @@
+{
+  "reviewer": "gpt-6-astra",
+  "measured_at": "2026-11-14T23:20:20Z",
+  "sampled_at": "2026-11-14T23:14:04Z",
+  "seed": "parallax-blind-2026-11-15-01-16",
+  "population": 76,
+  "sample_size": 60,
+  "confirmed": 53,
+  "false": 6,
+  "uncertain": 1,
+  "precision": 0.8833333333333333,
+  "blinding": "Reviewer received literal claims, check type, complete peer articles and actual cited source texts, without detector verdicts, summaries, reasons or private sample mapping. Uncertain counts as unconfirmed.",
+  "scope": "Seeded random sample of 60 unique shown Winter War flags before review. Seven unconfirmed flags were subsequently hidden; 88.3% is the original independent measurement, not an estimate from post-review filtering.",
+  "checks": {
+    "lang": {
+      "confirmed": 42,
+      "sample_size": 46
+    },
+    "src": {
+      "confirmed": 3,
+      "sample_size": 3
+    },
+    "tone": {
+      "confirmed": 3,
+      "sample_size": 3
+    },
+    "fact": {
+      "confirmed": 5,
+      "sample_size": 8
+    }
+  },
+  "assessments": [
+    {
+      "case": 1,
+      "flag_id": "7793e2c6b377ec54cc6d726851b00b48",
+      "confirmed": true,
+      "reason": "Anti-aircraft victory total absent from Swedish.",
+      "check": "lang",
+      "claim": "Finnish anti-aircraft guns downed more than 300 enemy aircraft.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "17a51e19a9f2795e1b28322ab29b75c3",
+          "title": "Tillotson (1993), p. 160",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/17a51e19a9f2795e1b28322ab29b75c3.txt"
+        }
+      ]
+    },
+    {
+      "case": 2,
+      "flag_id": "4c4ea980eb2d6714136a3364f82a5f83",
+      "confirmed": true,
+      "reason": "Soviet tank-loss accounting absent from Finnish.",
+      "check": "lang",
+      "claim": "The official figure was 611 tank casualties, but Yuri Kilin found a note received by the head of the Soviet General Staff, Boris Shaposhnikov, reporting 3,543 tank casualties and 316 tanks destroyed.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "71b276c113a10db156481d55c9d14172",
+          "title": "Kilin (1999) p. 381",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/71b276c113a10db156481d55c9d14172.txt"
+        },
+        {
+          "id": "967249c43ab5c304dc7cb5e7eaecf6cb",
+          "title": "Kantakoski (1998), p. 286",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/967249c43ab5c304dc7cb5e7eaecf6cb.txt"
+        },
+        {
+          "id": "eb7a90a0d37ca3196ff2e1fc6ed8242e",
+          "title": "Manninen (1999b), pp. 810–811",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/eb7a90a0d37ca3196ff2e1fc6ed8242e.txt"
+        }
+      ]
+    },
+    {
+      "case": 3,
+      "flag_id": "3300272af9c456c0e344ea4e401ef0c9",
+      "confirmed": true,
+      "reason": "Swedish omits a material dissenting historical interpretation.",
+      "check": "lang",
+      "claim": "He stated that \"the strongest argument\" against a Soviet intention of full conquest is that it did not happen in either 1939 or during the Continuation War in 1944 even though Stalin \"could have done so with comparative ease\".",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "049e270d806183975897773bba3f764c",
+          "title": "Trotter (2002), p. 17",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/049e270d806183975897773bba3f764c.txt"
+        }
+      ]
+    },
+    {
+      "case": 4,
+      "flag_id": "f932f09e2f975e5b0397f5c54b6222d6",
+      "confirmed": false,
+      "reason": "The specific officer roster is incidental rather than a substantive general-article omission.",
+      "check": "lang",
+      "claim": "Bazhanov's Finnish assistant Feodor Schulgin chose Captain Vladimir Kiseleff, Lieutenant Vladimir Lugovskoy, Anatoly Budyansky and brothers Nikolay and Vladimir Bastamov as officers for the unit.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "17dcd79f959b5e67cdea6b26ec7e33a3",
+          "title": "Venäläisemigranttien talvisota – Mannerheim hyväksyi huippusalaisen suunnitelman bolševikkien vastaisen sotavankiarmeijan perustamisesta",
+          "url": "https://yle.fi/uutiset/3-11254603",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/17dcd79f959b5e67cdea6b26ec7e33a3.txt"
+        },
+        {
+          "id": "a00beaeecb8f0b5dc97f9dd27768404f",
+          "title": "Venäläisemigranttien talvisota – Mannerheim hyväksyi huippusalaisen suunnitelman bolševikkien vastaisen sotavankiarmeijan perustamisesta",
+          "url": "https://web.archive.org/web/20220217145822/https://yle.fi/uutiset/3-11254603",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/a00beaeecb8f0b5dc97f9dd27768404f.txt"
+        }
+      ]
+    },
+    {
+      "case": 5,
+      "flag_id": "6145713a81de98fb9a6a03ce70c6bebb",
+      "confirmed": true,
+      "reason": "Signals intelligence absent from Swedish.",
+      "check": "lang",
+      "claim": "Suomalaisten merkittävä vahvuus oli myös radiotiedustelu eli vihollisen radioliikenteen sieppaus, paikantaminen ja salakirjoitussanomien avaaminen.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "202b0673317d34719d5300ec447da48f",
+          "title": "Talven soturit",
+          "url": "https://www.oruk.fi/2020/03/14/talven-soturit/",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/202b0673317d34719d5300ec447da48f.txt"
+        }
+      ]
+    },
+    {
+      "case": 6,
+      "flag_id": "c004998aa35e70661f65b7b6949ba1c5",
+      "confirmed": true,
+      "reason": "Compensating land exchange absent from Swedish.",
+      "check": "lang",
+      "claim": "In exchange, the Soviet Union would cede Repola and Porajärvi from Eastern Karelia (2120 square miles), an area twice the size as that of the territory demanded from Finland (1000 square miles).",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "5e7a2d42b2fb1cce1df037b948d1482e",
+          "title": "Turtola (1999a), pp. 38–41",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/5e7a2d42b2fb1cce1df037b948d1482e.txt"
+        },
+        {
+          "id": "8d8d8b7016a7332fb87d8d2ae35c4ce5",
+          "title": "Kotkin (2017), pp. 962",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/8d8d8b7016a7332fb87d8d2ae35c4ce5.txt"
+        },
+        {
+          "id": "c4ef908b49e404759fcd5539e4a5ff02",
+          "title": "Trotter (2002), pp. 14–16",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/c4ef908b49e404759fcd5539e4a5ff02.txt"
+        }
+      ]
+    },
+    {
+      "case": 7,
+      "flag_id": "78a1d4b993674640a4e7044a460b1767",
+      "confirmed": false,
+      "reason": "Finnish already covers the forward screening deployment; only the 21,000 detail is absent.",
+      "check": "lang",
+      "claim": "The Finnish command deployed a defence in depth of about 21,000 men in the area in front of the Mannerheim Line to delay and damage the Red Army before it reached the line.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "3806e7dfeb8b050c3501fa28ba34b1b5",
+          "title": "Trotter (2002), p. 69",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/3806e7dfeb8b050c3501fa28ba34b1b5.txt"
+        }
+      ]
+    },
+    {
+      "case": 8,
+      "flag_id": "1275ff0b5697bfd067c91928de1bbc17",
+      "confirmed": true,
+      "reason": "Signals intelligence absent from English.",
+      "check": "lang",
+      "claim": "Suomalaisten merkittävä vahvuus oli myös radiotiedustelu eli vihollisen radioliikenteen sieppaus, paikantaminen ja salakirjoitussanomien avaaminen.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "202b0673317d34719d5300ec447da48f",
+          "title": "Talven soturit",
+          "url": "https://www.oruk.fi/2020/03/14/talven-soturit/",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/202b0673317d34719d5300ec447da48f.txt"
+        }
+      ]
+    },
+    {
+      "case": 9,
+      "flag_id": "c292f75102cafcb8405a943481d38975",
+      "confirmed": true,
+      "reason": "Postwar Soviet reform review absent from Swedish.",
+      "check": "lang",
+      "claim": "The Soviet General Staff Supreme Command (Stavka) met in April 1940, reviewed the lessons of the Finnish campaign and recommended reforms.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "0ceb7b0786109753ba869476b7e29785",
+          "title": "Trotter (2002) p. 264",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/0ceb7b0786109753ba869476b7e29785.txt"
+        }
+      ]
+    },
+    {
+      "case": 10,
+      "flag_id": "d0ab363ca5520cc129107746cc05fa5f",
+      "confirmed": false,
+      "reason": "The claim confuses election to the League with election to its Council; omission is not a coverage defect.",
+      "check": "lang",
+      "claim": "Dessutom hade 3 av dessa 7 medlemmar (Sydafrikanska unionen, Bolivia och Egypten) valts in i Nationernas förbund dagen före omröstningen.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "45c5bb81c56d0b0fa8394eb6cec0e2c8",
+          "title": "militera.lib.ru",
+          "url": "http://militera.lib.ru/research/pyhalov_i/06.html",
+          "status": "Source unreachable",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/45c5bb81c56d0b0fa8394eb6cec0e2c8.txt"
+        },
+        {
+          "id": "7dfc4a8efa52c790fdb6d79aad3c556d",
+          "title": "ВОЕННАЯ ЛИТЕРАТУРА --[ Исследования ]-- Пыхалов И. Великая Оболганная война",
+          "url": "https://web.archive.org/web/20110406114918/http://militera.lib.ru/research/pyhalov_i/06.html",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/7dfc4a8efa52c790fdb6d79aad3c556d.txt"
+        }
+      ]
+    },
+    {
+      "case": 11,
+      "flag_id": "d01b486e3a68475c65f93a1a8f4d0549",
+      "confirmed": true,
+      "reason": "German-invasion rationale absent from Swedish.",
+      "check": "lang",
+      "claim": "In April 1938, NKVD agent Boris Yartsev contacted Finnish Foreign Minister Rudolf Holsti and Finnish Prime Minister Aimo Cajander, stating that the Soviets did not trust Germany and that war was considered possible between the two countries.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "9522c171f809bfa2b196d00fb24d43bd",
+          "title": "Trotter (2002), pp. 12–13",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/9522c171f809bfa2b196d00fb24d43bd.txt"
+        },
+        {
+          "id": "b7e1c28df999b0a26cc97c3d1125b82d",
+          "title": "Turtola (1999a), pp. 32–33",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/b7e1c28df999b0a26cc97c3d1125b82d.txt"
+        }
+      ]
+    },
+    {
+      "case": 12,
+      "flag_id": "0be282af57c535301c9b55f79d44f2cd",
+      "confirmed": true,
+      "reason": "Narrator wording: continued to lie.",
+      "check": "tone",
+      "claim": "In January 1940, the Soviet Pravda newspaper continued to lie that no civilian targets in Finland had been struck, even accidentally.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "b65d081049c8580da258f3c19fc71e80",
+          "title": "Tillotson (1993), p. 157",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/b65d081049c8580da258f3c19fc71e80.txt"
+        }
+      ]
+    },
+    {
+      "case": 13,
+      "flag_id": "f657e1290cef7674d11ca5517b06e53f",
+      "confirmed": true,
+      "reason": "Narrator wording: en märklig omständighet.",
+      "check": "tone",
+      "claim": "Ytterligare en märklig omständighet är att de cirka 5 000 sovjetiska krigsfångarna vilka togs av den finländska armén och efter kriget återbördades till Sovjet, är spårlöst försvunna (enligt ryska och finska källor.)",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": []
+    },
+    {
+      "case": 14,
+      "flag_id": "ed5f47aa55bc1fcddf726adc0314fcfa",
+      "confirmed": true,
+      "reason": "January diplomatic back channel absent from Swedish.",
+      "check": "lang",
+      "claim": "Tanner, Ryti, and Paasikivi accepted Wuolijoki's offer and granted her permission to meet with Kollontai in Stockholm, where she arrived on 10 January.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "c662d33a1a70deb4938a6c65a3a7f0f5",
+          "title": "Sander (2013), p. 230",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/c662d33a1a70deb4938a6c65a3a7f0f5.txt"
+        }
+      ]
+    },
+    {
+      "case": 15,
+      "flag_id": "f543424d4025ec6dd5040065cc0c45fa",
+      "confirmed": true,
+      "reason": "Border fighting tank losses absent from Finnish.",
+      "check": "lang",
+      "claim": "80 Soviet tanks were destroyed in the border zone engagements.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "a257ef43918747d8e376d85bf8f9de65",
+          "title": "Trotter (2002), pp. 72–73",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/a257ef43918747d8e376d85bf8f9de65.txt"
+        }
+      ]
+    },
+    {
+      "case": 16,
+      "flag_id": "f3e9f94aa068081fba4eb85fc6cc5ec2",
+      "confirmed": true,
+      "reason": "Same casualty statistic: 48,475 versus 48,745.",
+      "check": "fact",
+      "claim": "The official Soviet figure, with reference to the command of the Leningrad Military District, was published at a session of the Supreme Soviet on 26 March 1940, with 48,475 dead and 158,863 sick and wounded.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "d82d947bb66f54afeded9d768bc7d8bf",
+          "title": "Sokolov (2000), p. 340",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/d82d947bb66f54afeded9d768bc7d8bf.txt"
+        }
+      ]
+    },
+    {
+      "case": 17,
+      "flag_id": "7ee0fda64c8c9d6a8f9206891d96ee05",
+      "confirmed": true,
+      "reason": "8th Army composition absent from Swedish.",
+      "check": "lang",
+      "claim": "The 8th Army, comprising six divisions and a tank brigade, was north of Lake Ladoga.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "6323187b3f342a42590492a6ed89a62e",
+          "title": "Kilin and Raunio (2007), p. 13",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/6323187b3f342a42590492a6ed89a62e.txt"
+        }
+      ]
+    },
+    {
+      "case": 18,
+      "flag_id": "862c354c250aceb46520bfc94afac5dc",
+      "confirmed": true,
+      "reason": "Fighter victories and losses absent from Finnish.",
+      "check": "lang",
+      "claim": "Finnish fighters shot down 200 Soviet aircraft, while losing 62 of their own on all causes.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "17a51e19a9f2795e1b28322ab29b75c3",
+          "title": "Tillotson (1993), p. 160",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/17a51e19a9f2795e1b28322ab29b75c3.txt"
+        }
+      ]
+    },
+    {
+      "case": 19,
+      "flag_id": "14f6a70ac3dff77e98251ebeb975f77f",
+      "confirmed": true,
+      "reason": "Forward screening force absent from Swedish.",
+      "check": "lang",
+      "claim": "The Finnish command deployed a defence in depth of about 21,000 men in the area in front of the Mannerheim Line to delay and damage the Red Army before it reached the line.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "3806e7dfeb8b050c3501fa28ba34b1b5",
+          "title": "Trotter (2002), p. 69",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/3806e7dfeb8b050c3501fa28ba34b1b5.txt"
+        }
+      ]
+    },
+    {
+      "case": 20,
+      "flag_id": "0c119173c550b28dc7dab63acaa40527",
+      "confirmed": true,
+      "reason": "7th Army composition absent from Swedish.",
+      "check": "lang",
+      "claim": "The 7th Army, comprising nine divisions, a tank corps and three tank brigades, was located on the Karelian Isthmus.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "6323187b3f342a42590492a6ed89a62e",
+          "title": "Kilin and Raunio (2007), p. 13",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/6323187b3f342a42590492a6ed89a62e.txt"
+        },
+        {
+          "id": "d59c6db78ded61d154071268e605e578",
+          "title": "Nenye (2015), p. 54",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/d59c6db78ded61d154071268e605e578.txt"
+        }
+      ]
+    },
+    {
+      "case": 21,
+      "flag_id": "856e743c8300a26742f36ce0a77d4a3d",
+      "confirmed": true,
+      "reason": "Defensive strongpoints chronology absent from Swedish.",
+      "check": "lang",
+      "claim": "The Finns had built 221 strong-points along the Karelian Isthmus, mostly in the early 1920s.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "6b501ccaea312d98644fb2000a3d46c3",
+          "title": "Vuorenmaa (1999), pp. 494–495",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/6b501ccaea312d98644fb2000a3d46c3.txt"
+        }
+      ]
+    },
+    {
+      "case": 22,
+      "flag_id": "ae711bfb3e53729dc498c8ff2fb2ae77",
+      "confirmed": true,
+      "reason": "Source describes authorization of delegation, not signing; no support for switching writing hand.",
+      "check": "src",
+      "claim": "When he signed the document, the tormented president uttered the well-known words: \"Let the hand wither that signs this monstrous treaty!\" Ironically, his right arm was paralysed the following summer, and he was forced to switch his writing hand.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "5b14b5ec702bd77b82b4da43515f057f",
+          "title": "The Little, Brown book of anecdotes : Fadiman, Clifton, 1904-1999 : Free Download, Borrow, and Streaming : Internet Archive",
+          "url": "https://archive.org/details/littlebrownbooko00fadi/page/320/mode/2up?q=%22Let+the+hand+wither+that+signs+this+monstrous+treaty%22",
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/5b14b5ec702bd77b82b4da43515f057f.txt"
+        },
+        {
+          "id": "6fd968e592aeb5acffb4ada60ab2d9e9",
+          "title": "Kyösti Kallio lausui enteellisen kirouksen talvisodan päättyessä 83 vuotta sitten",
+          "url": "https://www.is.fi/kotimaa/art-2000009449470.html",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/6fd968e592aeb5acffb4ada60ab2d9e9.txt"
+        }
+      ]
+    },
+    {
+      "case": 23,
+      "flag_id": "48d264a0a71bee5fd3855b22b94c13c6",
+      "confirmed": true,
+      "reason": "Reciprocal same-scope casualty digit discrepancy.",
+      "check": "fact",
+      "claim": "Neuvostoliitto ilmoitti sodan jälkeen tappioikseen 48 745 kaatunutta ja 158 863 haavoittunutta, mutta lukujen tiedetään olevan liian pieniä.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "61fc825322beae68b4320a87ad3d793c",
+          "title": "Mannerheim–Virkkunen 1995: 238.",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/61fc825322beae68b4320a87ad3d793c.txt"
+        }
+      ]
+    },
+    {
+      "case": 24,
+      "flag_id": "4827fb48a9958505e71baaa730a46ffd",
+      "confirmed": true,
+      "reason": "Categorical conquest intention versus dissenting interpretation.",
+      "check": "lang",
+      "claim": "He stated that \"the strongest argument\" against a Soviet intention of full conquest is that it did not happen in either 1939 or during the Continuation War in 1944 even though Stalin \"could have done so with comparative ease\".",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "049e270d806183975897773bba3f764c",
+          "title": "Trotter (2002), p. 17",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/049e270d806183975897773bba3f764c.txt"
+        }
+      ]
+    },
+    {
+      "case": 25,
+      "flag_id": "fc2ab166af301626f8ad92e52ce2e91c",
+      "confirmed": true,
+      "reason": "Munasuo defensive gap absent from Swedish.",
+      "check": "lang",
+      "claim": "Because of a mistake in planning, the nearby Munasuo swamp had a 1 km-wide gap in the line.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "13a6e6d58bb59f1f786b69819adc236a",
+          "title": "Laaksonen (1999), p. 407",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/13a6e6d58bb59f1f786b69819adc236a.txt"
+        }
+      ]
+    },
+    {
+      "case": 26,
+      "flag_id": "4476687da0b54c2041af8018bece775a",
+      "confirmed": true,
+      "reason": "Finnish equipment losses absent from Finnish.",
+      "check": "lang",
+      "claim": "Between 20 and 30 tanks were destroyed and 62 aircraft were lost.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "17a51e19a9f2795e1b28322ab29b75c3",
+          "title": "Tillotson (1993), p. 160",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/17a51e19a9f2795e1b28322ab29b75c3.txt"
+        }
+      ]
+    },
+    {
+      "case": 27,
+      "flag_id": "b9d42dd551cd93f71ace63f2e661107d",
+      "confirmed": true,
+      "reason": "Anti-aircraft victory total absent from Finnish.",
+      "check": "lang",
+      "claim": "Finnish anti-aircraft guns downed more than 300 enemy aircraft.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "17a51e19a9f2795e1b28322ab29b75c3",
+          "title": "Tillotson (1993), p. 160",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/17a51e19a9f2795e1b28322ab29b75c3.txt"
+        }
+      ]
+    },
+    {
+      "case": 28,
+      "flag_id": "d94f487edcfb11d04c47cd53d7536eb5",
+      "confirmed": true,
+      "reason": "Diplomatic rupture on 28 versus 29 November.",
+      "check": "fact",
+      "claim": "Neuvostoliitto sanoutui irti hyökkäämättömyyssopimuksesta 28. marraskuuta ja katkaisi diplomaattisuhteet Suomeen 29. marraskuuta.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "5530f3a25498a16b09084290cf3582c7",
+          "title": "Book reference",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/5530f3a25498a16b09084290cf3582c7.txt"
+        }
+      ]
+    },
+    {
+      "case": 29,
+      "flag_id": "658595d42a3a64697eb41d553563b975",
+      "confirmed": true,
+      "reason": "Munasuo gap absent from Finnish.",
+      "check": "lang",
+      "claim": "Because of a mistake in planning, the nearby Munasuo swamp had a 1 km-wide gap in the line.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "13a6e6d58bb59f1f786b69819adc236a",
+          "title": "Laaksonen (1999), p. 407",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/13a6e6d58bb59f1f786b69819adc236a.txt"
+        }
+      ]
+    },
+    {
+      "case": 30,
+      "flag_id": "2bf9404af63bafabe056d682db87019b",
+      "confirmed": true,
+      "reason": "Fortification construction history absent from Finnish.",
+      "check": "lang",
+      "claim": "The Finns had built 221 strong-points along the Karelian Isthmus, mostly in the early 1920s.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "6b501ccaea312d98644fb2000a3d46c3",
+          "title": "Vuorenmaa (1999), pp. 494–495",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/6b501ccaea312d98644fb2000a3d46c3.txt"
+        }
+      ]
+    },
+    {
+      "case": 31,
+      "flag_id": "4b0a2473438afdc8b6e6fc137856a223",
+      "confirmed": true,
+      "reason": "Incomplete postwar reforms absent from Swedish.",
+      "check": "lang",
+      "claim": "Not all of the reforms had been completed when the Germans initiated Operation Barbarossa 14 months later.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "0ceb7b0786109753ba869476b7e29785",
+          "title": "Trotter (2002) p. 264",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/0ceb7b0786109753ba869476b7e29785.txt"
+        }
+      ]
+    },
+    {
+      "case": 32,
+      "flag_id": "ac38a745c81ca0b2ea9b45dd185f8f0e",
+      "confirmed": true,
+      "reason": "Border-zone tank losses absent from Swedish.",
+      "check": "lang",
+      "claim": "80 Soviet tanks were destroyed in the border zone engagements.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "a257ef43918747d8e376d85bf8f9de65",
+          "title": "Trotter (2002), pp. 72–73",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/a257ef43918747d8e376d85bf8f9de65.txt"
+        }
+      ]
+    },
+    {
+      "case": 33,
+      "flag_id": "6f03b4506b6742dc705df5a27538b60d",
+      "confirmed": true,
+      "reason": "Soviet equipment-loss accounting absent from Swedish.",
+      "check": "lang",
+      "claim": "Between 1,200 and 3,543 Soviet tanks were destroyed.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "71b276c113a10db156481d55c9d14172",
+          "title": "Kilin (1999) p. 381",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/71b276c113a10db156481d55c9d14172.txt"
+        },
+        {
+          "id": "967249c43ab5c304dc7cb5e7eaecf6cb",
+          "title": "Kantakoski (1998), p. 286",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/967249c43ab5c304dc7cb5e7eaecf6cb.txt"
+        },
+        {
+          "id": "eb7a90a0d37ca3196ff2e1fc6ed8242e",
+          "title": "Manninen (1999b), pp. 810–811",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/eb7a90a0d37ca3196ff2e1fc6ed8242e.txt"
+        }
+      ]
+    },
+    {
+      "case": 34,
+      "flag_id": "e818a6a7cfb08b4b02b5314b8c359ccd",
+      "confirmed": true,
+      "reason": "RNA unarmed propaganda role absent from Swedish.",
+      "check": "lang",
+      "claim": "About 35 to 40 members of it were present during a battle in Ruskeala in early March 1940, where they spread flyers and broadcast propaganda to encircled Soviet troops, but did not carry weapons.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "17dcd79f959b5e67cdea6b26ec7e33a3",
+          "title": "Venäläisemigranttien talvisota – Mannerheim hyväksyi huippusalaisen suunnitelman bolševikkien vastaisen sotavankiarmeijan perustamisesta",
+          "url": "https://yle.fi/uutiset/3-11254603",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/17dcd79f959b5e67cdea6b26ec7e33a3.txt"
+        },
+        {
+          "id": "a00beaeecb8f0b5dc97f9dd27768404f",
+          "title": "Venäläisemigranttien talvisota – Mannerheim hyväksyi huippusalaisen suunnitelman bolševikkien vastaisen sotavankiarmeijan perustamisesta",
+          "url": "https://web.archive.org/web/20220217145822/https://yle.fi/uutiset/3-11254603",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/a00beaeecb8f0b5dc97f9dd27768404f.txt"
+        }
+      ]
+    },
+    {
+      "case": 35,
+      "flag_id": "00191212bc5d16bf03d991a3fd4f8408",
+      "confirmed": false,
+      "reason": "The individual officer roster is incidental detail; the broader RNA omission can still be valid.",
+      "check": "lang",
+      "claim": "Bazhanov's Finnish assistant Feodor Schulgin chose Captain Vladimir Kiseleff, Lieutenant Vladimir Lugovskoy, Anatoly Budyansky and brothers Nikolay and Vladimir Bastamov as officers for the unit.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "17dcd79f959b5e67cdea6b26ec7e33a3",
+          "title": "Venäläisemigranttien talvisota – Mannerheim hyväksyi huippusalaisen suunnitelman bolševikkien vastaisen sotavankiarmeijan perustamisesta",
+          "url": "https://yle.fi/uutiset/3-11254603",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/17dcd79f959b5e67cdea6b26ec7e33a3.txt"
+        },
+        {
+          "id": "a00beaeecb8f0b5dc97f9dd27768404f",
+          "title": "Venäläisemigranttien talvisota – Mannerheim hyväksyi huippusalaisen suunnitelman bolševikkien vastaisen sotavankiarmeijan perustamisesta",
+          "url": "https://web.archive.org/web/20220217145822/https://yle.fi/uutiset/3-11254603",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/a00beaeecb8f0b5dc97f9dd27768404f.txt"
+        }
+      ]
+    },
+    {
+      "case": 36,
+      "flag_id": "cb74365599a8503499142fca3640d7cf",
+      "confirmed": true,
+      "reason": "Finnish historical estimate of Soviet tank losses absent from both peer articles.",
+      "check": "lang",
+      "claim": "In the immediate aftermath of the war, the Finnish estimate of the number of lost Soviet tanks was 1,000 to 1,200.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "71b276c113a10db156481d55c9d14172",
+          "title": "Kilin (1999) p. 381",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/71b276c113a10db156481d55c9d14172.txt"
+        },
+        {
+          "id": "967249c43ab5c304dc7cb5e7eaecf6cb",
+          "title": "Kantakoski (1998), p. 286",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/967249c43ab5c304dc7cb5e7eaecf6cb.txt"
+        },
+        {
+          "id": "eb7a90a0d37ca3196ff2e1fc6ed8242e",
+          "title": "Manninen (1999b), pp. 810–811",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/eb7a90a0d37ca3196ff2e1fc6ed8242e.txt"
+        }
+      ]
+    },
+    {
+      "case": 37,
+      "flag_id": "e3b16d4a87831aa0790b97f3fae2fc66",
+      "confirmed": true,
+      "reason": "Operational deadline tied to Stalin birthday absent from Swedish.",
+      "check": "lang",
+      "claim": "With the new plans, the key deadline for Finland's capitulation was to be Stalin's 60th birthday on 21 December.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "9e841009cf8b9187d0d29146f72325c8",
+          "title": "Nenye (2015), pp. 50, 51",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/9e841009cf8b9187d0d29146f72325c8.txt"
+        }
+      ]
+    },
+    {
+      "case": 38,
+      "flag_id": "0e4e4c2a931f53c6324bac69a15dda37",
+      "confirmed": true,
+      "reason": "RNA prisoner recruitment and emigre command absent from Finnish.",
+      "check": "lang",
+      "claim": "The ranks of RNA were to be filled by prisoners-of-war, but it would be commanded by White émigrés instead of captured Soviet Army officers, who were deemed unreliable.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "17dcd79f959b5e67cdea6b26ec7e33a3",
+          "title": "Venäläisemigranttien talvisota – Mannerheim hyväksyi huippusalaisen suunnitelman bolševikkien vastaisen sotavankiarmeijan perustamisesta",
+          "url": "https://yle.fi/uutiset/3-11254603",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/17dcd79f959b5e67cdea6b26ec7e33a3.txt"
+        },
+        {
+          "id": "a00beaeecb8f0b5dc97f9dd27768404f",
+          "title": "Venäläisemigranttien talvisota – Mannerheim hyväksyi huippusalaisen suunnitelman bolševikkien vastaisen sotavankiarmeijan perustamisesta",
+          "url": "https://web.archive.org/web/20220217145822/https://yle.fi/uutiset/3-11254603",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/a00beaeecb8f0b5dc97f9dd27768404f.txt"
+        }
+      ]
+    },
+    {
+      "case": 39,
+      "flag_id": "ba1a524943c2f467cacc78dc7e7b2ec7",
+      "confirmed": true,
+      "reason": "German inference about Soviet weakness absent from Swedish.",
+      "check": "lang",
+      "claim": "Puna-armeijan huomattavat tappiot talvisodassa saivat Saksan aliarvioimaan Neuvostoliiton sotapotentiaalin, mikä osaltaan vahvisti saksalaisten päätöstä hyökätä Neuvostoliittoon kesällä 1941.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "a7fc7678f143e5cf792eff9799d02c04",
+          "title": "Moscow 1941 : a city and its people at war : Braithwaite, Rodric, 1932- : Free Download, Borrow, and Streaming : Internet Archive",
+          "url": "https://archive.org/details/moscow1941cityit0000brai_k1c7/page/51",
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/a7fc7678f143e5cf792eff9799d02c04.txt"
+        },
+        {
+          "id": "dc5f7917d756afa002ffb4552bbe0e58",
+          "title": "Moscow 1941 : a city and its people at war : Braithwaite, Rodric, 1932- : Free Download, Borrow, and Streaming : Internet Archive",
+          "url": "https://archive.org/details/moscow1941cityit0000brai_k1c7",
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/dc5f7917d756afa002ffb4552bbe0e58.txt"
+        }
+      ]
+    },
+    {
+      "case": 40,
+      "flag_id": "a9ecd681b30d374dc52d5f45e27d693a",
+      "confirmed": true,
+      "reason": "RNA nonparticipation in combat absent from Swedish.",
+      "check": "lang",
+      "claim": "RNA never participated in battle, despite Boris Bazhanov's later claims to the contrary in his memoirs.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "17dcd79f959b5e67cdea6b26ec7e33a3",
+          "title": "Venäläisemigranttien talvisota – Mannerheim hyväksyi huippusalaisen suunnitelman bolševikkien vastaisen sotavankiarmeijan perustamisesta",
+          "url": "https://yle.fi/uutiset/3-11254603",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/17dcd79f959b5e67cdea6b26ec7e33a3.txt"
+        },
+        {
+          "id": "a00beaeecb8f0b5dc97f9dd27768404f",
+          "title": "Venäläisemigranttien talvisota – Mannerheim hyväksyi huippusalaisen suunnitelman bolševikkien vastaisen sotavankiarmeijan perustamisesta",
+          "url": "https://web.archive.org/web/20220217145822/https://yle.fi/uutiset/3-11254603",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/a00beaeecb8f0b5dc97f9dd27768404f.txt"
+        }
+      ]
+    },
+    {
+      "case": 41,
+      "flag_id": "65c3491c5d1f63e938fe4b3e32617dc9",
+      "confirmed": true,
+      "reason": "Thesis describes prewar beliefs rather than demonstrated winter equipment performance.",
+      "check": "src",
+      "claim": "Puna-armeijan mekanisoitu kalusto oli osin soveltumatonta metsäsodankäyntiin, toimi vain aukeilla ja teillä eikä useinkaan kestänyt kovia pakkasia.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "9c0ae26c2ec912c9a847431822c4ff74",
+          "title": "erepo.uef.fi",
+          "url": "https://erepo.uef.fi/bitstream/handle/123456789/23681/urn_nbn_fi_uef-20201456.pdf?sequence=1&isAllowed=y",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/9c0ae26c2ec912c9a847431822c4ff74.txt"
+        }
+      ]
+    },
+    {
+      "case": 42,
+      "flag_id": "2a9d804586cc71d818ba30ba4f258aa0",
+      "confirmed": null,
+      "reason": "9,500 versus 8,760 may use different inclusion rules, including medical staff and workers.",
+      "check": "fact",
+      "claim": "Cirka 9 500 svenska frivilliga deltog i vinterkriget varav 8 260 ingick i Svenska frivilligkåren.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "81d8b5b04d260499e0615ef4095f7076",
+          "title": "SFM - Historik",
+          "url": "https://web.archive.org/web/20191019031427/http://www.finlandsfrivilliga.se/historik.html",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/81d8b5b04d260499e0615ef4095f7076.txt"
+        },
+        {
+          "id": "89af29f9f074cde13e51644abb0cbef7",
+          "title": "www.finlandsfrivilliga.se",
+          "url": "http://www.finlandsfrivilliga.se/historik.html",
+          "status": "Source unreachable",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/89af29f9f074cde13e51644abb0cbef7.txt"
+        }
+      ]
+    },
+    {
+      "case": 43,
+      "flag_id": "8befa2230f3c47698a582be3b9a1c47a",
+      "confirmed": true,
+      "reason": "Claim says 8,260; own archived cited source says 8,400 in the corps.",
+      "check": "src",
+      "claim": "Cirka 9 500 svenska frivilliga deltog i vinterkriget varav 8 260 ingick i Svenska frivilligkåren.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "81d8b5b04d260499e0615ef4095f7076",
+          "title": "SFM - Historik",
+          "url": "https://web.archive.org/web/20191019031427/http://www.finlandsfrivilliga.se/historik.html",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/81d8b5b04d260499e0615ef4095f7076.txt"
+        },
+        {
+          "id": "89af29f9f074cde13e51644abb0cbef7",
+          "title": "www.finlandsfrivilliga.se",
+          "url": "http://www.finlandsfrivilliga.se/historik.html",
+          "status": "Source unreachable",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/89af29f9f074cde13e51644abb0cbef7.txt"
+        }
+      ]
+    },
+    {
+      "case": 44,
+      "flag_id": "39f37fd27975528a59e08a08c5f35fc2",
+      "confirmed": true,
+      "reason": "Competing Soviet tank-loss estimates absent from Swedish.",
+      "check": "lang",
+      "claim": "The official figure was 611 tank casualties, but Yuri Kilin found a note received by the head of the Soviet General Staff, Boris Shaposhnikov, reporting 3,543 tank casualties and 316 tanks destroyed.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "71b276c113a10db156481d55c9d14172",
+          "title": "Kilin (1999) p. 381",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/71b276c113a10db156481d55c9d14172.txt"
+        },
+        {
+          "id": "967249c43ab5c304dc7cb5e7eaecf6cb",
+          "title": "Kantakoski (1998), p. 286",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/967249c43ab5c304dc7cb5e7eaecf6cb.txt"
+        },
+        {
+          "id": "eb7a90a0d37ca3196ff2e1fc6ed8242e",
+          "title": "Manninen (1999b), pp. 810–811",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/eb7a90a0d37ca3196ff2e1fc6ed8242e.txt"
+        }
+      ]
+    },
+    {
+      "case": 45,
+      "flag_id": "f40eb0b435257480ee545ddb41055325",
+      "confirmed": true,
+      "reason": "Narrator wording: ei viitsitty.",
+      "check": "tone",
+      "claim": "Toisaalta jätettiin tekemättä ohjeiden mukaisia turvatoimia, esimerkiksi metsätiellä ei viitsitty raivata metsistä kaistoja puuttomiksi.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "66aaa00e9595a6182d151388238fb1b0",
+          "title": "Suomen talvisodasta tuli Stalinin pahin painajainen",
+          "url": "https://historianet.fi/sota/toinen-maailmansota/talvisota-puolustussota-40-pakkasasteessa",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/66aaa00e9595a6182d151388238fb1b0.txt"
+        }
+      ]
+    },
+    {
+      "case": 46,
+      "flag_id": "fea20b3d5b41e4bd960136a1d0c7a8a5",
+      "confirmed": true,
+      "reason": "Historical tank-loss estimate absent from both peer articles.",
+      "check": "lang",
+      "claim": "In the immediate aftermath of the war, the Finnish estimate of the number of lost Soviet tanks was 1,000 to 1,200.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "71b276c113a10db156481d55c9d14172",
+          "title": "Kilin (1999) p. 381",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/71b276c113a10db156481d55c9d14172.txt"
+        },
+        {
+          "id": "967249c43ab5c304dc7cb5e7eaecf6cb",
+          "title": "Kantakoski (1998), p. 286",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/967249c43ab5c304dc7cb5e7eaecf6cb.txt"
+        },
+        {
+          "id": "eb7a90a0d37ca3196ff2e1fc6ed8242e",
+          "title": "Manninen (1999b), pp. 810–811",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/eb7a90a0d37ca3196ff2e1fc6ed8242e.txt"
+        }
+      ]
+    },
+    {
+      "case": 47,
+      "flag_id": "e78a535b205a83c2643bd953c234b9d2",
+      "confirmed": false,
+      "reason": "The compared troop totals refer to different proposals and operational scopes.",
+      "check": "fact",
+      "claim": "Hela styrkan skulle omfatta en motoriserad armékår på kanske 22 000 soldater samt tungt artilleri från Storbritannien och Frankrike.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": []
+    },
+    {
+      "case": 48,
+      "flag_id": "08f07fc4e7f54a29b4c2ba451265a599",
+      "confirmed": true,
+      "reason": "Finnish equipment losses absent from Swedish.",
+      "check": "lang",
+      "claim": "Between 20 and 30 tanks were destroyed and 62 aircraft were lost.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "17a51e19a9f2795e1b28322ab29b75c3",
+          "title": "Tillotson (1993), p. 160",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/17a51e19a9f2795e1b28322ab29b75c3.txt"
+        }
+      ]
+    },
+    {
+      "case": 49,
+      "flag_id": "782209929cc30e4a35492ced4cdb9872",
+      "confirmed": true,
+      "reason": "RNA noncombat role absent from Finnish.",
+      "check": "lang",
+      "claim": "RNA never participated in battle, despite Boris Bazhanov's later claims to the contrary in his memoirs.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "17dcd79f959b5e67cdea6b26ec7e33a3",
+          "title": "Venäläisemigranttien talvisota – Mannerheim hyväksyi huippusalaisen suunnitelman bolševikkien vastaisen sotavankiarmeijan perustamisesta",
+          "url": "https://yle.fi/uutiset/3-11254603",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/17dcd79f959b5e67cdea6b26ec7e33a3.txt"
+        },
+        {
+          "id": "a00beaeecb8f0b5dc97f9dd27768404f",
+          "title": "Venäläisemigranttien talvisota – Mannerheim hyväksyi huippusalaisen suunnitelman bolševikkien vastaisen sotavankiarmeijan perustamisesta",
+          "url": "https://web.archive.org/web/20220217145822/https://yle.fi/uutiset/3-11254603",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/a00beaeecb8f0b5dc97f9dd27768404f.txt"
+        }
+      ]
+    },
+    {
+      "case": 50,
+      "flag_id": "95402704d490e9b96c276f04049735b7",
+      "confirmed": true,
+      "reason": "RNA prisoner recruitment and emigre command absent from Swedish.",
+      "check": "lang",
+      "claim": "The ranks of RNA were to be filled by prisoners-of-war, but it would be commanded by White émigrés instead of captured Soviet Army officers, who were deemed unreliable.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "17dcd79f959b5e67cdea6b26ec7e33a3",
+          "title": "Venäläisemigranttien talvisota – Mannerheim hyväksyi huippusalaisen suunnitelman bolševikkien vastaisen sotavankiarmeijan perustamisesta",
+          "url": "https://yle.fi/uutiset/3-11254603",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/17dcd79f959b5e67cdea6b26ec7e33a3.txt"
+        },
+        {
+          "id": "a00beaeecb8f0b5dc97f9dd27768404f",
+          "title": "Venäläisemigranttien talvisota – Mannerheim hyväksyi huippusalaisen suunnitelman bolševikkien vastaisen sotavankiarmeijan perustamisesta",
+          "url": "https://web.archive.org/web/20220217145822/https://yle.fi/uutiset/3-11254603",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/a00beaeecb8f0b5dc97f9dd27768404f.txt"
+        }
+      ]
+    },
+    {
+      "case": 51,
+      "flag_id": "0098e33f4ac7fdf65836ac2e527d83bd",
+      "confirmed": true,
+      "reason": "Soviet aircraft losses and combat/noncombat distinction absent from Swedish.",
+      "check": "lang",
+      "claim": "The Soviet Air Forces lost around 1,000 aircraft, but fewer than half of them were combat casualties.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "3322daadb724a96bc9075aab933ed73c",
+          "title": "Kilin (1999), p. 381",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/3322daadb724a96bc9075aab933ed73c.txt"
+        },
+        {
+          "id": "eb7a90a0d37ca3196ff2e1fc6ed8242e",
+          "title": "Manninen (1999b), pp. 810–811",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/eb7a90a0d37ca3196ff2e1fc6ed8242e.txt"
+        }
+      ]
+    },
+    {
+      "case": 52,
+      "flag_id": "e4ba3ef2767eb2fd1ba4d9a7a6bd1df9",
+      "confirmed": true,
+      "reason": "Tarmo bombing and 39 deaths absent from Swedish.",
+      "check": "lang",
+      "claim": "At 18 January, Finnish armed icebreaker Tarmo was severely damaged at Kotka, received two bombs from a Soviet bomber with 39 Finnish troops killed in action.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "1f46453b12fc55a29a8fdde06063b06e",
+          "title": "Elfvegren (1999), p. 678",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/1f46453b12fc55a29a8fdde06063b06e.txt"
+        }
+      ]
+    },
+    {
+      "case": 53,
+      "flag_id": "3cd0485b31971947a2829201ac0def8d",
+      "confirmed": true,
+      "reason": "Fighter victories and losses absent from Swedish.",
+      "check": "lang",
+      "claim": "Finnish fighters shot down 200 Soviet aircraft, while losing 62 of their own on all causes.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "17a51e19a9f2795e1b28322ab29b75c3",
+          "title": "Tillotson (1993), p. 160",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/17a51e19a9f2795e1b28322ab29b75c3.txt"
+        }
+      ]
+    },
+    {
+      "case": 54,
+      "flag_id": "86fb49f4084aa51885bb524db886aad4",
+      "confirmed": true,
+      "reason": "Same date and place: 3,000 versus 1,558 Soviet tanks.",
+      "check": "fact",
+      "claim": "By 11 February, the Soviets had approximately 460,000 soldiers, 3,350 artillery pieces, 3,000 tanks and 1,300 aircraft deployed on the Karelian Isthmus.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "b0e99330e189f9858535a347ce112a71",
+          "title": "Geust; Uitto (2006), p. 77",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/b0e99330e189f9858535a347ce112a71.txt"
+        }
+      ]
+    },
+    {
+      "case": 55,
+      "flag_id": "cf5a6832da0532f63977654d43884d40",
+      "confirmed": true,
+      "reason": "Soviet aircraft losses absent from Finnish.",
+      "check": "lang",
+      "claim": "The Soviet Air Forces lost around 1,000 aircraft, but fewer than half of them were combat casualties.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "3322daadb724a96bc9075aab933ed73c",
+          "title": "Kilin (1999), p. 381",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/3322daadb724a96bc9075aab933ed73c.txt"
+        },
+        {
+          "id": "eb7a90a0d37ca3196ff2e1fc6ed8242e",
+          "title": "Manninen (1999b), pp. 810–811",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/eb7a90a0d37ca3196ff2e1fc6ed8242e.txt"
+        }
+      ]
+    },
+    {
+      "case": 56,
+      "flag_id": "e4d29113fe67a9e91c01867f91afdd98",
+      "confirmed": true,
+      "reason": "Public announcement of Soviet demands absent from Swedish.",
+      "check": "lang",
+      "claim": "On 31 October, Molotov publicly announced the Soviet demands to the Supreme Soviet.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "41080126172a24c35d99c9861bf088b2",
+          "title": "Kotkin (2017), p. 966",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/41080126172a24c35d99c9861bf088b2.txt"
+        }
+      ]
+    },
+    {
+      "case": 57,
+      "flag_id": "44e71dbcd2ef00134877a2ee5d5c494d",
+      "confirmed": true,
+      "reason": "Raate Road casualty comparison absent from Finnish.",
+      "check": "lang",
+      "claim": "The Soviets suffered 7,000–9,000 casualties; the Finnish units, 400.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "54ad9d967669a0b00ef0d2da49e66e7b",
+          "title": "Kulju (2007), p. 229",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/54ad9d967669a0b00ef0d2da49e66e7b.txt"
+        },
+        {
+          "id": "d035901a7120520c75fad32fd8e53da6",
+          "title": "Kantakoski (1998), p. 283",
+          "url": null,
+          "status": "Book, not checked",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/d035901a7120520c75fad32fd8e53da6.txt"
+        }
+      ]
+    },
+    {
+      "case": 58,
+      "flag_id": "e37a9d3d85ae82d416bc5a9742c23fdf",
+      "confirmed": true,
+      "reason": "Signals intelligence role in motti tactics absent from English.",
+      "check": "lang",
+      "claim": "Radiotiedustelun avulla suomalaiset pystyivät muun muassa motteja laukaistessaan keskittämään voiman ulosmurtokohtiin ja jättämään muut alueet motin ympärillä lähes ilman miehitystä.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": [
+        {
+          "id": "202b0673317d34719d5300ec447da48f",
+          "title": "Talven soturit",
+          "url": "https://www.oruk.fi/2020/03/14/talven-soturit/",
+          "status": "Read",
+          "text_file": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/202b0673317d34719d5300ec447da48f.txt"
+        }
+      ]
+    },
+    {
+      "case": 59,
+      "flag_id": "bc4d6a00cd0ecf9847b3870ebacd3eca",
+      "confirmed": false,
+      "reason": "The compared aircraft figures have different explicit scopes: combat-ready versus all aircraft.",
+      "check": "fact",
+      "claim": "Finlands försvarsmakt bestod i det första skedet av 200 000 man, 32 stridsvagnar och 119 flygplan medan Röda armén anföll med 460 000 man, 1 500 stridsvagnar och 1 000 flygplan.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": []
+    },
+    {
+      "case": 60,
+      "flag_id": "27913c87217120ac9e6cd05feaab6981",
+      "confirmed": true,
+      "reason": "Command-chain conflation: Yakovlev versus Voroshilov and Meretskov.",
+      "check": "fact",
+      "claim": "På den sovjetiska sidan byttes armékommendören Jakovlev ut mot general Timosjenko och man utbildade trupperna för att förbättra samverkan mellan stridsvagnar, infanteri och artilleri så att inte de egna trupperna skulle kunna splittras vid anfallen.",
+      "article_files": {
+        "en": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-en.txt",
+        "fi": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-fi.txt",
+        "sv": "/Users/shreyansh/Documents/ChatGPT/Junction/mariadb/work/parallax/blind-real/Q134949-sv.txt"
+      },
+      "sources": []
+    }
+  ]
+}

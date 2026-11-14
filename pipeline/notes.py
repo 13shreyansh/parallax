@@ -3,6 +3,8 @@ import os
 
 NAMES={'fi':'Finnish','sv':'Swedish','en':'English','de':'German','ru':'Russian'}
 def fill_note(flag,articles):
+    if flag.get('note_model') and flag.get('note'):
+        return flag
     lang=flag['language'];target=flag.get('missing_language',lang)
     article=articles.get(target) or articles.get(lang)
     writing=target if target in ['fi','sv','en'] else 'en'

@@ -1,17 +1,18 @@
+https://parallax-gamma-red.vercel.app
 Parallax compares Wikipedia claims with their own cited sources and other language versions.
 Scope: 22 Finland in the Second World War topics, fi/sv/en; Winter War de/ru comparison only.
 Acceptance: real stored findings, exact quotes, readable evidence and revision boundaries.
 Hosting: isolated VPS MariaDB 11.8 and API, TLS, private SQL socket; new Vercel project.
 Validation: deployed desktop/mobile flow, frozen held-out evaluation and independent blind review.
 
-ENTRY: Parallax / Job 05 in progress / deployment pending
+ENTRY: Parallax / Job 05 in progress / 4fe4330182bdb453b06141b668985c98f9649dce / https://parallax-gamma-red.vercel.app
 DONE:
 - VPS MariaDB 11.8.9 and API are running; HTTPS health verified. All active vectors, source passages and 14,726 revisions imported.
 - Read-only container import and Unix-socket authentication bugs fixed and regression checked.
-- Home and Winter War are being released first. Ask, Method and time travel are hidden until verified.
-NUMBERS: measured held-out 32/40 planted errors caught (80%), 0/40 false flags; dropped sentences 0/8. Previous baseline measured 5/36. Blind precision pending. Winter War local shown flags: 77; hosted snapshot initially 16.
-SCREENSHOTS: pending deployed browser verification
-REVIEW: pending separate gpt-6-astra spec and build passes
+- Home and Winter War are live. Ask, Method and time travel are hidden until verified.
+NUMBERS: measured held-out 32/40 planted errors caught (80%), 0/40 false flags; dropped sentences 0/8. Blind gpt-6-astra review confirmed 53/60 (88.3% precision); six false and one uncertain were hidden, including mirrored counterparts. Previous baseline measured 5/36. Winter War has 67 unique publication-ready flags after quality exclusions. The first hosted snapshot had 12, then was refreshed to 77 before review.
+SCREENSHOTS: artifacts/e2e/core-home-1440.png; artifacts/e2e/core-home-390.png; artifacts/e2e/core-source-390.png
+REVIEW: blind evidence precision measured 53/60; separate spec and build passes pending.
 NEXT: release core screens, then verify each remaining feature and redeploy.
 NEEDS DECISION: none
 BLOCKED: none
@@ -98,3 +99,6 @@ Rauhanteon j√§lkeen Kallio murtui ruumiillisesti ja henkisesti. Puoli vuotta my√
 - Finding: The Finnish article states that Finland had only one-third of the planned number of anti-tank guns; this numerical detail is absent in English.
 - Source passage: no independently supporting source passage stored for this language/tone comparison yet; no source contradiction is claimed for it.
 - Entry edit: https://fi.wikipedia.org/w/index.php?diff=704318, 2006-01-15 17:29:43Z. Historical source support: not established.
+
+## Job 05 live milestone, 01:22 Helsinki
+Core release 4fe4330 verified public at https://parallax-gamma-red.vercel.app. VPS HTTPS health reports that exact commit. Deployed Chromium core flow passed at 1440x900 and 390px with zero console errors and no horizontal overflow. Phone evidence-sheet screenshots now wait for the animation to finish. Source-backed language fixes and Gemini-generated editor notes are stored. The next release applies independent review exclusions and fixes a slow temporal lookup (qid scanned all historical bodies; versioned primary-key branches seek each language page).

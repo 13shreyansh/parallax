@@ -12,16 +12,12 @@
     "@fontsource-variable/commissioner": "^5.3.0",
     "@fontsource-variable/jetbrains-mono": "^5.3.0",
     "@fontsource-variable/source-serif-4": "^5.3.1",
-    "@vercel/sandbox": "^4.0.0",
     "lucide-react": "0.468.0",
     "react": "19.2.0",
     "react-dom": "19.2.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.65.1",
     "vite": "^7.3.8"
-  },
-  "overrides": {
-    "@vercel/oidc": "4.0.6",
-    "@vercel/cli-config": "0.3.6"
   }
 }

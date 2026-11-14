@@ -69,7 +69,7 @@ def normalize(text):
     return text
 
 def onset(qid):
-    c=db();cur=c.cursor();cur.execute("SELECT * FROM flag WHERE qid=%s AND JSON_EXTRACT(payload,'$.current_confirmed')=true",(qid,));flags=cur.fetchall()
+    c=db();cur=c.cursor();cur.execute("SELECT * FROM flag WHERE qid=%s AND id NOT IN (SELECT flag_id FROM quality_exclusion) AND JSON_EXTRACT(payload,'$.current_confirmed')=true",(qid,));flags=cur.fetchall()
     cur.execute('SELECT * FROM article WHERE qid=%s',(qid,));articles={a['lang']:a for a in cur.fetchall()}
     bylang={}
     for row in flags:

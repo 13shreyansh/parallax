@@ -18,17 +18,23 @@ def run(cur,sql,args=(),traces=None,label=None):
     return rows
 
 def counts(cur):
-    sql="""SELECT (SELECT COUNT(DISTINCT qid) FROM claim) articles,(SELECT COUNT(*) FROM article WHERE qid IN (SELECT DISTINCT qid FROM claim)) versions,(SELECT COUNT(*) FROM claim) claims,(SELECT COUNT(DISTINCT s.id) FROM cited_source s JOIN claim_source cs ON cs.source_id=s.id JOIN claim cl ON cl.id=cs.claim_id) sources,(SELECT COUNT(DISTINCT s.id) FROM cited_source s JOIN claim_source cs ON cs.source_id=s.id JOIN claim cl ON cl.id=cs.claim_id WHERE s.status='Read') sources_read,(SELECT COUNT(*) FROM revision FOR SYSTEM_TIME ALL) revisions,(SELECT COUNT(*) FROM flag f LEFT JOIN editor_reviews r ON r.flag_id=f.id WHERE f.shown=1 AND COALESCE(r.dismissed,0)=0) flags,(SELECT COUNT(*) FROM editor_reviews WHERE dismissed=1) dismissed,(SELECT COALESCE(SUM(copies),0) FROM note_copies) copied,(SELECT MAX(checked_at) FROM flag) updated_at"""
+    sql="""SELECT (SELECT COUNT(DISTINCT qid) FROM claim) articles,(SELECT COUNT(*) FROM article WHERE qid IN (SELECT DISTINCT qid FROM claim)) versions,(SELECT COUNT(*) FROM claim) claims,(SELECT COUNT(DISTINCT s.id) FROM cited_source s JOIN claim_source cs ON cs.source_id=s.id JOIN claim cl ON cl.id=cs.claim_id) sources,(SELECT COUNT(DISTINCT s.id) FROM cited_source s JOIN claim_source cs ON cs.source_id=s.id JOIN claim cl ON cl.id=cs.claim_id WHERE s.status='Read') sources_read,(SELECT COUNT(*) FROM revision FOR SYSTEM_TIME ALL) revisions,(SELECT COUNT(*) FROM published_flag f LEFT JOIN editor_reviews r ON r.flag_id=f.id WHERE f.shown=1 AND COALESCE(r.dismissed,0)=0) flags,(SELECT COUNT(*) FROM editor_reviews WHERE dismissed=1) dismissed,(SELECT COALESCE(SUM(copies),0) FROM note_copies) copied,(SELECT MAX(checked_at) FROM flag) updated_at"""
     return run(cur,sql)[0]
 
 def flag_rows(cur,qid=None):
-    rows=run(cur,"SELECT f.*,r.reason,r.dismissed,r.reviewed_at,COALESCE(n.copies,0) copied_count FROM flag f LEFT JOIN editor_reviews r ON r.flag_id=f.id LEFT JOIN note_copies n ON n.flag_id=f.id WHERE f.shown=1"+(' AND f.qid=%s' if qid else ''),(qid,) if qid else ())
+    rows=run(cur,"SELECT f.*,r.reason,r.dismissed,r.reviewed_at,COALESCE(n.copies,0) copied_count FROM published_flag f LEFT JOIN editor_reviews r ON r.flag_id=f.id LEFT JOIN note_copies n ON n.flag_id=f.id WHERE f.shown=1"+(' AND f.qid=%s' if qid else ''),(qid,) if qid else ())
     return [{**unpack(r['payload']),'dismissed':bool(r['dismissed']),'review_reason':r['reason'],'reviewed_at':r['reviewed_at'],'copied_count':r['copied_count']} for r in rows]
 
 def article_meta(cur,qid):
     rows=run(cur,'SELECT * FROM topic WHERE qid=%s',(qid,))
     if not rows:return None
     a=rows[0];a['titles']=unpack(a['titles']);a['versions']=run(cur,'SELECT lang,title,page_id,rev_id,revised_at FROM article WHERE qid=%s ORDER BY FIELD(lang,\'fi\',\'sv\',\'en\',\'de\',\'ru\')',(qid,));return a
+
+def temporal_query(versions,instant):
+    # The system-versioned primary key is (lang,page_id,row_end). Looking up qid
+    # alone reads every historical article body; these branches seek one version.
+    part='SELECT lang,page_id,rev_id,title,text,row_start revised_at FROM revision FOR SYSTEM_TIME AS OF TIMESTAMP %s WHERE lang=%s AND page_id=%s'
+    return ' UNION ALL '.join(part for _ in versions),tuple(value for v in versions for value in (instant,v['lang'],v['page_id']))
 
 @app.before_request
 def access():
@@ -64,7 +70,7 @@ def home():
     SUM(CASE WHEN f.check_type='lang' AND f.shown=1 AND COALESCE(r.dismissed,0)=0 THEN 1 ELSE 0 END) lang,
     SUM(CASE WHEN f.check_type='tone' AND f.shown=1 AND COALESCE(r.dismissed,0)=0 THEN 1 ELSE 0 END) tone,
     SUM(CASE WHEN f.check_type='fact' AND f.shown=1 AND COALESCE(r.dismissed,0)=0 THEN 1 ELSE 0 END) fact
-    FROM topic t JOIN topic_theme tt ON tt.qid=t.qid LEFT JOIN flag f ON f.qid=t.qid LEFT JOIN editor_reviews r ON r.flag_id=f.id
+    FROM topic t JOIN topic_theme tt ON tt.qid=t.qid LEFT JOIN published_flag f ON f.qid=t.qid LEFT JOIN editor_reviews r ON r.flag_id=f.id
     WHERE tt.theme=%s AND t.distance IS NOT NULL GROUP BY t.qid ORDER BY """+order+' LIMIT 10',(theme,),traces,'Ranked articles')
     for r in rows:r['titles']=unpack(r['titles'])
     qids={r['qid']:i for i,r in enumerate(rows)};fs=[f for f in flag_rows(cur) if f['qid'] in qids and not f['dismissed'] and f.get('source') and f['check'] in ['src','fact','lang'] and all(len(v['text'])<=220 for v in f.get('versions',{}).values())]
@@ -89,7 +95,8 @@ def article():
         try:date=datetime.date.fromisoformat(asof)
         except ValueError:c.close();return jsonify(error='Choose a valid date.'),400
         if date>datetime.datetime.now(datetime.timezone.utc).date():c.close();return jsonify(error='Choose today or an earlier date.'),400
-    past=run(cur,'SELECT lang,page_id,rev_id,title,text,row_start revised_at FROM revision FOR SYSTEM_TIME AS OF TIMESTAMP %s WHERE qid=%s',((asof+' 23:59:59') if date else datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M:%S'),qid),traces,'As of '+(asof or 'today'))
+    temporal_sql,temporal_args=temporal_query(a['versions'],(asof+' 23:59:59') if date else datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M:%S'))
+    past=run(cur,temporal_sql,temporal_args,traces,'As of '+(asof or 'today'))
     history=run(cur,'SELECT COUNT(*) revisions,MIN(row_start) earliest,MAX(row_start) latest FROM revision FOR SYSTEM_TIME ALL WHERE qid=%s',(qid,))[0]
     if date:
         versions={r['lang']:r for r in past}

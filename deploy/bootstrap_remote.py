@@ -9,7 +9,8 @@ old=inspect('parallax-db');api=inspect('parallax-api')
 for obj in [old,api]:
     if obj and obj['Config'].get('Labels',{}).get('io.parallax.owner')!='mariadb-junction':raise RuntimeError('Container name belongs to another service')
 oldenv=dict(v.split('=',1) for v in old['Config']['Env']) if old else {}
-env={**os.environ,'PARALLAX_ROOT_PASSWORD':oldenv.get('MARIADB_ROOT_PASSWORD') or secrets.token_urlsafe(36),'PARALLAX_READ_PASSWORD':secrets.token_urlsafe(36),'PARALLAX_WRITER_PASSWORD':secrets.token_urlsafe(36),'PARALLAX_BRIDGE_TOKEN':cfg['bridge_token'],'PARALLAX_COMMIT':cfg['commit']}
+apienv=dict(v.split('=',1) for v in api['Config']['Env']) if api else {}
+env={**os.environ,'PARALLAX_ROOT_PASSWORD':oldenv.get('MARIADB_ROOT_PASSWORD') or secrets.token_urlsafe(36),'PARALLAX_READ_PASSWORD':apienv.get('PARALLAX_DB_PASSWORD') or secrets.token_urlsafe(36),'PARALLAX_WRITER_PASSWORD':apienv.get('PARALLAX_WRITER_PASSWORD') or secrets.token_urlsafe(36),'PARALLAX_BRIDGE_TOKEN':cfg['bridge_token'],'PARALLAX_COMMIT':cfg['commit']}
 def safe(s):
     for k,v in env.items():
         if k.startswith('PARALLAX_') and ('PASSWORD' in k or 'TOKEN' in k):s=s.replace(v,'[redacted]')

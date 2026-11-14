@@ -19,7 +19,8 @@ def full_articles(qid):
 def build_groups(qid):
     c=db();cur=c.cursor();cur.execute('SELECT * FROM claim WHERE qid=%s ORDER BY FIELD(lang,\'en\',\'fi\',\'sv\',\'de\',\'ru\'),ordinal',(qid,));claims=cur.fetchall()
     claims=[x for x in claims if x['lang'] in ['fi','sv','en']]
-    languages=list(dict.fromkeys(x['lang'] for x in claims));seen=set();groups=[];distances=[]
+    cur.execute("SELECT lang FROM article WHERE qid=%s AND lang IN ('fi','sv','en')",(qid,))
+    languages=[r['lang'] for r in cur.fetchall()];seen=set();groups=[];distances=[]
     for anchor in claims:
         if anchor['lang']!='en' and anchor['id'] in seen:continue
         candidates={anchor['lang']:[anchor]}
@@ -60,7 +61,7 @@ def evidence(group,full=False):
             out['candidates'][lang].append(r)
     # Absence requires the entire article, including infoboxes, never just failed retrieval.
     for lang,rows in group['candidates'].items():
-        if rows and float(rows[0].get('distance',0))>.55 and lang in ['fi','sv','en']:
+        if (not rows or float(rows[0].get('distance',0))>.55) and lang in ['fi','sv','en']:
             cur.execute('SELECT wikitext FROM article WHERE qid=%s AND lang=%s',(group['qid'],lang));a=cur.fetchone()
             if a:out.setdefault('full_article_text',{})[lang]=a['wikitext']
     c.close();return out
