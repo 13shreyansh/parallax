@@ -10,7 +10,7 @@
 | Design and demo quality, 20% | [IAB workflow evidence](eval/verification.md), [scoped visual verdict](eval/visual-review.md), [1:55 demo script](DEMO_SCRIPT.md), [five-minute pitch](PITCH_NOTES.md). Public video is not recorded. |
 | Originality, 20% | [Claim-level editorial implementation](src/main.jsx) combines retrieval, provenance, review notes and temporal inspection. No exhaustive prior-art or first-ever claim is made. |
 
-[Independent C-16 artifact review](eval/c16/REVIEW.md) passed scoped consistency checks and explicitly refused unsupported certifications.
+[Independent C-16 artifact review](eval/c16/REVIEW.md) passed scoped consistency checks and explicitly refused unsupported certifications. A [bounded public IAB disclosure check](docs/c16-disclosure.jpg) confirmed the audit rows and limits are visible, without repeating measurements.
 
 **Current limits:** live SQL needs this Mac and its temporary tunnel. The original retrieval proxy favored lexical **8/9**, vector **7/9**. The new [C-16 frozen audit](eval/c16/REPORT.md) found **2/57** false flags on constructed translation-equivalent controls and caught **5/36** planted errors with measured cross-language similarities. These are not human labels or full-pipeline accuracy. "Disagreement introduced at revision X" remains **unproven**, with no introduction revision asserted.
 

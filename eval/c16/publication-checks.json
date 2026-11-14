@@ -15,5 +15,12 @@
   },
   "sealed_overwrite_guard": "Refused rerun as expected",
   "reviewed_report_overwrite_guard": "Refused initial renderer after review as expected",
-  "new_iab_copy_check": "Requested from Chief; not claimed as completed. Frontend JS/CSS unchanged."
+  "new_iab_copy_check": {
+    "reported_at_helsinki": "2026-11-14 18:33",
+    "actor": "Chief of Staff using Codex IAB",
+    "result": "Published C-16 rows and limits visibly confirmed",
+    "evidence": "docs/c16-disclosure.jpg",
+    "evidence_sha256": "9be1f10b7817ee2681d57bc981cab364f17c6af8eea74da3f7376f4409d7f2f1",
+    "scope": "Disclosure rendering only. No repeated SQL/history run, fresh benchmark, model-weight verification or human label certification."
+  }
 }

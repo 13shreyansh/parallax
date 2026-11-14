@@ -67,3 +67,7 @@ The [independent model-agent review](REVIEW.md) received only the specification,
 ## Runtime and remaining limits
 
 The public site still relies on the build Mac and temporary tunnel for live SQL. Saved evidence remains readable offline. This audit adds no remote database hosting, Wikipedia edits, public video or final submission. Full S/M/L scale and human expert labels remain absent. New failures are published rather than hidden by changing thresholds.
+
+## Bounded public disclosure check
+
+Chief of Staff verified the public Method & evaluation page through Codex IAB at 18:33 Helsinki. The C-16 rows and limitations are visible in this [full-page screenshot](../../docs/c16-disclosure.jpg), linked in [publication checks](publication-checks.json). This confirms disclosure rendering only; it adds no fresh benchmark, SQL/history rerun, model-weight certification or human labels.
