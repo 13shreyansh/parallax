@@ -1,21 +1,62 @@
 {
-  "schema": 1,
-  "name": "NPOV evidence desk",
-  "colors": {
-    "background": "#f4f7f8",
-    "paper": "#ffffff",
-    "ink": "#183446",
-    "muted": "#526976",
-    "accent": "#1c5e9a",
-    "line": "#d7e1e6",
-    "review": "#835516"
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-14T15:55:26.279827+00:00",
+  "title": "Design System: NPOV Radar",
+  "extensions": {
+    "shadows": [],
+    "motion": [
+      {
+        "name": "connection-pulse",
+        "value": "1s ease-out, one iteration",
+        "purpose": "Announce a successful live connection; reduced motion disables it."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1650px"
+      },
+      {
+        "name": "compact",
+        "value": "1150px"
+      },
+      {
+        "name": "stacked-evidence",
+        "value": "900px"
+      },
+      {
+        "name": "mobile",
+        "value": "620px"
+      }
+    ],
+    "focus": {
+      "value": "3px solid #1974bc",
+      "offset": "4px"
+    }
   },
-  "typography": {
-    "ui": "Public Sans",
-    "evidence": "Georgia",
-    "code": "ui-monospace"
-  },
-  "spacing": { "base": 4, "desktopOuter": "3.4%", "evidencePadding": 24 },
-  "radii": { "desk": 12, "control": 5 },
-  "surfaceMode": "Operate"
+  "narrative": {
+    "northStar": "Evidence desk",
+    "overview": "A ranked editorial queue and source-bearing comparison document.",
+    "keyCharacteristics": [
+      "Cool paper surfaces",
+      "Serif evidence",
+      "Exact revision actions",
+      "Cautious status language"
+    ],
+    "rules": [
+      {
+        "name": "Evidence before verdict",
+        "body": "Similarity and matching dates do not establish full-claim truth.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Keep the current queue rank visible.",
+      "Use real excerpts to distinguish passages."
+    ],
+    "donts": [
+      "Do not hide exact revision actions in tiny text.",
+      "Do not place status tags above headings as eyebrows."
+    ]
+  }
 }

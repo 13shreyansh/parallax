@@ -117,16 +117,7 @@ json.dump(
 json.dump(fixtures, open(ROOT / "eval/temporal-results.json", "w"), indent=2)
 print(json.dumps(rows))
 print("Temporal archive checks", sum(f["pass"] for f in fixtures), "/", len(fixtures))
-# Leave 60 real pairs for a human to annotate. Empty labels are intentional.
-import csv
+# Human annotation is exported separately; labels stay blank.
+import runpy
 
-with open(ROOT / "eval/annotation-queue.csv", "w") as f:
-    w = csv.writer(f)
-    w.writerow(
-        ["fi_id", "qid", "fi_text", "en_id", "en_text", "human_label", "annotator"]
-    )
-    for p in [p for p in ps if p["lang"] == "fi"][:60]:
-        i = next(i for i, x in enumerate(ps) if x["id"] == p["id"])
-        c.execute(ALIGN_SQL, (json.dumps(emb[i].tolist()), p["qid"], "en"))
-        r = c.fetchone()
-        w.writerow([p["id"], p["qid"], p["text"], r["id"], r["text"], "", ""])
+runpy.run_path(str(ROOT / "scripts/export-annotation.py"))

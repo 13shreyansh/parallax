@@ -50,3 +50,5 @@ No video was recorded or published and no final entry form was submitted. Shreya
 Browser instruction: use only Codex IAB for web/account UI. IAB is unavailable in this project chat. Chief of Staff has working IAB and can handle the exact requested browser checks. Necessary authorized connectors and secret-safe CLI work are allowed. Do not use personal Chrome, Safari, Edge, or an external browser workaround.
 
 An idle-sleep assertion is attached to the current API process using `caffeinate -i -w <api-pid>`, without changing power settings. Its PID is in work/awake.pid. It ends when that API process ends. It does not keep a closed laptop online or guarantee network availability.
+
+Final build verification: Chief IAB passed the functional editor, source, SQL, archive, synthetic-test, mobile and keyboard flows. After one UI fix batch, current desktop/mobile captures show all five requested fixes; the independent reviewer scored each resolved, with disposition ship for those fixes only. Public source, ledger, raw traces, demo and pitch notes are complete. C-08 build is DONE; video recording and competition final submission are not claimed complete.

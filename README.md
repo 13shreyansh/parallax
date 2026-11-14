@@ -4,6 +4,8 @@ An evidence desk for Wikipedia editors comparing Finland's history in Finnish, E
 
 [Open the application](https://npov-radar.vercel.app) · [Evaluation ledger](eval/LEDGER.md) · [Two-minute demo](DEMO_SCRIPT.md)
 
+![NPOV Radar evidence desk](docs/preview.jpg)
+
 ## What works
 
 - Nine topics, 27 live article versions and 2,308 sentence vectors. MariaDB `VECTOR(384)` and `VEC_DISTANCE_COSINE` retrieve English and Swedish passages for each Finnish passage, restricted to the same Wikidata topic.
@@ -66,7 +68,7 @@ The first import fetches current extracts, interlanguage links and three latest 
 .venv/bin/python scripts/scale-probe.py
 ```
 
-The scripts keep per-case traces. `eval/annotation-queue.csv` contains 60 real retrieved pairs with deliberately empty human-label fields. An expert still needs to annotate them. The S/M/L files differ in content and purpose, not just size. Only a bounded L probe was loaded, 1,000 of 568,416 rows. Full-scale quality, memory use and concurrency are unmeasured.
+The scripts keep per-case traces. `eval/annotation-queue.csv` contains 60 real retrieved pairs with deliberately empty human-label fields. An expert still needs to annotate them. The sheet covers all nine topics with exact revision links; see [annotation guidance](eval/ANNOTATING.md). The S/M/L files differ in content and purpose, not just size. Only a bounded L probe was loaded, 1,000 of 568,416 rows. Full-scale quality, memory use and concurrency are unmeasured.
 
 ## Deployment
 
