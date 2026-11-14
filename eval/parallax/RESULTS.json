@@ -1,0 +1,59 @@
+{
+  "measured_at": "2026-11-14T23:04:57Z",
+  "prompt_version": "parallax-v4",
+  "scope": "Controlled copies of real Wikipedia passages, not full-article population accuracy. Eight dropped-sentence cases use original fi/sv counterparts and controlled English passage copies. Real source documents and native MariaDB retrieval are used.",
+  "errors": 40,
+  "controls": 40,
+  "caught": 32,
+  "false_flags": 0,
+  "complete": true,
+  "checks": {
+    "src": {
+      "errors": 8,
+      "controls": 8,
+      "caught": 8,
+      "false_flags": 0
+    },
+    "fact": {
+      "errors": 16,
+      "controls": 16,
+      "caught": 16,
+      "false_flags": 0
+    },
+    "lang": {
+      "errors": 8,
+      "controls": 8,
+      "caught": 0,
+      "false_flags": 0
+    },
+    "tone": {
+      "errors": 8,
+      "controls": 8,
+      "caught": 8,
+      "false_flags": 0
+    }
+  },
+  "by_error_type": {
+    "wrong_date": {
+      "caught": 8,
+      "errors": 8
+    },
+    "wrong_number": {
+      "caught": 8,
+      "errors": 8
+    },
+    "dropped_sentence": {
+      "caught": 0,
+      "errors": 8
+    },
+    "loaded_wording": {
+      "caught": 8,
+      "errors": 8
+    },
+    "unsupported_claim": {
+      "caught": 8,
+      "errors": 8
+    }
+  },
+  "classification_note": "Rows group cases by planted error type; a source check can catch a wrong fact. False-flag controls are source-supported passages, mostly single-language; this does not measure multilingual clean-pair false-positive rate."
+}

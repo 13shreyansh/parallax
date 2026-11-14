@@ -1,18 +1,100 @@
-# NPOV Radar status
+Parallax compares Wikipedia claims with their own cited sources and other language versions.
+Scope: 22 Finland in the Second World War topics, fi/sv/en; Winter War de/ru comparison only.
+Acceptance: real stored findings, exact quotes, readable evidence and revision boundaries.
+Hosting: isolated VPS MariaDB 11.8 and API, TLS, private SQL socket; new Vercel project.
+Validation: deployed desktop/mobile flow, frozen held-out evaluation and independent blind review.
 
-Owner: Codex, chat 01a1daa1-c19b-7813-9387-27ad33f7da3c. C-08 build DONE. Public video recording and final competition submission remain outside this build delivery.
+ENTRY: Parallax / Job 05 in progress / deployment pending
+DONE:
+- VPS MariaDB 11.8.9 and API are running; HTTPS health verified. All active vectors, source passages and 14,726 revisions imported.
+- Read-only container import and Unix-socket authentication bugs fixed and regression checked.
+- Home and Winter War are being released first. Ask, Method and time travel are hidden until verified.
+NUMBERS: measured held-out 32/40 planted errors caught (80%), 0/40 false flags; dropped sentences 0/8. Previous baseline measured 5/36. Blind precision pending. Winter War local shown flags: 77; hosted snapshot initially 16.
+SCREENSHOTS: pending deployed browser verification
+REVIEW: pending separate gpt-6-astra spec and build passes
+NEXT: release core screens, then verify each remaining feature and redeploy.
+NEEDS DECISION: none
+BLOCKED: none
 
-Repository: https://github.com/13shreyansh/npov-radar, public, created with existing gh authentication. Source and final evaluation, design and runtime documentation pushed.
-Frontend: https://npov-radar.vercel.app, Vercel project npov-radar in 13shreyanshs-projects.
+## Hosting used
+Hostinger VPS 72.61.22.106, isolated parallax-db and parallax-api containers. API HTTPS origin: https://parallax.72.61.22.106.sslip.io. MariaDB has networking disabled and uses a private Unix socket; no SQL port is published. API filesystem is read-only, with runtime writes only in /tmp. TLS is terminated by the existing Traefik Docker provider; its configuration and the other projects were not modified. Reader has SELECT only; writer is restricted to review and note-copy tables. Vercel proxies the API with a server-side token. No tunnel is used.
 
-Built: 9 themes / 27 live article versions / 2,308 multilingual sentence vectors / 12,944 real system-versioned revisions. Native MariaDB 13.0.2. Read-only API runs locally on 8808 through a temporary cloudflared tunnel, configured as RADAR_API_ORIGIN in Vercel. SQL socket is not exposed. Mac uptime is a live-query dependency. No other project modified.
+## Spec gaps I filled
+- One Home theme and Ask restricted to it, authorized by Job 03.
+- Initial release hides Ask, Method and time travel, authorized by Job 05; they return after verification.
+- Revision entry dates establish the first stored appearance of exact wording, not necessarily the first appearance of an idea. Historical source support remains unknown.
 
-Evaluation: v2 fresh article held-out synthetic tests catch 18/20 edits, no false flags on 22 controls. Country name swaps are missed. The first held-out set was seen before v2, retained as already seen. Cross-language date-overlap retrieval proxy: dev 7/7 vector and lexical; held-out 7/9 vector vs 8/9 lexical, no claimed vector win. Temporal metadata checks 9/9 after UTC correction. L: 1,000 of 568,416 records in a bounded vector ingestion/query probe; full scale not tested. No human labels or calibrated LLM judges. Curated Yle excerpt supports one start-date claim only.
+## Source recovery
+Measured Winter War before: 67 Read, 61 Source unreachable, 8 Book, not checked (136 total). After: 110 Read, 20 Source unreachable, 8 Book, not checked (138 total; two extra URLs from citation reconciliation). Archive closest-snapshot retry ran first, then Context.dev. Context usage measured 134 credits, below the 3,000 cap.
 
-Chief IAB functional verification passed at 17:39 Helsinki: exact revision links, Yle source, fresh SQL query, 2015 archive, synthetic detection and known miss; mobile 390px no page overflow; keyboard focus visible. Current wording/font and the five UI fixes were recaptured in IAB. Independent reviewer scored all five fixes resolved, no visible regressions from that batch, disposition ship for those fixes. Demo/pitch notes and runtime handoff are complete. Live API still requires this Mac and tunnel. No human expert labels or public video were fabricated.
+## REAL FINDINGS, Job 03 milestone 2026-11-14T22:39:31Z
+Measured: 16 shown Winter War flags. Argon confirmed these against stored evidence; blind precision has not been measured yet. Entries below establish exact wording, not conceptual first appearance.
 
-Browser constraint: this chat lacks IAB. Do not use personal Chrome/Safari/Edge or any external browser workaround. Necessary authorized service connectors and secret-safe CLI are allowed. Ask Chief via bridge for exact browser UI steps.
+### 1. Not in source
+- Claim (fi, revision 24373824): Puna-armeijan mekanisoitu kalusto oli osin soveltumatonta metsäsodankäyntiin, toimi vain aukeilla ja teillä eikä useinkaan kestänyt kovia pakkasia.
+- Finding: The cited 2020 thesis on pre-war military press does not establish how Red Army mechanized equipment performed in forest warfare or severe frost.
+- Source passage: Käsitys suomalaisen maaston epäedullisuudesta
+panssarivaunuille oli puolustuslaitoksessa yleinen aina 1930-luvun puoleenväliin saakka. Vasta
+vuonna 1934 Karjalankannaksella toteutetut uudet panssarivaunujen ajokokeet osoittivat
+käsityksen vääräksi. (https://erepo.uef.fi/bitstream/handle/123456789/23681/urn_nbn_fi_uef-20201456.pdf?sequence=1&isAllowed=y)
+- Entry edit: https://fi.wikipedia.org/w/index.php?diff=12389576, 2012-11-28 18:04:48Z. Historical source support: not established.
 
-## C-16 scoped improvement task
+### 2. Loaded wording
+- Claim (sv, revision 59855895): Ytterligare en märklig omständighet är att de cirka 5 000 sovjetiska krigsfångarna vilka togs av den finländska armén och efter kriget återbördades till Sovjet, är spårlöst försvunna (enligt ryska och finska källor.)
+- Finding: Swedish uses editorializing wording ('en märklig omständighet') in narrator voice when introducing the fate of returned Soviet POWs.
+- Other version (en, revision 1384334162): Of these, 450 were released, 4,354 were sentenced to imprisonment in labour camps ranging from 3 to 10 years and 414 were exposed to be "active in traitorous activities while in captivity", with 334 criminal cases being transferred to the Supreme Court of the Soviet Union; 232 of those cases ended in a death penalty.
+- Source passage: no independently supporting source passage stored for this language/tone comparison yet; no source contradiction is claimed for it.
+- Entry edit: https://sv.wikipedia.org/w/index.php?diff=27568032, 2014-09-17T06:32:49Z. Historical source support: not established.
 
-C-08 build remains DONE. C-16 MariaDB audit is DONE for the scoped implementation and publication. Independent spec/evidence-only review passed artifact consistency; production data publication and ten existing deployment regressions pass. Chief confirmed the bounded public IAB disclosure check at 18:33 Helsinki; the new audit rows and limitations are visibly present. This is rendering proof, not a fresh benchmark or execution certification. Fixed detector/model/thresholds and product corpus are preserved. Frozen whole-family held-out measured pairs: 2/57 equivalent controls flagged, 5/36 planted errors caught. Natural held-out date proxy: vector 3/4, lexical 4/4. Combined rename/reverse insertion changes 25/742 top-three rankings. Temporal introduction remains unproven. Details and sealed failures in eval/c16/. No forms or Discord actions.
+### 3. Missing in Finnish
+- Claim (en, revision 1384334162): The ranks of RNA were to be filled by prisoners-of-war, but it would be commanded by White émigrés instead of captured Soviet Army officers, who were deemed unreliable.
+- Finding: English and Russian cover the formation of the anti-Soviet 'Russian People's Army' (RNA) from Soviet POWs under White émigré officers; this is absent in Finnish.
+- Source passage: Erittäin salaisen operaation puitteissa Feodor Schulgin alkoi koota joukko-osastoja, jotka koostuisivat noin 200 värvätystä sotavangista. Operaatio oli Päämajan tiedusteluosaston alainen. Olen löytänyt arkistoista asiakirjoja, jotka todistavat tämän. Niistä käy muun muassa ilmi, että sotavankeja värväsivät Suomen ROVS:n jäsenet. Muodollisesti he toimivat tiedusteluososton erikoiskuulustelijoina. Leireillä olleita Puna-armeijan upseereita pidettiin epäluotettavina. Tästä syystä päätettiin, että joukko-osaston päällystö muodostetaan Suomen ROVS-osaston upseereista. (https://yle.fi/uutiset/3-11254603)
+- Entry edit: https://en.wikipedia.org/w/index.php?diff=1092157805, 2022-06-08T14:23:55Z. Historical source support: not established.
+
+### 4. Missing in Finnish
+- Claim (en, revision 1384334162): Further contributing to the legend of Kollaa was the sniper Simo Häyhä, dubbed "the White Death" in Finnish media, credited with over 500 kills in the war.
+- Finding: English and Swedish mention sniper Simo Häyhä ("the White Death") and his over 500 kills, whereas he is not mentioned in the Finnish article.
+- Source passage: Sotasankari Simo Häyhän ennennäkemätön päiväkirja löytyi - "Tässä on minun syntilistani"
+Legendaarinen tarkka-ampuja kirjoittaa ampuneensa yli 500 neuvostosotilasta. (https://www.iltalehti.fi/kotimaa/a/201707172200270836)
+- Entry edit: https://en.wikipedia.org/w/index.php?diff=1299597741, 2025-07-09T09:39:55Z. Historical source support: not established.
+
+### 5. Missing in Swedish
+- Claim (en, revision 1384334162): When he signed the document, the tormented president uttered the well-known words: "Let the hand wither that signs this monstrous treaty!" Ironically, his right arm was paralysed the following summer, and he was forced to switch his writing hand.
+- Finding: English mentions President Kallio's famous curse upon signing the peace mandate and his subsequent arm paralysis; this is absent in Swedish.
+- Source passage: Ei ihme, että presidentti Kyösti Kallio oli synkissä tunnelmissa antaessaan valtuutuksen rauhasta neuvotelleelle, Risto Rytin johtamalle valtuuskunnalle.
+– Kuivukoon käteni, joka on pakotettu tällaisen paperin allekirjoittamaan, Kallio totesi.
+Rauhanteon jälkeen Kallio murtui ruumiillisesti ja henkisesti. Puoli vuotta myöhemmin hänen kätensä halvaantui. (https://www.is.fi/kotimaa/art-2000009449470.html)
+- Entry edit: https://en.wikipedia.org/w/index.php?diff=1343076156, 2026-03-12T03:12:36Z. Historical source support: not established.
+
+### 6. Missing in Swedish
+- Claim (en, revision 1384334162): After 15 months of Interim Peace, in June 1941, Germany commenced Operation Barbarossa, and the Continuation War between Finland and the Soviets began.
+- Finding: English and Finnish state that the Interim Peace was followed by the Continuation War in June/summer 1941; the Swedish article does not state this consequence.
+- Other version (fi, revision 24373824): Sotaa seurasi välirauha, jonka aikana Suomi lähentyi Saksan kanssa, ja jota kesällä 1941 seurasi jatkosota.
+- Source passage: no independently supporting source passage stored for this language/tone comparison yet; no source contradiction is claimed for it.
+- Entry edit: https://en.wikipedia.org/w/index.php?diff=1077761055, 2022-03-18T02:11:44Z. Historical source support: not established.
+
+### 7. Missing in Swedish
+- Claim (en, revision 1384334162): The 7th Army, comprising nine divisions, a tank corps and three tank brigades, was located on the Karelian Isthmus.
+- Finding: English and Finnish detail the initial strength and deployment of the Soviet 7th Army on the Karelian Isthmus; this is absent in Swedish.
+- Other version (fi, revision 24373824): 7. armeijaan kuului yhdeksän jalkaväkidivisioonaa, panssariarmeijakunta ja kolme panssariprikaatia.
+- Source passage: no independently supporting source passage stored for this language/tone comparison yet; no source contradiction is claimed for it.
+- Entry edit: https://en.wikipedia.org/w/index.php?diff=556795759, 2013-05-25T23:50:24Z. Historical source support: not established.
+
+### 8. Missing in English
+- Claim (fi, revision 24373824): Suomalaisten merkittävä vahvuus oli myös radiotiedustelu eli vihollisen radioliikenteen sieppaus, paikantaminen ja salakirjoitussanomien avaaminen.
+- Finding: The Finnish article highlights radio intelligence and codebreaking as a significant Finnish strength, which is absent from the English article.
+- Source passage: Suomalaisten merkittävä vahvuus oli myös radiotiedustelu eli vihollisen radioliikenteen sieppaus, paikantaminen ja salakirjoitussanomien avaaminen. (https://www.oruk.fi/2020/03/14/talven-soturit/)
+- Entry edit: https://fi.wikipedia.org/w/index.php?diff=704318, 2006-01-15 17:29:43Z. Historical source support: not established.
+
+### 9. Missing in Swedish
+- Claim (en, revision 1384334162): From there, the 7th Army was to continue towards Lappeenranta, then turn west towards Lahti, before the final push to the capital Helsinki.
+- Finding: English and Finnish state the Soviet objective on the Karelian Isthmus was to advance via Viipuri to Helsinki; this planned advance route is missing in Swedish.
+- Source passage: no independently supporting source passage stored for this language/tone comparison yet; no source contradiction is claimed for it.
+- Entry edit: https://en.wikipedia.org/w/index.php?diff=1188277158, 2023-12-04T10:54:44Z. Historical source support: not established.
+
+### 10. Missing in English
+- Claim (fi, revision 24373824): Panssarintorjuntatykkejä oli vain kolmannes suunnitellusta määrästä.
+- Finding: The Finnish article states that Finland had only one-third of the planned number of anti-tank guns; this numerical detail is absent in English.
+- Source passage: no independently supporting source passage stored for this language/tone comparison yet; no source contradiction is claimed for it.
+- Entry edit: https://fi.wikipedia.org/w/index.php?diff=704318, 2006-01-15 17:29:43Z. Historical source support: not established.

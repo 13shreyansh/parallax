@@ -1,0 +1,18 @@
+CREATE DATABASE IF NOT EXISTS parallax CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE parallax;
+CREATE TABLE IF NOT EXISTS theme (slug VARCHAR(80) PRIMARY KEY, title VARCHAR(255) NOT NULL);
+CREATE TABLE IF NOT EXISTS topic (qid VARCHAR(24) PRIMARY KEY, title VARCHAR(255), titles JSON, distance DOUBLE, last_changed DATETIME, state VARCHAR(32) NOT NULL DEFAULT 'pending');
+CREATE TABLE IF NOT EXISTS topic_theme (qid VARCHAR(24), theme VARCHAR(80), PRIMARY KEY(qid,theme));
+CREATE TABLE IF NOT EXISTS article (qid VARCHAR(24),lang CHAR(2),page_id BIGINT,rev_id BIGINT,title VARCHAR(255),revised_at DATETIME,wikitext MEDIUMTEXT,origin VARCHAR(100),PRIMARY KEY(qid,lang));
+CREATE TABLE IF NOT EXISTS claim (id CHAR(32) PRIMARY KEY,qid VARCHAR(24),lang CHAR(2),rev_id BIGINT,ordinal INT,section VARCHAR(500),text TEXT,citations JSON,gloss TEXT,embedding VECTOR(384) NOT NULL,KEY(qid,lang),VECTOR INDEX claim_cosine(embedding) M=16 DISTANCE=cosine);
+CREATE TABLE IF NOT EXISTS cited_source (id CHAR(32) PRIMARY KEY,url TEXT,title TEXT,status VARCHAR(40),archive_url TEXT,text MEDIUMTEXT,read_at DATETIME,content_sha256 CHAR(64),metadata JSON);
+CREATE TABLE IF NOT EXISTS source_chunk (id CHAR(32) PRIMARY KEY,source_id CHAR(32),ordinal INT,text TEXT,embedding VECTOR(384) NOT NULL,KEY(source_id),VECTOR INDEX source_cosine(embedding) M=16 DISTANCE=cosine);
+CREATE TABLE IF NOT EXISTS claim_source (claim_id CHAR(32),source_id CHAR(32),PRIMARY KEY(claim_id,source_id));
+CREATE TABLE IF NOT EXISTS claim_group (id CHAR(32) PRIMARY KEY,qid VARCHAR(24),anchor_id CHAR(32),ordinal INT,versions JSON,checks JSON,KEY(qid));
+CREATE TABLE IF NOT EXISTS judgment (id CHAR(64) PRIMARY KEY,group_id CHAR(32),model VARCHAR(80),prompt_version VARCHAR(40),checked_at DATETIME,input_sha256 CHAR(64),payload JSON,KEY(group_id));
+CREATE TABLE IF NOT EXISTS flag (id CHAR(32) PRIMARY KEY,qid VARCHAR(24),group_id CHAR(32),claim_id CHAR(32),check_type VARCHAR(10),verdict VARCHAR(50),payload JSON,shown BOOLEAN NOT NULL DEFAULT 0,checked_at DATETIME,KEY(qid),KEY(group_id));
+CREATE TABLE IF NOT EXISTS editor_reviews (flag_id CHAR(32) PRIMARY KEY,reason VARCHAR(255),dismissed BOOLEAN NOT NULL DEFAULT 1,reviewed_at DATETIME NOT NULL);
+CREATE TABLE IF NOT EXISTS note_copies (flag_id CHAR(32) PRIMARY KEY,copies INT NOT NULL DEFAULT 0);
+CREATE TABLE IF NOT EXISTS revision (lang CHAR(2),page_id BIGINT,qid VARCHAR(24),rev_id BIGINT,title VARCHAR(255),text MEDIUMTEXT,comment TEXT,row_start TIMESTAMP(6) GENERATED ALWAYS AS ROW START INVISIBLE,row_end TIMESTAMP(6) GENERATED ALWAYS AS ROW END INVISIBLE,PERIOD FOR SYSTEM_TIME(row_start,row_end),PRIMARY KEY(lang,page_id),KEY(qid)) WITH SYSTEM VERSIONING;
+CREATE TABLE IF NOT EXISTS ingestion_log (id VARCHAR(100) PRIMARY KEY,state VARCHAR(40),updated_at DATETIME,payload JSON);
+CREATE TABLE IF NOT EXISTS evaluation (name VARCHAR(100) PRIMARY KEY,payload JSON,measured_at DATETIME);

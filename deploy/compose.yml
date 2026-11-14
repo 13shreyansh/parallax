@@ -1,0 +1,55 @@
+services:
+  database:
+    image: mariadb:11.8
+    container_name: parallax-db
+    environment:
+      MARIADB_ROOT_PASSWORD: ${PARALLAX_ROOT_PASSWORD}
+      MARIADB_DATABASE: parallax
+    command: ["--skip-networking", "--innodb-buffer-pool-size=384M"]
+    network_mode: none
+    volumes:
+      - parallax_data:/var/lib/mysql
+      - parallax_socket:/run/mysqld
+    restart: unless-stopped
+    mem_limit: 1g
+    cpus: 0.75
+    labels:
+      io.parallax.owner: mariadb-junction
+      traefik.enable: "false"
+  api:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    image: parallax-api:current
+    container_name: parallax-api
+    network_mode: bridge
+    environment:
+      PARALLAX_DB_USER: parallax_read
+      PARALLAX_DB_PASSWORD: ${PARALLAX_READ_PASSWORD}
+      PARALLAX_WRITER_USER: parallax_writer
+      PARALLAX_WRITER_PASSWORD: ${PARALLAX_WRITER_PASSWORD}
+      PARALLAX_BRIDGE_TOKEN: ${PARALLAX_BRIDGE_TOKEN}
+      PARALLAX_COMMIT: ${PARALLAX_COMMIT}
+    volumes:
+      - parallax_socket:/run/mysqld:ro
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    restart: unless-stopped
+    mem_limit: 2g
+    cpus: 1.5
+    labels:
+      io.parallax.owner: mariadb-junction
+      traefik.enable: "true"
+      traefik.http.routers.parallax.entrypoints: websecure
+      traefik.http.routers.parallax.rule: Host(`parallax.72.61.22.106.sslip.io`)
+      traefik.http.routers.parallax.service: parallax
+      traefik.http.routers.parallax.tls: "true"
+      traefik.http.routers.parallax.tls.certresolver: letsencrypt
+      traefik.http.services.parallax.loadbalancer.server.port: "18808"
+volumes:
+  parallax_data:
+    name: parallax_data
+  parallax_socket:
+    name: parallax_socket

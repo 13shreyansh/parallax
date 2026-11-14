@@ -1,0 +1,42 @@
+{
+  "reviewer": "gpt-6-astra",
+  "review_task": "/root/eval_ground_truth",
+  "review_scope": "113 actual held-out Wikipedia claim/cited-source pairs, before any held-out detector outputs",
+  "intact_clean_ids": ["63de97733b940ef743971c78df3d5c49","baddac456aeaf5ed7c786a1d9201248f","42bf9e77845dd1271e35dbc3bd580aff","92cc5ae8086cc2f5d461a0ee9c1d10ea","5d051fe716adedbfe7b310c7399379d7","4c341d7dbd7b20b349fe8fbd3638ea2a","b5a81277ced30116844a2ef68db33a2b","b6bd528ad3303e9247cdcfba2ec804af","512f129cfb3a701186acf7eace9faec7","ef3fa575b130db2e957da32a58ab55ad","d0796c8b633cbce49e30e46443cc6255","d7d836bdbea0ae40b50bfdf62256502e","7418954ca982f4166fe639107026e752","9b429c2e70bd7ffd548e777c0bf34985","21e51447696dddd666d8a6e43acc4bd1","0c71d866118439c1cd533e49e27ab95c","2456d89e534ade8b2d4562df7758b5c6"],
+  "supported_excerpts": {
+    "a08121d8f0f68e99cf7fe8068595ab16": "He placed fourth in the individual 18 km race at both Olympics",
+    "fcca9bf2bbc3d59be8b7a0c489575d40": "Norrback joined the government as the Minister of Defence in 1987",
+    "6d34eed20e60607f519e7fe212644512": "his parliamentary visitor performed a Nazi salute which Hirvisaari photographed.",
+    "c5b198f046ff2560fd9499965781a44f": "Gometal Oy was declared bankrupt due to accrued taxes owed.",
+    "d17ac7c5769feb46a4a061fdafba3536": "The Parliament has not received an explanation from him about the use of the group grants paid to his parliamentary group",
+    "b69b726fd64ceb31ab18100afdccfdb2": "Koivisto won 167 of the 301 votes of the electoral college",
+    "43ae7c138cdf07a7364eee1b5cb27ae7": "the Left Alliance announced that it was leaving the cabinet, citing the party's opposition to budget cuts in social welfare programs",
+    "18bd2a99a7a2ebb48ed0de1e38133753": "the parliament decided to merge certain electoral districts to create larger districts",
+    "f31737674d1ba946f43019c767d03a0c": "He became chairman of the Esperanto Association of Finland in 1936",
+    "350d867b5d7122947d1ccc133997832a": "the company announced seeking to develop ship breaking as a new line of business.",
+    "b1e89cf4ac1de642d6e0fa9ca4c1a7cb": "PBS aired an episode about Birka Grave Bj 581, titled \"Viking Warrior Queen\" on their show Secrets of the Dead .",
+    "ffa7b397b69fb6188675b387364b3e20": "He was an ambassador to the Council of Europe in 1994 –1998",
+    "0311a2b6a5b18e82fc0e2d6704dfb509": "The song climbed to number 61 on the UK singles chart",
+    "7fe758b408143724bbaa600c11625106": "Hanoi Rocks is mentioned in the Red House Painters song \"Cruiser\"",
+    "6a1baf13424b15a1270c5730c1ce2b54": "Rane Raitsikka replaced Kartsa as the second guitarist",
+    "a248922b0049e042e4dad9ec607d31ee": "police ruled out contact with Auvinen, and said that he had committed his crimes alone.",
+    "820d4cf8ca9a52e55dd4324b71415c72": "A police inspector was subsequently charged with dereliction of duty",
+    "7beeee3387278a5a110894564e62785a": "Valdemar was elected king, his maternal descent from the former royal dynasty strengthening his claim to the throne.",
+    "364a675a105f79f1d045a39815cf5210": "He served as Chief of Defence from 1933 to 1939",
+    "e4dda27ac77b692ccbdf41e4a38accf5": "The peak (elevation 1365 m) of the fell, called Ráisduottarháldi, is in Norway",
+    "e9dcc3f689d0edc9001a17fdd4201c52": "the Prime Minister of Norway, Erna Solberg was seriously considering ceding the peak.",
+    "ec1c94761c6e0ad7bce553a94e9d0742": "She offered her resignation from the Rinne cabinet",
+    "12d5fff998c856336fcf341b5774badc": "The principal architect of Finland's postwar foreign policy of neutrality was Juho Kusti Paasikivi"
+  },
+  "counterparts": {
+    "42bf9e77845dd1271e35dbc3bd580aff":{"lang":"fi","claim_id":"fe7932bf74c36c4e52f94f6990e382c5","text":"Koivisto toimi Suomen Pankin pääjohtajana vuosina 1968–1982.","rev_id":24374272},
+    "5d051fe716adedbfe7b310c7399379d7":{"lang":"sv","claim_id":"6a14bad6bb0f23e66cca0f945f6bc905","text":"Valet 2015 hölls den 19 april, förhandsröstningen 8–14 april.","rev_id":49077025},
+    "b5a81277ced30116844a2ef68db33a2b":{"lang":"fi","claim_id":"221ac4bd77df88da97ef701e532bce5b","text":"Venäjällä manifesti julkaistiin virallisessa tiedonantolehdessä Hallituksen sanansaattajassa 17. helmikuuta.","rev_id":24118142},
+    "512f129cfb3a701186acf7eace9faec7":{"lang":"sv","claim_id":"ce79a0895485750d1938a0f7232eec93","text":"I den Romersk-katolska kyrkan är han omnämnd som helgon och han är ihågkommen i Martyrologium Romanum den 18 maj varje år .","rev_id":59705723},
+    "9b429c2e70bd7ffd548e777c0bf34985":{"lang":"fi","claim_id":"e5e3e97f4feb576cf38a51a240d36d4b","text":"Sukselaisen I hallitus oli Suomen tasavallan 41. hallitus, joka toimi 187 päivän ajan 27. toukokuuta 1957 – 29. marraskuuta 1957.","rev_id":24254823},
+    "0c71d866118439c1cd533e49e27ab95c":{"lang":"fi","claim_id":"57575ed45d5e7d40e87d14492c1b192c","text":"Raja vakiintui lopulta Uudenkaupungin rauhassa (1721), jossa Pohjois-Karjala erottui Venäjän puolelle jääneistä \"muista Karjaloista\".","rev_id":24188769},
+    "f31737674d1ba946f43019c767d03a0c":{"lang":"sv","claim_id":"40d86aaa76a0180da4e637d01aa047f2","text":"Efter att han kommit tillbaka från Japan, blev han ordförande för Esperantoförbundet i Finland mellan 1936 och 1939.","rev_id":57496740},
+    "6a1baf13424b15a1270c5730c1ce2b54":{"lang":"fi","claim_id":"b75c3c40f46f85b49a6f1d6ba312a08b","text":"Ensimmäisen albumin jälkeen Kartsan tilalle toiseksi kitaristiksi vaihtui Rane Raitsikka, joka oli soittanut bassoa punk-rock-yhtyeissä Lama ja Unicef.","rev_id":24001263}
+  },
+  "limitations": ["17 intact original claims and 23 constructed supported excerpts; not 40 intact claims.","Excerpt controls approve only the excerpt, not the full original sentence.","Some pronouns require their original article context, which the test must preserve.","All label evidence is the actual fetched cited-source text, not independent historical truth.","No held-out detector outputs were inspected before these labels."]
+}

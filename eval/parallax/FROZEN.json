@@ -1,0 +1,1746 @@
+{
+  "frozen_at": "2026-11-14T23:02:47Z",
+  "prompt_version": "parallax-v4",
+  "recall_sha256": "c9f7c0c709bdb0b6a2d16486fa697615377ca7da2684808da844141ba669f257",
+  "precision_sha256": "daeeb1d9546d7364773f4faf1d8dc84ae17d459a843ee3119aa95da30fb3909a",
+  "case_sha256": "4da54620867de34a5fe7f4ffb579835e66ab1248f58e4631cc4d1f1e4dc9207b",
+  "errors": 40,
+  "controls": 40,
+  "controls_intact": 17,
+  "controls_supported_excerpts": 23,
+  "scope": "Controlled copies of real Wikipedia passages, not full-article population accuracy. Eight dropped-sentence cases use original fi/sv counterparts and controlled English passage copies. Real source documents and native MariaDB retrieval are used.",
+  "case_metadata": [
+    {
+      "id": "6c9ecdcc86474b001433deaa7bd8b256",
+      "qid": "E6c9ecdcc86474b001433de",
+      "original_id": "e4dda27ac77b692ccbdf41e4a38accf5",
+      "kind": "unsupported_claim",
+      "planted": true,
+      "text": "The peak (elevation 1365 m) of the fell, called Ráisduottarháldi, is in Norway The cited source attributes this to funding from the Swedish Academy.",
+      "changed": [
+        "funding from the Swedish Academy"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q216035",
+        "title": "Halti",
+        "lang": "en",
+        "rev_id": 1370907040,
+        "page_id": 1586806
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "http://www.snl.no/Halti",
+      "source_sha256": "723696fe2e6a950e5830710dac1a83a49aba2475a2060c6c3071bc7251bb0637"
+    },
+    {
+      "id": "15453a5b9b78a540c33b0e7d81dc4ef8",
+      "qid": "E15453a5b9b78a540c33b0e",
+      "original_id": "4c341d7dbd7b20b349fe8fbd3638ea2a",
+      "kind": "wrong_number",
+      "planted": false,
+      "text": "The Greens' departure cut the government's majority to 102 MPs (including the Speaker of the Parliament, who does not vote).",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q2112415",
+        "title": "2015 Finnish parliamentary election",
+        "lang": "en",
+        "rev_id": 1345408359,
+        "page_id": 40428886
+      },
+      "construction": "intact claim",
+      "source_url": "http://yle.fi/uutiset/vihreat_ulos_hallituksesta__mieli_on_raskas_ja_pettynyt/7478372",
+      "source_sha256": "85631f174bcd3c6d7fbc44db8502dc0f1782a53fa2710e5c708a4105db501c05"
+    },
+    {
+      "id": "052175e6cb02be5037e76865250c3940",
+      "qid": "E052175e6cb02be5037e768",
+      "original_id": "7fe758b408143724bbaa600c11625106",
+      "kind": "unsupported_claim",
+      "planted": true,
+      "text": "Hanoi Rocks is mentioned in the Red House Painters song \"Cruiser\" The cited source attributes this to funding from the Swedish Academy.",
+      "changed": [
+        "funding from the Swedish Academy"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q1428813",
+        "title": "Hanoi Rocks",
+        "lang": "en",
+        "rev_id": 1384861873,
+        "page_id": 523632
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://songmeanings.com/songs/view/45722/",
+      "source_sha256": "2b3f4e7b51c81c32463383d5cffdb49cd6a4ef49d26a6e80e3f5d853ed49b58b"
+    },
+    {
+      "id": "fccd370d00593dbfee5e18a9538ac218",
+      "qid": "Efccd370d00593dbfee5e18",
+      "original_id": "d7d836bdbea0ae40b50bfdf62256502e",
+      "kind": "wrong_date",
+      "planted": true,
+      "text": "As Valdemar was still a minor, Birger Jarl became the effective ruler of the kingdom and retained this position even after Valdemar reached adulthood, until Birger's death in 1276.",
+      "changed": [
+        "1276"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q357200",
+        "title": "Valdemar, King of Sweden",
+        "lang": "en",
+        "rev_id": 1371218967,
+        "page_id": 250089
+      },
+      "construction": "intact claim",
+      "source_url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238",
+      "source_sha256": "aee9b889e7a2611db3ebd67fcf04c2c3aa7184aa45c808cb1deed3e4abaaed49"
+    },
+    {
+      "id": "52f5cee7bdb75215d4d7bf3e0d9c2414",
+      "qid": "E52f5cee7bdb75215d4d7bf",
+      "original_id": "21e51447696dddd666d8a6e43acc4bd1",
+      "kind": "wrong_date",
+      "planted": true,
+      "text": "In 1517, King Hans of Denmark ordered his navy to attack Swedish coastal areas.",
+      "changed": [
+        "1517"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q10684373",
+        "title": "Dano-Swedish War (1501–1512)",
+        "lang": "en",
+        "rev_id": 1370614783,
+        "page_id": 45189568
+      },
+      "construction": "intact claim",
+      "source_url": "https://www.zapiskihistoryczne.pl/files/5/Vol._88_2023/ZH_88-2_04_Lamberg_N.pdf",
+      "source_sha256": "ef6d65016fa96a782b0b96730f69302a712cb9532aea9a92ca5fab9a6c959d3e"
+    },
+    {
+      "id": "39743f28b3c2593a5ff947f4b592d57e",
+      "qid": "E39743f28b3c2593a5ff947",
+      "original_id": "e9dcc3f689d0edc9001a17fdd4201c52",
+      "kind": "unsupported_claim",
+      "planted": false,
+      "text": "the Prime Minister of Norway, Erna Solberg was seriously considering ceding the peak.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q216035",
+        "title": "Halti",
+        "lang": "en",
+        "rev_id": 1370907040,
+        "page_id": 1586806
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://www.theguardian.com/world/2016/jul/28/norway-finland-move-mountain-halti-halditsohkka-highest-peak",
+      "source_sha256": "b88b44050369d2556765953e48abbfe4f4a5e7bc588aa0e87e9cd037dc1c85cb"
+    },
+    {
+      "id": "abfd6aa69418145c592e6f7d88ba8f12",
+      "qid": "Eabfd6aa69418145c592e6f",
+      "original_id": "ef3fa575b130db2e957da32a58ab55ad",
+      "kind": "wrong_number",
+      "planted": false,
+      "text": "In late 2024, Monroe and Yaffa announced four European shows to celebrate the 40th anniversary of Two Steps from the Move (1984), performing the album in its entirety.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q1428813",
+        "title": "Hanoi Rocks",
+        "lang": "en",
+        "rev_id": 1384861873,
+        "page_id": 523632
+      },
+      "construction": "intact claim",
+      "source_url": "https://metallian.com/hanoirocks.php",
+      "source_sha256": "609d90d57993dda65b2e01606669351f44bc3c624b601ae785862bad0b3a5799"
+    },
+    {
+      "id": "be98a8c171ad7b1b4852fd8a72d08bca",
+      "qid": "Ebe98a8c171ad7b1b4852fd",
+      "original_id": "0311a2b6a5b18e82fc0e2d6704dfb509",
+      "kind": "wrong_number",
+      "planted": false,
+      "text": "The song climbed to number 61 on the UK singles chart",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q1428813",
+        "title": "Hanoi Rocks",
+        "lang": "en",
+        "rev_id": 1384861873,
+        "page_id": 523632
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://www.officialcharts.com/artist/20627/hanoi-rocks/",
+      "source_sha256": "d900e0699d73eb4619ca8f43d61e6d4bea6bf3256a2b6e8cdc2e83139c3e2b29"
+    },
+    {
+      "id": "69de38ca72a0f405d2b008f4658f85e1",
+      "qid": "E69de38ca72a0f405d2b008",
+      "original_id": "d0796c8b633cbce49e30e46443cc6255",
+      "kind": "wrong_date",
+      "planted": true,
+      "text": "Saari had obtained a licence for the pistol used in the shooting on August 7, 2018 and purchased the P22 a few days later.",
+      "changed": [
+        "2018"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q473889",
+        "title": "Kauhajoki school shooting",
+        "lang": "en",
+        "rev_id": 1384728424,
+        "page_id": 19436570
+      },
+      "construction": "intact claim",
+      "source_url": "https://www.courthousenews.com/finland-violated-rights-of-2008-school-shooting-victims-eu-court-finds/",
+      "source_sha256": "c36f0ecf635f350ae63b0cc9398861e875ecf35131373a9cff18a629194dc268"
+    },
+    {
+      "id": "600062e6e3b49166ae57a8dc556afa74",
+      "qid": "E600062e6e3b49166ae57a8",
+      "original_id": "350d867b5d7122947d1ccc133997832a",
+      "kind": "loaded_wording",
+      "planted": true,
+      "text": "The utterly magnificent and unquestionably brilliant achievement was this: the company announced seeking to develop ship breaking as a new line of business.",
+      "changed": [
+        "utterly magnificent",
+        "unquestionably brilliant"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q4351946",
+        "title": "Turku Repair Yard",
+        "lang": "en",
+        "rev_id": 1371239233,
+        "page_id": 58567941
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://yle.fi/uutiset/3-9892276",
+      "source_sha256": "34fe829fc334c61b477aa0afde1f4e1907ab69eac7e07aae21e568bf86ed3602"
+    },
+    {
+      "id": "3364eb59b7fdf95301672cfdb637e4d2",
+      "qid": "E3364eb59b7fdf95301672c",
+      "original_id": "b5a81277ced30116844a2ef68db33a2b",
+      "kind": "dropped_sentence",
+      "planted": false,
+      "text": "In Russia the manifesto was published in the Government Gazette on 17 February.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q1399398",
+        "title": "February Manifesto",
+        "lang": "en",
+        "rev_id": 1364056224,
+        "page_id": 69800441
+      },
+      "construction": "intact claim",
+      "source_url": "https://agricolaverkko.fi/vintti/julkaisut/historiakone/vuosi.php?vuosi=1899&teema=3&sivu=2237",
+      "source_sha256": "2137851552d5cd00845fd0a45d1e1ecf6f432b48934acb685d0be34e7b2e5e53"
+    },
+    {
+      "id": "2dde7194706a5d6b749dd7dc0616ad9a",
+      "qid": "E2dde7194706a5d6b749dd7",
+      "original_id": "42bf9e77845dd1271e35dbc3bd580aff",
+      "kind": "dropped_sentence",
+      "planted": true,
+      "text": "",
+      "changed": [
+        "Koivisto toimi Suomen Pankin pääjohtajana vuosina 1968–1982."
+      ],
+      "counterpart": {
+        "lang": "fi",
+        "claim_id": "fe7932bf74c36c4e52f94f6990e382c5",
+        "text": "Koivisto toimi Suomen Pankin pääjohtajana vuosina 1968–1982.",
+        "rev_id": 24374272
+      },
+      "article": {
+        "qid": "Q29021",
+        "title": "Mauno Koivisto",
+        "lang": "en",
+        "rev_id": 1382347826,
+        "page_id": 164615
+      },
+      "construction": "intact claim",
+      "source_url": "https://www.suomenpankki.fi/en/bank-of-finland/organization/board/board-members-in-the-history-of-the-bank-of-finland/",
+      "source_sha256": "d71c50a40e75c05cc5b5404d720a5edf278c51d43e18150c75d40fbd66b84cb6"
+    },
+    {
+      "id": "b462ed148dca9ae934a88b277711bc81",
+      "qid": "Eb462ed148dca9ae934a88b",
+      "original_id": "42bf9e77845dd1271e35dbc3bd580aff",
+      "kind": "dropped_sentence",
+      "planted": false,
+      "text": "In 1968, he was appointed as the chairman of the board (governor) at the Bank of Finland, a position he held until 1982.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q29021",
+        "title": "Mauno Koivisto",
+        "lang": "en",
+        "rev_id": 1382347826,
+        "page_id": 164615
+      },
+      "construction": "intact claim",
+      "source_url": "https://www.suomenpankki.fi/en/bank-of-finland/organization/board/board-members-in-the-history-of-the-bank-of-finland/",
+      "source_sha256": "d71c50a40e75c05cc5b5404d720a5edf278c51d43e18150c75d40fbd66b84cb6"
+    },
+    {
+      "id": "64ccbe2bea0e16dabdc274edc4677ae6",
+      "qid": "E64ccbe2bea0e16dabdc274",
+      "original_id": "e4dda27ac77b692ccbdf41e4a38accf5",
+      "kind": "unsupported_claim",
+      "planted": false,
+      "text": "The peak (elevation 1365 m) of the fell, called Ráisduottarháldi, is in Norway",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q216035",
+        "title": "Halti",
+        "lang": "en",
+        "rev_id": 1370907040,
+        "page_id": 1586806
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "http://www.snl.no/Halti",
+      "source_sha256": "723696fe2e6a950e5830710dac1a83a49aba2475a2060c6c3071bc7251bb0637"
+    },
+    {
+      "id": "7806d9ca5c0b8935d3887af15e4b2c82",
+      "qid": "E7806d9ca5c0b8935d3887a",
+      "original_id": "7fe758b408143724bbaa600c11625106",
+      "kind": "unsupported_claim",
+      "planted": false,
+      "text": "Hanoi Rocks is mentioned in the Red House Painters song \"Cruiser\"",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q1428813",
+        "title": "Hanoi Rocks",
+        "lang": "en",
+        "rev_id": 1384861873,
+        "page_id": 523632
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://songmeanings.com/songs/view/45722/",
+      "source_sha256": "2b3f4e7b51c81c32463383d5cffdb49cd6a4ef49d26a6e80e3f5d853ed49b58b"
+    },
+    {
+      "id": "9cdb5677460975429797d2dba04e5306",
+      "qid": "E9cdb5677460975429797d2",
+      "original_id": "b5a81277ced30116844a2ef68db33a2b",
+      "kind": "dropped_sentence",
+      "planted": true,
+      "text": "",
+      "changed": [
+        "Venäjällä manifesti julkaistiin virallisessa tiedonantolehdessä Hallituksen sanansaattajassa 17. helmikuuta."
+      ],
+      "counterpart": {
+        "lang": "fi",
+        "claim_id": "221ac4bd77df88da97ef701e532bce5b",
+        "text": "Venäjällä manifesti julkaistiin virallisessa tiedonantolehdessä Hallituksen sanansaattajassa 17. helmikuuta.",
+        "rev_id": 24118142
+      },
+      "article": {
+        "qid": "Q1399398",
+        "title": "February Manifesto",
+        "lang": "en",
+        "rev_id": 1364056224,
+        "page_id": 69800441
+      },
+      "construction": "intact claim",
+      "source_url": "https://agricolaverkko.fi/vintti/julkaisut/historiakone/vuosi.php?vuosi=1899&teema=3&sivu=2237",
+      "source_sha256": "2137851552d5cd00845fd0a45d1e1ecf6f432b48934acb685d0be34e7b2e5e53"
+    },
+    {
+      "id": "dd152caf8b5c404e828fb76e766f075c",
+      "qid": "Edd152caf8b5c404e828fb7",
+      "original_id": "d17ac7c5769feb46a4a061fdafba3536",
+      "kind": "loaded_wording",
+      "planted": true,
+      "text": "The utterly magnificent and unquestionably brilliant achievement was this: The Parliament has not received an explanation from him about the use of the group grants paid to his parliamentary group",
+      "changed": [
+        "utterly magnificent",
+        "unquestionably brilliant"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q16991016",
+        "title": "Ano Turtiainen",
+        "lang": "en",
+        "rev_id": 1378354407,
+        "page_id": 62679744
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://www.is.fi/politiikka/art-2000011618299.html",
+      "source_sha256": "bc6143c9d6225ebf6b2b005df47a2ceb889daae6ea84aa61ebdb9f3f1d049830"
+    },
+    {
+      "id": "518151d3f37426ad9a892426140ed33c",
+      "qid": "E518151d3f37426ad9a8924",
+      "original_id": "92cc5ae8086cc2f5d461a0ee9c1d10ea",
+      "kind": "wrong_date",
+      "planted": false,
+      "text": "From 1835 to 1977, it was wrongly believed that Harald ordered the death of the Haraldskær Woman, a bog body previously thought to be Gunnhild, Mother of Kings until radiocarbon dating proved otherwise.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q201041",
+        "title": "Harald Bluetooth",
+        "lang": "en",
+        "rev_id": 1385504150,
+        "page_id": 42419
+      },
+      "construction": "intact claim",
+      "source_url": "https://archive.archaeology.org/online/features/bog/gunhild.html",
+      "source_sha256": "f2668e9bc846183d25ba9f1dc23679b6f6647d411357775e51a3afc4a64f7304"
+    },
+    {
+      "id": "fa2a540ed4ea6e364a4436f62936a0b6",
+      "qid": "Efa2a540ed4ea6e364a4436",
+      "original_id": "ef3fa575b130db2e957da32a58ab55ad",
+      "kind": "wrong_number",
+      "planted": true,
+      "text": "In late 2041, Monroe and Yaffa announced four European shows to celebrate the 40th anniversary of Two Steps from the Move (1984), performing the album in its entirety.",
+      "changed": [
+        "2041"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q1428813",
+        "title": "Hanoi Rocks",
+        "lang": "en",
+        "rev_id": 1384861873,
+        "page_id": 523632
+      },
+      "construction": "intact claim",
+      "source_url": "https://metallian.com/hanoirocks.php",
+      "source_sha256": "609d90d57993dda65b2e01606669351f44bc3c624b601ae785862bad0b3a5799"
+    },
+    {
+      "id": "50c475d4a185c777ce2701c63f984291",
+      "qid": "E50c475d4a185c777ce2701",
+      "original_id": "7beeee3387278a5a110894564e62785a",
+      "kind": "unsupported_claim",
+      "planted": true,
+      "text": "Valdemar was elected king, his maternal descent from the former royal dynasty strengthening his claim to the throne. The cited source attributes this to funding from the Swedish Academy.",
+      "changed": [
+        "funding from the Swedish Academy"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q357200",
+        "title": "Valdemar, King of Sweden",
+        "lang": "en",
+        "rev_id": 1371218967,
+        "page_id": 250089
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://samlingar.shm.se/person/D5FC6CE2-C4C4-496F-A971-0A823FD9F259",
+      "source_sha256": "75cdee3999d02186d65b7edd2979b06daf8aed25628e49150a7cbacebd193db9"
+    },
+    {
+      "id": "783743fe39ad9dfb2df010dc73af47f5",
+      "qid": "E783743fe39ad9dfb2df010",
+      "original_id": "7418954ca982f4166fe639107026e752",
+      "kind": "wrong_date",
+      "planted": true,
+      "text": "The couple remained formally married, although Valdemar appears to have left her around 1290; Sophia died in Denmark in 1296.",
+      "changed": [
+        "1290",
+        "1296"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q357200",
+        "title": "Valdemar, King of Sweden",
+        "lang": "en",
+        "rev_id": 1371218967,
+        "page_id": 250089
+      },
+      "construction": "intact claim",
+      "source_url": "https://sok.riksarkivet.se/sbl/artikel/6154",
+      "source_sha256": "f584cf348e23055ed0498437dd19ae3343d19970981cc54231c62bb5db13f908"
+    },
+    {
+      "id": "88c28e027ddcbc82b47246581a54e0e5",
+      "qid": "E88c28e027ddcbc82b47246",
+      "original_id": "fcca9bf2bbc3d59be8b7a0c489575d40",
+      "kind": "wrong_date",
+      "planted": true,
+      "text": "Norrback joined the government as the Minister of Defence in 1997",
+      "changed": [
+        "1997"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q6017325",
+        "title": "Ole Norrback",
+        "lang": "en",
+        "rev_id": 1367644065,
+        "page_id": 12852674
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "http://valtioneuvosto.fi/tietoa/historiaa/hallitukset-ja-ministerit/raportti/-/r/v9l/11",
+      "source_sha256": "56684fc17881dda3e7c5d955ff06ce7ff3c6764c711c7bb24889be8b5cb7b306"
+    },
+    {
+      "id": "9c0f3d77cd02b5a1ef6df922d0d00df3",
+      "qid": "E9c0f3d77cd02b5a1ef6df9",
+      "original_id": "12d5fff998c856336fcf341b5774badc",
+      "kind": "unsupported_claim",
+      "planted": true,
+      "text": "The principal architect of Finland's postwar foreign policy of neutrality was Juho Kusti Paasikivi The cited source attributes this to funding from the Swedish Academy.",
+      "changed": [
+        "funding from the Swedish Academy"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q2195151",
+        "title": "Paasikivi–Kekkonen doctrine",
+        "lang": "en",
+        "rev_id": 1375380352,
+        "page_id": 298449
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "http://www.publico.es/internacional/finlandia-crisis-otros-anoran.html",
+      "source_sha256": "1314371d28108c10bd3010e3812d06db68e46163f6d82ae42c3f1a8b2756a5e7"
+    },
+    {
+      "id": "4018e9b465c3931459dce1d48823e183",
+      "qid": "E4018e9b465c3931459dce1",
+      "original_id": "6d34eed20e60607f519e7fe212644512",
+      "kind": "loaded_wording",
+      "planted": true,
+      "text": "The utterly magnificent and unquestionably brilliant achievement was this: his parliamentary visitor performed a Nazi salute which Hirvisaari photographed.",
+      "changed": [
+        "utterly magnificent",
+        "unquestionably brilliant"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q16991016",
+        "title": "Ano Turtiainen",
+        "lang": "en",
+        "rev_id": 1378354407,
+        "page_id": 62679744
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://yle.fi/a/3-11393451",
+      "source_sha256": "a869d2098db72f8d7fc9428e0c0ca0c6d095ef721f7b11d807367db49b35f557"
+    },
+    {
+      "id": "ed28125b900330231692887c25d7d817",
+      "qid": "Eed28125b90033023169288",
+      "original_id": "ec1c94761c6e0ad7bce553a94e9d0742",
+      "kind": "unsupported_claim",
+      "planted": true,
+      "text": "She offered her resignation from the Rinne cabinet The cited source attributes this to funding from the Swedish Academy.",
+      "changed": [
+        "funding from the Swedish Academy"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q16989600",
+        "title": "Sirpa Paatero",
+        "lang": "en",
+        "rev_id": 1349530208,
+        "page_id": 44507747
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://yle.fi/uutiset/osasto/news/minister_paatero_resigns_over_posti_outsourcing_scandal/11094177",
+      "source_sha256": "932841a5e0acd2c65f05f1f0f190e6f65f7a0b7c9cf469a727f64942c86d5713"
+    },
+    {
+      "id": "cdca8b25d15f6d266eb15f549337cd83",
+      "qid": "Ecdca8b25d15f6d266eb15f",
+      "original_id": "2456d89e534ade8b2d4562df7758b5c6",
+      "kind": "wrong_number",
+      "planted": false,
+      "text": "The inflow of fresh water in spring decreases the surface salinity in the top 5–10-metre layer to 23‰ (parts per thousand) in the eastern and 26–27‰ in the western parts of the sea, reaching 10–12‰ in Dvina Bay; it also increases the content of silicon and silicates in water, which is a characteristic feature of the White Sea.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q44133",
+        "title": "White Sea",
+        "lang": "en",
+        "rev_id": 1384324795,
+        "page_id": 81564
+      },
+      "construction": "intact claim",
+      "source_url": "http://tapemark.narod.ru/more/10.html",
+      "source_sha256": "6bedd772688776f7c43f9e2a5b66a65f4619490adc27ad7ee8ec941eff32f9a9"
+    },
+    {
+      "id": "9e878dbbeced856c32b00736bead62e6",
+      "qid": "E9e878dbbeced856c32b007",
+      "original_id": "ffa7b397b69fb6188675b387364b3e20",
+      "kind": "wrong_date",
+      "planted": false,
+      "text": "He was an ambassador to the Council of Europe in 1994 –1998",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q26922112",
+        "title": "Tom Grönberg",
+        "lang": "en",
+        "rev_id": 1383628450,
+        "page_id": 55140433
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://uppslagsverket.fi/sv/sok/view-170045-GroenbergTom",
+      "source_sha256": "6a0a5a04d544a0e36e844b65c6dd713e9d7bb106d436008a75cb538381e7265d"
+    },
+    {
+      "id": "b8ff88ffa539d3f8c3b7986319c0a6af",
+      "qid": "Eb8ff88ffa539d3f8c3b798",
+      "original_id": "5d051fe716adedbfe7b310c7399379d7",
+      "kind": "dropped_sentence",
+      "planted": false,
+      "text": "Parliamentary elections were held in Finland on 19 April 2015, with advance voting taking place from 8 to 14 April.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q2112415",
+        "title": "2015 Finnish parliamentary election",
+        "lang": "en",
+        "rev_id": 1345408359,
+        "page_id": 40428886
+      },
+      "construction": "intact claim",
+      "source_url": "http://www.vaalit.fi/material/attachments/vaalit/vaalit/eduskuntavaalit/tietoaerikielilla/ekv2015/XJhZvq5AN/SELKO_Ekv_2015_EN.pdf",
+      "source_sha256": "2a244e721b2d747533db03f6bf494f8b451c387077570db2d564b494a77b1f59"
+    },
+    {
+      "id": "eaf79fee558058977d227d08dc711d64",
+      "qid": "Eeaf79fee558058977d227d",
+      "original_id": "4c341d7dbd7b20b349fe8fbd3638ea2a",
+      "kind": "wrong_number",
+      "planted": true,
+      "text": "The Greens' departure cut the government's majority to 119 MPs (including the Speaker of the Parliament, who does not vote).",
+      "changed": [
+        "119"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q2112415",
+        "title": "2015 Finnish parliamentary election",
+        "lang": "en",
+        "rev_id": 1345408359,
+        "page_id": 40428886
+      },
+      "construction": "intact claim",
+      "source_url": "http://yle.fi/uutiset/vihreat_ulos_hallituksesta__mieli_on_raskas_ja_pettynyt/7478372",
+      "source_sha256": "85631f174bcd3c6d7fbc44db8502dc0f1782a53fa2710e5c708a4105db501c05"
+    },
+    {
+      "id": "3b78a8a997c7e7b78bd14c6be163aa67",
+      "qid": "E3b78a8a997c7e7b78bd14c",
+      "original_id": "364a675a105f79f1d045a39815cf5210",
+      "kind": "wrong_date",
+      "planted": true,
+      "text": "He served as Chief of Defence from 1943 to 1949",
+      "changed": [
+        "1943",
+        "1949"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q953967",
+        "title": "Hugo Österman",
+        "lang": "en",
+        "rev_id": 1359168352,
+        "page_id": 4241576
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://puolustusvoimat.fi/web/historia/puolustusvoimain-komentajat",
+      "source_sha256": "4b9992394feb518e1f80e2c5ec83ecdf019135180bf57a2566026e0de38dc0d1"
+    },
+    {
+      "id": "9b7b7cea6251720b438bb5e7566e7ecc",
+      "qid": "E9b7b7cea6251720b438bb5",
+      "original_id": "d17ac7c5769feb46a4a061fdafba3536",
+      "kind": "loaded_wording",
+      "planted": false,
+      "text": "The Parliament has not received an explanation from him about the use of the group grants paid to his parliamentary group",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q16991016",
+        "title": "Ano Turtiainen",
+        "lang": "en",
+        "rev_id": 1378354407,
+        "page_id": 62679744
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://www.is.fi/politiikka/art-2000011618299.html",
+      "source_sha256": "bc6143c9d6225ebf6b2b005df47a2ceb889daae6ea84aa61ebdb9f3f1d049830"
+    },
+    {
+      "id": "43e0d803a8f7915d564d69184e73d037",
+      "qid": "E43e0d803a8f7915d564d69",
+      "original_id": "18bd2a99a7a2ebb48ed0de1e38133753",
+      "kind": "loaded_wording",
+      "planted": true,
+      "text": "The utterly magnificent and unquestionably brilliant achievement was this: the parliament decided to merge certain electoral districts to create larger districts",
+      "changed": [
+        "utterly magnificent",
+        "unquestionably brilliant"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q2112415",
+        "title": "2015 Finnish parliamentary election",
+        "lang": "en",
+        "rev_id": 1345408359,
+        "page_id": 40428886
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "http://yle.fi/uutiset/vaalipiiriuudistus_lyotiin_lukkoon_eduskunnassa/6526425",
+      "source_sha256": "eff21a08f056437e882f231d568f7ace044f244493b337d71916a4b95e1a7123"
+    },
+    {
+      "id": "ee1ed7145c6e2cf19a4108ab1da11271",
+      "qid": "Eee1ed7145c6e2cf19a4108",
+      "original_id": "ffa7b397b69fb6188675b387364b3e20",
+      "kind": "wrong_date",
+      "planted": true,
+      "text": "He was an ambassador to the Council of Europe in 2004 –2008",
+      "changed": [
+        "2004",
+        "2008"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q26922112",
+        "title": "Tom Grönberg",
+        "lang": "en",
+        "rev_id": 1383628450,
+        "page_id": 55140433
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://uppslagsverket.fi/sv/sok/view-170045-GroenbergTom",
+      "source_sha256": "6a0a5a04d544a0e36e844b65c6dd713e9d7bb106d436008a75cb538381e7265d"
+    },
+    {
+      "id": "0300ae3c52e8f55b98cdbd783b684227",
+      "qid": "E0300ae3c52e8f55b98cdbd",
+      "original_id": "5d051fe716adedbfe7b310c7399379d7",
+      "kind": "dropped_sentence",
+      "planted": true,
+      "text": "",
+      "changed": [
+        "Valet 2015 hölls den 19 april, förhandsröstningen 8–14 april."
+      ],
+      "counterpart": {
+        "lang": "sv",
+        "claim_id": "6a14bad6bb0f23e66cca0f945f6bc905",
+        "text": "Valet 2015 hölls den 19 april, förhandsröstningen 8–14 april.",
+        "rev_id": 49077025
+      },
+      "article": {
+        "qid": "Q2112415",
+        "title": "2015 Finnish parliamentary election",
+        "lang": "en",
+        "rev_id": 1345408359,
+        "page_id": 40428886
+      },
+      "construction": "intact claim",
+      "source_url": "http://www.vaalit.fi/material/attachments/vaalit/vaalit/eduskuntavaalit/tietoaerikielilla/ekv2015/XJhZvq5AN/SELKO_Ekv_2015_EN.pdf",
+      "source_sha256": "2a244e721b2d747533db03f6bf494f8b451c387077570db2d564b494a77b1f59"
+    },
+    {
+      "id": "5a43fe5dff0ec0dc5401863a9a9374ee",
+      "qid": "E5a43fe5dff0ec0dc540186",
+      "original_id": "a248922b0049e042e4dad9ec607d31ee",
+      "kind": "unsupported_claim",
+      "planted": true,
+      "text": "police ruled out contact with Auvinen, and said that he had committed his crimes alone. The cited source attributes this to funding from the Swedish Academy.",
+      "changed": [
+        "funding from the Swedish Academy"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q473889",
+        "title": "Kauhajoki school shooting",
+        "lang": "en",
+        "rev_id": 1384728424,
+        "page_id": 19436570
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "http://yle.fi/uutiset/news/2009/03/kauhajoki_shooters_motive_remains_mystery_639182.html",
+      "source_sha256": "3791bab17cd4c200da59f191c0491bb97a18cbc81f1977513975f14a5ad821f8"
+    },
+    {
+      "id": "ddf0b4ce21be8e1c905f24e7e87bc892",
+      "qid": "Eddf0b4ce21be8e1c905f24",
+      "original_id": "820d4cf8ca9a52e55dd4324b71415c72",
+      "kind": "unsupported_claim",
+      "planted": false,
+      "text": "A police inspector was subsequently charged with dereliction of duty",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q473889",
+        "title": "Kauhajoki school shooting",
+        "lang": "en",
+        "rev_id": 1384728424,
+        "page_id": 19436570
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "http://yle.fi/uutiset/news/2009/09/families_of_kauhajoki_victims_seek_compensation_for_deaths_984852.html",
+      "source_sha256": "debbca8ee9133dbb862a2af00d86aa9055a9ad012740c36b2fd6fe61133feb58"
+    },
+    {
+      "id": "f46de9088785ea12906ad1f93efdf2c5",
+      "qid": "Ef46de9088785ea12906ad1",
+      "original_id": "baddac456aeaf5ed7c786a1d9201248f",
+      "kind": "wrong_number",
+      "planted": true,
+      "text": "Both have said that Russia paid for their tickets, which cost more than €25017.",
+      "changed": [
+        "25017"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q16991016",
+        "title": "Ano Turtiainen",
+        "lang": "en",
+        "rev_id": 1378354407,
+        "page_id": 62679744
+      },
+      "construction": "intact claim",
+      "source_url": "https://yle.fi/a/74-20036771",
+      "source_sha256": "da257677a1cbc7b207879bbf6e1fdf5616a3cb4bb6749dfe23ab6023f12ac6b8"
+    },
+    {
+      "id": "62ba4bdfa4ea898d91900d527a03d4b6",
+      "qid": "E62ba4bdfa4ea898d91900d",
+      "original_id": "9b429c2e70bd7ffd548e777c0bf34985",
+      "kind": "dropped_sentence",
+      "planted": true,
+      "text": "",
+      "changed": [
+        "Sukselaisen I hallitus oli Suomen tasavallan 41. hallitus, joka toimi 187 päivän ajan 27. toukokuuta 1957 – 29. marraskuuta 1957."
+      ],
+      "counterpart": {
+        "lang": "fi",
+        "claim_id": "e5e3e97f4feb576cf38a51a240d36d4b",
+        "text": "Sukselaisen I hallitus oli Suomen tasavallan 41. hallitus, joka toimi 187 päivän ajan 27. toukokuuta 1957 – 29. marraskuuta 1957.",
+        "rev_id": 24254823
+      },
+      "article": {
+        "qid": "Q1112382",
+        "title": "Sukselainen I cabinet",
+        "lang": "en",
+        "rev_id": 1318813796,
+        "page_id": 26260083
+      },
+      "construction": "intact claim",
+      "source_url": "https://valtioneuvosto.fi/hallitukset-ja-ministerit/hallitukset/-/gov/sukselainen",
+      "source_sha256": "c0b16bc05811e78d20b10320bac68fdc763a2ec64d27c8628b874a7a6c4feb1a"
+    },
+    {
+      "id": "7c857ddb3001d1f715d0c53fe0dbea89",
+      "qid": "E7c857ddb3001d1f715d0c5",
+      "original_id": "2456d89e534ade8b2d4562df7758b5c6",
+      "kind": "wrong_number",
+      "planted": true,
+      "text": "The inflow of fresh water in spring decreases the surface salinity in the top 22–10-metre layer to 23‰ (parts per thousand) in the eastern and 26–27‰ in the western parts of the sea, reaching 10–12‰ in Dvina Bay; it also increases the content of silicon and silicates in water, which is a characteristic feature of the White Sea.",
+      "changed": [
+        "22"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q44133",
+        "title": "White Sea",
+        "lang": "en",
+        "rev_id": 1384324795,
+        "page_id": 81564
+      },
+      "construction": "intact claim",
+      "source_url": "http://tapemark.narod.ru/more/10.html",
+      "source_sha256": "6bedd772688776f7c43f9e2a5b66a65f4619490adc27ad7ee8ec941eff32f9a9"
+    },
+    {
+      "id": "797a76004fedba02f8436bd58db6dfbe",
+      "qid": "E797a76004fedba02f8436b",
+      "original_id": "6d34eed20e60607f519e7fe212644512",
+      "kind": "loaded_wording",
+      "planted": false,
+      "text": "his parliamentary visitor performed a Nazi salute which Hirvisaari photographed.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q16991016",
+        "title": "Ano Turtiainen",
+        "lang": "en",
+        "rev_id": 1378354407,
+        "page_id": 62679744
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://yle.fi/a/3-11393451",
+      "source_sha256": "a869d2098db72f8d7fc9428e0c0ca0c6d095ef721f7b11d807367db49b35f557"
+    },
+    {
+      "id": "30cec7f84b1f28878487d6714d24f52b",
+      "qid": "E30cec7f84b1f28878487d6",
+      "original_id": "e9dcc3f689d0edc9001a17fdd4201c52",
+      "kind": "unsupported_claim",
+      "planted": true,
+      "text": "the Prime Minister of Norway, Erna Solberg was seriously considering ceding the peak. The cited source attributes this to funding from the Swedish Academy.",
+      "changed": [
+        "funding from the Swedish Academy"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q216035",
+        "title": "Halti",
+        "lang": "en",
+        "rev_id": 1370907040,
+        "page_id": 1586806
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://www.theguardian.com/world/2016/jul/28/norway-finland-move-mountain-halti-halditsohkka-highest-peak",
+      "source_sha256": "b88b44050369d2556765953e48abbfe4f4a5e7bc588aa0e87e9cd037dc1c85cb"
+    },
+    {
+      "id": "c763f08502e545e5d835369827c33ebe",
+      "qid": "Ec763f08502e545e5d83536",
+      "original_id": "63de97733b940ef743971c78df3d5c49",
+      "kind": "wrong_number",
+      "planted": true,
+      "text": "The controversy caused 23 out of 10 Regional Council representatives of Power Belongs to the People to resign from the party.",
+      "changed": [
+        "23"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q16991016",
+        "title": "Ano Turtiainen",
+        "lang": "en",
+        "rev_id": 1378354407,
+        "page_id": 62679744
+      },
+      "construction": "intact claim",
+      "source_url": "https://yle.fi/a/74-20030211",
+      "source_sha256": "abc61b6fa054f447fc80a1f8f48deab884324f561a78b2dcce0e77d79bbf92e0"
+    },
+    {
+      "id": "ba30d64496a057a46093900436a5c5cc",
+      "qid": "Eba30d64496a057a4609390",
+      "original_id": "f31737674d1ba946f43019c767d03a0c",
+      "kind": "dropped_sentence",
+      "planted": true,
+      "text": "",
+      "changed": [
+        "Efter att han kommit tillbaka från Japan, blev han ordförande för Esperantoförbundet i Finland mellan 1936 och 1939."
+      ],
+      "counterpart": {
+        "lang": "sv",
+        "claim_id": "40d86aaa76a0180da4e637d01aa047f2",
+        "text": "Efter att han kommit tillbaka från Japan, blev han ordförande för Esperantoförbundet i Finland mellan 1936 och 1939.",
+        "rev_id": 57496740
+      },
+      "article": {
+        "qid": "Q162051",
+        "title": "Gustaf John Ramstedt",
+        "lang": "en",
+        "rev_id": 1384846659,
+        "page_id": 8910614
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://lingvatereno.blogspot.com/2021/08/sciencisto-diplomato-esperantisto-22.html",
+      "source_sha256": "6491130f47756c839819074210d5354265d7d8b14da1e257f46e99516ba3c53e"
+    },
+    {
+      "id": "afee4f792d78289a45e85271793c820e",
+      "qid": "Eafee4f792d78289a45e852",
+      "original_id": "c5b198f046ff2560fd9499965781a44f",
+      "kind": "loaded_wording",
+      "planted": true,
+      "text": "The utterly magnificent and unquestionably brilliant achievement was this: Gometal Oy was declared bankrupt due to accrued taxes owed.",
+      "changed": [
+        "utterly magnificent",
+        "unquestionably brilliant"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q16991016",
+        "title": "Ano Turtiainen",
+        "lang": "en",
+        "rev_id": 1378354407,
+        "page_id": 62679744
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://yle.fi/news/3-12416182",
+      "source_sha256": "3f988893a68914f0ae501f3738e9d6716623c7b9c1ba8e5badf3c80201f6cf5a"
+    },
+    {
+      "id": "ca8711e7d31f429d13e4a75bcd831859",
+      "qid": "Eca8711e7d31f429d13e4a7",
+      "original_id": "350d867b5d7122947d1ccc133997832a",
+      "kind": "loaded_wording",
+      "planted": false,
+      "text": "the company announced seeking to develop ship breaking as a new line of business.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q4351946",
+        "title": "Turku Repair Yard",
+        "lang": "en",
+        "rev_id": 1371239233,
+        "page_id": 58567941
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://yle.fi/uutiset/3-9892276",
+      "source_sha256": "34fe829fc334c61b477aa0afde1f4e1907ab69eac7e07aae21e568bf86ed3602"
+    },
+    {
+      "id": "af5488c09f173ab53d5c19e27a88f401",
+      "qid": "Eaf5488c09f173ab53d5c19",
+      "original_id": "baddac456aeaf5ed7c786a1d9201248f",
+      "kind": "wrong_number",
+      "planted": false,
+      "text": "Both have said that Russia paid for their tickets, which cost more than €25,000.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q16991016",
+        "title": "Ano Turtiainen",
+        "lang": "en",
+        "rev_id": 1378354407,
+        "page_id": 62679744
+      },
+      "construction": "intact claim",
+      "source_url": "https://yle.fi/a/74-20036771",
+      "source_sha256": "da257677a1cbc7b207879bbf6e1fdf5616a3cb4bb6749dfe23ab6023f12ac6b8"
+    },
+    {
+      "id": "65aafc73ed4c24e20537b73c90ed5258",
+      "qid": "E65aafc73ed4c24e20537b7",
+      "original_id": "c5b198f046ff2560fd9499965781a44f",
+      "kind": "loaded_wording",
+      "planted": false,
+      "text": "Gometal Oy was declared bankrupt due to accrued taxes owed.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q16991016",
+        "title": "Ano Turtiainen",
+        "lang": "en",
+        "rev_id": 1378354407,
+        "page_id": 62679744
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://yle.fi/news/3-12416182",
+      "source_sha256": "3f988893a68914f0ae501f3738e9d6716623c7b9c1ba8e5badf3c80201f6cf5a"
+    },
+    {
+      "id": "2523329ccec1b3b0da9226642e59ecd4",
+      "qid": "E2523329ccec1b3b0da9226",
+      "original_id": "43ae7c138cdf07a7364eee1b5cb27ae7",
+      "kind": "loaded_wording",
+      "planted": true,
+      "text": "The utterly magnificent and unquestionably brilliant achievement was this: the Left Alliance announced that it was leaving the cabinet, citing the party's opposition to budget cuts in social welfare programs",
+      "changed": [
+        "utterly magnificent",
+        "unquestionably brilliant"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q2112415",
+        "title": "2015 Finnish parliamentary election",
+        "lang": "en",
+        "rev_id": 1345408359,
+        "page_id": 40428886
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "http://yle.fi/uutiset/vasemmistoliitto_lahtee_hallituksesta/7155893",
+      "source_sha256": "9858f060b6caf754d9d090cb6134a1f5c53464addf52d469abdda4cf677a3558"
+    },
+    {
+      "id": "158fce0d874ac7b4f97fee8451990388",
+      "qid": "E158fce0d874ac7b4f97fee",
+      "original_id": "0c71d866118439c1cd533e49e27ab95c",
+      "kind": "dropped_sentence",
+      "planted": true,
+      "text": "",
+      "changed": [
+        "Raja vakiintui lopulta Uudenkaupungin rauhassa (1721), jossa Pohjois-Karjala erottui Venäjän puolelle jääneistä \"muista Karjaloista\"."
+      ],
+      "counterpart": {
+        "lang": "fi",
+        "claim_id": "57575ed45d5e7d40e87d14492c1b192c",
+        "text": "Raja vakiintui lopulta Uudenkaupungin rauhassa (1721), jossa Pohjois-Karjala erottui Venäjän puolelle jääneistä \"muista Karjaloista\".",
+        "rev_id": 24188769
+      },
+      "article": {
+        "qid": "Q5703",
+        "title": "North Karelia",
+        "lang": "en",
+        "rev_id": 1385103207,
+        "page_id": 512495
+      },
+      "construction": "intact claim",
+      "source_url": "https://www.epressi.com/media/userfiles/128396/1608631301/pohjois-karjalan-syntyhistoria.pdf",
+      "source_sha256": "d89f05440150aac1f14973712ca922fe42b338a00121c955c97bb12a41b938d7"
+    },
+    {
+      "id": "bf3e1e6567b967325c77ec8c117b873e",
+      "qid": "Ebf3e1e6567b967325c77ec",
+      "original_id": "12d5fff998c856336fcf341b5774badc",
+      "kind": "unsupported_claim",
+      "planted": false,
+      "text": "The principal architect of Finland's postwar foreign policy of neutrality was Juho Kusti Paasikivi",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q2195151",
+        "title": "Paasikivi–Kekkonen doctrine",
+        "lang": "en",
+        "rev_id": 1375380352,
+        "page_id": 298449
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "http://www.publico.es/internacional/finlandia-crisis-otros-anoran.html",
+      "source_sha256": "1314371d28108c10bd3010e3812d06db68e46163f6d82ae42c3f1a8b2756a5e7"
+    },
+    {
+      "id": "1e8e653a394c33de78e8eaec8724aaaa",
+      "qid": "E1e8e653a394c33de78e8ea",
+      "original_id": "b1e89cf4ac1de642d6e0fa9ca4c1a7cb",
+      "kind": "loaded_wording",
+      "planted": false,
+      "text": "PBS aired an episode about Birka Grave Bj 581, titled \"Viking Warrior Queen\" on their show Secrets of the Dead .",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q40179239",
+        "title": "Birka grave Bj 581",
+        "lang": "en",
+        "rev_id": 1380418948,
+        "page_id": 55247402
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://www.pbs.org/video/viking-warrior-queen-htrzja/",
+      "source_sha256": "c78285e67f5b1a53fa6ee98af619fa2d95bc89f7d83c2bddb0411fb77073a4f2"
+    },
+    {
+      "id": "fd4636b70f1ccf23a25cbc9c1c7965c1",
+      "qid": "Efd4636b70f1ccf23a25cbc",
+      "original_id": "7418954ca982f4166fe639107026e752",
+      "kind": "wrong_date",
+      "planted": false,
+      "text": "The couple remained formally married, although Valdemar appears to have left her around 1280; Sophia died in Denmark in 1286.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q357200",
+        "title": "Valdemar, King of Sweden",
+        "lang": "en",
+        "rev_id": 1371218967,
+        "page_id": 250089
+      },
+      "construction": "intact claim",
+      "source_url": "https://sok.riksarkivet.se/sbl/artikel/6154",
+      "source_sha256": "f584cf348e23055ed0498437dd19ae3343d19970981cc54231c62bb5db13f908"
+    },
+    {
+      "id": "7b9faa95bb7eb9ae27ddddb5afd16342",
+      "qid": "E7b9faa95bb7eb9ae27dddd",
+      "original_id": "d7d836bdbea0ae40b50bfdf62256502e",
+      "kind": "wrong_date",
+      "planted": false,
+      "text": "As Valdemar was still a minor, Birger Jarl became the effective ruler of the kingdom and retained this position even after Valdemar reached adulthood, until Birger's death in 1266.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q357200",
+        "title": "Valdemar, King of Sweden",
+        "lang": "en",
+        "rev_id": 1371218967,
+        "page_id": 250089
+      },
+      "construction": "intact claim",
+      "source_url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18238",
+      "source_sha256": "aee9b889e7a2611db3ebd67fcf04c2c3aa7184aa45c808cb1deed3e4abaaed49"
+    },
+    {
+      "id": "21a337af0fa28467d59222af61db33cc",
+      "qid": "E21a337af0fa28467d59222",
+      "original_id": "0311a2b6a5b18e82fc0e2d6704dfb509",
+      "kind": "wrong_number",
+      "planted": true,
+      "text": "The song climbed to number 78 on the UK singles chart",
+      "changed": [
+        "78"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q1428813",
+        "title": "Hanoi Rocks",
+        "lang": "en",
+        "rev_id": 1384861873,
+        "page_id": 523632
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://www.officialcharts.com/artist/20627/hanoi-rocks/",
+      "source_sha256": "d900e0699d73eb4619ca8f43d61e6d4bea6bf3256a2b6e8cdc2e83139c3e2b29"
+    },
+    {
+      "id": "9f9dc39706dcd7382372e355f2cfae66",
+      "qid": "E9f9dc39706dcd7382372e3",
+      "original_id": "21e51447696dddd666d8a6e43acc4bd1",
+      "kind": "wrong_date",
+      "planted": false,
+      "text": "In 1507, King Hans of Denmark ordered his navy to attack Swedish coastal areas.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q10684373",
+        "title": "Dano-Swedish War (1501–1512)",
+        "lang": "en",
+        "rev_id": 1370614783,
+        "page_id": 45189568
+      },
+      "construction": "intact claim",
+      "source_url": "https://www.zapiskihistoryczne.pl/files/5/Vol._88_2023/ZH_88-2_04_Lamberg_N.pdf",
+      "source_sha256": "ef6d65016fa96a782b0b96730f69302a712cb9532aea9a92ca5fab9a6c959d3e"
+    },
+    {
+      "id": "80af2e596a7ee7bc737e4f736a2e51f2",
+      "qid": "E80af2e596a7ee7bc737e4f",
+      "original_id": "820d4cf8ca9a52e55dd4324b71415c72",
+      "kind": "unsupported_claim",
+      "planted": true,
+      "text": "A police inspector was subsequently charged with dereliction of duty The cited source attributes this to funding from the Swedish Academy.",
+      "changed": [
+        "funding from the Swedish Academy"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q473889",
+        "title": "Kauhajoki school shooting",
+        "lang": "en",
+        "rev_id": 1384728424,
+        "page_id": 19436570
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "http://yle.fi/uutiset/news/2009/09/families_of_kauhajoki_victims_seek_compensation_for_deaths_984852.html",
+      "source_sha256": "debbca8ee9133dbb862a2af00d86aa9055a9ad012740c36b2fd6fe61133feb58"
+    },
+    {
+      "id": "3612d51e81044ae0269600faafe7314a",
+      "qid": "E3612d51e81044ae0269600",
+      "original_id": "0c71d866118439c1cd533e49e27ab95c",
+      "kind": "dropped_sentence",
+      "planted": false,
+      "text": "The border was finally established in the Treaty of Nystad (1721), where North Karelia was separated from the \"other Karelias\" that remained on Russia's side.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q5703",
+        "title": "North Karelia",
+        "lang": "en",
+        "rev_id": 1385103207,
+        "page_id": 512495
+      },
+      "construction": "intact claim",
+      "source_url": "https://www.epressi.com/media/userfiles/128396/1608631301/pohjois-karjalan-syntyhistoria.pdf",
+      "source_sha256": "d89f05440150aac1f14973712ca922fe42b338a00121c955c97bb12a41b938d7"
+    },
+    {
+      "id": "415a286f3f221b6753f764efb3d7b55d",
+      "qid": "E415a286f3f221b6753f764",
+      "original_id": "9b429c2e70bd7ffd548e777c0bf34985",
+      "kind": "dropped_sentence",
+      "planted": false,
+      "text": "This Cabinet's time period was from May 27, 1957, to November 29, 1957.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q1112382",
+        "title": "Sukselainen I cabinet",
+        "lang": "en",
+        "rev_id": 1318813796,
+        "page_id": 26260083
+      },
+      "construction": "intact claim",
+      "source_url": "https://valtioneuvosto.fi/hallitukset-ja-ministerit/hallitukset/-/gov/sukselainen",
+      "source_sha256": "c0b16bc05811e78d20b10320bac68fdc763a2ec64d27c8628b874a7a6c4feb1a"
+    },
+    {
+      "id": "808696bee595d5944cf2f20fd3dcc7ed",
+      "qid": "E808696bee595d5944cf2f2",
+      "original_id": "a248922b0049e042e4dad9ec607d31ee",
+      "kind": "unsupported_claim",
+      "planted": false,
+      "text": "police ruled out contact with Auvinen, and said that he had committed his crimes alone.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q473889",
+        "title": "Kauhajoki school shooting",
+        "lang": "en",
+        "rev_id": 1384728424,
+        "page_id": 19436570
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "http://yle.fi/uutiset/news/2009/03/kauhajoki_shooters_motive_remains_mystery_639182.html",
+      "source_sha256": "3791bab17cd4c200da59f191c0491bb97a18cbc81f1977513975f14a5ad821f8"
+    },
+    {
+      "id": "8e42cd3d18c69befbd2fcb9043e61d9a",
+      "qid": "E8e42cd3d18c69befbd2fcb",
+      "original_id": "d0796c8b633cbce49e30e46443cc6255",
+      "kind": "wrong_date",
+      "planted": false,
+      "text": "Saari had obtained a licence for the pistol used in the shooting on August 7, 2008 and purchased the P22 a few days later.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q473889",
+        "title": "Kauhajoki school shooting",
+        "lang": "en",
+        "rev_id": 1384728424,
+        "page_id": 19436570
+      },
+      "construction": "intact claim",
+      "source_url": "https://www.courthousenews.com/finland-violated-rights-of-2008-school-shooting-victims-eu-court-finds/",
+      "source_sha256": "c36f0ecf635f350ae63b0cc9398861e875ecf35131373a9cff18a629194dc268"
+    },
+    {
+      "id": "2dd4892cd1486f5a9db85d18fabb94c7",
+      "qid": "E2dd4892cd1486f5a9db85d",
+      "original_id": "63de97733b940ef743971c78df3d5c49",
+      "kind": "wrong_number",
+      "planted": false,
+      "text": "The controversy caused 6 out of 10 Regional Council representatives of Power Belongs to the People to resign from the party.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q16991016",
+        "title": "Ano Turtiainen",
+        "lang": "en",
+        "rev_id": 1378354407,
+        "page_id": 62679744
+      },
+      "construction": "intact claim",
+      "source_url": "https://yle.fi/a/74-20030211",
+      "source_sha256": "abc61b6fa054f447fc80a1f8f48deab884324f561a78b2dcce0e77d79bbf92e0"
+    },
+    {
+      "id": "58bd4a650d2ea3fa2ec38278ccf270a1",
+      "qid": "E58bd4a650d2ea3fa2ec382",
+      "original_id": "a08121d8f0f68e99cf7fe8068595ab16",
+      "kind": "loaded_wording",
+      "planted": false,
+      "text": "He placed fourth in the individual 18 km race at both Olympics",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q738922",
+        "title": "Heikki Hasu",
+        "lang": "en",
+        "rev_id": 1380136375,
+        "page_id": 5665725
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://www.sports-reference.com/olympics/athletes/ha/heikki-hasu-1.html",
+      "source_sha256": "5efb61df5609636b44176bdd76e0a868ba5fa016642d7e949bc9b50efbc79959"
+    },
+    {
+      "id": "cf26b266d197f4e358be9e77a0f9bf98",
+      "qid": "Ecf26b266d197f4e358be9e",
+      "original_id": "6a1baf13424b15a1270c5730c1ce2b54",
+      "kind": "dropped_sentence",
+      "planted": false,
+      "text": "Rane Raitsikka replaced Kartsa as the second guitarist",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q3028131",
+        "title": "Smack (Finnish band)",
+        "lang": "en",
+        "rev_id": 1363097788,
+        "page_id": 12218990
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://yle.fi/aihe/artikkeli/2007/10/09/smackia-vietiin-rapakon-taakse",
+      "source_sha256": "bc4726cdc432fe738bfbaec10aa995f460372ab510c09721fdea7791adff062e"
+    },
+    {
+      "id": "af883cddd3951bf3db659c31b37f70ca",
+      "qid": "Eaf883cddd3951bf3db659c",
+      "original_id": "43ae7c138cdf07a7364eee1b5cb27ae7",
+      "kind": "loaded_wording",
+      "planted": false,
+      "text": "the Left Alliance announced that it was leaving the cabinet, citing the party's opposition to budget cuts in social welfare programs",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q2112415",
+        "title": "2015 Finnish parliamentary election",
+        "lang": "en",
+        "rev_id": 1345408359,
+        "page_id": 40428886
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "http://yle.fi/uutiset/vasemmistoliitto_lahtee_hallituksesta/7155893",
+      "source_sha256": "9858f060b6caf754d9d090cb6134a1f5c53464addf52d469abdda4cf677a3558"
+    },
+    {
+      "id": "9aebec2bc66a9dbecfa9e5f94f891003",
+      "qid": "E9aebec2bc66a9dbecfa9e5",
+      "original_id": "b6bd528ad3303e9247cdcfba2ec804af",
+      "kind": "wrong_number",
+      "planted": false,
+      "text": "This misidentification remained widely accepted by archaeologists for nearly 140 years.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q40179239",
+        "title": "Birka grave Bj 581",
+        "lang": "en",
+        "rev_id": 1380418948,
+        "page_id": 55247402
+      },
+      "construction": "intact claim",
+      "source_url": "https://www.nationalgeographic.com/history/article/ancient-viking-women-warriors",
+      "source_sha256": "5fc85e0dd368dde7b6a44ea336d77ce6ef7e7afb7729ebcc0e86960c2246a5b7"
+    },
+    {
+      "id": "05ff5e0e947de751eff8dfd3119218a8",
+      "qid": "E05ff5e0e947de751eff8df",
+      "original_id": "7beeee3387278a5a110894564e62785a",
+      "kind": "unsupported_claim",
+      "planted": false,
+      "text": "Valdemar was elected king, his maternal descent from the former royal dynasty strengthening his claim to the throne.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q357200",
+        "title": "Valdemar, King of Sweden",
+        "lang": "en",
+        "rev_id": 1371218967,
+        "page_id": 250089
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://samlingar.shm.se/person/D5FC6CE2-C4C4-496F-A971-0A823FD9F259",
+      "source_sha256": "75cdee3999d02186d65b7edd2979b06daf8aed25628e49150a7cbacebd193db9"
+    },
+    {
+      "id": "f80014c03c8708b3d67d4eb0cc04c3ce",
+      "qid": "Ef80014c03c8708b3d67d4e",
+      "original_id": "92cc5ae8086cc2f5d461a0ee9c1d10ea",
+      "kind": "wrong_date",
+      "planted": true,
+      "text": "From 1845 to 1987, it was wrongly believed that Harald ordered the death of the Haraldskær Woman, a bog body previously thought to be Gunnhild, Mother of Kings until radiocarbon dating proved otherwise.",
+      "changed": [
+        "1845",
+        "1987"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q201041",
+        "title": "Harald Bluetooth",
+        "lang": "en",
+        "rev_id": 1385504150,
+        "page_id": 42419
+      },
+      "construction": "intact claim",
+      "source_url": "https://archive.archaeology.org/online/features/bog/gunhild.html",
+      "source_sha256": "f2668e9bc846183d25ba9f1dc23679b6f6647d411357775e51a3afc4a64f7304"
+    },
+    {
+      "id": "7862611574d2ec54bbb3f85aec5d6c15",
+      "qid": "E7862611574d2ec54bbb3f8",
+      "original_id": "364a675a105f79f1d045a39815cf5210",
+      "kind": "wrong_date",
+      "planted": false,
+      "text": "He served as Chief of Defence from 1933 to 1939",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q953967",
+        "title": "Hugo Österman",
+        "lang": "en",
+        "rev_id": 1359168352,
+        "page_id": 4241576
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://puolustusvoimat.fi/web/historia/puolustusvoimain-komentajat",
+      "source_sha256": "4b9992394feb518e1f80e2c5ec83ecdf019135180bf57a2566026e0de38dc0d1"
+    },
+    {
+      "id": "4518c0f63aacf45be3951104fcf9cde8",
+      "qid": "E4518c0f63aacf45be39511",
+      "original_id": "512f129cfb3a701186acf7eace9faec7",
+      "kind": "dropped_sentence",
+      "planted": false,
+      "text": "The Roman Martyrology of the Catholic Church names him as a saint memorialized on 18 May.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q310152",
+        "title": "Saint Erik",
+        "lang": "en",
+        "rev_id": 1381852839,
+        "page_id": 779468
+      },
+      "construction": "intact claim",
+      "source_url": "https://www.vatican.va/roman_curia/pontifical_academies/cult-martyrum/martiri/009.html#maggio",
+      "source_sha256": "1e40b0aa22b000e6b191dad09e74c485223a362f4a34867f527dcde5f28d273c"
+    },
+    {
+      "id": "5e8ff798f135a90e5a3a2bd79c222274",
+      "qid": "E5e8ff798f135a90e5a3a2b",
+      "original_id": "f31737674d1ba946f43019c767d03a0c",
+      "kind": "dropped_sentence",
+      "planted": false,
+      "text": "He became chairman of the Esperanto Association of Finland in 1936",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q162051",
+        "title": "Gustaf John Ramstedt",
+        "lang": "en",
+        "rev_id": 1384846659,
+        "page_id": 8910614
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://lingvatereno.blogspot.com/2021/08/sciencisto-diplomato-esperantisto-22.html",
+      "source_sha256": "6491130f47756c839819074210d5354265d7d8b14da1e257f46e99516ba3c53e"
+    },
+    {
+      "id": "000e3d75ee98965d0fbbebe3333db119",
+      "qid": "E000e3d75ee98965d0fbbeb",
+      "original_id": "a08121d8f0f68e99cf7fe8068595ab16",
+      "kind": "loaded_wording",
+      "planted": true,
+      "text": "The utterly magnificent and unquestionably brilliant achievement was this: He placed fourth in the individual 18 km race at both Olympics",
+      "changed": [
+        "utterly magnificent",
+        "unquestionably brilliant"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q738922",
+        "title": "Heikki Hasu",
+        "lang": "en",
+        "rev_id": 1380136375,
+        "page_id": 5665725
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://www.sports-reference.com/olympics/athletes/ha/heikki-hasu-1.html",
+      "source_sha256": "5efb61df5609636b44176bdd76e0a868ba5fa016642d7e949bc9b50efbc79959"
+    },
+    {
+      "id": "368e17e671281a5b98209fefbc801626",
+      "qid": "E368e17e671281a5b98209f",
+      "original_id": "ec1c94761c6e0ad7bce553a94e9d0742",
+      "kind": "unsupported_claim",
+      "planted": false,
+      "text": "She offered her resignation from the Rinne cabinet",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q16989600",
+        "title": "Sirpa Paatero",
+        "lang": "en",
+        "rev_id": 1349530208,
+        "page_id": 44507747
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://yle.fi/uutiset/osasto/news/minister_paatero_resigns_over_posti_outsourcing_scandal/11094177",
+      "source_sha256": "932841a5e0acd2c65f05f1f0f190e6f65f7a0b7c9cf469a727f64942c86d5713"
+    },
+    {
+      "id": "41a7b34e8805e3524f2daefe066dbb58",
+      "qid": "E41a7b34e8805e3524f2dae",
+      "original_id": "b69b726fd64ceb31ab18100afdccfdb2",
+      "kind": "wrong_number",
+      "planted": true,
+      "text": "Koivisto won 184 of the 301 votes of the electoral college",
+      "changed": [
+        "184"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q29021",
+        "title": "Mauno Koivisto",
+        "lang": "en",
+        "rev_id": 1382347826,
+        "page_id": 164615
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://www.nytimes.com/1982/01/27/world/finnish-president-is-elected-he-vows-policy-of-continuity.html",
+      "source_sha256": "e71569d5d67bfb875679f4eaa151c44c12b31f58ab3364eeee94c92063707eda"
+    },
+    {
+      "id": "6e19933a814cb767eeffe75feb14c813",
+      "qid": "E6e19933a814cb767eeffe7",
+      "original_id": "512f129cfb3a701186acf7eace9faec7",
+      "kind": "dropped_sentence",
+      "planted": true,
+      "text": "",
+      "changed": [
+        "I den Romersk-katolska kyrkan är han omnämnd som helgon och han är ihågkommen i Martyrologium Romanum den 18 maj varje år ."
+      ],
+      "counterpart": {
+        "lang": "sv",
+        "claim_id": "ce79a0895485750d1938a0f7232eec93",
+        "text": "I den Romersk-katolska kyrkan är han omnämnd som helgon och han är ihågkommen i Martyrologium Romanum den 18 maj varje år .",
+        "rev_id": 59705723
+      },
+      "article": {
+        "qid": "Q310152",
+        "title": "Saint Erik",
+        "lang": "en",
+        "rev_id": 1381852839,
+        "page_id": 779468
+      },
+      "construction": "intact claim",
+      "source_url": "https://www.vatican.va/roman_curia/pontifical_academies/cult-martyrum/martiri/009.html#maggio",
+      "source_sha256": "1e40b0aa22b000e6b191dad09e74c485223a362f4a34867f527dcde5f28d273c"
+    },
+    {
+      "id": "99523a8fd6d7a583b62ed73936e27f08",
+      "qid": "E99523a8fd6d7a583b62ed7",
+      "original_id": "b69b726fd64ceb31ab18100afdccfdb2",
+      "kind": "wrong_number",
+      "planted": false,
+      "text": "Koivisto won 167 of the 301 votes of the electoral college",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q29021",
+        "title": "Mauno Koivisto",
+        "lang": "en",
+        "rev_id": 1382347826,
+        "page_id": 164615
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://www.nytimes.com/1982/01/27/world/finnish-president-is-elected-he-vows-policy-of-continuity.html",
+      "source_sha256": "e71569d5d67bfb875679f4eaa151c44c12b31f58ab3364eeee94c92063707eda"
+    },
+    {
+      "id": "e1d5bda7850eafe5e11c2aefe4b9e664",
+      "qid": "Ee1d5bda7850eafe5e11c2a",
+      "original_id": "b6bd528ad3303e9247cdcfba2ec804af",
+      "kind": "wrong_number",
+      "planted": true,
+      "text": "This misidentification remained widely accepted by archaeologists for nearly 157 years.",
+      "changed": [
+        "157"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q40179239",
+        "title": "Birka grave Bj 581",
+        "lang": "en",
+        "rev_id": 1380418948,
+        "page_id": 55247402
+      },
+      "construction": "intact claim",
+      "source_url": "https://www.nationalgeographic.com/history/article/ancient-viking-women-warriors",
+      "source_sha256": "5fc85e0dd368dde7b6a44ea336d77ce6ef7e7afb7729ebcc0e86960c2246a5b7"
+    },
+    {
+      "id": "2668a952eb34efa8218e8f227a4fb184",
+      "qid": "E2668a952eb34efa8218e8f",
+      "original_id": "b1e89cf4ac1de642d6e0fa9ca4c1a7cb",
+      "kind": "loaded_wording",
+      "planted": true,
+      "text": "The utterly magnificent and unquestionably brilliant achievement was this: PBS aired an episode about Birka Grave Bj 581, titled \"Viking Warrior Queen\" on their show Secrets of the Dead .",
+      "changed": [
+        "utterly magnificent",
+        "unquestionably brilliant"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q40179239",
+        "title": "Birka grave Bj 581",
+        "lang": "en",
+        "rev_id": 1380418948,
+        "page_id": 55247402
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://www.pbs.org/video/viking-warrior-queen-htrzja/",
+      "source_sha256": "c78285e67f5b1a53fa6ee98af619fa2d95bc89f7d83c2bddb0411fb77073a4f2"
+    },
+    {
+      "id": "ad6db1406e04d559c966b847acd2a80b",
+      "qid": "Ead6db1406e04d559c966b8",
+      "original_id": "fcca9bf2bbc3d59be8b7a0c489575d40",
+      "kind": "wrong_date",
+      "planted": false,
+      "text": "Norrback joined the government as the Minister of Defence in 1987",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q6017325",
+        "title": "Ole Norrback",
+        "lang": "en",
+        "rev_id": 1367644065,
+        "page_id": 12852674
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "http://valtioneuvosto.fi/tietoa/historiaa/hallitukset-ja-ministerit/raportti/-/r/v9l/11",
+      "source_sha256": "56684fc17881dda3e7c5d955ff06ce7ff3c6764c711c7bb24889be8b5cb7b306"
+    },
+    {
+      "id": "ce4de4e750666de49e23ba690662a6ae",
+      "qid": "Ece4de4e750666de49e23ba",
+      "original_id": "6a1baf13424b15a1270c5730c1ce2b54",
+      "kind": "dropped_sentence",
+      "planted": true,
+      "text": "",
+      "changed": [
+        "Ensimmäisen albumin jälkeen Kartsan tilalle toiseksi kitaristiksi vaihtui Rane Raitsikka, joka oli soittanut bassoa punk-rock-yhtyeissä Lama ja Unicef."
+      ],
+      "counterpart": {
+        "lang": "fi",
+        "claim_id": "b75c3c40f46f85b49a6f1d6ba312a08b",
+        "text": "Ensimmäisen albumin jälkeen Kartsan tilalle toiseksi kitaristiksi vaihtui Rane Raitsikka, joka oli soittanut bassoa punk-rock-yhtyeissä Lama ja Unicef.",
+        "rev_id": 24001263
+      },
+      "article": {
+        "qid": "Q3028131",
+        "title": "Smack (Finnish band)",
+        "lang": "en",
+        "rev_id": 1363097788,
+        "page_id": 12218990
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "https://yle.fi/aihe/artikkeli/2007/10/09/smackia-vietiin-rapakon-taakse",
+      "source_sha256": "bc4726cdc432fe738bfbaec10aa995f460372ab510c09721fdea7791adff062e"
+    },
+    {
+      "id": "0200b340d53e1e53cf66d3ffb6d15e33",
+      "qid": "E0200b340d53e1e53cf66d3",
+      "original_id": "18bd2a99a7a2ebb48ed0de1e38133753",
+      "kind": "loaded_wording",
+      "planted": false,
+      "text": "the parliament decided to merge certain electoral districts to create larger districts",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q2112415",
+        "title": "2015 Finnish parliamentary election",
+        "lang": "en",
+        "rev_id": 1345408359,
+        "page_id": 40428886
+      },
+      "construction": "exact supported excerpt",
+      "source_url": "http://yle.fi/uutiset/vaalipiiriuudistus_lyotiin_lukkoon_eduskunnassa/6526425",
+      "source_sha256": "eff21a08f056437e882f231d568f7ace044f244493b337d71916a4b95e1a7123"
+    }
+  ]
+}

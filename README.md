@@ -1,94 +1,33 @@
-# NPOV Radar
+# Parallax
 
-## Judge quick path
+A review desk for Wikipedia editors. Parallax compares claims in Finnish, Swedish and English with their own cited sources and with the other language versions. It flags passages for a person to review and prepares a neutral Talk-page note. It never edits Wikipedia.
 
-| Criterion | Actual evidence and its limit |
-|---|---|
-| Effective and creative use of MariaDB, 20% | [Native vector/SVT schema](schema.sql), [parameterized live queries](server/db.py), [measured product SQL run](eval/database-run.json), [deployed HTTP checks](eval/deployed-regression-checks.json). Native use is verified; exact nearest-neighbor ranking is not guaranteed. |
-| Implementation and scalability, 20% | [Bounded S/M/L results](eval/scale-results.json) and [frozen whole-family audit](eval/c16/REPORT.md). L actually loads 1,000 of 568,416 rows; full-scale quality/concurrency are unproven. |
-| Usefulness for editors, 20% | [Live evidence desk](https://npov-radar.vercel.app), [scoped cited-source example](data/source-evidence.json), [60-pair human annotation queue](eval/ANNOTATING.md). Real flows work; editor utility and general contradiction accuracy have not been established by a user study or human gold set. |
-| Design and demo quality, 20% | [IAB workflow evidence](eval/verification.md), [scoped visual verdict](eval/visual-review.md), [1:55 demo script](DEMO_SCRIPT.md), [five-minute pitch](PITCH_NOTES.md). Public video is not recorded. |
-| Originality, 20% | [Claim-level editorial implementation](src/main.jsx) combines retrieval, provenance, review notes and temporal inspection. No exhaustive prior-art or first-ever claim is made. |
+The active theme contains 22 sponsor-linked topics on Finland in the Second World War. Winter War also has German and Russian comparison columns. Product findings come from real current Wikipedia revisions and fetched sources; planted errors are kept in an isolated evaluation database.
 
-[Independent C-16 artifact review](eval/c16/REVIEW.md) passed scoped consistency checks and explicitly refused unsupported certifications. A [bounded public IAB disclosure check](docs/c16-disclosure.jpg) confirmed the audit rows and limits are visible, without repeating measurements.
+## How it works
 
-**Current limits:** live SQL needs this Mac and its temporary tunnel. The original retrieval proxy favored lexical **8/9**, vector **7/9**. The new [C-16 frozen audit](eval/c16/REPORT.md) found **2/57** false flags on constructed translation-equivalent controls and caught **5/36** planted errors with measured cross-language similarities. These are not human labels or full-pipeline accuracy. "Disagreement introduced at revision X" remains **unproven**, with no introduction revision asserted.
+- Sponsor S provides article/Wikidata links; M supplies Finnish history. Wikipedia APIs supply current cited wikitext and available revisions.
+- Each claim keeps its section, revision and citation links. Readable cited pages are extracted, chunked, embedded with multilingual MiniLM and stored in native MariaDB VECTOR columns.
+- MariaDB cosine retrieval selects source passages and cross-language claims. Gemini 3.8 Flash nominates candidates; Gemini 4 Argon confirms them against the actual source and peer articles. Literal evidence gates reject invented quotes.
+- Unreachable URLs are retried through Internet Archive and Context.dev. Books and unreachable sources remain explicitly unchecked.
+- Revision history lives in MariaDB system-versioned tables. Entry dates describe exact wording, with historical source support explicitly unknown.
 
-An evidence desk for Wikipedia editors comparing Finland's history in Finnish, English and Swedish. Select an article, inspect related passages and their exact revisions, and prepare a review note. Radar never edits Wikipedia.
+## Hosting
 
-[Open the application](https://npov-radar.vercel.app) · [Evaluation ledger](eval/LEDGER.md) · [Two-minute demo](DEMO_SCRIPT.md)
+The new `parallax` Vercel project serves the frontend and a token-authenticated proxy to the isolated VPS API at `https://parallax.72.61.22.106.sslip.io`. MariaDB 11.8 has networking disabled; the API connects through a private socket. Read and review-write accounts are separate. API writes use `/tmp`; persistent database data uses named volumes. The old `npov-radar` Vercel project remains untouched.
 
-![NPOV Radar evidence desk](docs/preview.jpg)
-
-## What works
-
-- Nine topics, 27 live article versions and 2,308 sentence vectors. MariaDB `VECTOR(384)` and `VEC_DISTANCE_COSINE` retrieve English and Swedish passages for each Finnish passage, restricted to the same Wikidata topic.
-- Deterministic full-date and unit checks produce cautious review leads. Different emphasis and weak retrieval matches are not called contradictions. The worklist uses a review-count/distance heuristic, not a validated neutrality score.
-- 12,944 real Wikipedia revision rows in MariaDB `WITH SYSTEM VERSIONING`. `FOR SYSTEM_TIME ALL` lists edits and `AS OF` retrieves genuine historical content. Original edit times remain UTC; archive-to-live gaps remain gaps.
-- Exact passage and revision links, local-device review marks, an editable-in-Wikipedia link and a draft note copied only at the user's request.
-- A curated cited-source check supports the Finnish War start date using a short Yle excerpt. Other source checks explicitly abstain.
-- A live planted-error lab retrieves a real passage, changes a copy, and exposes caught date edits and missed name swaps. Synthetic text is never stored as a Wikipedia revision.
-
-## Evidence and limits
-
-Earlier C-08 article-held-out synthetic rule tests caught **18/20** constructed errors, with **0/22** negative controls flagged. The misses were country-name swaps. Similarity is fixed at 1 for these edited-copy tests; they isolate the rules and do not test the full retrieval pipeline. Labels come from mutation construction, not people.
-
-The weak cross-language date-overlap retrieval proxy found **7/9** held-out targets with vector search and **8/9** with lexical search. This is not a benchmark win. The proxy has only 16 pairs overall and equal dates can describe different events. Nine archived-revision checks pass against the supplied metadata after a UTC correction.
-
-No human gold labels, calibrated model judges, whole-article LLM baseline or real-world contradiction precision/recall are available. The model truncates at 128 tokens; we cap sentence length, but some truncation remains possible. Only the first 100 usable passages per language/article are considered. Source support is mostly unverified. See the ledger for raw results, failures and split history.
-
-## Run the frontend
-
-Node 20.19+ or 22.12+.
+## Development
 
 ```sh
 npm ci
-npm run dev
 npm run build
+.venv/bin/python -m unittest discover -s tests
 ```
 
-The committed `public/snapshot.json` is an actual export of native MariaDB query results. It keeps the evidence desk readable without a database. A status indicator distinguishes live API connectivity from saved results. `public/history-snapshot.json` keeps saved revision listings available; arbitrary time travel requires the live database.
+Pipeline entry points live in `pipeline/`; the hosted API is `service/app.py`; deployment files are in `deploy/`. Local data, model caches and credentials are ignored. Never place keys in source files or public assets. `DESIGN-DIRECTION.md` is the binding UI specification.
 
-## Run the real database pipeline
+## Measurement
 
-Use an authorized MariaDB server **11.7+**, with vector search and `system_versioning_insert_history` available. This build ran on isolated MariaDB **13.0.2** on macOS, via a local Unix socket. No SQL port is exposed. SQL schema creation and historical import need appropriate privileges. Use your own existing database credentials or local socket authentication; keep them in the environment, never in git.
+The first frozen v4 held-out run caught 32 of 40 planted errors (80%), with 0 false flags on 40 clean controls. Date, number, loaded wording and unsupported-claim cases scored 8/8 each; dropped sentences scored 0/8. These are controlled real-passage tests, not full-article population accuracy. Blind precision on real findings is pending. See `eval/parallax/RESULTS.json` and `STATUS.md` for the current measured results and limitations.
 
-```sh
-python3.11 -m venv .venv
-.venv/bin/pip install -r requirements.txt
-mkdir -p work
-# Official source of the supplied S article files. Application code is not copied.
-git clone --depth 1 https://github.com/MariaDB/mariadb-vector-wikipedia-rag work/vector-starter
-.venv/bin/python scripts/download-data.py
-# Default socket: work/mariadb.sock, user: current OS user.
-# Or set DB_HOST / DB_PORT / DB_USER / DB_PASSWORD for an existing reachable server.
-.venv/bin/python scripts/ingest.py
-.venv/bin/python scripts/fetch-source.py
-.venv/bin/python scripts/update-findings.py
-.venv/bin/python scripts/export-history.py
-.venv/bin/python -m server.app
-```
-
-The first import fetches current extracts, interlanguage links and three latest revisions via Wikipedia APIs. It loads the selected Finnish histories from M, preserving each revision's time. The final archived row ends at the 1 October 2026 archive cutoff, never at a fabricated next-live-edit time. Two revisions in the same second with zero validity intervals are skipped rather than assigned invented timestamps.
-
-`server/db.py` contains the actual parameterized vector and temporal SQL. The public API exposes only fixed read queries with bounded inputs, not arbitrary SQL or writes. `scripts/start-db.sh` is the build-machine restart command and expects its isolated local runtime under `work/runtime`; it is not a general installer.
-
-## Reproduce evaluations
-
-C-16 is a separate sealed audit of the unchanged delivered system. Read its [specification](eval/c16/SPEC.md), [family plan](eval/c16/PLAN.json), [results and failures](eval/c16/REPORT.md), and [freeze manifest](eval/c16/FROZEN.json). Replay to a separate directory with `.venv/bin/python scripts/c16_audit.py replay --out work/c16-replay`. The final evidence is not overwritten.
-
-
-```sh
-.venv/bin/python scripts/prepare-confirmation.py
-.venv/bin/python scripts/evaluate.py
-.venv/bin/python scripts/retrieval-eval.py
-.venv/bin/python scripts/scale-probe.py
-```
-
-The scripts keep per-case traces. `eval/annotation-queue.csv` contains 60 real retrieved pairs with deliberately empty human-label fields. An expert still needs to annotate them. The sheet covers all nine topics with exact revision links; see [annotation guidance](eval/ANNOTATING.md). The S/M/L files differ in content and purpose, not just size. Only a bounded L probe was loaded, 1,000 of 568,416 rows. Full-scale quality, memory use and concurrency are unmeasured.
-
-## Deployment
-
-Vercel serves the React/Vite frontend and the fixed read-only API proxy in `api/radar.js`. `RADAR_API_ORIGIN` points to the read-only backend, never to MariaDB's SQL port. The current backend is on the build Mac behind a temporary Cloudflare tunnel, so live queries require the Mac online. This is a hackathon hosting dependency, not a durable managed database deployment. Saved evidence remains accessible if it disconnects. No account credentials are sent to the frontend.
-
-All new project code was written during Junction 2026. The code is MIT. Wikipedia text and derived data remain CC BY-SA 4.0, and third-party excerpts retain their copyright. See [data attribution](DATA_LICENSE.md).
+Wikipedia text is attributed and linked to its revision under CC BY-SA 4.0. Source excerpts retain their source links.
