@@ -1,7 +1,7 @@
 """Parallax's database-backed API. No snapshots or local fallback in the product."""
 import os,json,time,datetime,re,hmac,threading
 from collections import defaultdict,deque
-from flask import Flask,request,jsonify
+from flask import Flask,request,jsonify,send_from_directory
 from pipeline.common import db,ROOT
 from pipeline.check import ALIGN_SQL,SOURCE_SQL
 from pipeline.text import normalize,HistoricalIndex
@@ -39,7 +39,8 @@ def temporal_query(versions,instant):
 @app.before_request
 def access():
     token=os.environ.get('PARALLAX_BRIDGE_TOKEN')
-    if token and not hmac.compare_digest(request.headers.get('X-Parallax-Token',''),token):return jsonify(error='Access denied'),403
+    public=request.path in ['/','/ask','/method','/favicon.svg','/api/parallax'] or request.path.startswith(('/a/','/assets/','/fonts/'))
+    if token and not public and not hmac.compare_digest(request.headers.get('X-Parallax-Token',''),token):return jsonify(error='Access denied'),403
     if request.method=='POST':
         if request.content_type!='application/json':return jsonify(error='Use JSON'),415
         ip=request.headers.get('X-Parallax-Client','unknown');q=_limits[ip];now=time.monotonic()
@@ -54,6 +55,35 @@ def error(e):
     if isinstance(e,HTTPException):return jsonify(error='This page could not be found.'),e.code
     app.logger.error('Parallax request failed: %s',type(e).__name__)
     return jsonify(error='The database did not answer. Try again in a moment.'),503
+
+@app.after_request
+def security(response):
+    response.headers['X-Content-Type-Options']='nosniff';response.headers['X-Frame-Options']='DENY'
+    response.headers['Referrer-Policy']='strict-origin-when-cross-origin'
+    response.headers['Cache-Control']='public,max-age=31536000,immutable' if request.path.startswith(('/assets/','/fonts/')) else 'no-store'
+    return response
+
+@app.get('/')
+@app.get('/a/<qid>')
+@app.get('/ask')
+@app.get('/method')
+def frontend(qid=None):return send_from_directory(ROOT/'frontend','index.html')
+
+@app.get('/assets/<path:name>')
+def asset(name):return send_from_directory(ROOT/'frontend/assets',name)
+
+@app.get('/fonts/<path:name>')
+def font(name):return send_from_directory(ROOT/'frontend/fonts',name)
+
+@app.get('/favicon.svg')
+def favicon():return send_from_directory(ROOT/'frontend','favicon.svg')
+
+@app.route('/api/parallax',methods=['GET','POST'])
+def browser_api():
+    mode=request.args.get('mode','home')
+    allowed={'GET':{'health','home','article','search','method'},'POST':{'review','copied'}}
+    if mode not in allowed[request.method]:return jsonify(error='This action is not available.'),405
+    return app.view_functions[mode]()
 
 @app.get('/health')
 def health():

@@ -20,6 +20,8 @@ services:
     build:
       context: ..
       dockerfile: deploy/Dockerfile
+      args:
+        PARALLAX_COMMIT: ${PARALLAX_COMMIT}
     image: parallax-api:current
     container_name: parallax-api
     network_mode: bridge
