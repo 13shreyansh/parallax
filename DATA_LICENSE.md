@@ -20,3 +20,5 @@ The model is [sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2](https
 A short quotation from Yle News, "Southern Towns Mark War of Finland Bicentennial", 21 February 2008, appears solely to support the start-date source-check example. Copyright remains with Yle. [Original report](https://yle.fi/a/3-5823726). The HTML page is not redistributed. The source-evidence record retains the retrieval hash and URL. This source is referenced in the English Finnish War article; the displayed check supports only the start date, not every statement in the passage.
 
 The synthetic evaluation mutations are deliberately altered text. They are marked synthetic in every fixture and are never presented as real Wikipedia revisions.
+
+The self-hosted Public Sans font is distributed under the SIL Open Font License in `public/fonts/LICENSE.md`. Its license is separate from project code.

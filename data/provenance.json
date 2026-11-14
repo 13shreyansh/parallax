@@ -1,0 +1,199 @@
+{
+  "s_data_repository": "https://github.com/MariaDB/mariadb-vector-wikipedia-rag",
+  "s_repository_commit": "9c2e729037bcf5fae9aa49bd17f087391448c7fe",
+  "m_release": "https://github.com/MariaDB/mariadb-wikipedia-datasets/releases/tag/m-2026-10",
+  "l_release": "https://github.com/MariaDB/mariadb-wikipedia-datasets/releases/tag/l-2026-10",
+  "m_l_release_checksums_verified": true,
+  "live_revision_provenance": [
+    {
+      "lang": "fi",
+      "page_id": 440,
+      "revision_id": 24333541,
+      "revision_timestamp": "2026-10-22T20:10:51Z",
+      "url": "https://fi.wikipedia.org/w/index.php?oldid=24333541"
+    },
+    {
+      "lang": "fi",
+      "page_id": 1150,
+      "revision_id": 24307521,
+      "revision_timestamp": "2026-10-07T15:15:52Z",
+      "url": "https://fi.wikipedia.org/w/index.php?oldid=24307521"
+    },
+    {
+      "lang": "fi",
+      "page_id": 1256,
+      "revision_id": 24373824,
+      "revision_timestamp": "2026-11-13T10:39:22Z",
+      "url": "https://fi.wikipedia.org/w/index.php?oldid=24373824"
+    },
+    {
+      "lang": "fi",
+      "page_id": 5261,
+      "revision_id": 24215016,
+      "revision_timestamp": "2026-09-02T19:21:07Z",
+      "url": "https://fi.wikipedia.org/w/index.php?oldid=24215016"
+    },
+    {
+      "lang": "fi",
+      "page_id": 6021,
+      "revision_id": 24345690,
+      "revision_timestamp": "2026-10-29T09:05:49Z",
+      "url": "https://fi.wikipedia.org/w/index.php?oldid=24345690"
+    },
+    {
+      "lang": "fi",
+      "page_id": 6816,
+      "revision_id": 24335229,
+      "revision_timestamp": "2026-10-23T20:34:30Z",
+      "url": "https://fi.wikipedia.org/w/index.php?oldid=24335229"
+    },
+    {
+      "lang": "fi",
+      "page_id": 8617,
+      "revision_id": 24375615,
+      "revision_timestamp": "2026-11-14T14:12:59Z",
+      "url": "https://fi.wikipedia.org/w/index.php?oldid=24375615"
+    },
+    {
+      "lang": "fi",
+      "page_id": 24889,
+      "revision_id": 24263564,
+      "revision_timestamp": "2026-09-24T10:26:28Z",
+      "url": "https://fi.wikipedia.org/w/index.php?oldid=24263564"
+    },
+    {
+      "lang": "fi",
+      "page_id": 52097,
+      "revision_id": 24334421,
+      "revision_timestamp": "2026-10-23T11:55:50Z",
+      "url": "https://fi.wikipedia.org/w/index.php?oldid=24334421"
+    },
+    {
+      "lang": "en",
+      "page_id": 7712,
+      "revision_id": 1384254721,
+      "revision_timestamp": "2026-11-07T10:04:31Z",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1384254721"
+    },
+    {
+      "lang": "en",
+      "page_id": 11732,
+      "revision_id": 1384669397,
+      "revision_timestamp": "2026-11-09T13:20:43Z",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1384669397"
+    },
+    {
+      "lang": "en",
+      "page_id": 11772,
+      "revision_id": 1385549379,
+      "revision_timestamp": "2026-11-13T22:07:10Z",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1385549379"
+    },
+    {
+      "lang": "en",
+      "page_id": 33924,
+      "revision_id": 1384334162,
+      "revision_timestamp": "2026-11-07T19:50:21Z",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1384334162"
+    },
+    {
+      "lang": "en",
+      "page_id": 164614,
+      "revision_id": 1384694134,
+      "revision_timestamp": "2026-11-09T16:58:47Z",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1384694134"
+    },
+    {
+      "lang": "en",
+      "page_id": 246174,
+      "revision_id": 1381826242,
+      "revision_timestamp": "2026-10-25T01:17:09Z",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1381826242"
+    },
+    {
+      "lang": "en",
+      "page_id": 288706,
+      "revision_id": 1355516673,
+      "revision_timestamp": "2026-05-22T08:40:59Z",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1355516673"
+    },
+    {
+      "lang": "en",
+      "page_id": 410610,
+      "revision_id": 1384171260,
+      "revision_timestamp": "2026-11-06T23:42:44Z",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1384171260"
+    },
+    {
+      "lang": "en",
+      "page_id": 23371965,
+      "revision_id": 1384758302,
+      "revision_timestamp": "2026-11-10T00:14:41Z",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1384758302"
+    },
+    {
+      "lang": "sv",
+      "page_id": 6861,
+      "revision_id": 59682754,
+      "revision_timestamp": "2026-09-18T11:21:56Z",
+      "url": "https://sv.wikipedia.org/w/index.php?oldid=59682754"
+    },
+    {
+      "lang": "sv",
+      "page_id": 8414,
+      "revision_id": 59682765,
+      "revision_timestamp": "2026-09-18T11:23:39Z",
+      "url": "https://sv.wikipedia.org/w/index.php?oldid=59682765"
+    },
+    {
+      "lang": "sv",
+      "page_id": 8639,
+      "revision_id": 59833984,
+      "revision_timestamp": "2026-11-04T14:48:13Z",
+      "url": "https://sv.wikipedia.org/w/index.php?oldid=59833984"
+    },
+    {
+      "lang": "sv",
+      "page_id": 13455,
+      "revision_id": 59682771,
+      "revision_timestamp": "2026-09-18T11:24:31Z",
+      "url": "https://sv.wikipedia.org/w/index.php?oldid=59682771"
+    },
+    {
+      "lang": "sv",
+      "page_id": 23612,
+      "revision_id": 59855895,
+      "revision_timestamp": "2026-11-12T13:18:44Z",
+      "url": "https://sv.wikipedia.org/w/index.php?oldid=59855895"
+    },
+    {
+      "lang": "sv",
+      "page_id": 117699,
+      "revision_id": 59777396,
+      "revision_timestamp": "2026-10-18T05:20:01Z",
+      "url": "https://sv.wikipedia.org/w/index.php?oldid=59777396"
+    },
+    {
+      "lang": "sv",
+      "page_id": 136873,
+      "revision_id": 58177118,
+      "revision_timestamp": "2025-09-29T09:07:00Z",
+      "url": "https://sv.wikipedia.org/w/index.php?oldid=58177118"
+    },
+    {
+      "lang": "sv",
+      "page_id": 340021,
+      "revision_id": 59025844,
+      "revision_timestamp": "2026-02-10T21:35:39Z",
+      "url": "https://sv.wikipedia.org/w/index.php?oldid=59025844"
+    },
+    {
+      "lang": "sv",
+      "page_id": 426533,
+      "revision_id": 55941070,
+      "revision_timestamp": "2024-09-17T19:04:30Z",
+      "url": "https://sv.wikipedia.org/w/index.php?oldid=55941070"
+    }
+  ],
+  "history_notes": "M history validity ends at 2026-10-01 UTC archive cutoff. Recent API revisions form separate observed windows. Zero-duration same-second older edits are not assigned synthetic timestamps."
+}

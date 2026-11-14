@@ -1,1 +1,21 @@
-{"schema":1,"name":"NPOV evidence desk","colors":{"background":"#f4f7f8","paper":"#ffffff","ink":"#183446","muted":"#526976","accent":"#1c5e9a","line":"#d7e1e6","review":"#835516"},"typography":{"ui":"Public Sans","evidence":"Georgia","code":"ui-monospace"},"spacing":{"base":4,"desktopOuter":"3.4%","evidencePadding":24},"radii":{"desk":12,"control":5},"surfaceMode":"Operate"}
+{
+  "schema": 1,
+  "name": "NPOV evidence desk",
+  "colors": {
+    "background": "#f4f7f8",
+    "paper": "#ffffff",
+    "ink": "#183446",
+    "muted": "#526976",
+    "accent": "#1c5e9a",
+    "line": "#d7e1e6",
+    "review": "#835516"
+  },
+  "typography": {
+    "ui": "Public Sans",
+    "evidence": "Georgia",
+    "code": "ui-monospace"
+  },
+  "spacing": { "base": 4, "desktopOuter": "3.4%", "evidencePadding": 24 },
+  "radii": { "desk": 12, "control": 5 },
+  "surfaceMode": "Operate"
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "pass": true,
+    "at": "2026-11-14T15:42:49.408906+00:00"
+  },
+  {
+    "path": "/snapshot.json",
+    "status": 200,
+    "pass": true,
+    "at": "2026-11-14T15:42:49.893737+00:00"
+  },
+  {
+    "path": "/api/radar?mode=health",
+    "status": 200,
+    "pass": true,
+    "at": "2026-11-14T15:42:50.490652+00:00"
+  },
+  {
+    "path": "/api/radar?mode=align&id=fi-1256-0&lang=en",
+    "status": 200,
+    "pass": true,
+    "at": "2026-11-14T15:42:51.064019+00:00"
+  },
+  {
+    "path": "/api/radar?mode=asof&qid=Q134949&lang=fi&date=2015-01-01",
+    "status": 200,
+    "pass": true,
+    "at": "2026-11-14T15:42:51.706716+00:00"
+  },
+  {
+    "path": "/api/radar?mode=asof&qid=Q134949&lang=fi&date=2026-10-02",
+    "status": 200,
+    "pass": true,
+    "at": "2026-11-14T15:42:52.121426+00:00"
+  },
+  {
+    "path": "/api/radar?mode=probe&mutation=day",
+    "status": 200,
+    "pass": true,
+    "at": "2026-11-14T15:42:52.552876+00:00"
+  },
+  {
+    "path": "/api/radar?mode=probe&mutation=name",
+    "status": 200,
+    "pass": true,
+    "at": "2026-11-14T15:42:53.161301+00:00"
+  },
+  {
+    "path": "/api/radar?mode=align&id=unknown&lang=en",
+    "status": 400,
+    "pass": true,
+    "at": "2026-11-14T15:42:53.567235+00:00"
+  },
+  {
+    "path": "/api/radar?mode=arbitrary-sql",
+    "status": 400,
+    "pass": true,
+    "at": "2026-11-14T15:42:53.807626+00:00"
+  }
+]

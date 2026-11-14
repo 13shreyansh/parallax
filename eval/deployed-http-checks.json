@@ -1,0 +1,101 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "bytes": 629,
+    "at": "2026-11-14T15:35:55.319524+00:00",
+    "ok": null,
+    "error": null,
+    "rows": 0,
+    "revision": null,
+    "detected": null
+  },
+  {
+    "path": "/snapshot.json",
+    "status": 200,
+    "bytes": 2493666,
+    "at": "2026-11-14T15:35:55.446005+00:00",
+    "ok": null,
+    "error": null,
+    "rows": 0,
+    "revision": null,
+    "detected": null
+  },
+  {
+    "path": "/api/radar?mode=health",
+    "status": 200,
+    "bytes": 118,
+    "at": "2026-11-14T15:35:55.790227+00:00",
+    "ok": true,
+    "error": null,
+    "rows": 0,
+    "revision": null,
+    "detected": null
+  },
+  {
+    "path": "/api/radar?mode=align&id=fi-1256-0&lang=en",
+    "status": 200,
+    "bytes": 1143,
+    "at": "2026-11-14T15:35:56.163459+00:00",
+    "ok": null,
+    "error": null,
+    "rows": 3,
+    "revision": null,
+    "detected": null
+  },
+  {
+    "path": "/api/radar?mode=history&qid=Q134949&lang=fi",
+    "status": 200,
+    "bytes": 5133,
+    "at": "2026-11-14T15:35:56.594337+00:00",
+    "ok": null,
+    "error": null,
+    "rows": 40,
+    "revision": null,
+    "detected": null
+  },
+  {
+    "path": "/api/radar?mode=asof&qid=Q134949&lang=fi&date=2015-01-01",
+    "status": 200,
+    "bytes": 87013,
+    "at": "2026-11-14T15:35:57.030694+00:00",
+    "ok": null,
+    "error": null,
+    "rows": 0,
+    "revision": 14547217,
+    "detected": null
+  },
+  {
+    "path": "/api/radar?mode=asof&qid=Q134949&lang=fi&date=2026-10-02",
+    "status": 200,
+    "bytes": 231,
+    "at": "2026-11-14T15:35:57.769524+00:00",
+    "ok": null,
+    "error": null,
+    "rows": 0,
+    "revision": null,
+    "detected": null
+  },
+  {
+    "path": "/api/radar?mode=probe&mutation=day",
+    "status": 200,
+    "bytes": 1106,
+    "at": "2026-11-14T15:35:58.474691+00:00",
+    "ok": null,
+    "error": null,
+    "rows": 0,
+    "revision": null,
+    "detected": true
+  },
+  {
+    "path": "/api/radar?mode=probe&mutation=name",
+    "status": 200,
+    "bytes": 1059,
+    "at": "2026-11-14T15:35:59.024600+00:00",
+    "ok": null,
+    "error": null,
+    "rows": 0,
+    "revision": null,
+    "detected": false
+  }
+]

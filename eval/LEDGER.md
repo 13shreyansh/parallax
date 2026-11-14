@@ -38,7 +38,7 @@ Change: allow year changes and single changed dates within otherwise matching da
 | Fresh held-out | 42 | Naive numeral mismatch | 18/20 | 13/22 |
 | Fresh held-out | 42 | Guarded rules | 18/20 | 0/22 |
 
-The fresh held-out result is **90% planted recall and 0% constructed-control false-positive rate**, 20 positives and 22 negatives. Both misses were country-name changes. This is not a real-world accuracy estimate. The cases reuse sentences for multiple variants, so case outcomes are correlated. The fresh set has only nine original date-bearing sentences across five articles. Do not treat 42 cases as 42 independent real claims.
+The fresh held-out result is **90% planted recall and 0% constructed-control false-positive rate**, 20 positives and 22 negatives. Both misses were country-name changes. This is not a real-world accuracy estimate. The cases reuse sentences for multiple variants, so case outcomes are correlated. The fresh set has only nine original date-bearing sentences across four contributing articles. Five articles were reserved; the famine article had no eligible full-date sentence and contributed no case. Do not treat 42 cases as 42 independent real claims.
 
 Observed a development-article numeric false lead: a Finnish Civil War passage about 75% of deaths being Reds matched a Swedish passage about 64.6% of a different group being civilians. Similarity was 0.755. Raised the numeric gate from 0.72 to 0.86 and kept the cautionary scope language. The date-fixture results above do not measure this numeric-gate refinement. It removes that observed lead, but does not validate the remaining numeric detector.
 
