@@ -34,11 +34,11 @@ def cases():
    out.append({'id':ident,'qid':'E'+ident[:22],'original_id':cid,'kind':kind,'planted':planted,'text':text,'changed':changed,'counterpart':counterpart,'article':original['article'],'source':original['source'],'construction':'intact claim' if cid in labels['intact_clean_ids'] else 'exact supported excerpt'})
  random.Random(2026111504).shuffle(out);return out
 
-def setup(allcases):
- os.environ['PARALLAX_DB_NAME']='parallax_eval';from server.db import connect
+def setup(allcases,database='parallax_eval',include_title=False):
+ os.environ['PARALLAX_DB_NAME']=database;from server.db import connect
  con=connect(None)
  with con.cursor() as cur:
-  for stmt in (ROOT/'pipeline/schema.sql').read_text().replace('parallax','parallax_eval').split(';'):
+  for stmt in (ROOT/'pipeline/schema.sql').read_text().replace('parallax',database).split(';'):
    if stmt.strip():cur.execute(stmt)
  con.close();c=db();cur=c.cursor();model=encoder();loaded=set();casegroups={}
  for case in allcases:
@@ -52,6 +52,7 @@ def setup(allcases):
   for lang,text in versions.items():
    # These are explicitly controlled article-passage copies, never full-article accuracy claims.
    wt=text+(f'<ref>{{{{cite web|url={url}|title=Source}}}}</ref>' if text and lang=='en' else '')
+   if include_title:wt='== '+case['article']['title']+' ==\n'+wt
    a={'qid':qid,'lang':lang,'page_id':1,'rev_id':case['article']['rev_id'],'title':case['article']['title'],'wikitext':wt}
    cur.execute('REPLACE INTO article VALUES (%s,%s,1,%s,%s,UTC_TIMESTAMP(),%s,%s)',(qid,lang,a['rev_id'],a['title'],wt,'Controlled held-out passage copy'))
    claims=split_claims(a)

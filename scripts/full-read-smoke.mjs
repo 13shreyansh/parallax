@@ -12,12 +12,12 @@ for(const width of [1440,390]){
  const rail=page.getByRole('complementary',{name:'Finding evidence'});await rail.waitFor();await page.locator('.rail-container').evaluate(e=>Promise.all(e.getAnimations().map(a=>a.finished)));
  await expect(rail.getByRole('heading',{name:'Not in source',exact:true})).toBeVisible();await expect(rail.locator('.source-reading')).toContainText('panssarivaunuille');
  await page.screenshot({path:`artifacts/e2e/expanded-source-${width}.png`});
- await rail.getByRole('button',{name:'Show the day before it entered',exact:true}).click();await page.waitForURL(/asof=2012-11-27/);await expect(page.locator('.query-pending')).toHaveCount(0);await expect(page.locator('.time-bar')).toHaveClass(/past/);
+ await rail.getByRole('button',{name:'Show the day before it entered',exact:true}).click();await page.waitForURL(/asof=2012-11-27/);await expect(page.locator('.article-page')).toHaveAttribute('data-asof','2012-11-27');await expect(page.locator('.query-pending')).toHaveCount(0);await expect(page.locator('.time-bar')).toHaveClass(/past/);
  if(width<700)await rail.getByRole('button',{name:'Close reading',exact:true}).click();
  await expect(page.locator('.selected-row .missing-cell').first()).toContainText('27 Nov 2012');
  await page.screenshot({path:`artifacts/e2e/expanded-history-${width}.png`});
- await page.keyboard.press(']');await page.waitForURL(/asof=2012-11-28/);await expect(page.locator('.query-pending')).toHaveCount(0);await expect(page.locator('.selected-row .claim-cell').first()).toContainText('mekanisoitu');
- await page.keyboard.press('t');await expect(page).not.toHaveURL(/asof=/);await expect(page.locator('.query-pending')).toHaveCount(0);
+ await page.keyboard.press(']');await page.waitForURL(/asof=2012-11-28/);await expect(page.locator('.article-page')).toHaveAttribute('data-asof','2012-11-28');await expect(page.locator('.query-pending')).toHaveCount(0);await expect(page.locator('.selected-row .claim-cell').first()).toContainText('mekanisoitu');
+ await page.keyboard.press('t');await expect(page).not.toHaveURL(/asof=/);await expect(page.locator('.article-page')).toHaveAttribute('data-asof','today');await expect(page.locator('.query-pending')).toHaveCount(0);
  await page.locator('[data-flag="0e4e4c2a931f53c6324bac69a15dda37"]').scrollIntoViewIfNeeded();await page.locator('[data-flag="0e4e4c2a931f53c6324bac69a15dda37"]').click();await expect(rail.getByRole('heading',{name:'Missing in Finnish',exact:true})).toBeVisible();await expect(rail.getByRole('link',{name:'Supporting source',exact:true})).toBeVisible();
  await page.locator('.rail-container').evaluate(e=>Promise.all(e.getAnimations().map(a=>a.finished)));await page.screenshot({path:`artifacts/e2e/expanded-language-${width}.png`});
  if(width<700)await rail.getByRole('button',{name:'Close reading',exact:true}).click();

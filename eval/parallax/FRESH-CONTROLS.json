@@ -1,0 +1,441 @@
+{
+  "labeler": "gpt-6-astra",
+  "labeled_at": "2026-11-14T23:48:21Z",
+  "detector_output_seen": false,
+  "controls": [
+    {
+      "id": "4a7d9915949b06732119a901d532a2b1",
+      "original_id": "4a7d9915949b06732119a901d532a2b1",
+      "kind": "wrong_date",
+      "clean_text": "Ahtisaari received the prize on 10 December 2008 at Oslo City Hall in Norway.",
+      "source_quote": "Watch the Nobel Peace Prize Award Ceremony at the Oslo City Hall in Norway, 10 December 2008, where Martti Ahtisaari receives the Nobel Peace Prize medal and diploma.",
+      "article_context": "Martti Ahtisaari",
+      "construction": "intact claim"
+    },
+    {
+      "id": "2ca64cc73e39667b737bee9b22ef4db4",
+      "original_id": "2ca64cc73e39667b737bee9b22ef4db4",
+      "kind": "wrong_date",
+      "clean_text": "In August 2003, HIM parted ways with BMG, having fulfilled its contractual obligations to the label.",
+      "source_quote": "Finnish goth metallers H.I.M. have reportedly fulfilled their contractual obligations to BMG Records Finland and are currently seeking a new label.",
+      "article_context": "HIM (Finnish band)",
+      "construction": "intact claim"
+    },
+    {
+      "id": "a6f93bdbb54c7f6c4ffe842cf1265304",
+      "original_id": "a6f93bdbb54c7f6c4ffe842cf1265304",
+      "kind": "wrong_date",
+      "clean_text": "In September 2004, HIM signed a new recording contract with Sire Records",
+      "source_quote": "Following several months of negotiations, Finnish goth-metallers H.I.M. have confirmed that they have signed an exclusive worldwide recording contract with Sire Records.",
+      "article_context": "HIM (Finnish band)",
+      "construction": "exact supported excerpt"
+    },
+    {
+      "id": "3f5005e08c4de1b0e3baef96b89b231e",
+      "original_id": "3f5005e08c4de1b0e3baef96b89b231e",
+      "kind": "wrong_date",
+      "clean_text": "The history of the stadium dates back to 1926, when the city council of Tampere decided to build a football field in Tammela.",
+      "source_quote": "Koulun eteläpuolelle alettiin valtuuston vuonna 1926 tekemän päätöksen myötä rakentaa pallokenttää.",
+      "article_context": "Tammelan Stadion (1931)",
+      "construction": "intact claim"
+    },
+    {
+      "id": "380ff77d663d81d0f41167bcd745af2b",
+      "original_id": "380ff77d663d81d0f41167bcd745af2b",
+      "kind": "wrong_date",
+      "clean_text": "Artti was Hankkija's Department Manager from 1918 to 1919 and then transferred to the Foreign Service in 1919.",
+      "source_quote": "Hankkijan osastopääll. 1918-19, siirtyi 1919 ulkoasianhallinnon palv.",
+      "article_context": "Pontus Artti",
+      "construction": "intact claim"
+    },
+    {
+      "id": "1363288f426769565f8ff2068208ca78",
+      "original_id": "1363288f426769565f8ff2068208ca78",
+      "kind": "wrong_date",
+      "clean_text": "Secret Agent X-9 was adapted as a radio drama broadcast on BBC Radio 5 in January 1994, starring Stuart Milligan as X-9 and Connie Booth as Grace Powers.",
+      "source_quote": "First broadcast on BBC Radio 5 in January 1994.",
+      "article_context": "Secret Agent X-9",
+      "construction": "intact claim"
+    },
+    {
+      "id": "1438be770460fbb3644721fc2e1f75f8",
+      "original_id": "1438be770460fbb3644721fc2e1f75f8",
+      "kind": "wrong_date",
+      "clean_text": "In 1968, he married Eeva Irmeli Hyvärinen",
+      "source_quote": "Eeva Ahtisaari, o.s. Hyvärinen, syntyi 18.6.1936 Varkaudessa. Vuonna 1968 hän meni naimisiin Martti Ahtisaaren kanssa.",
+      "article_context": "Martti Ahtisaari",
+      "construction": "exact supported excerpt"
+    },
+    {
+      "id": "33ea9f64a31d4be0f8c32316aae221f6",
+      "original_id": "33ea9f64a31d4be0f8c32316aae221f6",
+      "kind": "wrong_date",
+      "clean_text": "Ahtisaari remained in that office until 1972, where he served from 1971 as assistant to the director, a position he combined with his presence on the Government's Advisory Committee for Trade and Industry Affairs of Developing Countries.",
+      "source_quote": "En 1965 ingresó en la Oficina de Cooperación Técnica del Ministerio de Asuntos Exteriores de Finlandia, donde desempeñó diversos puestos hasta 1972, incluyendo, a partir de 1971, el de asistente a la dirección, coincidiendo con su pertenencia al Comité Asesor del Gobierno para Asuntos de Comercio e Industria de los Países en Vías de Desarrollo.",
+      "article_context": "Martti Ahtisaari",
+      "construction": "intact claim"
+    },
+    {
+      "id": "fc4c64be1edd7b2fb74295a8a1b470bd",
+      "original_id": "fc4c64be1edd7b2fb74295a8a1b470bd",
+      "kind": "wrong_number",
+      "clean_text": "In the 2015 Finnish parliamentary election he received 5,497 votes from Uusimaa and was elected to the Parliament.",
+      "source_quote": "| Harakka, Timo | Helsinki | 17292,400 | 5497 |",
+      "article_context": "Timo Harakka",
+      "construction": "intact claim"
+    },
+    {
+      "id": "f16d4be52bde21b7a32cf33664ff15d1",
+      "original_id": "f16d4be52bde21b7a32cf33664ff15d1",
+      "kind": "wrong_number",
+      "clean_text": "In 2000, Cocco Bill was adapted into an animated TV series, consisting of 104 episodes of in total 13 minutes in length per episode.",
+      "source_quote": "- NUMERO EPISODI: 52 + 52\n- DURATA EPISODIO: 13 minuti",
+      "article_context": "Cocco Bill",
+      "construction": "intact claim"
+    },
+    {
+      "id": "c917e9ca176c0c400139e39a6609ea5a",
+      "original_id": "c917e9ca176c0c400139e39a6609ea5a",
+      "kind": "wrong_number",
+      "clean_text": "The ship was towed into the harbour overnight and the 331 passengers and 98 crew, who had slept on board, were evacuated later that morning.",
+      "source_quote": "De 331 passagerarna och 98 besättningsmännen sov ombord på fartyget.",
+      "article_context": "Baltic Sea cruiseferries",
+      "construction": "intact claim"
+    },
+    {
+      "id": "224897305cf036c15d66194be899c832",
+      "original_id": "224897305cf036c15d66194be899c832",
+      "kind": "wrong_number",
+      "clean_text": "He received 1,474 votes in the 2015 parliamentary election",
+      "source_quote": "| Total number of votes |  | 1474 | 0,6 |",
+      "article_context": "Sebastian Tynkkynen",
+      "construction": "exact supported excerpt"
+    },
+    {
+      "id": "4f3ba8c040c58aeb34e9ffccb1c5c5cb",
+      "original_id": "4f3ba8c040c58aeb34e9ffccb1c5c5cb",
+      "kind": "wrong_number",
+      "clean_text": "Tynkkynen was elected to the City Council of Oulu with 680 votes.",
+      "source_quote": "| Tynkkynen, Sebastian | 3576,500 | 680 |",
+      "article_context": "Sebastian Tynkkynen",
+      "construction": "exact supported excerpt"
+    },
+    {
+      "id": "4aafef868d5dd19175a760e70eb0fbaf",
+      "original_id": "4aafef868d5dd19175a760e70eb0fbaf",
+      "kind": "wrong_number",
+      "clean_text": "On 27 January 2015, Gas Lipstick announced his departure from HIM, after 16 years with the band.",
+      "source_quote": "With a heavy heart, I'm announcing my departure from HIM, a magnificent band that I've been part of for the past 16 magical years.",
+      "article_context": "HIM (Finnish band)",
+      "construction": "intact claim"
+    },
+    {
+      "id": "c158dd14b8687d396d094e7378e961c1",
+      "original_id": "c158dd14b8687d396d094e7378e961c1",
+      "kind": "wrong_number",
+      "clean_text": "Tynkkynen was convicted of ethnic agitation for the second time and issued a 50 day-fine (approximately 4000 euros based on his income) for comments on Muslims.",
+      "source_quote": "Perussuomalaisten oululainen kansanedustaja Sebastian Tynkkynen on tuomittu kiihottamisesta kansanryhmää vastaan 50 päiväsakon sakkorangaistukseen.",
+      "article_context": "Sebastian Tynkkynen",
+      "construction": "exact supported excerpt"
+    },
+    {
+      "id": "58c35d7304843c16e942c209077b73f4",
+      "original_id": "58c35d7304843c16e942c209077b73f4",
+      "kind": "wrong_number",
+      "clean_text": "Tynkkynen was convicted for a third time for inciting ethnic agitation, being issued a 70 day-fine (approximately 4400 euros).",
+      "source_quote": "Oulu District Court on Monday issued Oulu parliamentarian Sebastian Tynkkynen 70 day fines—amounting to 4,400 euros—for inciting ethnic agitation.",
+      "article_context": "Sebastian Tynkkynen",
+      "construction": "exact supported excerpt"
+    },
+    {
+      "id": "8ffe0f536440921b78f295e2d661f60a",
+      "original_id": "8ffe0f536440921b78f295e2d661f60a",
+      "kind": "dropped_sentence",
+      "clean_text": "Martti Ahtisaari was born in Viipuri, Finland (now Vyborg, Russia) on 23 June 1937.",
+      "source_quote": "Martti Ahtisaari (born June 23, 1937, Viipuri, Finland [now Vyborg, Russia]—died October 16, 2023, Helsinki, Finland) was a Finnish politician and noted mediator who was president of Finland (1994–2000).",
+      "article_context": "Martti Ahtisaari",
+      "construction": "intact claim",
+      "counterpart": {
+        "lang": "fi",
+        "page_id": 5901,
+        "rev_id": 24312843,
+        "claim_id": "78b59065c77b5dfb555bc8aca7cabe20",
+        "text": "Martti Oiva Kalevi Ahtisaari (23. kesäkuuta 1937 Viipuri – 16. lokakuuta 2023 Helsinki) oli suomalainen diplomaatti ja Suomen tasavallan kymmenes presidentti vuosina 1994–2000."
+      }
+    },
+    {
+      "id": "84513e492515b70b2c155facd1e939ac",
+      "original_id": "84513e492515b70b2c155facd1e939ac",
+      "kind": "dropped_sentence",
+      "clean_text": "Ahtisaari suggested as new CMI leader Alexander Stubb",
+      "source_quote": "Tilalleen hän esittää kokoomuksen kansanedustajaa, ex-pääministeri Alexander Stubbia.",
+      "article_context": "Martti Ahtisaari",
+      "construction": "exact supported excerpt",
+      "counterpart": {
+        "lang": "fi",
+        "page_id": 5901,
+        "rev_id": 24312843,
+        "claim_id": "e222b06138b5b8fbb58742ab911ed4ca",
+        "text": "Toukokuussa 2017 Ahtisaari kertoi luopuvansa rauhanvälitysjärjestö CMI:n hallituksen puheenjohtajuudesta ja esittävänsä seuraajakseen Suomen entistä ulkoministeriä ja pääministeriä Alexander Stubbia."
+      }
+    },
+    {
+      "id": "302a91dbf338f53eb5f4f4ce6bd8b9d1",
+      "original_id": "302a91dbf338f53eb5f4f4ce6bd8b9d1",
+      "kind": "dropped_sentence",
+      "clean_text": "it was announced that Ahtisaari had Alzheimer's disease and had retired from public life.",
+      "source_quote": "Former Finnish president Martti Ahtisaari has withdrawn from all public engagements after being diagnosed with Alzheimer's disease.",
+      "article_context": "Martti Ahtisaari",
+      "construction": "exact supported excerpt",
+      "counterpart": {
+        "lang": "fi",
+        "page_id": 5901,
+        "rev_id": 24312843,
+        "claim_id": "175c834b16a0723193d5cbe55f416fc2",
+        "text": "Tasavallan presidentin kanslia tiedotti syyskuussa 2021 Ahtisaaren sairastavan Alzheimerin tautia, minkä vuoksi hän jättäytyi kaikesta julkisesta toiminnasta."
+      }
+    },
+    {
+      "id": "cb271178e17fd02640dd447af27fe6ad",
+      "original_id": "cb271178e17fd02640dd447af27fe6ad",
+      "kind": "dropped_sentence",
+      "clean_text": "Harakka announced his candidacy for the leadership of Social Democratic Party.",
+      "source_quote": "SDP leader Antti Rinne has a fight on his hands to retain his post, after MP Timo Harakka announced he would bid for the leadership.",
+      "article_context": "Timo Harakka",
+      "construction": "exact supported excerpt",
+      "counterpart": {
+        "lang": "fi",
+        "page_id": 156802,
+        "rev_id": 24352919,
+        "claim_id": "422a6717fa6f90bd713f0c77959ff31a",
+        "text": "Joulukuussa 2016 Harakka asettui SDP:n puheenjohtajaehdokkaaksi."
+      }
+    },
+    {
+      "id": "14addaf85490418ae9e97073c36b342e",
+      "original_id": "14addaf85490418ae9e97073c36b342e",
+      "kind": "dropped_sentence",
+      "clean_text": "He was defeated by the incumbent party leader Antti Rinne in the election",
+      "source_quote": "His challengers, Tytti Tuppurainen and Timo Harakka , received 55 and 159 votes, respectively.",
+      "article_context": "Timo Harakka",
+      "construction": "exact supported excerpt",
+      "counterpart": {
+        "lang": "sv",
+        "page_id": 7855244,
+        "rev_id": 59261236,
+        "claim_id": "f54593bf0ce85a7f7047266d602771a2",
+        "text": "Han försökte bli partiordförande vid partikongressen 2017, men förlorade stort mot Antti Rinne."
+      }
+    },
+    {
+      "id": "62d01c602046bcc66c9d393a73abe6aa",
+      "original_id": "62d01c602046bcc66c9d393a73abe6aa",
+      "kind": "dropped_sentence",
+      "clean_text": "HIM announced that the band would be disbanding following a farewell tour",
+      "source_quote": "HIM julkaisi juuri Facebook-sivuillaan tiedotteen, jossa kerrotaan yhtyeen lopettavan uransa.",
+      "article_context": "HIM (Finnish band)",
+      "construction": "exact supported excerpt",
+      "counterpart": {
+        "lang": "fi",
+        "page_id": 17105,
+        "rev_id": 24355094,
+        "claim_id": "3892c689ae3b52f53986bbfd8d842289",
+        "text": "HIM ilmoitti 5. maaliskuuta 2017 lopettavansa toimintansa jäähyväiskiertueen merkeissä."
+      }
+    },
+    {
+      "id": "4d87dd18871488c70137cdb9f74185d6",
+      "original_id": "4d87dd18871488c70137cdb9f74185d6",
+      "kind": "dropped_sentence",
+      "clean_text": "HIM announced it had parted ways with Sire Records",
+      "source_quote": "Kolmen albumin mittainen yhteistyö levy-yhtiö Sire/Warner Musicin kanssa on tullut päätökseen. HIM kertoi asiasta verkkosivuillaan.",
+      "article_context": "HIM (Finnish band)",
+      "construction": "exact supported excerpt",
+      "counterpart": {
+        "lang": "fi",
+        "page_id": 17105,
+        "rev_id": 24355094,
+        "claim_id": "b5139fbdf8a91011f1b13bd064a1299a",
+        "text": "Maaliskuussa 2011 yhtye ilmoitti jättävänsä levy-yhtiönsä Sire/Warner Musicin."
+      }
+    },
+    {
+      "id": "3d84865ab0f003ea87434b64bf723539",
+      "original_id": "3d84865ab0f003ea87434b64bf723539",
+      "kind": "dropped_sentence",
+      "clean_text": "In 2016, HIM took another hiatus",
+      "source_quote": "HIM ILMOITTI viime vuonna hyvissä ajoin, että pitää 2016 sapattia.",
+      "article_context": "HIM (Finnish band)",
+      "construction": "exact supported excerpt",
+      "counterpart": {
+        "lang": "fi",
+        "page_id": 17105,
+        "rev_id": 24355094,
+        "claim_id": "5676a5dc3c75994fbb5acd1b35129504",
+        "text": "Tämän jälkeen HIM vietti pitkään hiljaiseloa, ollen miltei koko vuoden 2016 tauolla."
+      }
+    },
+    {
+      "id": "e495823acf50effe68425a0e775e3b39",
+      "original_id": "e495823acf50effe68425a0e775e3b39",
+      "kind": "loaded_wording",
+      "clean_text": "Ahtisaari joined The Elders, a group of independent global leaders",
+      "source_quote": "The Elders is an independent group of eminent global leaders brought together by Nelson Mandela",
+      "article_context": "Martti Ahtisaari",
+      "construction": "exact supported excerpt"
+    },
+    {
+      "id": "f87c8cd46bd67146a9ed4f85226cff17",
+      "original_id": "f87c8cd46bd67146a9ed4f85226cff17",
+      "kind": "loaded_wording",
+      "clean_text": "Elovaara and 19 other MPs left the Finns Party parliamentary group to found their own parliamentary group",
+      "source_quote": "Perussuomalaisista irtautunut 20 kansanedustajan ryhmä ilmoitti päätöksestään iltapäivällä Eduskunnassa.",
+      "article_context": "Tiina Elovaara",
+      "construction": "exact supported excerpt"
+    },
+    {
+      "id": "c5866172b07a2c6de0171b26d42ad637",
+      "original_id": "c5866172b07a2c6de0171b26d42ad637",
+      "kind": "loaded_wording",
+      "clean_text": "Häkkänen declared that he was planning to introduce legislation that would prohibit people from resigning from the Finnish Defence Forces' military reserve",
+      "source_quote": "Finland's Defence Minister Antti Häkkänen (NCP) is planning to introduce legislation that would prohibit people from resigning from the Finnish Defence Forces' (FDF) military reserve.",
+      "article_context": "Antti Häkkänen",
+      "construction": "exact supported excerpt"
+    },
+    {
+      "id": "51617c98dab048e6f9a73920953274d9",
+      "original_id": "51617c98dab048e6f9a73920953274d9",
+      "kind": "loaded_wording",
+      "clean_text": "He was elected as the Youth National Coalition Party leader",
+      "source_quote": "Kokoomuksen Nuorten Liiton 78. liittokokous on valinnut kokoomusnuorten puheenjohtajaksi vuosille 2012-2013 Antti Häkkäsen, 26.",
+      "article_context": "Antti Häkkänen",
+      "construction": "exact supported excerpt"
+    },
+    {
+      "id": "976dbcd38ebb32298341854ca6f9fa45",
+      "original_id": "976dbcd38ebb32298341854ca6f9fa45",
+      "kind": "loaded_wording",
+      "clean_text": "he was appointed Minister of Defence in the Orpo Cabinet.",
+      "source_quote": "Antti Häkkänen, Minister of Defence",
+      "article_context": "Antti Häkkänen",
+      "construction": "exact supported excerpt"
+    },
+    {
+      "id": "b675e8259ac83e4ee3d38c69c179e17e",
+      "original_id": "b675e8259ac83e4ee3d38c69c179e17e",
+      "kind": "loaded_wording",
+      "clean_text": "While in Port Lincoln, a 22-year old music teacher disguised herself as a boy and stowed away on the ship.",
+      "source_quote": "So one night, when the German-built Herzogin Cecilie tall ship was docked in Port Lincoln, she cut her hair and dressed in trousers and climbed aboard to hide below deck.",
+      "article_context": "Herzogin Cecilie",
+      "construction": "intact claim"
+    },
+    {
+      "id": "cca5d2d72619bff269f5ec76126ead5e",
+      "original_id": "cca5d2d72619bff269f5ec76126ead5e",
+      "kind": "loaded_wording",
+      "clean_text": "Fyrkat is the site of a former Viking Age ring fortress",
+      "source_quote": "For example, there is the very strange Viking woman’s grave, which was found at the ring fortress of “Fyrkat”, near Hobro, in Denmark.",
+      "article_context": "Seeress (Germanic)",
+      "construction": "exact supported excerpt"
+    },
+    {
+      "id": "7232eecba545546b6f6c7f7d657398b6",
+      "original_id": "7232eecba545546b6f6c7f7d657398b6",
+      "kind": "loaded_wording",
+      "clean_text": "the tour was cancelled after Ville Valo suffered a severe asthma attack and was diagnosed with presumptive pneumonia.",
+      "source_quote": "HIM's North American tour (which was due to kick off in Los Angeles on May 3rd at the House Of Blues) has been cancelled due to unforeseen medical circumstances.",
+      "article_context": "HIM (Finnish band)",
+      "construction": "exact supported excerpt"
+    },
+    {
+      "id": "122525d75e3d4dc51cd213a52140224f",
+      "original_id": "122525d75e3d4dc51cd213a52140224f",
+      "kind": "unsupported_claim",
+      "clean_text": "it was announced that HIM would be headlining the Tuska Open Air Metal Festival in 2017.",
+      "source_quote": "Pääesiintyjänä nähdään kotimaamme legendaarisimpiin metalliyhtyeisiin lukeutuva HIM",
+      "article_context": "HIM (Finnish band)",
+      "construction": "exact supported excerpt"
+    },
+    {
+      "id": "02a711c430f625fe0570255ee1ded1c5",
+      "original_id": "02a711c430f625fe0570255ee1ded1c5",
+      "kind": "unsupported_claim",
+      "clean_text": "MS Birka Princess became known as the fictional cruiseferry Freja from the Swedish TV series Rederiet",
+      "source_quote": "Det var på detta fartyg som tv-serien \"Rederiet\" delvis spelades in, och det syns i seriens vinjett under namnet M/S Freja.",
+      "article_context": "Baltic Sea cruiseferries",
+      "construction": "exact supported excerpt"
+    },
+    {
+      "id": "125d9aa6014c94d3ce99c245f6df67b3",
+      "original_id": "125d9aa6014c94d3ce99c245f6df67b3",
+      "kind": "unsupported_claim",
+      "clean_text": "Estonia, Latvia, Lithuania, Poland and Ukraine, applied to include birch bark letters from Siberia (1945–1965) in the UNESCO \"Memory of the World\" register.",
+      "source_quote": "Estonia, along with Latvia, Lithuania, Poland and Ukraine, proposed to include birch bark letters from Siberia (1945-1965) in the UNESCO list \"memory of the world\".",
+      "article_context": "Birch bark manuscript",
+      "construction": "exact supported excerpt"
+    },
+    {
+      "id": "5108102e1a5616e5cbcb642f5e1148b3",
+      "original_id": "5108102e1a5616e5cbcb642f5e1148b3",
+      "kind": "unsupported_claim",
+      "clean_text": "Tynkkynen was elected third vice chairman of the Finns Party",
+      "source_quote": "Perussuomalaisten kolmanneksi varapuheenjohtajaksi valittiin ehkä yllättäen Sebastian Tynkkynen.",
+      "article_context": "Sebastian Tynkkynen",
+      "construction": "exact supported excerpt"
+    },
+    {
+      "id": "2ee09781d2c8748181d606e0c4481436",
+      "original_id": "2ee09781d2c8748181d606e0c4481436",
+      "kind": "unsupported_claim",
+      "clean_text": "Tynkkynen was allowed to rejoin the party although he had to give up his position as the vice chairman.",
+      "source_quote": "Tynkkynen sai perussuomalaisten jäsenyyden takaisin, mutta luopuu varapuheenjohtajan tehtävistä.",
+      "article_context": "Sebastian Tynkkynen",
+      "construction": "exact supported excerpt"
+    },
+    {
+      "id": "4e03fe66f4905154b7c4b090e42e1342",
+      "original_id": "4e03fe66f4905154b7c4b090e42e1342",
+      "kind": "unsupported_claim",
+      "clean_text": "Ahtisaari was Chairman Emeritus and a Special Advisor.",
+      "source_quote": "Chairman Emeritus and Special Advisor",
+      "article_context": "Martti Ahtisaari",
+      "construction": "exact supported excerpt"
+    },
+    {
+      "id": "f435baf4f2fd32a1cd44d53b1c43ce1e",
+      "original_id": "f435baf4f2fd32a1cd44d53b1c43ce1e",
+      "kind": "unsupported_claim",
+      "clean_text": "it was announced that Martti and Eeva Ahtisaari were recovering from the coronavirus infection.",
+      "source_quote": "Presidentti Martti Ahtisaaren ja rouva Eeva Ahtisaaren viimeisimmät koronavirusnäytteet on todettu negatiivisiksi ja he jatkavat toipumistaan, tiedottaa tasavallan presidentin kanslia.",
+      "article_context": "Martti Ahtisaari",
+      "construction": "exact supported excerpt"
+    },
+    {
+      "id": "a2333072e6942708f3f55533c3c7b0f7",
+      "original_id": "a2333072e6942708f3f55533c3c7b0f7",
+      "kind": "unsupported_claim",
+      "clean_text": "Koskinen was nominated as the CEO of the Association of Finnish Local and Regional Authorities.",
+      "source_quote": "Entinen maa- ja metsätalousministeri Jari Koskinen (kok) on valittu Kuntaliiton uudeksi toimitusjohtajaksi.",
+      "article_context": "Jari Koskinen",
+      "construction": "exact supported excerpt"
+    }
+  ],
+  "article_families": [
+    "Q11888617",
+    "Q137312",
+    "Q1463082",
+    "Q1477129",
+    "Q16298585",
+    "Q16299227",
+    "Q18633801",
+    "Q20251436",
+    "Q23479",
+    "Q2614054",
+    "Q29230",
+    "Q4852727",
+    "Q542565",
+    "Q5493026",
+    "Q865595"
+  ],
+  "scope": "40 source-supported controlled real-passage copies: 12 intact claims and 28 exact supported excerpts; eight real fi/sv counterparts. Labels were checked independently before the detector ran. This is not full-article population accuracy."
+}
