@@ -1,0 +1,10 @@
+work/
+.venv/
+.env*
+!.env.example
+node_modules/
+dist/
+.vercel/
+__pycache__/
+.impeccable/review/
+.vercel

@@ -1,0 +1,17 @@
+{
+  "description": "Weak relevance proxy: an English passage containing exactly the same extracted full dates as the Finnish query is considered relevant. Equal dates can describe different events. Not human labels or contradiction accuracy. All query candidates are restricted to the same article topic.",
+  "rows": [
+    {
+      "split": "dev",
+      "n": 7,
+      "vector_hit_at_3": 7,
+      "lexical_hit_at_3": 7
+    },
+    {
+      "split": "initial held-out",
+      "n": 9,
+      "vector_hit_at_3": 7,
+      "lexical_hit_at_3": 8
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "fi-440": {
+    "archive_through": "2026-10-01T00:00:00Z",
+    "recent_from": "2026-10-07T11:10:13Z"
+  },
+  "fi-1150": {
+    "archive_through": "2026-10-01T00:00:00Z",
+    "recent_from": "2026-10-07T11:40:30Z"
+  },
+  "fi-1256": {
+    "archive_through": "2026-10-01T00:00:00Z",
+    "recent_from": "2026-10-12T12:41:27Z"
+  },
+  "fi-5261": {
+    "archive_through": "2026-10-01T00:00:00Z",
+    "recent_from": "2026-08-16T04:28:29Z"
+  },
+  "fi-6021": {
+    "archive_through": "2026-10-01T00:00:00Z",
+    "recent_from": "2026-10-07T20:02:05Z"
+  },
+  "fi-6816": {
+    "archive_through": "2026-10-01T00:00:00Z",
+    "recent_from": "2026-10-23T20:32:59Z"
+  },
+  "fi-8617": {
+    "archive_through": "2026-10-01T00:00:00Z",
+    "recent_from": "2026-11-05T15:03:33Z"
+  },
+  "fi-24889": {
+    "archive_through": "2026-10-01T00:00:00Z",
+    "recent_from": "2026-09-24T10:22:12Z"
+  },
+  "fi-52097": {
+    "archive_through": "2026-10-01T00:00:00Z",
+    "recent_from": "2026-10-23T10:23:21Z"
+  },
+  "en-7712": {
+    "archive_through": null,
+    "recent_from": "2026-10-03T21:15:31Z"
+  },
+  "en-11732": {
+    "archive_through": null,
+    "recent_from": "2026-10-09T17:22:04Z"
+  },
+  "en-11772": {
+    "archive_through": null,
+    "recent_from": "2026-11-05T18:09:21Z"
+  },
+  "en-33924": {
+    "archive_through": null,
+    "recent_from": "2026-11-01T00:10:52Z"
+  },
+  "en-164614": {
+    "archive_through": null,
+    "recent_from": "2026-11-07T23:28:28Z"
+  },
+  "en-246174": {
+    "archive_through": null,
+    "recent_from": "2026-08-22T03:15:23Z"
+  },
+  "en-288706": {
+    "archive_through": null,
+    "recent_from": "2026-03-12T03:57:01Z"
+  },
+  "en-410610": {
+    "archive_through": null,
+    "recent_from": "2026-09-11T10:04:56Z"
+  },
+  "en-23371965": {
+    "archive_through": null,
+    "recent_from": "2026-11-03T19:56:39Z"
+  },
+  "sv-6861": {
+    "archive_through": null,
+    "recent_from": "2026-04-24T03:56:28Z"
+  },
+  "sv-8414": {
+    "archive_through": null,
+    "recent_from": "2025-03-18T16:49:21Z"
+  },
+  "sv-8639": {
+    "archive_through": null,
+    "recent_from": "2026-03-31T10:46:29Z"
+  },
+  "sv-13455": {
+    "archive_through": null,
+    "recent_from": "2026-08-24T06:49:00Z"
+  },
+  "sv-23612": {
+    "archive_through": null,
+    "recent_from": "2026-09-18T11:24:11Z"
+  },
+  "sv-117699": {
+    "archive_through": null,
+    "recent_from": "2026-03-25T07:50:49Z"
+  },
+  "sv-136873": {
+    "archive_through": null,
+    "recent_from": "2020-03-18T12:08:19Z"
+  },
+  "sv-340021": {
+    "archive_through": null,
+    "recent_from": "2025-12-13T16:46:10Z"
+  },
+  "sv-426533": {
+    "archive_through": null,
+    "recent_from": "2024-04-03T17:37:16Z"
+  }
+}

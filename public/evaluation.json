@@ -1,0 +1,90 @@
+{
+  "summary": "Controlled edits to real English sentences from disjoint development and held-out articles. Labels are synthetic construction labels. Similarity is fixed at 1 for edited copies; these tests isolate the rules and do not test the retrieval pipeline.",
+  "rows": [
+    {
+      "split": "dev",
+      "method": "Naive numeral mismatch",
+      "n": 58,
+      "positive": 31,
+      "negative": 27,
+      "tp": 24,
+      "fp": 15,
+      "tn": 12,
+      "fn": 7,
+      "recall": "24/31 (77.4%)",
+      "fpr": "15/27 (55.6%)",
+      "p50_ms": 0.006645997927989811
+    },
+    {
+      "split": "dev",
+      "method": "Guarded date/unit rules",
+      "n": 58,
+      "positive": 31,
+      "negative": 27,
+      "tp": 24,
+      "fp": 0,
+      "tn": 27,
+      "fn": 7,
+      "recall": "24/31 (77.4%)",
+      "fpr": "0/27 (0.0%)",
+      "p50_ms": 0.005395493644755334
+    },
+    {
+      "split": "initial held-out, already seen",
+      "method": "Naive numeral mismatch",
+      "n": 85,
+      "positive": 44,
+      "negative": 41,
+      "tp": 36,
+      "fp": 23,
+      "tn": 18,
+      "fn": 8,
+      "recall": "36/44 (81.8%)",
+      "fpr": "23/41 (56.1%)",
+      "p50_ms": 0.004417001036927104
+    },
+    {
+      "split": "initial held-out, already seen",
+      "method": "Guarded date/unit rules",
+      "n": 85,
+      "positive": 44,
+      "negative": 41,
+      "tp": 35,
+      "fp": 0,
+      "tn": 41,
+      "fn": 9,
+      "recall": "35/44 (79.5%)",
+      "fpr": "0/41 (0.0%)",
+      "p50_ms": 0.0038330035749822855
+    },
+    {
+      "split": "fresh held-out",
+      "method": "Naive numeral mismatch",
+      "n": 42,
+      "positive": 20,
+      "negative": 22,
+      "tp": 18,
+      "fp": 13,
+      "tn": 9,
+      "fn": 2,
+      "recall": "18/20 (90.0%)",
+      "fpr": "13/22 (59.1%)",
+      "p50_ms": 0.004979003279004246
+    },
+    {
+      "split": "fresh held-out",
+      "method": "Guarded date/unit rules",
+      "n": 42,
+      "positive": 20,
+      "negative": 22,
+      "tp": 18,
+      "fp": 0,
+      "tn": 22,
+      "fn": 2,
+      "recall": "18/20 (90.0%)",
+      "fpr": "0/22 (0.0%)",
+      "p50_ms": 0.004707995685748756
+    }
+  ],
+  "limitations": "No human labels, calibrated model judges, whole-article LLM baseline, or real-world contradiction accuracy. The initial held-out scores were seen before v2; only the fresh held-out articles were reserved before that change. Name swaps remain outside the rules and are counted as misses. Model/API cost for these local rules is zero; hardware and hosting costs are not estimated."
+}

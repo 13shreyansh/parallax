@@ -1,0 +1,62 @@
+{
+  "summary": "Controlled edits to real English sentences from disjoint development and held-out articles. Labels are synthetic construction labels. Similarity is fixed at 1 for edited copies; these tests isolate the rules and do not test the retrieval pipeline.",
+  "rows": [
+    {
+      "split": "dev",
+      "method": "Naive numeral mismatch",
+      "n": 51,
+      "positive": 24,
+      "negative": 27,
+      "tp": 24,
+      "fp": 15,
+      "tn": 12,
+      "fn": 0,
+      "recall": "24/24 (100.0%)",
+      "fpr": "15/27 (55.6%)",
+      "p50_ms": 0.0069590023485943675
+    },
+    {
+      "split": "dev",
+      "method": "Guarded date/unit rules",
+      "n": 51,
+      "positive": 24,
+      "negative": 27,
+      "tp": 7,
+      "fp": 0,
+      "tn": 27,
+      "fn": 17,
+      "recall": "7/24 (29.2%)",
+      "fpr": "0/27 (0.0%)",
+      "p50_ms": 0.0070829992182552814
+    },
+    {
+      "split": "heldout",
+      "method": "Naive numeral mismatch",
+      "n": 77,
+      "positive": 36,
+      "negative": 41,
+      "tp": 36,
+      "fp": 23,
+      "tn": 18,
+      "fn": 0,
+      "recall": "36/36 (100.0%)",
+      "fpr": "23/41 (56.1%)",
+      "p50_ms": 0.004916000762023032
+    },
+    {
+      "split": "heldout",
+      "method": "Guarded date/unit rules",
+      "n": 77,
+      "positive": 36,
+      "negative": 41,
+      "tp": 16,
+      "fp": 0,
+      "tn": 41,
+      "fn": 20,
+      "recall": "16/36 (44.4%)",
+      "fpr": "0/41 (0.0%)",
+      "p50_ms": 0.004583998816087842
+    }
+  ],
+  "limitations": "No human labels, calibrated model judges, whole-article LLM baseline, or real-world contradiction accuracy. Changed years and additional context expose rule failures. Model/API cost for these local rules is zero; hardware and hosting costs are not estimated."
+}

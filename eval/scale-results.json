@@ -1,0 +1,13 @@
+{
+  "L_file_rows": 568416,
+  "L_loaded_vector_rows": 1000,
+  "L_selection": "First 1000 rows in official Parquet order, title + first 400 characters. Not representative sampling.",
+  "embedding_seconds": 1.4867404579999857,
+  "load_seconds": 1.0447681250079768,
+  "queries": 30,
+  "p50_ms": 0.585166497330647,
+  "p95_ms": 0.8813705040665802,
+  "M_file_rows": 862076,
+  "M_loaded_revision_rows": 12944,
+  "limits": "Bounded schema/ingestion/query probe only. Full L or M database load, concurrent traffic and multilingual quality at full scale unmeasured."
+}

@@ -1,0 +1,12 @@
+{
+  "version": "13.0.2-MariaDB",
+  "passages": 2308,
+  "revisions": 12944,
+  "topics": 9,
+  "model": "paraphrase-multilingual-MiniLM-L12-v2",
+  "dimensions": 384,
+  "max_tokens": 128,
+  "query_p50_ms": 1.428020499588456,
+  "query_p95_ms": 4.596208502334775,
+  "query_count": 1766
+}

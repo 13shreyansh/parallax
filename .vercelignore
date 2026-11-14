@@ -1,0 +1,13 @@
+work/
+.venv/
+.git/
+node_modules/
+.env*
+!.env.example
+data/
+eval/
+scripts/
+server/
+.impeccable/
+__pycache__/
+requirements.txt
