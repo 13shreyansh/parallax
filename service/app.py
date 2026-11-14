@@ -153,11 +153,14 @@ def search():
             _encoder=encoder(os.environ.get('PARALLAX_EMBED_DEVICE','cpu'))
         vec=_encoder.encode([question],normalize_embeddings=True,show_progress_bar=False)[0].tolist()
     c=db();cur=c.cursor();traces=[]
-    sql="""SELECT 'claim' kind,id,qid,lang,section,text,VEC_DISTANCE_COSINE(embedding,VEC_FromText(%s)) distance FROM claim
-    UNION ALL SELECT 'source' kind,sc.id,NULL qid,NULL lang,s.title section,sc.text,VEC_DISTANCE_COSINE(sc.embedding,VEC_FromText(%s)) distance FROM source_chunk sc JOIN cited_source s ON s.id=sc.source_id WHERE s.status='Read' ORDER BY distance LIMIT 18"""
+    sql="""SELECT 'claim' kind,h.id,h.qid,h.lang,h.section,h.text,h.distance FROM
+    (SELECT id,qid,lang,section,text,VEC_DISTANCE_COSINE(embedding,VEC_FromText(%s)) distance FROM claim ORDER BY distance LIMIT 18) h
+    UNION ALL SELECT 'source' kind,h.id,NULL qid,NULL lang,s.title section,h.text,h.distance FROM
+    (SELECT id,source_id,text,VEC_DISTANCE_COSINE(embedding,VEC_FromText(%s)) distance FROM source_chunk ORDER BY distance LIMIT 18) h
+    JOIN cited_source s ON s.id=h.source_id WHERE s.status='Read' ORDER BY distance LIMIT 18"""
     hits=run(cur,sql,(json.dumps(vec),json.dumps(vec)),traces,'Closest claims and source texts');best=next((h for h in hits if h['kind']=='claim'),None);group=None;flags=[];topic=None
     if best and best['distance']<=.7:
-        gs=run(cur,'SELECT * FROM claim_group WHERE anchor_id=%s OR JSON_SEARCH(versions,\'one\',%s,NULL,\'$.*.claim_id\') IS NOT NULL LIMIT 1',(best['id'],best['id']))
+        gs=run(cur,'SELECT g.* FROM claim_group g WHERE anchor_id=%s OR JSON_SEARCH(versions,\'one\',%s,NULL,\'$.*.claim_id\') IS NOT NULL ORDER BY (SELECT COUNT(*) FROM published_flag f WHERE f.group_id=g.id) DESC,g.ordinal LIMIT 1',(best['id'],best['id']))
         if gs:
             group={**gs[0],'versions':unpack(gs[0]['versions'])};flags=[f for f in flag_rows(cur,best['qid']) if f['group_id']==group['id'] and not f['dismissed']]
         else:group={'id':best['id'],'versions':{best['lang']:best}}
