@@ -85,6 +85,21 @@ function App() {
   useEffect(() => {
     localStorage.setItem("npov-reviewed", JSON.stringify(reviewed));
   }, [reviewed]);
+  useEffect(() => {
+    const revealSelection = () => {
+      document.querySelector(".article-row.selected")?.scrollIntoView({
+        block: "nearest",
+        inline: "nearest",
+        behavior: "instant",
+      });
+    };
+    const frame = requestAnimationFrame(revealSelection);
+    window.addEventListener("resize", revealSelection);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("resize", revealSelection);
+    };
+  }, [data, topic, view]);
   if (error)
     return (
       <main className="load">
@@ -514,7 +529,11 @@ function App() {
                       aria-pressed={article.qid === a.qid}
                     >
                       <span className="rank">
-                        {String(i + 1).padStart(2, "0")}
+                        {String(
+                          data.articles.findIndex(
+                            (item) => item.qid === a.qid,
+                          ) + 1,
+                        ).padStart(2, "0")}
                       </span>
                       <span className="article-row-content">
                         <strong>{a.title}</strong>
@@ -618,6 +637,8 @@ function App() {
                     visible.map((f, i) => (
                       <button
                         key={f.id}
+                        aria-label={`Review passage: ${f.matches.en?.text || f.fi.text}`}
+                        aria-pressed={finding?.id === f.id}
                         onClick={() => {
                           setSelected(f.id);
                           setQuery(null);
@@ -631,6 +652,9 @@ function App() {
                         <span className={"kind-dot " + reviewKind(f)} />
                         <span>
                           <strong>{f.fi.section}</strong>
+                          <span className="passage-preview">
+                            {f.matches.en?.text || f.fi.text}
+                          </span>
                           <small>{labels[reviewKind(f)]}</small>
                         </span>
                         <ChevronRight size={14} />
@@ -645,6 +669,7 @@ function App() {
                 {finding ? (
                   <div className="evidence">
                     <div className="finding-title">
+                      <h3>{finding.fi.section}</h3>
                       <span className={"tag " + reviewKind(finding)}>
                         {labels[reviewKind(finding)]}
                       </span>
@@ -668,7 +693,6 @@ function App() {
                           : "Mark reviewed"}
                       </button>
                     </div>
-                    <h3>{finding.fi.section}</h3>
                     <p className="finding-explanation">
                       {reviewKind(finding) === "emphasis"
                         ? "Related text was retrieved. These passages may agree or emphasize different things; no factual verdict has been established."

@@ -1539,3 +1539,157 @@ footer a {
   font-size: 11px;
   padding: 8px 10px;
 }
+/* Keep the comparison, current queue position and revision actions visible. */
+header {
+  height: 66px;
+}
+.statusline {
+  padding-block: 8px;
+}
+.intro {
+  padding-block: 20px 18px;
+}
+.intro h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+.intro p {
+  font-size: 13px;
+  line-height: 1.6;
+}
+.queue {
+  max-height: 320px;
+  overflow-y: auto;
+  scroll-padding: 8px;
+}
+.article-heading {
+  padding: 19px 24px 15px;
+}
+.article-heading h2 {
+  font-size: 25px;
+  margin-bottom: 6px;
+}
+.workspace-tabs button {
+  padding-block: 12px;
+}
+.filters {
+  padding-block: 10px;
+}
+.evidence {
+  padding-top: 18px;
+}
+.finding-title {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  margin-bottom: 10px;
+}
+.finding-title h3 {
+  margin: 0;
+  font-size: 19px;
+}
+.finding-title .text-button {
+  margin-left: auto;
+  font-size: 10px;
+}
+.finding-explanation {
+  margin-bottom: 16px;
+  line-height: 1.65;
+}
+.passage-preview {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 10px;
+  line-height: 1.5;
+  margin-top: 6px;
+  color: var(--muted);
+}
+.passage-link {
+  padding-block: 11px;
+}
+.provenance {
+  font-size: 10px;
+}
+.provenance a {
+  font-size: 12px;
+  padding-block: 5px;
+  min-height: 32px;
+}
+@media (max-width: 900px) {
+  .passage-link {
+    min-width: 185px;
+    width: 185px;
+  }
+  .passage-list {
+    max-height: 125px;
+  }
+}
+@media (max-width: 620px) {
+  header {
+    height: 66px;
+  }
+  .intro {
+    padding: 16px 18px 14px;
+  }
+  .intro h1 {
+    font-size: 25px;
+  }
+  .intro p {
+    font-size: 12px;
+  }
+  .worklist {
+    padding-top: 13px;
+  }
+  .queue-help {
+    display: none;
+  }
+  .search {
+    margin-block: 10px 8px;
+  }
+  .queue {
+    max-height: none;
+    overflow-y: hidden;
+  }
+  .article-row {
+    padding-block: 11px;
+  }
+  .article-row-content > span:not(.row-meta) {
+    display: none;
+  }
+  .article-row-content > .row-meta {
+    margin-top: 4px;
+  }
+  .article-heading {
+    padding: 17px 18px 13px;
+  }
+  .article-heading h2 {
+    font-size: 24px;
+  }
+  .article-heading p span {
+    display: inline;
+    margin-left: 4px;
+  }
+  .workspace-tabs button {
+    padding-block: 11px;
+  }
+  .filters {
+    padding-block: 8px;
+  }
+  .evidence {
+    padding-top: 15px;
+  }
+  .finding-title h3 {
+    font-size: 20px;
+  }
+  .finding-title .text-button {
+    font-size: 10px;
+    max-width: none;
+  }
+  .provenance a {
+    font-size: 13px;
+    min-height: 44px;
+    padding-block: 10px;
+  }
+}
