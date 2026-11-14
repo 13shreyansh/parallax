@@ -52,3 +52,13 @@ Browser instruction: use only Codex IAB for web/account UI. IAB is unavailable i
 An idle-sleep assertion is attached to the current API process using `caffeinate -i -w <api-pid>`, without changing power settings. Its PID is in work/awake.pid. It ends when that API process ends. It does not keep a closed laptop online or guarantee network availability.
 
 Final build verification: Chief IAB passed the functional editor, source, SQL, archive, synthetic-test, mobile and keyboard flows. After one UI fix batch, current desktop/mobile captures show all five requested fixes; the independent reviewer scored each resolved, with disposition ship for those fixes only. Public source, ledger, raw traces, demo and pitch notes are complete. C-08 build is DONE; video recording and competition final submission are not claimed complete.
+
+## C-16 audit update
+
+C-08 remains delivered. C-16 is a separate frozen family audit, without changes to the detector, model settings, thresholds, product corpus or frontend JS/CSS. README now starts with criterion-to-evidence links.
+
+New held-out education/railway controlled paired tests caught 5/36 planted errors and flagged 2/57 constructed equivalents. These are audit-authored translations, not human labels or full-pipeline accuracy. Rule-only stress at similarity 1 catches 15/36. The two false positives are equivalent decimal percentages, 50.0 versus 50. All name swaps remain missed. The natural date-overlap proxy favors lexical 4/4 over vector 3/4; earlier lexical 8/9 over vector 7/9 remains visible. Combined title-rename/reverse-insertion changes 25/742 top-three rankings, all in the development wartime family; held-out education 0/221 and railway 0/138 change. Metadata changes preserve passage embeddings and do not measure semantic entity renaming. Rephrase controls show 0/24 decision flips per scoring path, not broad robustness.
+
+Frozen inputs and sealed final output are in eval/c16/, with all raw failures and honest reviewer provenance. The fresh model reviewer received only spec/evidence and passed artifact consistency; it did not independently certify live execution, weights, historical truth or human translation labels. Introduction revision remains null/unproven for every inspected topic. The available versioned history does not establish when cross-language disagreement began.
+
+Replay only to a separate output directory with `.venv/bin/python scripts/c16_audit.py replay --out work/c16-replay`. Do not overwrite or retune the final audit. The initial report-rendering helper refuses to overwrite the reviewed publication. Audit tables are isolated in npov_c16_audit; the public API still uses npov. Mac/tunnel dependency is unchanged. No video or competition submission has been performed.

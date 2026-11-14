@@ -37,11 +37,12 @@ This uses real MariaDB native vectors for 1,711 audit passages in isolated `npov
 | education_institutions | 2 | 1/2 | 2/2 |
 | railway_sites | 2 | 2/2 | 2/2 |
 
-Held-out families together: vector **3/4**, lexical **4/4**. Only 10 of 742 Finnish query passages had a usable date-overlap reference; 732 are unscored, not successful. Per-topic sample sizes are too small for general quality claims. The earlier deployed-corpus test also favored lexical, **8/9 versus vector 7/9**. No vector benchmark win is claimed. [Natural traces](final/natural-retrieval-traces.json).
+Held-out families together: vector **3/4**, lexical **4/4**. Only 10 of 742 Finnish query passages had a usable date-overlap reference; 732 are unscored, not successful. Four topics have zero scorable proxy queries: Q211855, Q1646874, Q277664 and Q18661302. Their retrieval quality is unmeasured by this proxy. Per-topic sample sizes are too small for general quality claims. The earlier deployed-corpus test also favored lexical, **8/9 versus vector 7/9**. No vector benchmark win is claimed. [Natural traces](final/natural-retrieval-traces.json).
 
 ## Nuisance checks and failures
 
 - Combined display-title anonymization and reverse candidate insertion changed **25/742** top-three rankings. This test changes two factors together and cannot isolate which caused a change. Display titles are not embedded; this is retrieval/database plumbing, not semantic robustness to entity renaming. Of the 25, 24 change candidate membership and two change the first result. [Raw comparisons](final/metadata-nuisance-traces.json).
+  The family split is wartime 25/383 changed rankings, education 0/221 and railway 0/138. These denominators concern query rankings, not translation accuracy.
 - Meaning-preserving rephrases caused **0/24** review-decision flips per paired scoring path. These are equivalent controls with mostly no review flags, not a broad paraphrase robustness benchmark. [Rephrase traces](final/rephrase-traces.json).
 - Neutral-clause reordering is split separately in FINAL.json. It is a controlled wording nuisance, not evidence of general document-order invariance.
 

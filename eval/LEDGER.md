@@ -99,3 +99,5 @@ A source linked in the English Finnish War article, Yle's "Southern Towns Mark W
 - Human expert labels, an independent calibrated judge, numeric-scope evaluation and a stronger retrieval set are still needed.
 
 Next evidence should be the 60 human labels and the actual retrieval misses, not a claim that vector search has already won. No human labels are available in this ledger.
+
+C-16 publication checks: new evaluation JSON is byte-identical to the reviewed local publication, frontend JS/CSS hashes match the delivered build, README relative evidence links resolve, and all ten existing deployment regression checks pass with receipts saved separately in c16/. The sealed-final and reviewed-report overwrite guards refuse replacements. A new IAB copy check was requested, not claimed complete.

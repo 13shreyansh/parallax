@@ -5,6 +5,10 @@ import pathlib, json, hashlib
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 D = ROOT / "eval/c16"
 j = json.load(open(D / "final/FINAL.json"))
+if (D / "REVIEW.md").exists():
+    raise SystemExit(
+        "Reviewed report exists; refusing to replace post-review publication text."
+    )
 seal = json.load(open(D / "final/SEALED.json"))
 for name, h in seal["files"].items():
     assert hashlib.sha256((D / "final" / name).read_bytes()).hexdigest() == h
@@ -103,6 +107,7 @@ for mode, name in [
                     "fpr": f"{r['false_positives']}/{r['equivalents']}",
                 }
             )
+old["limitations"] = old["limitations"].split(" C-16 frozen whole-family audit:", 1)[0]
 old["limitations"] += (
     " C-16 frozen whole-family audit: measured cross-language pairs caught 5/36 planted errors and falsely flagged 2/57 constructed equivalents. These are audit-authored translations, not human labels. Combined metadata rename/reverse insertion changed 25/742 top-three rankings. The original natural retrieval test favored lexical, 8/9 vs vector 7/9; C-16 held-out proxy also favored lexical, 4/4 vs vector 3/4. Disagreement introduction at revision X remains unproven. Live SQL still requires this Mac and its temporary tunnel. See the ledger for sealed traces."
 )

@@ -1,0 +1,19 @@
+{
+  "checked_at_utc": "2026-11-14T16:20:31.760966+00:00",
+  "site": "https://npov-radar.vercel.app",
+  "public_eval_sha256": "9671b28a976ac51c3232b3ce25bd73f1eeb5f9356c682beb158544f9c5c7356e",
+  "frontend_js": "index-BRnZl9qn.js",
+  "frontend_css": "index-DaxQ9nTW.css",
+  "frontend_assets_unchanged_from_delivered_build": true,
+  "readme_relative_links_missing": [],
+  "scope": "Builder HTTP/content checks; not an IAB or independent execution certification.",
+  "deployment_regressions": {
+    "source": "Existing scripts/verify-deployment.py, reused via a temporary copy with only its output file redirected",
+    "passed": 10,
+    "failed": 0,
+    "receipt": "eval/c16/deployed-regression-checks.json"
+  },
+  "sealed_overwrite_guard": "Refused rerun as expected",
+  "reviewed_report_overwrite_guard": "Refused initial renderer after review as expected",
+  "new_iab_copy_check": "Requested from Chief; not claimed as completed. Frontend JS/CSS unchanged."
+}
