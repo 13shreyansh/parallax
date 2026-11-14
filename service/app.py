@@ -4,7 +4,7 @@ from collections import defaultdict,deque
 from flask import Flask,request,jsonify
 from pipeline.common import db,ROOT
 from pipeline.check import ALIGN_SQL,SOURCE_SQL
-from pipeline.text import normalize
+from pipeline.text import normalize,HistoricalIndex
 
 app=Flask(__name__)
 app.config['MAX_CONTENT_LENGTH']=4096
@@ -22,7 +22,7 @@ def counts(cur):
     return run(cur,sql)[0]
 
 def flag_rows(cur,qid=None):
-    rows=run(cur,"SELECT f.*,r.reason,r.dismissed,r.reviewed_at,COALESCE(n.copies,0) copied_count FROM published_flag f LEFT JOIN editor_reviews r ON r.flag_id=f.id LEFT JOIN note_copies n ON n.flag_id=f.id WHERE f.shown=1"+(' AND f.qid=%s' if qid else ''),(qid,) if qid else ())
+    rows=run(cur,"SELECT f.*,r.reason,r.dismissed,r.reviewed_at,COALESCE(n.copies,0) copied_count FROM published_flag f LEFT JOIN claim_group g ON g.id=f.group_id LEFT JOIN editor_reviews r ON r.flag_id=f.id LEFT JOIN note_copies n ON n.flag_id=f.id WHERE f.shown=1"+(' AND f.qid=%s' if qid else '')+" ORDER BY g.ordinal,FIELD(f.check_type,'src','lang','tone','fact'),f.id",(qid,) if qid else ())
     return [{**unpack(r['payload']),'dismissed':bool(r['dismissed']),'review_reason':r['reason'],'reviewed_at':r['reviewed_at'],'copied_count':r['copied_count']} for r in rows]
 
 def article_meta(cur,qid):
@@ -33,7 +33,7 @@ def article_meta(cur,qid):
 def temporal_query(versions,instant):
     # The system-versioned primary key is (lang,page_id,row_end). Looking up qid
     # alone reads every historical article body; these branches seek one version.
-    part='SELECT lang,page_id,rev_id,title,text,row_start revised_at FROM revision FOR SYSTEM_TIME AS OF TIMESTAMP %s WHERE lang=%s AND page_id=%s'
+    part='SELECT lang,page_id,rev_id,title,text,row_start revised_at FROM revision FOR SYSTEM_TIME AS OF TIMESTAMP %s FORCE INDEX(history_at) WHERE lang=%s AND page_id=%s'
     return ' UNION ALL '.join(part for _ in versions),tuple(value for v in versions for value in (instant,v['lang'],v['page_id']))
 
 @app.before_request
@@ -71,11 +71,11 @@ def home():
     SUM(CASE WHEN f.check_type='tone' AND f.shown=1 AND COALESCE(r.dismissed,0)=0 THEN 1 ELSE 0 END) tone,
     SUM(CASE WHEN f.check_type='fact' AND f.shown=1 AND COALESCE(r.dismissed,0)=0 THEN 1 ELSE 0 END) fact
     FROM topic t JOIN topic_theme tt ON tt.qid=t.qid LEFT JOIN published_flag f ON f.qid=t.qid LEFT JOIN editor_reviews r ON r.flag_id=f.id
-    WHERE tt.theme=%s AND t.distance IS NOT NULL GROUP BY t.qid ORDER BY """+order+' LIMIT 10',(theme,),traces,'Ranked articles')
+    WHERE tt.theme=%s AND t.distance IS NOT NULL GROUP BY t.qid ORDER BY """+order,(theme,),traces,'Ranked articles')
     for r in rows:r['titles']=unpack(r['titles'])
-    qids={r['qid']:i for i,r in enumerate(rows)};fs=[f for f in flag_rows(cur) if f['qid'] in qids and not f['dismissed'] and f.get('source') and f['check'] in ['src','fact','lang'] and all(len(v['text'])<=220 for v in f.get('versions',{}).values())]
+    qids={r['qid']:i for i,r in enumerate(rows)};fs=[f for f in flag_rows(cur) if f['qid'] in qids and not f['dismissed'] and f.get('source') and f['check'] in ['src','fact','lang'] and len(f['source'].get('passage',''))<=220 and all(len(v['text'])<=220 for v in ([f['versions'][f['language']]] if f['check']=='src' else f.get('versions',{}).values()))]
     fs.sort(key=lambda f:(0 if f['check']=='src' and f['verdict']=='Contradicted' else 1 if f['check']=='fact' else 2,qids[f['qid']]))
-    result={'themes':themes,'theme':theme,'sort':sort,'articles':rows,'example':fs[0] if fs else None,'counts':counts(cur),'queries':traces};c.close();return jsonify(result)
+    result={'themes':themes,'theme':theme,'sort':sort,'articles':rows[:10],'example':fs[0] if fs else None,'counts':counts(cur),'queries':traces};c.close();return jsonify(result)
 
 @app.get('/article')
 def article():
@@ -100,10 +100,13 @@ def article():
     history=run(cur,'SELECT COUNT(*) revisions,MIN(row_start) earliest,MAX(row_start) latest FROM revision FOR SYSTEM_TIME ALL WHERE qid=%s',(qid,))[0]
     if date:
         versions={r['lang']:r for r in past}
-        normalized_past={r['lang']:normalize(r['text']) for r in past}
+        indexes={r['lang']:HistoricalIndex(r['text']) for r in past}
         for g in groups:
             for lang,v in g['versions'].items():
-                r=versions.get(lang);v['asof_present']=bool(r and normalize(v['text']) in normalized_past[lang])
+                r=versions.get(lang);passage=indexes[lang].match(v['text']) if r else None
+                v['asof_present']=bool(passage);v['asof_text']=passage
+                v['asof_match']='exact' if passage==normalize(v['text']) else 'similar' if passage else 'not found'
+                v['asof_absence_verified']=any(f['claim_id']==v.get('claim_id',v.get('id')) and f.get('history',{}).get('material_absence_verified') and asof<str(f['history']['entered_at'])[:10] for f in fs)
                 if r:v['asof_revision']=r['rev_id']
     unread=run(cur,"SELECT DISTINCT cl.id,cl.lang,LEFT(cl.text,80) text,s.title,s.url,s.status FROM claim cl JOIN claim_source cs ON cs.claim_id=cl.id JOIN cited_source s ON s.id=cs.source_id WHERE cl.qid=%s AND s.status<>'Read'",(qid,))
     a.update(flags=fs,groups=groups,history=history,queries=traces,unread=unread,asof=asof,claim_count=run(cur,'SELECT COUNT(*) n FROM claim WHERE qid=%s',(qid,))[0]['n'])

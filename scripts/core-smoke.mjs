@@ -12,7 +12,7 @@ for(const width of [1440,390]) {
  await page.locator('.rail[aria-label="Finding evidence"]').waitFor({state:'attached'});
  await page.goto(`${base}/a/Q134949?flag=65c3491c5d1f63e938fe4b3e32617dc9`);
  await page.locator('.rail-heading h2').filter({hasText:'Not in source'}).waitFor({state:'attached'});
- if(width<700)await page.getByRole('button',{name:'Not in source flag',exact:true}).first().click();
+ if(width<700)await page.locator('.marker-button[data-flag="65c3491c5d1f63e938fe4b3e32617dc9"]').click();
  await page.locator('.source-reading .quote').waitFor();await page.locator('.rail-container').evaluate(e=>Promise.all(e.getAnimations().map(a=>a.finished)));await page.screenshot({path:`artifacts/e2e/core-source-${width}.png`});
  const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
  results.push({width,errors,overflow});await page.close();

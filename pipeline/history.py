@@ -98,6 +98,10 @@ def onset(qid):
             present=i in found
             if present!=last_seen and len(history['changes'])<4:history['changes'].append({'date':vs[i]['timestamp'],'revision':vs[i]['rev_id'],'label':'wording added' if present else 'wording changed','comment':vs[i].get('comment','')})
             last_seen=present
+        previous=f.get('history') or {}
+        if previous.get('entered_revision')==history['entered_revision']:
+            for key in ['material_absence_verified','boundary_model','boundary_checked_at','boundary_prompt_version','boundary_evidence']:
+                if key in previous:history[key]=previous[key]
         f['history']=history
         from .notes import fill_note
         fill_note(f,articles)
