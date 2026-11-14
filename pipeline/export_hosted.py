@@ -23,17 +23,20 @@ def encode(o):
  if isinstance(o,bytes):return {'$bytes':base64.b64encode(o).decode()}
  raise TypeError(type(o).__name__)
 def main():
- parser=argparse.ArgumentParser();parser.add_argument('--tables');parser.add_argument('--output',default=str(WORK/'hosted-data.jsonl.gz'));args=parser.parse_args()
+ parser=argparse.ArgumentParser();parser.add_argument('--tables');parser.add_argument('--output',default=str(WORK/'hosted-data.jsonl.gz'));parser.add_argument('--non-winter-history',action='store_true');parser.add_argument('--publish-ready',action='store_true');args=parser.parse_args()
  selected=args.tables.split(',') if args.tables else list(QUERIES)
  if not set(selected).issubset(QUERIES):raise ValueError('Unknown export table')
  c=db();counts={}
  with gzip.open(args.output,'wt',encoding='utf-8',compresslevel=5) as out:
   for table in selected:
    sql=QUERIES[table]
+   if table=='revision' and args.non_winter_history:sql+=" WHERE qid<>'Q134949'"
    count=0
    with c.cursor(pymysql.cursors.SSDictCursor) as cur:
     cur.execute(sql)
     for row in cur:
+     if table=='flag' and args.publish_ready and row['shown']:
+      payload=json.loads(row['payload']);row['shown']=int(bool(payload.get('note_model') and payload.get('finalized_at')))
      out.write(json.dumps({'table':table,'row':row},ensure_ascii=False,default=encode)+'\n');count+=1
    counts[table]=count;print(table,count,flush=True)
  (WORK/'hosted-export-counts.json').write_text(json.dumps(counts,indent=2));c.close()

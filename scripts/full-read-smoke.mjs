@@ -1,0 +1,30 @@
+import {chromium,expect} from '@playwright/test';
+import fs from 'node:fs/promises';
+const base=process.env.PARALLAX_URL||'https://parallax.72.61.22.106.sslip.io';
+const browser=await chromium.launch();const results=[];
+for(const width of [1440,390]){
+ const page=await browser.newPage({viewport:{width,height:900}}),errors=[];
+ page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text())});
+ await page.goto(base);await page.locator('.table-row').first().waitFor();await page.evaluate(()=>document.fonts.ready);
+ await page.screenshot({path:`artifacts/e2e/expanded-home-${width}.png`});
+ await page.getByRole('button',{name:'Number of issues',exact:true}).click();await page.locator('.table-row[href="/a/Q134949"]').click();await page.locator('.claim-row').first().waitFor();
+ await page.locator('[data-flag="65c3491c5d1f63e938fe4b3e32617dc9"]').scrollIntoViewIfNeeded();await page.locator('[data-flag="65c3491c5d1f63e938fe4b3e32617dc9"]').click();
+ const rail=page.getByRole('complementary',{name:'Finding evidence'});await rail.waitFor();await page.locator('.rail-container').evaluate(e=>Promise.all(e.getAnimations().map(a=>a.finished)));
+ await expect(rail.getByRole('heading',{name:'Not in source',exact:true})).toBeVisible();await expect(rail.locator('.source-reading')).toContainText('panssarivaunuille');
+ await page.screenshot({path:`artifacts/e2e/expanded-source-${width}.png`});
+ await rail.getByRole('button',{name:'Show the day before it entered',exact:true}).click();await page.waitForURL(/asof=2012-11-27/);await expect(page.locator('.query-pending')).toHaveCount(0);await expect(page.locator('.time-bar')).toHaveClass(/past/);
+ if(width<700)await rail.getByRole('button',{name:'Close reading',exact:true}).click();
+ await expect(page.locator('.selected-row .missing-cell').first()).toContainText('27 Nov 2012');
+ await page.screenshot({path:`artifacts/e2e/expanded-history-${width}.png`});
+ await page.keyboard.press(']');await page.waitForURL(/asof=2012-11-28/);await expect(page.locator('.query-pending')).toHaveCount(0);await expect(page.locator('.selected-row .claim-cell').first()).toContainText('mekanisoitu');
+ await page.keyboard.press('t');await expect(page).not.toHaveURL(/asof=/);await expect(page.locator('.query-pending')).toHaveCount(0);
+ await page.locator('[data-flag="0e4e4c2a931f53c6324bac69a15dda37"]').scrollIntoViewIfNeeded();await page.locator('[data-flag="0e4e4c2a931f53c6324bac69a15dda37"]').click();await expect(rail.getByRole('heading',{name:'Missing in Finnish',exact:true})).toBeVisible();await expect(rail.getByRole('link',{name:'Supporting source',exact:true})).toBeVisible();
+ await page.locator('.rail-container').evaluate(e=>Promise.all(e.getAnimations().map(a=>a.finished)));await page.screenshot({path:`artifacts/e2e/expanded-language-${width}.png`});
+ if(width<700)await rail.getByRole('button',{name:'Close reading',exact:true}).click();
+ await page.getByRole('button',{name:'Show the SQL',exact:true}).click();await expect(page.locator('.sql-drawer')).toBeVisible();await page.getByRole('button',{name:'Closest source passage',exact:true}).click();await expect(page.locator('.sql-drawer pre')).toContainText('VEC_DISTANCE_COSINE');await page.getByRole('button',{name:'Close SQL',exact:true}).click();
+ if(width<700)await page.getByRole('button',{name:'Open search',exact:true}).click();
+ await page.getByRole('textbox',{name:'Ask in any language',exact:true}).fill('Hur många svenska frivilliga deltog i vinterkriget?');await page.getByRole('textbox',{name:'Ask in any language',exact:true}).press('Enter');await page.locator('.answer-sentence').waitFor();await page.screenshot({path:`artifacts/e2e/expanded-ask-${width}.png`});
+ await page.getByRole('link',{name:'Method',exact:true}).click();await expect(page.getByRole('heading',{name:'How Parallax checks Wikipedia',exact:true})).toBeVisible();await expect(page.locator('.counts-table')).not.toContainText('Loading');await expect(page.locator('.eval-table')).toContainText('32 of 40');await page.screenshot({path:`artifacts/e2e/expanded-method-${width}.png`});
+ results.push({width,errors,overflow:await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)});await page.close();
+}
+await browser.close();console.log(results);await fs.writeFile('artifacts/e2e/expanded-read-results.json',JSON.stringify(results,null,2));

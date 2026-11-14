@@ -36,6 +36,13 @@ def temporal_query(versions,instant):
     part='SELECT lang,page_id,rev_id,title,text,row_start revised_at FROM revision FOR SYSTEM_TIME AS OF TIMESTAMP %s FORCE INDEX(history_at) WHERE lang=%s AND page_id=%s'
     return ' UNION ALL '.join(part for _ in versions),tuple(value for v in versions for value in (instant,v['lang'],v['page_id']))
 
+def include_unrepresented(groups,claims):
+    represented={v.get('claim_id',v.get('id')) for g in groups for v in g['versions'].values()}
+    for claim in claims:
+        if claim['id'] not in represented:
+            groups.append({'id':claim['id'],'anchor_id':claim['id'],'ordinal':claim['ordinal'],'versions':{claim['lang']:{**claim,'claim_id':claim['id']}},'checks':{'state':'pending'},'flags':[]})
+    return groups
+
 @app.before_request
 def access():
     token=os.environ.get('PARALLAX_BRIDGE_TOKEN')
@@ -105,6 +112,7 @@ def home():
     for r in rows:r['titles']=unpack(r['titles'])
     qids={r['qid']:i for i,r in enumerate(rows)};fs=[f for f in flag_rows(cur) if f['qid'] in qids and not f['dismissed'] and f.get('source') and f['check'] in ['src','fact','lang'] and len(f['source'].get('passage',''))<=220 and all(len(v['text'])<=220 for v in ([f['versions'][f['language']]] if f['check']=='src' else f.get('versions',{}).values()))]
     fs.sort(key=lambda f:(0 if f['check']=='src' and f['verdict']=='Contradicted' else 1 if f['check']=='fact' else 2,qids[f['qid']]))
+    if fs:fs[0]['article_title']=next((r['title'] for r in rows if r['qid']==fs[0]['qid']),'')
     result={'themes':themes,'theme':theme,'sort':sort,'articles':rows[:10],'example':fs[0] if fs else None,'counts':counts(cur),'queries':traces};c.close();return jsonify(result)
 
 @app.get('/article')
@@ -112,9 +120,13 @@ def article():
     qid=request.args.get('qid','');asof=request.args.get('asof');c=db();cur=c.cursor();traces=[];a=article_meta(cur,qid)
     if not a:c.close();return jsonify(error='This article is not in the database.'),404
     fs=flag_rows(cur,qid);selected=next((f for f in fs if f['id']==request.args.get('flag')),None) or next((f for f in fs if not f['dismissed']),None)
-    gs=run(cur,'SELECT * FROM claim_group WHERE qid=%s ORDER BY ordinal',(qid,))
+    all_claims=request.args.get('all')=='1'
+    gs=run(cur,'SELECT * FROM claim_group WHERE qid=%s'+('' if all_claims else ' AND id IN (SELECT group_id FROM published_flag WHERE qid=%s)')+' ORDER BY ordinal',(qid,) if all_claims else (qid,qid))
     groups=[{**g,'versions':unpack(g['versions']),'checks':unpack(g['checks'])} for g in gs]
     for g in groups:g['flags']=[f['id'] for f in fs if f['group_id']==g['id']]
+    if all_claims:
+        claims=run(cur,'SELECT id,lang,section,text,rev_id,gloss,ordinal FROM claim WHERE qid=%s ORDER BY FIELD(lang,\'en\',\'fi\',\'sv\',\'de\',\'ru\'),ordinal',(qid,))
+        include_unrepresented(groups,claims)
     # Actually run the three inspection queries for the current selected claim.
     anchor=selected['claim_id'] if selected else groups[0]['anchor_id'] if groups else None
     if anchor:
@@ -139,7 +151,8 @@ def article():
                 v['asof_absence_verified']=any(f['claim_id']==v.get('claim_id',v.get('id')) and f.get('history',{}).get('material_absence_verified') and asof<str(f['history']['entered_at'])[:10] for f in fs)
                 if r:v['asof_revision']=r['rev_id']
     unread=run(cur,"SELECT DISTINCT cl.id,cl.lang,LEFT(cl.text,80) text,s.title,s.url,s.status FROM claim cl JOIN claim_source cs ON cs.claim_id=cl.id JOIN cited_source s ON s.id=cs.source_id WHERE cl.qid=%s AND s.status<>'Read'",(qid,))
-    a.update(flags=fs,groups=groups,history=history,queries=traces,unread=unread,asof=asof,claim_count=run(cur,'SELECT COUNT(*) n FROM claim WHERE qid=%s',(qid,))[0]['n'])
+    claim_counts={r['lang']:r['n'] for r in run(cur,'SELECT lang,COUNT(*) n FROM claim WHERE qid=%s GROUP BY lang',(qid,))}
+    a.update(flags=fs,groups=groups,history=history,queries=traces,unread=unread,asof=asof,claim_counts=claim_counts,claim_count=sum(claim_counts.values()))
     c.close();return jsonify(a)
 
 @app.get('/search')
@@ -153,12 +166,16 @@ def search():
             _encoder=encoder(os.environ.get('PARALLAX_EMBED_DEVICE','cpu'))
         vec=_encoder.encode([question],normalize_embeddings=True,show_progress_bar=False)[0].tolist()
     c=db();cur=c.cursor();traces=[]
+    cur.execute('SET SESSION mhnsw_ef_search=128')
     sql="""SELECT 'claim' kind,h.id,h.qid,h.lang,h.section,h.text,h.distance FROM
-    (SELECT id,qid,lang,section,text,VEC_DISTANCE_COSINE(embedding,VEC_FromText(%s)) distance FROM claim ORDER BY distance LIMIT 18) h
+    (SELECT id,qid,lang,section,text,VEC_DISTANCE_COSINE(embedding,VEC_FromText(%s)) distance FROM claim WHERE lang IN ('fi','sv','en') ORDER BY distance LIMIT 18) h
     UNION ALL SELECT 'source' kind,h.id,NULL qid,NULL lang,s.title section,h.text,h.distance FROM
     (SELECT id,source_id,text,VEC_DISTANCE_COSINE(embedding,VEC_FromText(%s)) distance FROM source_chunk ORDER BY distance LIMIT 18) h
     JOIN cited_source s ON s.id=h.source_id WHERE s.status='Read' ORDER BY distance LIMIT 18"""
-    hits=run(cur,sql,(json.dumps(vec),json.dumps(vec)),traces,'Closest claims and source texts');best=next((h for h in hits if h['kind']=='claim'),None);group=None;flags=[];topic=None
+    hits=run(cur,sql,(json.dumps(vec),json.dumps(vec)),traces,'Closest claims and source texts');claim_hits=[h for h in hits if h['kind']=='claim'];best=next(iter(claim_hits),None);group=None;flags=[];topic=None
+    if claim_hits:
+        cur.execute('SELECT DISTINCT claim_id FROM published_flag WHERE claim_id IN ('+','.join(['%s']*len(claim_hits))+')',tuple(h['id'] for h in claim_hits));reviewed={r['claim_id'] for r in cur.fetchall()}
+        best=next((h for h in claim_hits if h['id'] in reviewed and h['distance']<=claim_hits[0]['distance']+.12),best)
     if best and best['distance']<=.7:
         gs=run(cur,'SELECT g.* FROM claim_group g WHERE anchor_id=%s OR JSON_SEARCH(versions,\'one\',%s,NULL,\'$.*.claim_id\') IS NOT NULL ORDER BY (SELECT COUNT(*) FROM published_flag f WHERE f.group_id=g.id) DESC,g.ordinal LIMIT 1',(best['id'],best['id']))
         if gs:
