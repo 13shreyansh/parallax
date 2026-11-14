@@ -1,0 +1,29 @@
+{
+  "audit_id": "c16-family-audit-v1",
+  "frozen_at_utc": "2026-11-14T16:09:46.498220+00:00",
+  "files": {
+    "eval/c16/SPEC.md": "568fc33a3270d74a12d98b78a92870e63a886e145f12e5304f440d17a7fceb77",
+    "eval/c16/PLAN.json": "b9fcf65c24ff9b0316574cbdc480d822a292550a4a986ad645d7e5eda067fcb1",
+    "eval/c16/cases.json": "667a3203fa4a6f10b72329b90a0acdc932bc3c4ba7598c4a11024bdf6404a082",
+    "eval/c16/facts.json": "4c166cfda63277b5acaac82e6bce888abbc26259b17e165382bd6644e36244cb",
+    "eval/c16/source-articles.json": "8d1feedaa1a9558807fb7779ff66f7f500d53bbbdb1c2ab6fa9d2e377a24d2e8",
+    "scripts/c16_prepare.py": "2b828e5075de34780eef73fccb78894f336e35b798ceca8c5031e559f2c80949",
+    "scripts/c16_audit.py": "bb2baa2fb37f116b95f73919c8b4b364034302f09cc1f155a30f52c43c865fd4",
+    "server/checks.py": "027a8679bcc0954db7634524136bf772a69995a2dca48333ec4da8347ec0b8f3",
+    "server/db.py": "866120f7e53dce508ee6f4bcc1e3ff35fef86b51b0fabd5908bd050e7d1915ee",
+    "scripts/ingest.py": "7cf8d87288ae9f40e8e038f6a7a98035ddd206e78eab6cc4280b3712a2c13dd2"
+  },
+  "model": {
+    "id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "weight_file": "model.safetensors",
+    "sha256": "eaa086f0ffee582aeb45b36e34cdd1fe2d6de2bef61f8a559a1bbc9bd955917b"
+  },
+  "packages": {
+    "sentence-transformers": "6.3.0",
+    "torch": "2.15.0",
+    "numpy": "2.4.6",
+    "pyarrow": "26.0.1",
+    "PyMySQL": "1.2.4"
+  },
+  "policy": "Fixed product, single final scoring run; no human labels or calibrated model judge."
+}

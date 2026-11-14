@@ -2,6 +2,10 @@
 
 All runs in this ledger were performed during Junction on 14 November 2026, Helsinki time. Raw traces are committed. There are no human annotations or calibrated model judges. Synthetic mutation labels and weak automated retrieval proxies are identified separately.
 
+## C-16 separate frozen family audit
+
+See [C-16 report](c16/REPORT.md), [spec](c16/SPEC.md), [freeze manifest](c16/FROZEN.json) and [sealed final result](c16/final/FINAL.json). Product detector/model/thresholds were unchanged. New whole-family held-out measured paired tests caught 5/36 planted errors with 2/57 false flags on controlled equivalents. Held-out natural date proxy: vector 3/4 vs lexical 4/4. Combined metadata rename/reverse insertion changed 25/742 top-three rankings. All failures are published. Introduction of disagreement at revision X remains unproven. No new human labels or durable remote hosting are claimed. The earlier results below retain their original scope and history.
+
 ## What is being measured
 
 The product produces review leads with exact evidence. It does not produce a validated neutrality score or general truth verdict. A flagged number can still describe a different scope. The evaluation isolates specific rules and checks the database's revision behavior; it does not establish real-world contradiction precision or recall.

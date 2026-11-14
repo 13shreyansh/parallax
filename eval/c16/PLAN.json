@@ -1,0 +1,46 @@
+{
+  "audit_id": "c16-family-audit-v1",
+  "product_baseline_commit": "7f98b50cc9f48c6d058e34d670136bd7ef60e1fa",
+  "policy": "Do not change the delivered detector, model, thresholds or product corpus during this audit. Freeze cases, runner, spec and source evidence hashes before the single final scoring run. Publish all failures. This is a family-held-out audit of a fixed system, not a fresh training experiment.",
+  "development": {
+    "wartime_history": [
+      "Q134949",
+      "Q122100",
+      "Q211855",
+      "Q185489"
+    ]
+  },
+  "heldout": {
+    "education_institutions": [
+      "Q414481",
+      "Q1646874",
+      "Q277664"
+    ],
+    "railway_sites": [
+      "Q4411811",
+      "Q6750548",
+      "Q18661302"
+    ]
+  },
+  "previously_seen_excluded_from_new_holdout": [
+    "Q152306",
+    "Q736268",
+    "Q695285",
+    "Q154940",
+    "Q823175",
+    "Q2989671",
+    "Q202171",
+    "Q179858",
+    "Q1130792",
+    "Q1558846"
+  ],
+  "family_basis": "Builder-authored coarse entity/topic families, selected from title metadata before opening these articles for this audit. All text still comes from Wikipedia; this is not a publisher-independent split or proof that pretrained model training excluded these topics.",
+  "translation_controls": "Controlled multilingual equivalents authored for the audit, with explicit construction labels and source-backed fact values. No human gold labels. Report rule-only high-similarity stress and measured-embedding paths separately.",
+  "nuisances": [
+    "display-title rename",
+    "candidate insertion reorder",
+    "meaning-preserving rephrase"
+  ],
+  "onset": "Investigate evidence coverage; do not infer discrepancy onset from a single-language revision view. Leave introduction revision unproven unless both before/after cross-language claims, exact revisions, scope and continuity justify it.",
+  "selected_at_utc": "2026-11-14T16:05:50.397744+00:00"
+}

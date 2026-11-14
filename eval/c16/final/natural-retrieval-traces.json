@@ -1,0 +1,432 @@
+[
+  {
+    "id": "fi-440-0",
+    "qid": "Q122100",
+    "family": "wartime_history",
+    "source": "S snapshot original Wikipedia excerpts",
+    "query": "Jatkosota oli sota, joka käytiin Suomen ja Neuvostoliiton välillä 25. kesäkuuta 1941 – 19. syyskuuta 1944 Neuvostoliiton Suomen pommituksista Moskovan välirauhaan.",
+    "reference_ids": [
+      "en-7712-1"
+    ],
+    "vector": [
+      {
+        "id": "en-7712-1",
+        "text": "It began with a Finnish declaration of war on 25 June 1941 and ended on 19 September 1944 with the Moscow Armistice.",
+        "distance": 0.15720100722447627
+      },
+      {
+        "id": "en-7712-2",
+        "text": "The Soviet Union and Finland had previously fought the Winter War from 1939 to 1940, which ended with the Soviet failure to conquer Finland and the Moscow Peace Treaty.",
+        "distance": 0.2533847843576068
+      },
+      {
+        "id": "en-7712-91",
+        "text": "During the Interim Peace, the Soviet Military had relaid operational plans to conquer Finland, but with the German attack, Operation Barbarossa, begun on 22 June 1941, the Soviets required its best units and latest materiel to be deployed against the Germans and so abandoned plans for a renewed offensive against Finland.",
+        "distance": 0.25652408776822
+      }
+    ],
+    "lexical": [
+      {
+        "id": "en-7712-1",
+        "text": "It began with a Finnish declaration of war on 25 June 1941 and ended on 19 September 1944 with the Moscow Armistice."
+      },
+      {
+        "id": "en-7712-8",
+        "text": "It participated in besieging the city by cutting the northern supply routes and by digging in until 1944."
+      },
+      {
+        "id": "en-7712-6",
+        "text": "By September 1941, Finland had regained its post–Winter War concessions to the Soviet Union in Karelia."
+      }
+    ],
+    "vector_hit": true,
+    "lexical_hit": true
+  },
+  {
+    "id": "fi-1256-0",
+    "qid": "Q134949",
+    "family": "wartime_history",
+    "source": "S snapshot original Wikipedia excerpts",
+    "query": "Talvisota oli 30. marraskuuta 1939 – 13. maaliskuuta 1940 Suomen ja Neuvostoliiton välillä käyty sota.",
+    "reference_ids": [
+      "en-33924-1"
+    ],
+    "vector": [
+      {
+        "id": "en-33924-1",
+        "text": "It began with a Soviet invasion of Finland on 30 November 1939, three months after the outbreak of World War II, and ended three and a half months later with the Moscow Peace Treaty on 13 March 1940.",
+        "distance": 0.19796152676266643
+      },
+      {
+        "id": "en-33924-0",
+        "text": "The Winter War was a war between the Soviet Union and Finland.",
+        "distance": 0.20840012898781635
+      },
+      {
+        "id": "en-33924-17",
+        "text": "After 15 months of Interim Peace, in June 1941, Germany commenced Operation Barbarossa, and the Continuation War between Finland and the Soviets began.",
+        "distance": 0.3010853638160851
+      }
+    ],
+    "lexical": [
+      {
+        "id": "en-33924-1",
+        "text": "It began with a Soviet invasion of Finland on 30 November 1939, three months after the outbreak of World War II, and ended three and a half months later with the Moscow Peace Treaty on 13 March 1940."
+      },
+      {
+        "id": "en-33924-60",
+        "text": "The Soviet Union and Nazi Germany signed the Molotov–Ribbentrop Pact in August 1939."
+      },
+      {
+        "id": "en-33924-70",
+        "text": "On 5 October 1939, the Soviets invited a Finnish delegation to Moscow for negotiations."
+      }
+    ],
+    "vector_hit": true,
+    "lexical_hit": true
+  },
+  {
+    "id": "fi-20669-0",
+    "qid": "Q414481",
+    "family": "education_institutions",
+    "source": "S snapshot original Wikipedia excerpts",
+    "query": "Helsingin yliopisto) on Suomen ensimmäinen yliopisto, joka perustettiin Turkuun 26. maaliskuuta 1640.",
+    "reference_ids": [
+      "en-218062-4"
+    ],
+    "vector": [
+      {
+        "id": "en-218062-0",
+        "text": "The Royal Academy of Turku or the Royal Academy of Åbo was the first university in Finland, and the only Finnish university that was founded when the country still was a part of Sweden.",
+        "distance": 0.2945864218342189
+      },
+      {
+        "id": "en-218062-11",
+        "text": "There are two universities in Turku today: the Swedish-speaking Åbo Akademi University (founded in 1918) and the Finnish-speaking University of Turku (1920), which both sometimes may claim an academic tradition at the location since the 17th century, in spite of a break for almost a century.",
+        "distance": 0.3253655896032934
+      },
+      {
+        "id": "en-218062-10",
+        "text": "It continued in Helsinki, first as the Imperial Alexander University in Finland, and, following Finland's independence in 1917, as the University of Helsinki.",
+        "distance": 0.34041861001206475
+      }
+    ],
+    "lexical": [
+      {
+        "id": "en-218062-4",
+        "text": "The academy was founded on 26 March 1640 by Queen Christina of Sweden at the proposal of Count Per Brahe, on base of Åbo Cathedral School (founded 1276)."
+      },
+      {
+        "id": "en-218062-0",
+        "text": "The Royal Academy of Turku or the Royal Academy of Åbo was the first university in Finland, and the only Finnish university that was founded when the country still was a part of Sweden."
+      },
+      {
+        "id": "en-218062-1",
+        "text": "In 1809, after Finland became a grand duchy within the Russian Empire, it was renamed the Imperial Academy of Turku."
+      }
+    ],
+    "vector_hit": false,
+    "lexical_hit": true
+  },
+  {
+    "id": "fi-20669-18",
+    "qid": "Q414481",
+    "family": "education_institutions",
+    "source": "S snapshot original Wikipedia excerpts",
+    "query": "Kuningatar Kristiinan ja kuningattaren holhooja, kansleri Oxenstiernan johdolla valtaneuvosto allekirjoitti Turun akatemian perustamiskirjan 26. maaliskuuta 1640.",
+    "reference_ids": [
+      "en-218062-4"
+    ],
+    "vector": [
+      {
+        "id": "en-218062-4",
+        "text": "The academy was founded on 26 March 1640 by Queen Christina of Sweden at the proposal of Count Per Brahe, on base of Åbo Cathedral School (founded 1276).",
+        "distance": 0.5560569093593417
+      },
+      {
+        "id": "en-218062-9",
+        "text": "As a result of the Great Fire of Turku of 1827, which devastated most of the city and also badly damaged the university, the government offices that had remained were finally moved to the new capital, and so also was the university.",
+        "distance": 0.7509934577707814
+      },
+      {
+        "id": "en-218062-2",
+        "text": "In 1828, after the Great Fire of Turku, the institution was moved to Helsinki, in line with the relocation of the capital of the grand duchy.",
+        "distance": 0.7606791387335213
+      }
+    ],
+    "lexical": [
+      {
+        "id": "en-218062-4",
+        "text": "The academy was founded on 26 March 1640 by Queen Christina of Sweden at the proposal of Count Per Brahe, on base of Åbo Cathedral School (founded 1276)."
+      },
+      {
+        "id": "en-218062-0",
+        "text": "The Royal Academy of Turku or the Royal Academy of Åbo was the first university in Finland, and the only Finnish university that was founded when the country still was a part of Sweden."
+      },
+      {
+        "id": "en-218062-1",
+        "text": "In 1809, after Finland became a grand duchy within the Russian Empire, it was renamed the Imperial Academy of Turku."
+      }
+    ],
+    "vector_hit": true,
+    "lexical_hit": true
+  },
+  {
+    "id": "fi-24889-0",
+    "qid": "Q185489",
+    "family": "wartime_history",
+    "source": "S snapshot original Wikipedia excerpts",
+    "query": "Simo Häyhä (17. joulukuuta 1905 Rautjärvi – 1. huhtikuuta 2002 Hamina) oli suomalainen sotilas Neuvostoliittoa vastaan käydyssä talvisodassa.",
+    "reference_ids": [
+      "en-410610-0"
+    ],
+    "vector": [
+      {
+        "id": "en-410610-6",
+        "text": "Simo Häyhä was born on 17 December 1905 in the Kiiskinen hamlet of the Rautjärvi municipality in the Viipuri Province of southern Finland.",
+        "distance": 0.3087770899702067
+      },
+      {
+        "id": "en-410610-0",
+        "text": "Simo Häyhä (Finnish pronunciation: [ˈsimo ˈhæy̯hæ] ⓘ; 17 December 1905 –  1 April 2002), often referred to by his nickname The White Death (Finnish: Valkoinen kuolema; Russian: Бе́лая смерть, romanized: Bélaya smert’), was a Finnish military sniper during World War II in the 1939–1940 Winter War between Finland and the Soviet Union.",
+        "distance": 0.3435100072978602
+      },
+      {
+        "id": "en-410610-18",
+        "text": "Häyhä served as a sniper in the Finnish Army during the 1939–40 Winter War between Finland and the Soviet Union, under Lieutenant Aarne Juutilainen in the 6th Company of Infantry Regiment 34 (Jalkaväkirykmentti 34, or JR 34) during the Battle of Kollaa in temperatures between −40 and −20 °C (−40 and −4 °F).",
+        "distance": 0.47709658653665676
+      }
+    ],
+    "lexical": [
+      {
+        "id": "en-410610-6",
+        "text": "Simo Häyhä was born on 17 December 1905 in the Kiiskinen hamlet of the Rautjärvi municipality in the Viipuri Province of southern Finland."
+      },
+      {
+        "id": "en-410610-96",
+        "text": "Häyhä spent his last years in a war veterans' nursing home in Hamina, where he died on 1 April 2002, aged 96."
+      },
+      {
+        "id": "en-410610-0",
+        "text": "Simo Häyhä (Finnish pronunciation: [ˈsimo ˈhæy̯hæ] ⓘ; 17 December 1905 –  1 April 2002), often referred to by his nickname The White Death (Finnish: Valkoinen kuolema; Russian: Бе́лая смерть, romanized: Bélaya smert’), was a Finnish military sniper during World War II in the 1939–1940 Winter War between Finland and the Soviet Union."
+      }
+    ],
+    "vector_hit": true,
+    "lexical_hit": true
+  },
+  {
+    "id": "fi-24889-22",
+    "qid": "Q185489",
+    "family": "wartime_history",
+    "source": "S snapshot original Wikipedia excerpts",
+    "query": "Brandtbergin mukaan Häyhä muun muassa ampui ennätykselliset 25 neuvostosotilasta yhden päivän aikana, 21. joulukuuta 1939, minkä hän ”korsuun” palatessaan saattoi ilmoittaa vain mainitsemalla luvun ”kakskymmentviis”.",
+    "reference_ids": [
+      "en-410610-32"
+    ],
+    "vector": [
+      {
+        "id": "en-410610-32",
+        "text": "On 21 December 1939, Häyhä achieved his highest daily count of 25 kills.",
+        "distance": 0.41039104117981273
+      },
+      {
+        "id": "en-410610-18",
+        "text": "Häyhä served as a sniper in the Finnish Army during the 1939–40 Winter War between Finland and the Soviet Union, under Lieutenant Aarne Juutilainen in the 6th Company of Infantry Regiment 34 (Jalkaväkirykmentti 34, or JR 34) during the Battle of Kollaa in temperatures between −40 and −20 °C (−40 and −4 °F).",
+        "distance": 0.4635828545385847
+      },
+      {
+        "id": "en-410610-34",
+        "text": "Some of Häyhä's figures are from a Finnish Army document, counted from the beginning of the war, 30 November 1939:",
+        "distance": 0.4746438139765562
+      }
+    ],
+    "lexical": [
+      {
+        "id": "en-410610-32",
+        "text": "On 21 December 1939, Häyhä achieved his highest daily count of 25 kills."
+      },
+      {
+        "id": "en-410610-34",
+        "text": "Some of Häyhä's figures are from a Finnish Army document, counted from the beginning of the war, 30 November 1939:"
+      },
+      {
+        "id": "en-410610-18",
+        "text": "Häyhä served as a sniper in the Finnish Army during the 1939–40 Winter War between Finland and the Soviet Union, under Lieutenant Aarne Juutilainen in the 6th Company of Infantry Regiment 34 (Jalkaväkirykmentti 34, or JR 34) during the Battle of Kollaa in temperatures between −40 and −20 °C (−40 and −4 °F)."
+      }
+    ],
+    "vector_hit": true,
+    "lexical_hit": true
+  },
+  {
+    "id": "fi-24889-40",
+    "qid": "Q185489",
+    "family": "wartime_history",
+    "source": "S snapshot original Wikipedia excerpts",
+    "query": "Häyhä haavoittui vakavasti Kollaan rintamalla 6. maaliskuuta 1940.",
+    "reference_ids": [
+      "en-410610-53"
+    ],
+    "vector": [
+      {
+        "id": "en-410610-53",
+        "text": "On 6 March 1940, just a week before the end of the war, Häyhä was severely wounded when an explosive bullet fired by a Red Army soldier tore through his face and shattered his lower left jaw.",
+        "distance": 0.34396101872704954
+      },
+      {
+        "id": "en-410610-5",
+        "text": "Written in 1940 (a few months after he was wounded), his Sotamuistoja (lit. 'War Memories') describes his experiences in the Winter War from 30 November 1939 to 13 March 1940.",
+        "distance": 0.5181487634210763
+      },
+      {
+        "id": "en-410610-33",
+        "text": "In his diary, military chaplain Antti Rantamaa reported 259 confirmed kills made by rifle and an equal number of kills by submachine gun from the beginning of the war until 7 March 1940, one day after Häyhä was severely wounded.",
+        "distance": 0.5266562096505203
+      }
+    ],
+    "lexical": [
+      {
+        "id": "en-410610-53",
+        "text": "On 6 March 1940, just a week before the end of the war, Häyhä was severely wounded when an explosive bullet fired by a Red Army soldier tore through his face and shattered his lower left jaw."
+      },
+      {
+        "id": "en-410610-84",
+        "text": "Häyhä also served as a long-time board member of the Kollaa Fighters' Brotherhood, formed after the Winter War in May 1940."
+      },
+      {
+        "id": "en-410610-31",
+        "text": "Häyhä's division commander Antero Svensson credited him with 219 confirmed kills with a rifle and an equal number of kills by submachine gun, when he awarded Häyhä with an honorary rifle on 17 February 1940."
+      }
+    ],
+    "vector_hit": true,
+    "lexical_hit": true
+  },
+  {
+    "id": "fi-24889-61",
+    "qid": "Q185489",
+    "family": "wartime_history",
+    "source": "S snapshot original Wikipedia excerpts",
+    "query": "Hieman sodan jälkeen 28. elokuuta 1940 marsalkka Mannerheim ylensi Häyhän suoraan alikersantista vänrikiksi.",
+    "reference_ids": [
+      "en-410610-71"
+    ],
+    "vector": [
+      {
+        "id": "en-410610-71",
+        "text": "Shortly after the Winter War, on 28 August 1940, Finnish Field Marshal Carl Gustaf Emil Mannerheim promoted Häyhä straight from alikersantti (the lowest military rank of a non-commissioned officer) to vänrikki (the first military rank of an officer).",
+        "distance": 0.4172117555711007
+      },
+      {
+        "id": "en-410610-53",
+        "text": "On 6 March 1940, just a week before the end of the war, Häyhä was severely wounded when an explosive bullet fired by a Red Army soldier tore through his face and shattered his lower left jaw.",
+        "distance": 0.5840326976579903
+      },
+      {
+        "id": "en-410610-75",
+        "text": "Häyhä's cross was numbered four, following Marshal Mannerheim, President Kyösti Kallio, and Häyhä's division commander, Colonel Antero Svensson.",
+        "distance": 0.5953195929120214
+      }
+    ],
+    "lexical": [
+      {
+        "id": "en-410610-71",
+        "text": "Shortly after the Winter War, on 28 August 1940, Finnish Field Marshal Carl Gustaf Emil Mannerheim promoted Häyhä straight from alikersantti (the lowest military rank of a non-commissioned officer) to vänrikki (the first military rank of an officer)."
+      },
+      {
+        "id": "en-410610-68",
+        "text": "As an additional honour, on 17 February 1940, he received a nameplated SAKO M/28-30 “Pystykorva” Honorary  Rifle (serial number 100 781), donated by Eugen Johansson, a Swedish businessman and supporter of Finland."
+      },
+      {
+        "id": "en-410610-40",
+        "text": "Häyhä used his issued Civil Guard rifle, an early series SAKO M/28-30, serial number 35281, Civil Guard number S60974."
+      }
+    ],
+    "vector_hit": true,
+    "lexical_hit": true
+  },
+  {
+    "id": "fi-40509-10",
+    "qid": "Q6750548",
+    "family": "railway_sites",
+    "source": "S snapshot original Wikipedia excerpts",
+    "query": "Seisakkeen pysähdykset päättyivät lopulta 27. maaliskuuta 2016, minkä yhteydessä perustettiin korvaava bussilinja 166B.",
+    "reference_ids": [
+      "en-10893088-4"
+    ],
+    "vector": [
+      {
+        "id": "en-10893088-4",
+        "text": "Because of the very low number of passengers, the station was closed on 27 March 2016.",
+        "distance": 0.432584346984765
+      },
+      {
+        "id": "en-10893088-5",
+        "text": "Only the U and early morning/late night L trains between Kirkkonummi and Helsinki stopped at Mankki giving approximately an hourly service, but the faster S trains did not stop.",
+        "distance": 0.7386542238336061
+      },
+      {
+        "id": "en-10893088-3",
+        "text": "Mankki was the least used station in the Espoo area, with only 60-100 passengers per day before its closure.",
+        "distance": 0.7719501548347558
+      }
+    ],
+    "lexical": [
+      {
+        "id": "en-10893088-4",
+        "text": "Because of the very low number of passengers, the station was closed on 27 March 2016."
+      },
+      {
+        "id": "en-10893088-0",
+        "text": "Mankki railway station (Finnish: Mankin rautatieasema, Swedish: Mankby hållplats) was a station on the VR commuter rail network located in Espoo, Finland, between the stations of Kauklahti and Luoma."
+      },
+      {
+        "id": "en-10893088-1",
+        "text": "The station had two tracks, with track one serving trains towards Kirkkonummi and the other towards Helsinki."
+      }
+    ],
+    "vector_hit": true,
+    "lexical_hit": true
+  },
+  {
+    "id": "fi-204156-15",
+    "qid": "Q4411811",
+    "family": "railway_sites",
+    "source": "S snapshot original Wikipedia excerpts",
+    "query": "Lopulta Luoman henkilöliikenne lakkautettiin 27. maaliskuuta 2016 samaan aikaan Mankin aseman kanssa.",
+    "reference_ids": [
+      "en-10889315-5"
+    ],
+    "vector": [
+      {
+        "id": "en-10889315-5",
+        "text": "Because of very low number of passengers, the station was closed a day after neighbouring station Mankki on 27 March 2016.",
+        "distance": 0.25290826450784065
+      },
+      {
+        "id": "en-10889315-0",
+        "text": "Luoma (Finnish) or Bobäck (Swedish) was a station on the VR commuter rail network located in Kirkkonummi, Finland, between the stations of Mankki and Masala.",
+        "distance": 0.6482956978886967
+      },
+      {
+        "id": "en-10889315-4",
+        "text": "When the original Luoma station was shut down in 1978, the Nokka station was renamed as Luoma.",
+        "distance": 0.6715044214561385
+      }
+    ],
+    "lexical": [
+      {
+        "id": "en-10889315-5",
+        "text": "Because of very low number of passengers, the station was closed a day after neighbouring station Mankki on 27 March 2016."
+      },
+      {
+        "id": "en-10889315-0",
+        "text": "Luoma (Finnish) or Bobäck (Swedish) was a station on the VR commuter rail network located in Kirkkonummi, Finland, between the stations of Mankki and Masala."
+      },
+      {
+        "id": "en-10889315-1",
+        "text": "The station had two tracks, with track one serving trains towards Kirkkonummi and track two towards Helsinki."
+      }
+    ],
+    "vector_hit": true,
+    "lexical_hit": true
+  }
+]

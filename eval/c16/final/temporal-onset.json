@@ -1,0 +1,362 @@
+[
+  {
+    "qid": "Q185489",
+    "coverage": [
+      {
+        "lang": "fi",
+        "n": 915,
+        "first_revision": "2004-11-22 14:06:31",
+        "last_revision": "2026-09-24 10:26:28"
+      },
+      {
+        "lang": "en",
+        "n": 3,
+        "first_revision": "2026-09-11 10:04:56",
+        "last_revision": "2026-11-06 23:42:44"
+      },
+      {
+        "lang": "sv",
+        "n": 3,
+        "first_revision": "2025-12-13 16:46:10",
+        "last_revision": "2026-02-10 21:35:39"
+      }
+    ],
+    "comparison_2015_utc": [
+      {
+        "lang": "fi",
+        "revision": 14543058
+      },
+      {
+        "lang": "en",
+        "revision": null
+      },
+      {
+        "lang": "sv",
+        "revision": null
+      }
+    ],
+    "status": "unproven",
+    "introduction_revision": null,
+    "reason": "No established factual disagreement and no continuous aligned multilingual history. Single-language content changes cannot identify cross-language disagreement onset."
+  },
+  {
+    "qid": "Q823175",
+    "coverage": [
+      {
+        "lang": "fi",
+        "n": 528,
+        "first_revision": "2004-01-18 15:41:08",
+        "last_revision": "2026-09-02 19:21:07"
+      },
+      {
+        "lang": "en",
+        "n": 3,
+        "first_revision": "2026-10-09 17:22:04",
+        "last_revision": "2026-11-09 13:20:43"
+      },
+      {
+        "lang": "sv",
+        "n": 3,
+        "first_revision": "2020-03-18 12:08:19",
+        "last_revision": "2025-09-29 09:07:00"
+      }
+    ],
+    "comparison_2015_utc": [
+      {
+        "lang": "fi",
+        "revision": 14528569
+      },
+      {
+        "lang": "en",
+        "revision": null
+      },
+      {
+        "lang": "sv",
+        "revision": null
+      }
+    ],
+    "status": "unproven",
+    "introduction_revision": null,
+    "reason": "No established factual disagreement and no continuous aligned multilingual history. Single-language content changes cannot identify cross-language disagreement onset."
+  },
+  {
+    "qid": "Q154940",
+    "coverage": [
+      {
+        "lang": "fi",
+        "n": 850,
+        "first_revision": "2004-03-04 14:37:40",
+        "last_revision": "2026-10-23 20:34:30"
+      },
+      {
+        "lang": "en",
+        "n": 3,
+        "first_revision": "2026-11-03 19:56:39",
+        "last_revision": "2026-11-10 00:14:41"
+      },
+      {
+        "lang": "sv",
+        "n": 3,
+        "first_revision": "2026-03-25 07:50:49",
+        "last_revision": "2026-10-18 05:20:01"
+      }
+    ],
+    "comparison_2015_utc": [
+      {
+        "lang": "fi",
+        "revision": 14512123
+      },
+      {
+        "lang": "en",
+        "revision": null
+      },
+      {
+        "lang": "sv",
+        "revision": null
+      }
+    ],
+    "status": "unproven",
+    "introduction_revision": null,
+    "reason": "No established factual disagreement and no continuous aligned multilingual history. Single-language content changes cannot identify cross-language disagreement onset."
+  },
+  {
+    "qid": "Q695285",
+    "coverage": [
+      {
+        "lang": "fi",
+        "n": 215,
+        "first_revision": "2005-05-21 12:01:58",
+        "last_revision": "2026-10-23 11:55:50"
+      },
+      {
+        "lang": "en",
+        "n": 3,
+        "first_revision": "2026-03-12 03:57:01",
+        "last_revision": "2026-05-22 08:40:59"
+      },
+      {
+        "lang": "sv",
+        "n": 3,
+        "first_revision": "2024-04-03 17:37:16",
+        "last_revision": "2024-09-17 19:04:30"
+      }
+    ],
+    "comparison_2015_utc": [
+      {
+        "lang": "fi",
+        "revision": 14373583
+      },
+      {
+        "lang": "en",
+        "revision": null
+      },
+      {
+        "lang": "sv",
+        "revision": null
+      }
+    ],
+    "status": "unproven",
+    "introduction_revision": null,
+    "reason": "No established factual disagreement and no continuous aligned multilingual history. Single-language content changes cannot identify cross-language disagreement onset."
+  },
+  {
+    "qid": "Q736268",
+    "coverage": [
+      {
+        "lang": "fi",
+        "n": 799,
+        "first_revision": "2004-04-14 17:06:41",
+        "last_revision": "2026-11-14 14:12:59"
+      },
+      {
+        "lang": "en",
+        "n": 3,
+        "first_revision": "2026-08-22 03:15:23",
+        "last_revision": "2026-10-25 01:17:09"
+      },
+      {
+        "lang": "sv",
+        "n": 3,
+        "first_revision": "2026-04-24 03:56:28",
+        "last_revision": "2026-09-18 11:21:56"
+      }
+    ],
+    "comparison_2015_utc": [
+      {
+        "lang": "fi",
+        "revision": 14331365
+      },
+      {
+        "lang": "en",
+        "revision": null
+      },
+      {
+        "lang": "sv",
+        "revision": null
+      }
+    ],
+    "status": "unproven",
+    "introduction_revision": null,
+    "reason": "No established factual disagreement and no continuous aligned multilingual history. Single-language content changes cannot identify cross-language disagreement onset."
+  },
+  {
+    "qid": "Q211855",
+    "coverage": [
+      {
+        "lang": "fi",
+        "n": 3360,
+        "first_revision": "2003-08-26 14:35:35",
+        "last_revision": "2026-10-07 15:15:52"
+      },
+      {
+        "lang": "en",
+        "n": 3,
+        "first_revision": "2026-11-05 18:09:21",
+        "last_revision": "2026-11-13 22:07:10"
+      },
+      {
+        "lang": "sv",
+        "n": 3,
+        "first_revision": "2025-03-18 16:49:21",
+        "last_revision": "2026-09-18 11:23:39"
+      }
+    ],
+    "comparison_2015_utc": [
+      {
+        "lang": "fi",
+        "revision": 14546671
+      },
+      {
+        "lang": "en",
+        "revision": null
+      },
+      {
+        "lang": "sv",
+        "revision": null
+      }
+    ],
+    "status": "unproven",
+    "introduction_revision": null,
+    "reason": "No established factual disagreement and no continuous aligned multilingual history. Single-language content changes cannot identify cross-language disagreement onset."
+  },
+  {
+    "qid": "Q152306",
+    "coverage": [
+      {
+        "lang": "fi",
+        "n": 2403,
+        "first_revision": "2004-02-18 15:04:08",
+        "last_revision": "2026-10-29 09:05:49"
+      },
+      {
+        "lang": "en",
+        "n": 3,
+        "first_revision": "2026-11-07 23:28:28",
+        "last_revision": "2026-11-09 16:58:47"
+      },
+      {
+        "lang": "sv",
+        "n": 3,
+        "first_revision": "2026-03-31 10:46:29",
+        "last_revision": "2026-11-04 14:48:13"
+      }
+    ],
+    "comparison_2015_utc": [
+      {
+        "lang": "fi",
+        "revision": 14547319
+      },
+      {
+        "lang": "en",
+        "revision": null
+      },
+      {
+        "lang": "sv",
+        "revision": null
+      }
+    ],
+    "status": "unproven",
+    "introduction_revision": null,
+    "reason": "No established factual disagreement and no continuous aligned multilingual history. Single-language content changes cannot identify cross-language disagreement onset."
+  },
+  {
+    "qid": "Q122100",
+    "coverage": [
+      {
+        "lang": "fi",
+        "n": 1674,
+        "first_revision": "2003-08-06 08:14:00",
+        "last_revision": "2026-10-22 20:10:51"
+      },
+      {
+        "lang": "en",
+        "n": 3,
+        "first_revision": "2026-10-03 21:15:31",
+        "last_revision": "2026-11-07 10:04:31"
+      },
+      {
+        "lang": "sv",
+        "n": 3,
+        "first_revision": "2026-08-24 06:49:00",
+        "last_revision": "2026-09-18 11:24:31"
+      }
+    ],
+    "comparison_2015_utc": [
+      {
+        "lang": "fi",
+        "revision": 14530771
+      },
+      {
+        "lang": "en",
+        "revision": null
+      },
+      {
+        "lang": "sv",
+        "revision": null
+      }
+    ],
+    "status": "unproven",
+    "introduction_revision": null,
+    "reason": "No established factual disagreement and no continuous aligned multilingual history. Single-language content changes cannot identify cross-language disagreement onset."
+  },
+  {
+    "qid": "Q134949",
+    "coverage": [
+      {
+        "lang": "fi",
+        "n": 2146,
+        "first_revision": "2003-10-13 09:21:05",
+        "last_revision": "2026-11-13 10:39:22"
+      },
+      {
+        "lang": "en",
+        "n": 3,
+        "first_revision": "2026-11-01 00:10:52",
+        "last_revision": "2026-11-07 19:50:21"
+      },
+      {
+        "lang": "sv",
+        "n": 3,
+        "first_revision": "2026-09-18 11:24:11",
+        "last_revision": "2026-11-12 13:18:44"
+      }
+    ],
+    "comparison_2015_utc": [
+      {
+        "lang": "fi",
+        "revision": 14547217
+      },
+      {
+        "lang": "en",
+        "revision": null
+      },
+      {
+        "lang": "sv",
+        "revision": null
+      }
+    ],
+    "status": "unproven",
+    "introduction_revision": null,
+    "reason": "No established factual disagreement and no continuous aligned multilingual history. Single-language content changes cannot identify cross-language disagreement onset."
+  }
+]

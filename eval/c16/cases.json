@@ -1,0 +1,3068 @@
+[
+  {
+    "id": "war-start-fi-en-base",
+    "fact_id": "war-start",
+    "qid": "Q134949",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Talvisota alkoi 30. marraskuuta 1939.",
+    "b": "The Winter War began on 30 November 1939.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303580599,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303580599",
+      "title": "Winter War",
+      "matching_source_paragraph": "The Winter War was a war between the Soviet Union and Finland. It began with a Soviet invasion of Finland on 30 November 1939, three months after the outbreak of World War II, and ended three and a half months later with the Moscow Peace Treaty on 13 March 1940. Despite superior military strength, especially in tanks and aircraft, the Soviet Union suffered severe losses and initially made little headway. The League of Nations deemed the attack illegal and expelled the Soviet Union from its organization."
+    }
+  },
+  {
+    "id": "war-start-fi-en-rephrase",
+    "fact_id": "war-start",
+    "qid": "Q134949",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Talvisota alkoi 30. marraskuuta 1939.",
+    "b": "30 November 1939 was the start date of the Winter War.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303580599,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303580599",
+      "title": "Winter War",
+      "matching_source_paragraph": "The Winter War was a war between the Soviet Union and Finland. It began with a Soviet invasion of Finland on 30 November 1939, three months after the outbreak of World War II, and ended three and a half months later with the Moscow Peace Treaty on 13 March 1940. Despite superior military strength, especially in tanks and aircraft, the Soviet Union suffered severe losses and initially made little headway. The League of Nations deemed the attack illegal and expelled the Soviet Union from its organization."
+    }
+  },
+  {
+    "id": "war-start-fi-en-context_reorder",
+    "fact_id": "war-start",
+    "qid": "Q134949",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "This statement concerns the stored article. Talvisota alkoi 30. marraskuuta 1939.",
+    "b": "The Winter War began on 30 November 1939. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303580599,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303580599",
+      "title": "Winter War",
+      "matching_source_paragraph": "The Winter War was a war between the Soviet Union and Finland. It began with a Soviet invasion of Finland on 30 November 1939, three months after the outbreak of World War II, and ended three and a half months later with the Moscow Peace Treaty on 13 March 1940. Despite superior military strength, especially in tanks and aircraft, the Soviet Union suffered severe losses and initially made little headway. The League of Nations deemed the attack illegal and expelled the Soviet Union from its organization."
+    }
+  },
+  {
+    "id": "war-start-fi-en-changed-year",
+    "fact_id": "war-start",
+    "qid": "Q134949",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Talvisota alkoi 30. marraskuuta 1939.",
+    "b": "The Winter War began on 30 November 1940.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303580599,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303580599",
+      "title": "Winter War",
+      "matching_source_paragraph": "The Winter War was a war between the Soviet Union and Finland. It began with a Soviet invasion of Finland on 30 November 1939, three months after the outbreak of World War II, and ended three and a half months later with the Moscow Peace Treaty on 13 March 1940. Despite superior military strength, especially in tanks and aircraft, the Soviet Union suffered severe losses and initially made little headway. The League of Nations deemed the attack illegal and expelled the Soviet Union from its organization."
+    }
+  },
+  {
+    "id": "war-start-fi-en-changed-name",
+    "fact_id": "war-start",
+    "qid": "Q134949",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Talvisota alkoi 30. marraskuuta 1939.",
+    "b": "The Atlantis began on 30 November 1939.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303580599,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303580599",
+      "title": "Winter War",
+      "matching_source_paragraph": "The Winter War was a war between the Soviet Union and Finland. It began with a Soviet invasion of Finland on 30 November 1939, three months after the outbreak of World War II, and ended three and a half months later with the Moscow Peace Treaty on 13 March 1940. Despite superior military strength, especially in tanks and aircraft, the Soviet Union suffered severe losses and initially made little headway. The League of Nations deemed the attack illegal and expelled the Soviet Union from its organization."
+    }
+  },
+  {
+    "id": "war-start-fi-sv-base",
+    "fact_id": "war-start",
+    "qid": "Q134949",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Talvisota alkoi 30. marraskuuta 1939.",
+    "b": "Vinterkriget började den 30 november 1939.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303580599,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303580599",
+      "title": "Winter War",
+      "matching_source_paragraph": "The Winter War was a war between the Soviet Union and Finland. It began with a Soviet invasion of Finland on 30 November 1939, three months after the outbreak of World War II, and ended three and a half months later with the Moscow Peace Treaty on 13 March 1940. Despite superior military strength, especially in tanks and aircraft, the Soviet Union suffered severe losses and initially made little headway. The League of Nations deemed the attack illegal and expelled the Soviet Union from its organization."
+    }
+  },
+  {
+    "id": "war-start-fi-sv-rephrase",
+    "fact_id": "war-start",
+    "qid": "Q134949",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Talvisota alkoi 30. marraskuuta 1939.",
+    "b": "Vinterkrigets startdatum var den 30 november 1939.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303580599,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303580599",
+      "title": "Winter War",
+      "matching_source_paragraph": "The Winter War was a war between the Soviet Union and Finland. It began with a Soviet invasion of Finland on 30 November 1939, three months after the outbreak of World War II, and ended three and a half months later with the Moscow Peace Treaty on 13 March 1940. Despite superior military strength, especially in tanks and aircraft, the Soviet Union suffered severe losses and initially made little headway. The League of Nations deemed the attack illegal and expelled the Soviet Union from its organization."
+    }
+  },
+  {
+    "id": "war-start-fi-sv-context_reorder",
+    "fact_id": "war-start",
+    "qid": "Q134949",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "This statement concerns the stored article. Talvisota alkoi 30. marraskuuta 1939.",
+    "b": "Vinterkriget började den 30 november 1939. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303580599,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303580599",
+      "title": "Winter War",
+      "matching_source_paragraph": "The Winter War was a war between the Soviet Union and Finland. It began with a Soviet invasion of Finland on 30 November 1939, three months after the outbreak of World War II, and ended three and a half months later with the Moscow Peace Treaty on 13 March 1940. Despite superior military strength, especially in tanks and aircraft, the Soviet Union suffered severe losses and initially made little headway. The League of Nations deemed the attack illegal and expelled the Soviet Union from its organization."
+    }
+  },
+  {
+    "id": "war-start-fi-sv-changed-year",
+    "fact_id": "war-start",
+    "qid": "Q134949",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Talvisota alkoi 30. marraskuuta 1939.",
+    "b": "Vinterkriget började den 30 november 1940.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303580599,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303580599",
+      "title": "Winter War",
+      "matching_source_paragraph": "The Winter War was a war between the Soviet Union and Finland. It began with a Soviet invasion of Finland on 30 November 1939, three months after the outbreak of World War II, and ended three and a half months later with the Moscow Peace Treaty on 13 March 1940. Despite superior military strength, especially in tanks and aircraft, the Soviet Union suffered severe losses and initially made little headway. The League of Nations deemed the attack illegal and expelled the Soviet Union from its organization."
+    }
+  },
+  {
+    "id": "war-start-fi-sv-changed-name",
+    "fact_id": "war-start",
+    "qid": "Q134949",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Talvisota alkoi 30. marraskuuta 1939.",
+    "b": "Atlantis började den 30 november 1939.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303580599,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303580599",
+      "title": "Winter War",
+      "matching_source_paragraph": "The Winter War was a war between the Soviet Union and Finland. It began with a Soviet invasion of Finland on 30 November 1939, three months after the outbreak of World War II, and ended three and a half months later with the Moscow Peace Treaty on 13 March 1940. Despite superior military strength, especially in tanks and aircraft, the Soviet Union suffered severe losses and initially made little headway. The League of Nations deemed the attack illegal and expelled the Soviet Union from its organization."
+    }
+  },
+  {
+    "id": "war-start-sv-en-base",
+    "fact_id": "war-start",
+    "qid": "Q134949",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Vinterkriget började den 30 november 1939.",
+    "b": "The Winter War began on 30 November 1939.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303580599,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303580599",
+      "title": "Winter War",
+      "matching_source_paragraph": "The Winter War was a war between the Soviet Union and Finland. It began with a Soviet invasion of Finland on 30 November 1939, three months after the outbreak of World War II, and ended three and a half months later with the Moscow Peace Treaty on 13 March 1940. Despite superior military strength, especially in tanks and aircraft, the Soviet Union suffered severe losses and initially made little headway. The League of Nations deemed the attack illegal and expelled the Soviet Union from its organization."
+    }
+  },
+  {
+    "id": "war-start-sv-en-rephrase",
+    "fact_id": "war-start",
+    "qid": "Q134949",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Vinterkriget började den 30 november 1939.",
+    "b": "30 November 1939 was the start date of the Winter War.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303580599,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303580599",
+      "title": "Winter War",
+      "matching_source_paragraph": "The Winter War was a war between the Soviet Union and Finland. It began with a Soviet invasion of Finland on 30 November 1939, three months after the outbreak of World War II, and ended three and a half months later with the Moscow Peace Treaty on 13 March 1940. Despite superior military strength, especially in tanks and aircraft, the Soviet Union suffered severe losses and initially made little headway. The League of Nations deemed the attack illegal and expelled the Soviet Union from its organization."
+    }
+  },
+  {
+    "id": "war-start-sv-en-context_reorder",
+    "fact_id": "war-start",
+    "qid": "Q134949",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "This statement concerns the stored article. Vinterkriget började den 30 november 1939.",
+    "b": "The Winter War began on 30 November 1939. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303580599,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303580599",
+      "title": "Winter War",
+      "matching_source_paragraph": "The Winter War was a war between the Soviet Union and Finland. It began with a Soviet invasion of Finland on 30 November 1939, three months after the outbreak of World War II, and ended three and a half months later with the Moscow Peace Treaty on 13 March 1940. Despite superior military strength, especially in tanks and aircraft, the Soviet Union suffered severe losses and initially made little headway. The League of Nations deemed the attack illegal and expelled the Soviet Union from its organization."
+    }
+  },
+  {
+    "id": "war-start-sv-en-changed-year",
+    "fact_id": "war-start",
+    "qid": "Q134949",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Vinterkriget började den 30 november 1939.",
+    "b": "The Winter War began on 30 November 1940.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303580599,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303580599",
+      "title": "Winter War",
+      "matching_source_paragraph": "The Winter War was a war between the Soviet Union and Finland. It began with a Soviet invasion of Finland on 30 November 1939, three months after the outbreak of World War II, and ended three and a half months later with the Moscow Peace Treaty on 13 March 1940. Despite superior military strength, especially in tanks and aircraft, the Soviet Union suffered severe losses and initially made little headway. The League of Nations deemed the attack illegal and expelled the Soviet Union from its organization."
+    }
+  },
+  {
+    "id": "war-start-sv-en-changed-name",
+    "fact_id": "war-start",
+    "qid": "Q134949",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Vinterkriget började den 30 november 1939.",
+    "b": "The Atlantis began on 30 November 1939.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303580599,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303580599",
+      "title": "Winter War",
+      "matching_source_paragraph": "The Winter War was a war between the Soviet Union and Finland. It began with a Soviet invasion of Finland on 30 November 1939, three months after the outbreak of World War II, and ended three and a half months later with the Moscow Peace Treaty on 13 March 1940. Despite superior military strength, especially in tanks and aircraft, the Soviet Union suffered severe losses and initially made little headway. The League of Nations deemed the attack illegal and expelled the Soviet Union from its organization."
+    }
+  },
+  {
+    "id": "continuation-start-fi-en-base",
+    "fact_id": "continuation-start",
+    "qid": "Q122100",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Jatkosota alkoi 25. kesäkuuta 1941.",
+    "b": "The Continuation War began on 25 June 1941.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1304070619,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1304070619",
+      "title": "Continuation War",
+      "matching_source_paragraph": "The Continuation War, also known as the Second Soviet–Finnish War, was a conflict fought by Finland and Nazi Germany against the Soviet Union during World War II. It began with a Finnish declaration of war on 25 June 1941 and ended on 19 September 1944 with the Moscow Armistice. The Soviet Union and Finland had previously fought the Winter War from 1939 to 1940, which ended with the Soviet failure to conquer Finland and the Moscow Peace Treaty. Numerous reasons have been proposed for the Finnish decision to invade, with regaining territory lost during the Winter War regarded as the most common. Other justifications for the conflict include Finnish President Risto Ryti's vision of a Greater Finland and Commander-in-Chief Carl Gustaf Emil Mannerheim's desire to annex East Karelia."
+    }
+  },
+  {
+    "id": "continuation-start-fi-en-rephrase",
+    "fact_id": "continuation-start",
+    "qid": "Q122100",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Jatkosota alkoi 25. kesäkuuta 1941.",
+    "b": "The start date of the Continuation War was 25 June 1941.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1304070619,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1304070619",
+      "title": "Continuation War",
+      "matching_source_paragraph": "The Continuation War, also known as the Second Soviet–Finnish War, was a conflict fought by Finland and Nazi Germany against the Soviet Union during World War II. It began with a Finnish declaration of war on 25 June 1941 and ended on 19 September 1944 with the Moscow Armistice. The Soviet Union and Finland had previously fought the Winter War from 1939 to 1940, which ended with the Soviet failure to conquer Finland and the Moscow Peace Treaty. Numerous reasons have been proposed for the Finnish decision to invade, with regaining territory lost during the Winter War regarded as the most common. Other justifications for the conflict include Finnish President Risto Ryti's vision of a Greater Finland and Commander-in-Chief Carl Gustaf Emil Mannerheim's desire to annex East Karelia."
+    }
+  },
+  {
+    "id": "continuation-start-fi-en-context_reorder",
+    "fact_id": "continuation-start",
+    "qid": "Q122100",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "This statement concerns the stored article. Jatkosota alkoi 25. kesäkuuta 1941.",
+    "b": "The Continuation War began on 25 June 1941. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1304070619,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1304070619",
+      "title": "Continuation War",
+      "matching_source_paragraph": "The Continuation War, also known as the Second Soviet–Finnish War, was a conflict fought by Finland and Nazi Germany against the Soviet Union during World War II. It began with a Finnish declaration of war on 25 June 1941 and ended on 19 September 1944 with the Moscow Armistice. The Soviet Union and Finland had previously fought the Winter War from 1939 to 1940, which ended with the Soviet failure to conquer Finland and the Moscow Peace Treaty. Numerous reasons have been proposed for the Finnish decision to invade, with regaining territory lost during the Winter War regarded as the most common. Other justifications for the conflict include Finnish President Risto Ryti's vision of a Greater Finland and Commander-in-Chief Carl Gustaf Emil Mannerheim's desire to annex East Karelia."
+    }
+  },
+  {
+    "id": "continuation-start-fi-en-changed-year",
+    "fact_id": "continuation-start",
+    "qid": "Q122100",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Jatkosota alkoi 25. kesäkuuta 1941.",
+    "b": "The Continuation War began on 25 June 1942.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1304070619,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1304070619",
+      "title": "Continuation War",
+      "matching_source_paragraph": "The Continuation War, also known as the Second Soviet–Finnish War, was a conflict fought by Finland and Nazi Germany against the Soviet Union during World War II. It began with a Finnish declaration of war on 25 June 1941 and ended on 19 September 1944 with the Moscow Armistice. The Soviet Union and Finland had previously fought the Winter War from 1939 to 1940, which ended with the Soviet failure to conquer Finland and the Moscow Peace Treaty. Numerous reasons have been proposed for the Finnish decision to invade, with regaining territory lost during the Winter War regarded as the most common. Other justifications for the conflict include Finnish President Risto Ryti's vision of a Greater Finland and Commander-in-Chief Carl Gustaf Emil Mannerheim's desire to annex East Karelia."
+    }
+  },
+  {
+    "id": "continuation-start-fi-en-changed-name",
+    "fact_id": "continuation-start",
+    "qid": "Q122100",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Jatkosota alkoi 25. kesäkuuta 1941.",
+    "b": "The Atlantis began on 25 June 1941.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1304070619,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1304070619",
+      "title": "Continuation War",
+      "matching_source_paragraph": "The Continuation War, also known as the Second Soviet–Finnish War, was a conflict fought by Finland and Nazi Germany against the Soviet Union during World War II. It began with a Finnish declaration of war on 25 June 1941 and ended on 19 September 1944 with the Moscow Armistice. The Soviet Union and Finland had previously fought the Winter War from 1939 to 1940, which ended with the Soviet failure to conquer Finland and the Moscow Peace Treaty. Numerous reasons have been proposed for the Finnish decision to invade, with regaining territory lost during the Winter War regarded as the most common. Other justifications for the conflict include Finnish President Risto Ryti's vision of a Greater Finland and Commander-in-Chief Carl Gustaf Emil Mannerheim's desire to annex East Karelia."
+    }
+  },
+  {
+    "id": "continuation-start-fi-sv-base",
+    "fact_id": "continuation-start",
+    "qid": "Q122100",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Jatkosota alkoi 25. kesäkuuta 1941.",
+    "b": "Fortsättningskriget började den 25 juni 1941.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1304070619,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1304070619",
+      "title": "Continuation War",
+      "matching_source_paragraph": "The Continuation War, also known as the Second Soviet–Finnish War, was a conflict fought by Finland and Nazi Germany against the Soviet Union during World War II. It began with a Finnish declaration of war on 25 June 1941 and ended on 19 September 1944 with the Moscow Armistice. The Soviet Union and Finland had previously fought the Winter War from 1939 to 1940, which ended with the Soviet failure to conquer Finland and the Moscow Peace Treaty. Numerous reasons have been proposed for the Finnish decision to invade, with regaining territory lost during the Winter War regarded as the most common. Other justifications for the conflict include Finnish President Risto Ryti's vision of a Greater Finland and Commander-in-Chief Carl Gustaf Emil Mannerheim's desire to annex East Karelia."
+    }
+  },
+  {
+    "id": "continuation-start-fi-sv-rephrase",
+    "fact_id": "continuation-start",
+    "qid": "Q122100",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Jatkosota alkoi 25. kesäkuuta 1941.",
+    "b": "Fortsättningskrigets startdatum var den 25 juni 1941.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1304070619,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1304070619",
+      "title": "Continuation War",
+      "matching_source_paragraph": "The Continuation War, also known as the Second Soviet–Finnish War, was a conflict fought by Finland and Nazi Germany against the Soviet Union during World War II. It began with a Finnish declaration of war on 25 June 1941 and ended on 19 September 1944 with the Moscow Armistice. The Soviet Union and Finland had previously fought the Winter War from 1939 to 1940, which ended with the Soviet failure to conquer Finland and the Moscow Peace Treaty. Numerous reasons have been proposed for the Finnish decision to invade, with regaining territory lost during the Winter War regarded as the most common. Other justifications for the conflict include Finnish President Risto Ryti's vision of a Greater Finland and Commander-in-Chief Carl Gustaf Emil Mannerheim's desire to annex East Karelia."
+    }
+  },
+  {
+    "id": "continuation-start-fi-sv-context_reorder",
+    "fact_id": "continuation-start",
+    "qid": "Q122100",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "This statement concerns the stored article. Jatkosota alkoi 25. kesäkuuta 1941.",
+    "b": "Fortsättningskriget började den 25 juni 1941. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1304070619,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1304070619",
+      "title": "Continuation War",
+      "matching_source_paragraph": "The Continuation War, also known as the Second Soviet–Finnish War, was a conflict fought by Finland and Nazi Germany against the Soviet Union during World War II. It began with a Finnish declaration of war on 25 June 1941 and ended on 19 September 1944 with the Moscow Armistice. The Soviet Union and Finland had previously fought the Winter War from 1939 to 1940, which ended with the Soviet failure to conquer Finland and the Moscow Peace Treaty. Numerous reasons have been proposed for the Finnish decision to invade, with regaining territory lost during the Winter War regarded as the most common. Other justifications for the conflict include Finnish President Risto Ryti's vision of a Greater Finland and Commander-in-Chief Carl Gustaf Emil Mannerheim's desire to annex East Karelia."
+    }
+  },
+  {
+    "id": "continuation-start-fi-sv-changed-year",
+    "fact_id": "continuation-start",
+    "qid": "Q122100",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Jatkosota alkoi 25. kesäkuuta 1941.",
+    "b": "Fortsättningskriget började den 25 juni 1942.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1304070619,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1304070619",
+      "title": "Continuation War",
+      "matching_source_paragraph": "The Continuation War, also known as the Second Soviet–Finnish War, was a conflict fought by Finland and Nazi Germany against the Soviet Union during World War II. It began with a Finnish declaration of war on 25 June 1941 and ended on 19 September 1944 with the Moscow Armistice. The Soviet Union and Finland had previously fought the Winter War from 1939 to 1940, which ended with the Soviet failure to conquer Finland and the Moscow Peace Treaty. Numerous reasons have been proposed for the Finnish decision to invade, with regaining territory lost during the Winter War regarded as the most common. Other justifications for the conflict include Finnish President Risto Ryti's vision of a Greater Finland and Commander-in-Chief Carl Gustaf Emil Mannerheim's desire to annex East Karelia."
+    }
+  },
+  {
+    "id": "continuation-start-fi-sv-changed-name",
+    "fact_id": "continuation-start",
+    "qid": "Q122100",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Jatkosota alkoi 25. kesäkuuta 1941.",
+    "b": "Atlantis började den 25 juni 1941.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1304070619,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1304070619",
+      "title": "Continuation War",
+      "matching_source_paragraph": "The Continuation War, also known as the Second Soviet–Finnish War, was a conflict fought by Finland and Nazi Germany against the Soviet Union during World War II. It began with a Finnish declaration of war on 25 June 1941 and ended on 19 September 1944 with the Moscow Armistice. The Soviet Union and Finland had previously fought the Winter War from 1939 to 1940, which ended with the Soviet failure to conquer Finland and the Moscow Peace Treaty. Numerous reasons have been proposed for the Finnish decision to invade, with regaining territory lost during the Winter War regarded as the most common. Other justifications for the conflict include Finnish President Risto Ryti's vision of a Greater Finland and Commander-in-Chief Carl Gustaf Emil Mannerheim's desire to annex East Karelia."
+    }
+  },
+  {
+    "id": "continuation-start-sv-en-base",
+    "fact_id": "continuation-start",
+    "qid": "Q122100",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Fortsättningskriget började den 25 juni 1941.",
+    "b": "The Continuation War began on 25 June 1941.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1304070619,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1304070619",
+      "title": "Continuation War",
+      "matching_source_paragraph": "The Continuation War, also known as the Second Soviet–Finnish War, was a conflict fought by Finland and Nazi Germany against the Soviet Union during World War II. It began with a Finnish declaration of war on 25 June 1941 and ended on 19 September 1944 with the Moscow Armistice. The Soviet Union and Finland had previously fought the Winter War from 1939 to 1940, which ended with the Soviet failure to conquer Finland and the Moscow Peace Treaty. Numerous reasons have been proposed for the Finnish decision to invade, with regaining territory lost during the Winter War regarded as the most common. Other justifications for the conflict include Finnish President Risto Ryti's vision of a Greater Finland and Commander-in-Chief Carl Gustaf Emil Mannerheim's desire to annex East Karelia."
+    }
+  },
+  {
+    "id": "continuation-start-sv-en-rephrase",
+    "fact_id": "continuation-start",
+    "qid": "Q122100",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Fortsättningskriget började den 25 juni 1941.",
+    "b": "The start date of the Continuation War was 25 June 1941.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1304070619,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1304070619",
+      "title": "Continuation War",
+      "matching_source_paragraph": "The Continuation War, also known as the Second Soviet–Finnish War, was a conflict fought by Finland and Nazi Germany against the Soviet Union during World War II. It began with a Finnish declaration of war on 25 June 1941 and ended on 19 September 1944 with the Moscow Armistice. The Soviet Union and Finland had previously fought the Winter War from 1939 to 1940, which ended with the Soviet failure to conquer Finland and the Moscow Peace Treaty. Numerous reasons have been proposed for the Finnish decision to invade, with regaining territory lost during the Winter War regarded as the most common. Other justifications for the conflict include Finnish President Risto Ryti's vision of a Greater Finland and Commander-in-Chief Carl Gustaf Emil Mannerheim's desire to annex East Karelia."
+    }
+  },
+  {
+    "id": "continuation-start-sv-en-context_reorder",
+    "fact_id": "continuation-start",
+    "qid": "Q122100",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "This statement concerns the stored article. Fortsättningskriget började den 25 juni 1941.",
+    "b": "The Continuation War began on 25 June 1941. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1304070619,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1304070619",
+      "title": "Continuation War",
+      "matching_source_paragraph": "The Continuation War, also known as the Second Soviet–Finnish War, was a conflict fought by Finland and Nazi Germany against the Soviet Union during World War II. It began with a Finnish declaration of war on 25 June 1941 and ended on 19 September 1944 with the Moscow Armistice. The Soviet Union and Finland had previously fought the Winter War from 1939 to 1940, which ended with the Soviet failure to conquer Finland and the Moscow Peace Treaty. Numerous reasons have been proposed for the Finnish decision to invade, with regaining territory lost during the Winter War regarded as the most common. Other justifications for the conflict include Finnish President Risto Ryti's vision of a Greater Finland and Commander-in-Chief Carl Gustaf Emil Mannerheim's desire to annex East Karelia."
+    }
+  },
+  {
+    "id": "continuation-start-sv-en-changed-year",
+    "fact_id": "continuation-start",
+    "qid": "Q122100",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Fortsättningskriget började den 25 juni 1941.",
+    "b": "The Continuation War began on 25 June 1942.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1304070619,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1304070619",
+      "title": "Continuation War",
+      "matching_source_paragraph": "The Continuation War, also known as the Second Soviet–Finnish War, was a conflict fought by Finland and Nazi Germany against the Soviet Union during World War II. It began with a Finnish declaration of war on 25 June 1941 and ended on 19 September 1944 with the Moscow Armistice. The Soviet Union and Finland had previously fought the Winter War from 1939 to 1940, which ended with the Soviet failure to conquer Finland and the Moscow Peace Treaty. Numerous reasons have been proposed for the Finnish decision to invade, with regaining territory lost during the Winter War regarded as the most common. Other justifications for the conflict include Finnish President Risto Ryti's vision of a Greater Finland and Commander-in-Chief Carl Gustaf Emil Mannerheim's desire to annex East Karelia."
+    }
+  },
+  {
+    "id": "continuation-start-sv-en-changed-name",
+    "fact_id": "continuation-start",
+    "qid": "Q122100",
+    "family": "wartime_history",
+    "split": "development",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Fortsättningskriget började den 25 juni 1941.",
+    "b": "The Atlantis began on 25 June 1941.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1304070619,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1304070619",
+      "title": "Continuation War",
+      "matching_source_paragraph": "The Continuation War, also known as the Second Soviet–Finnish War, was a conflict fought by Finland and Nazi Germany against the Soviet Union during World War II. It began with a Finnish declaration of war on 25 June 1941 and ended on 19 September 1944 with the Moscow Armistice. The Soviet Union and Finland had previously fought the Winter War from 1939 to 1940, which ended with the Soviet failure to conquer Finland and the Moscow Peace Treaty. Numerous reasons have been proposed for the Finnish decision to invade, with regaining territory lost during the Winter War regarded as the most common. Other justifications for the conflict include Finnish President Risto Ryti's vision of a Greater Finland and Commander-in-Chief Carl Gustaf Emil Mannerheim's desire to annex East Karelia."
+    }
+  },
+  {
+    "id": "academy-foundation-fi-en-base",
+    "fact_id": "academy-foundation",
+    "qid": "Q414481",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Turun akatemia perustettiin 26. maaliskuuta 1640.",
+    "b": "The Royal Academy of Turku was founded on 26 March 1640.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1280830549,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1280830549",
+      "title": "Royal Academy of Turku",
+      "matching_source_paragraph": "The Royal Academy of Turku or the Royal Academy of Åbo was the first university in Finland, and the only Finnish university that was founded when the country still was a part of Sweden. It was founded in 1640. In 1809, after Finland became a grand duchy within the Russian Empire, it was renamed the Imperial Academy of Turku. In 1828, after the Great Fire of Turku, the institution was moved to Helsinki, in line with the relocation of the capital of the grand duchy. It was finally renamed the University of Helsinki when Finland declared independence in 1917."
+    }
+  },
+  {
+    "id": "academy-foundation-fi-en-rephrase",
+    "fact_id": "academy-foundation",
+    "qid": "Q414481",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Turun akatemia perustettiin 26. maaliskuuta 1640.",
+    "b": "On 26 March 1640, the Royal Academy of Turku was founded.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1280830549,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1280830549",
+      "title": "Royal Academy of Turku",
+      "matching_source_paragraph": "The Royal Academy of Turku or the Royal Academy of Åbo was the first university in Finland, and the only Finnish university that was founded when the country still was a part of Sweden. It was founded in 1640. In 1809, after Finland became a grand duchy within the Russian Empire, it was renamed the Imperial Academy of Turku. In 1828, after the Great Fire of Turku, the institution was moved to Helsinki, in line with the relocation of the capital of the grand duchy. It was finally renamed the University of Helsinki when Finland declared independence in 1917."
+    }
+  },
+  {
+    "id": "academy-foundation-fi-en-context_reorder",
+    "fact_id": "academy-foundation",
+    "qid": "Q414481",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "This statement concerns the stored article. Turun akatemia perustettiin 26. maaliskuuta 1640.",
+    "b": "The Royal Academy of Turku was founded on 26 March 1640. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1280830549,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1280830549",
+      "title": "Royal Academy of Turku",
+      "matching_source_paragraph": "The Royal Academy of Turku or the Royal Academy of Åbo was the first university in Finland, and the only Finnish university that was founded when the country still was a part of Sweden. It was founded in 1640. In 1809, after Finland became a grand duchy within the Russian Empire, it was renamed the Imperial Academy of Turku. In 1828, after the Great Fire of Turku, the institution was moved to Helsinki, in line with the relocation of the capital of the grand duchy. It was finally renamed the University of Helsinki when Finland declared independence in 1917."
+    }
+  },
+  {
+    "id": "academy-foundation-fi-en-changed-year",
+    "fact_id": "academy-foundation",
+    "qid": "Q414481",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Turun akatemia perustettiin 26. maaliskuuta 1640.",
+    "b": "The Royal Academy of Turku was founded on 26 March 1641.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1280830549,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1280830549",
+      "title": "Royal Academy of Turku",
+      "matching_source_paragraph": "The Royal Academy of Turku or the Royal Academy of Åbo was the first university in Finland, and the only Finnish university that was founded when the country still was a part of Sweden. It was founded in 1640. In 1809, after Finland became a grand duchy within the Russian Empire, it was renamed the Imperial Academy of Turku. In 1828, after the Great Fire of Turku, the institution was moved to Helsinki, in line with the relocation of the capital of the grand duchy. It was finally renamed the University of Helsinki when Finland declared independence in 1917."
+    }
+  },
+  {
+    "id": "academy-foundation-fi-en-changed-name",
+    "fact_id": "academy-foundation",
+    "qid": "Q414481",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Turun akatemia perustettiin 26. maaliskuuta 1640.",
+    "b": "The Atlantis was founded on 26 March 1640.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1280830549,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1280830549",
+      "title": "Royal Academy of Turku",
+      "matching_source_paragraph": "The Royal Academy of Turku or the Royal Academy of Åbo was the first university in Finland, and the only Finnish university that was founded when the country still was a part of Sweden. It was founded in 1640. In 1809, after Finland became a grand duchy within the Russian Empire, it was renamed the Imperial Academy of Turku. In 1828, after the Great Fire of Turku, the institution was moved to Helsinki, in line with the relocation of the capital of the grand duchy. It was finally renamed the University of Helsinki when Finland declared independence in 1917."
+    }
+  },
+  {
+    "id": "academy-foundation-fi-sv-base",
+    "fact_id": "academy-foundation",
+    "qid": "Q414481",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Turun akatemia perustettiin 26. maaliskuuta 1640.",
+    "b": "Kungliga Akademien i Åbo grundades den 26 mars 1640.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1280830549,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1280830549",
+      "title": "Royal Academy of Turku",
+      "matching_source_paragraph": "The Royal Academy of Turku or the Royal Academy of Åbo was the first university in Finland, and the only Finnish university that was founded when the country still was a part of Sweden. It was founded in 1640. In 1809, after Finland became a grand duchy within the Russian Empire, it was renamed the Imperial Academy of Turku. In 1828, after the Great Fire of Turku, the institution was moved to Helsinki, in line with the relocation of the capital of the grand duchy. It was finally renamed the University of Helsinki when Finland declared independence in 1917."
+    }
+  },
+  {
+    "id": "academy-foundation-fi-sv-rephrase",
+    "fact_id": "academy-foundation",
+    "qid": "Q414481",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Turun akatemia perustettiin 26. maaliskuuta 1640.",
+    "b": "Den 26 mars 1640 grundades Kungliga Akademien i Åbo.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1280830549,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1280830549",
+      "title": "Royal Academy of Turku",
+      "matching_source_paragraph": "The Royal Academy of Turku or the Royal Academy of Åbo was the first university in Finland, and the only Finnish university that was founded when the country still was a part of Sweden. It was founded in 1640. In 1809, after Finland became a grand duchy within the Russian Empire, it was renamed the Imperial Academy of Turku. In 1828, after the Great Fire of Turku, the institution was moved to Helsinki, in line with the relocation of the capital of the grand duchy. It was finally renamed the University of Helsinki when Finland declared independence in 1917."
+    }
+  },
+  {
+    "id": "academy-foundation-fi-sv-context_reorder",
+    "fact_id": "academy-foundation",
+    "qid": "Q414481",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "This statement concerns the stored article. Turun akatemia perustettiin 26. maaliskuuta 1640.",
+    "b": "Kungliga Akademien i Åbo grundades den 26 mars 1640. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1280830549,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1280830549",
+      "title": "Royal Academy of Turku",
+      "matching_source_paragraph": "The Royal Academy of Turku or the Royal Academy of Åbo was the first university in Finland, and the only Finnish university that was founded when the country still was a part of Sweden. It was founded in 1640. In 1809, after Finland became a grand duchy within the Russian Empire, it was renamed the Imperial Academy of Turku. In 1828, after the Great Fire of Turku, the institution was moved to Helsinki, in line with the relocation of the capital of the grand duchy. It was finally renamed the University of Helsinki when Finland declared independence in 1917."
+    }
+  },
+  {
+    "id": "academy-foundation-fi-sv-changed-year",
+    "fact_id": "academy-foundation",
+    "qid": "Q414481",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Turun akatemia perustettiin 26. maaliskuuta 1640.",
+    "b": "Kungliga Akademien i Åbo grundades den 26 mars 1641.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1280830549,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1280830549",
+      "title": "Royal Academy of Turku",
+      "matching_source_paragraph": "The Royal Academy of Turku or the Royal Academy of Åbo was the first university in Finland, and the only Finnish university that was founded when the country still was a part of Sweden. It was founded in 1640. In 1809, after Finland became a grand duchy within the Russian Empire, it was renamed the Imperial Academy of Turku. In 1828, after the Great Fire of Turku, the institution was moved to Helsinki, in line with the relocation of the capital of the grand duchy. It was finally renamed the University of Helsinki when Finland declared independence in 1917."
+    }
+  },
+  {
+    "id": "academy-foundation-fi-sv-changed-name",
+    "fact_id": "academy-foundation",
+    "qid": "Q414481",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Turun akatemia perustettiin 26. maaliskuuta 1640.",
+    "b": "Atlantis grundades den 26 mars 1640.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1280830549,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1280830549",
+      "title": "Royal Academy of Turku",
+      "matching_source_paragraph": "The Royal Academy of Turku or the Royal Academy of Åbo was the first university in Finland, and the only Finnish university that was founded when the country still was a part of Sweden. It was founded in 1640. In 1809, after Finland became a grand duchy within the Russian Empire, it was renamed the Imperial Academy of Turku. In 1828, after the Great Fire of Turku, the institution was moved to Helsinki, in line with the relocation of the capital of the grand duchy. It was finally renamed the University of Helsinki when Finland declared independence in 1917."
+    }
+  },
+  {
+    "id": "academy-foundation-sv-en-base",
+    "fact_id": "academy-foundation",
+    "qid": "Q414481",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Kungliga Akademien i Åbo grundades den 26 mars 1640.",
+    "b": "The Royal Academy of Turku was founded on 26 March 1640.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1280830549,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1280830549",
+      "title": "Royal Academy of Turku",
+      "matching_source_paragraph": "The Royal Academy of Turku or the Royal Academy of Åbo was the first university in Finland, and the only Finnish university that was founded when the country still was a part of Sweden. It was founded in 1640. In 1809, after Finland became a grand duchy within the Russian Empire, it was renamed the Imperial Academy of Turku. In 1828, after the Great Fire of Turku, the institution was moved to Helsinki, in line with the relocation of the capital of the grand duchy. It was finally renamed the University of Helsinki when Finland declared independence in 1917."
+    }
+  },
+  {
+    "id": "academy-foundation-sv-en-rephrase",
+    "fact_id": "academy-foundation",
+    "qid": "Q414481",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Kungliga Akademien i Åbo grundades den 26 mars 1640.",
+    "b": "On 26 March 1640, the Royal Academy of Turku was founded.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1280830549,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1280830549",
+      "title": "Royal Academy of Turku",
+      "matching_source_paragraph": "The Royal Academy of Turku or the Royal Academy of Åbo was the first university in Finland, and the only Finnish university that was founded when the country still was a part of Sweden. It was founded in 1640. In 1809, after Finland became a grand duchy within the Russian Empire, it was renamed the Imperial Academy of Turku. In 1828, after the Great Fire of Turku, the institution was moved to Helsinki, in line with the relocation of the capital of the grand duchy. It was finally renamed the University of Helsinki when Finland declared independence in 1917."
+    }
+  },
+  {
+    "id": "academy-foundation-sv-en-context_reorder",
+    "fact_id": "academy-foundation",
+    "qid": "Q414481",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "This statement concerns the stored article. Kungliga Akademien i Åbo grundades den 26 mars 1640.",
+    "b": "The Royal Academy of Turku was founded on 26 March 1640. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1280830549,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1280830549",
+      "title": "Royal Academy of Turku",
+      "matching_source_paragraph": "The Royal Academy of Turku or the Royal Academy of Åbo was the first university in Finland, and the only Finnish university that was founded when the country still was a part of Sweden. It was founded in 1640. In 1809, after Finland became a grand duchy within the Russian Empire, it was renamed the Imperial Academy of Turku. In 1828, after the Great Fire of Turku, the institution was moved to Helsinki, in line with the relocation of the capital of the grand duchy. It was finally renamed the University of Helsinki when Finland declared independence in 1917."
+    }
+  },
+  {
+    "id": "academy-foundation-sv-en-changed-year",
+    "fact_id": "academy-foundation",
+    "qid": "Q414481",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Kungliga Akademien i Åbo grundades den 26 mars 1640.",
+    "b": "The Royal Academy of Turku was founded on 26 March 1641.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1280830549,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1280830549",
+      "title": "Royal Academy of Turku",
+      "matching_source_paragraph": "The Royal Academy of Turku or the Royal Academy of Åbo was the first university in Finland, and the only Finnish university that was founded when the country still was a part of Sweden. It was founded in 1640. In 1809, after Finland became a grand duchy within the Russian Empire, it was renamed the Imperial Academy of Turku. In 1828, after the Great Fire of Turku, the institution was moved to Helsinki, in line with the relocation of the capital of the grand duchy. It was finally renamed the University of Helsinki when Finland declared independence in 1917."
+    }
+  },
+  {
+    "id": "academy-foundation-sv-en-changed-name",
+    "fact_id": "academy-foundation",
+    "qid": "Q414481",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Kungliga Akademien i Åbo grundades den 26 mars 1640.",
+    "b": "The Atlantis was founded on 26 March 1640.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1280830549,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1280830549",
+      "title": "Royal Academy of Turku",
+      "matching_source_paragraph": "The Royal Academy of Turku or the Royal Academy of Åbo was the first university in Finland, and the only Finnish university that was founded when the country still was a part of Sweden. It was founded in 1640. In 1809, after Finland became a grand duchy within the Russian Empire, it was renamed the Imperial Academy of Turku. In 1828, after the Great Fire of Turku, the institution was moved to Helsinki, in line with the relocation of the capital of the grand duchy. It was finally renamed the University of Helsinki when Finland declared independence in 1917."
+    }
+  },
+  {
+    "id": "tkk-foundation-fi-en-base",
+    "fact_id": "tkk-foundation",
+    "qid": "Q1646874",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Teknillinen korkeakoulu perustettiin vuonna 1849.",
+    "b": "Helsinki University of Technology was founded in 1849.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1297974998,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1297974998",
+      "title": "Helsinki University of Technology",
+      "matching_source_paragraph": "Helsinki University of Technology (TKK; Finnish: Teknillinen korkeakoulu; Swedish: Tekniska högskolan, HUT in international usage) was a technical university in Finland. It was located in Otaniemi, Espoo in the Helsinki metropolitan area, and it was one of the three universities from which the modern day Aalto University was founded. The university was founded in 1849 by Grand Duke of Finland, Emperor Nicholas I and received university status in 1908. It moved from Helsinki to Otaniemi campus area in 1966. The merger of HUT with two other schools created the Aalto University in 2010, and HUT briefly held the name Aalto University School of Science and Technology before being split into four schools in 2011. "
+    }
+  },
+  {
+    "id": "tkk-foundation-fi-en-rephrase",
+    "fact_id": "tkk-foundation",
+    "qid": "Q1646874",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Teknillinen korkeakoulu perustettiin vuonna 1849.",
+    "b": "The founding year of Helsinki University of Technology was 1849.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1297974998,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1297974998",
+      "title": "Helsinki University of Technology",
+      "matching_source_paragraph": "Helsinki University of Technology (TKK; Finnish: Teknillinen korkeakoulu; Swedish: Tekniska högskolan, HUT in international usage) was a technical university in Finland. It was located in Otaniemi, Espoo in the Helsinki metropolitan area, and it was one of the three universities from which the modern day Aalto University was founded. The university was founded in 1849 by Grand Duke of Finland, Emperor Nicholas I and received university status in 1908. It moved from Helsinki to Otaniemi campus area in 1966. The merger of HUT with two other schools created the Aalto University in 2010, and HUT briefly held the name Aalto University School of Science and Technology before being split into four schools in 2011. "
+    }
+  },
+  {
+    "id": "tkk-foundation-fi-en-context_reorder",
+    "fact_id": "tkk-foundation",
+    "qid": "Q1646874",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "This statement concerns the stored article. Teknillinen korkeakoulu perustettiin vuonna 1849.",
+    "b": "Helsinki University of Technology was founded in 1849. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1297974998,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1297974998",
+      "title": "Helsinki University of Technology",
+      "matching_source_paragraph": "Helsinki University of Technology (TKK; Finnish: Teknillinen korkeakoulu; Swedish: Tekniska högskolan, HUT in international usage) was a technical university in Finland. It was located in Otaniemi, Espoo in the Helsinki metropolitan area, and it was one of the three universities from which the modern day Aalto University was founded. The university was founded in 1849 by Grand Duke of Finland, Emperor Nicholas I and received university status in 1908. It moved from Helsinki to Otaniemi campus area in 1966. The merger of HUT with two other schools created the Aalto University in 2010, and HUT briefly held the name Aalto University School of Science and Technology before being split into four schools in 2011. "
+    }
+  },
+  {
+    "id": "tkk-foundation-fi-en-changed-year",
+    "fact_id": "tkk-foundation",
+    "qid": "Q1646874",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Teknillinen korkeakoulu perustettiin vuonna 1849.",
+    "b": "Helsinki University of Technology was founded in 1850.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1297974998,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1297974998",
+      "title": "Helsinki University of Technology",
+      "matching_source_paragraph": "Helsinki University of Technology (TKK; Finnish: Teknillinen korkeakoulu; Swedish: Tekniska högskolan, HUT in international usage) was a technical university in Finland. It was located in Otaniemi, Espoo in the Helsinki metropolitan area, and it was one of the three universities from which the modern day Aalto University was founded. The university was founded in 1849 by Grand Duke of Finland, Emperor Nicholas I and received university status in 1908. It moved from Helsinki to Otaniemi campus area in 1966. The merger of HUT with two other schools created the Aalto University in 2010, and HUT briefly held the name Aalto University School of Science and Technology before being split into four schools in 2011. "
+    }
+  },
+  {
+    "id": "tkk-foundation-fi-en-changed-name",
+    "fact_id": "tkk-foundation",
+    "qid": "Q1646874",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Teknillinen korkeakoulu perustettiin vuonna 1849.",
+    "b": "Atlantis was founded in 1849.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1297974998,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1297974998",
+      "title": "Helsinki University of Technology",
+      "matching_source_paragraph": "Helsinki University of Technology (TKK; Finnish: Teknillinen korkeakoulu; Swedish: Tekniska högskolan, HUT in international usage) was a technical university in Finland. It was located in Otaniemi, Espoo in the Helsinki metropolitan area, and it was one of the three universities from which the modern day Aalto University was founded. The university was founded in 1849 by Grand Duke of Finland, Emperor Nicholas I and received university status in 1908. It moved from Helsinki to Otaniemi campus area in 1966. The merger of HUT with two other schools created the Aalto University in 2010, and HUT briefly held the name Aalto University School of Science and Technology before being split into four schools in 2011. "
+    }
+  },
+  {
+    "id": "tkk-foundation-fi-sv-base",
+    "fact_id": "tkk-foundation",
+    "qid": "Q1646874",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Teknillinen korkeakoulu perustettiin vuonna 1849.",
+    "b": "Tekniska högskolan grundades år 1849.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1297974998,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1297974998",
+      "title": "Helsinki University of Technology",
+      "matching_source_paragraph": "Helsinki University of Technology (TKK; Finnish: Teknillinen korkeakoulu; Swedish: Tekniska högskolan, HUT in international usage) was a technical university in Finland. It was located in Otaniemi, Espoo in the Helsinki metropolitan area, and it was one of the three universities from which the modern day Aalto University was founded. The university was founded in 1849 by Grand Duke of Finland, Emperor Nicholas I and received university status in 1908. It moved from Helsinki to Otaniemi campus area in 1966. The merger of HUT with two other schools created the Aalto University in 2010, and HUT briefly held the name Aalto University School of Science and Technology before being split into four schools in 2011. "
+    }
+  },
+  {
+    "id": "tkk-foundation-fi-sv-rephrase",
+    "fact_id": "tkk-foundation",
+    "qid": "Q1646874",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Teknillinen korkeakoulu perustettiin vuonna 1849.",
+    "b": "Tekniska högskolans grundläggningsår var 1849.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1297974998,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1297974998",
+      "title": "Helsinki University of Technology",
+      "matching_source_paragraph": "Helsinki University of Technology (TKK; Finnish: Teknillinen korkeakoulu; Swedish: Tekniska högskolan, HUT in international usage) was a technical university in Finland. It was located in Otaniemi, Espoo in the Helsinki metropolitan area, and it was one of the three universities from which the modern day Aalto University was founded. The university was founded in 1849 by Grand Duke of Finland, Emperor Nicholas I and received university status in 1908. It moved from Helsinki to Otaniemi campus area in 1966. The merger of HUT with two other schools created the Aalto University in 2010, and HUT briefly held the name Aalto University School of Science and Technology before being split into four schools in 2011. "
+    }
+  },
+  {
+    "id": "tkk-foundation-fi-sv-context_reorder",
+    "fact_id": "tkk-foundation",
+    "qid": "Q1646874",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "This statement concerns the stored article. Teknillinen korkeakoulu perustettiin vuonna 1849.",
+    "b": "Tekniska högskolan grundades år 1849. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1297974998,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1297974998",
+      "title": "Helsinki University of Technology",
+      "matching_source_paragraph": "Helsinki University of Technology (TKK; Finnish: Teknillinen korkeakoulu; Swedish: Tekniska högskolan, HUT in international usage) was a technical university in Finland. It was located in Otaniemi, Espoo in the Helsinki metropolitan area, and it was one of the three universities from which the modern day Aalto University was founded. The university was founded in 1849 by Grand Duke of Finland, Emperor Nicholas I and received university status in 1908. It moved from Helsinki to Otaniemi campus area in 1966. The merger of HUT with two other schools created the Aalto University in 2010, and HUT briefly held the name Aalto University School of Science and Technology before being split into four schools in 2011. "
+    }
+  },
+  {
+    "id": "tkk-foundation-fi-sv-changed-year",
+    "fact_id": "tkk-foundation",
+    "qid": "Q1646874",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Teknillinen korkeakoulu perustettiin vuonna 1849.",
+    "b": "Tekniska högskolan grundades år 1850.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1297974998,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1297974998",
+      "title": "Helsinki University of Technology",
+      "matching_source_paragraph": "Helsinki University of Technology (TKK; Finnish: Teknillinen korkeakoulu; Swedish: Tekniska högskolan, HUT in international usage) was a technical university in Finland. It was located in Otaniemi, Espoo in the Helsinki metropolitan area, and it was one of the three universities from which the modern day Aalto University was founded. The university was founded in 1849 by Grand Duke of Finland, Emperor Nicholas I and received university status in 1908. It moved from Helsinki to Otaniemi campus area in 1966. The merger of HUT with two other schools created the Aalto University in 2010, and HUT briefly held the name Aalto University School of Science and Technology before being split into four schools in 2011. "
+    }
+  },
+  {
+    "id": "tkk-foundation-fi-sv-changed-name",
+    "fact_id": "tkk-foundation",
+    "qid": "Q1646874",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Teknillinen korkeakoulu perustettiin vuonna 1849.",
+    "b": "Atlantis grundades år 1849.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1297974998,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1297974998",
+      "title": "Helsinki University of Technology",
+      "matching_source_paragraph": "Helsinki University of Technology (TKK; Finnish: Teknillinen korkeakoulu; Swedish: Tekniska högskolan, HUT in international usage) was a technical university in Finland. It was located in Otaniemi, Espoo in the Helsinki metropolitan area, and it was one of the three universities from which the modern day Aalto University was founded. The university was founded in 1849 by Grand Duke of Finland, Emperor Nicholas I and received university status in 1908. It moved from Helsinki to Otaniemi campus area in 1966. The merger of HUT with two other schools created the Aalto University in 2010, and HUT briefly held the name Aalto University School of Science and Technology before being split into four schools in 2011. "
+    }
+  },
+  {
+    "id": "tkk-foundation-sv-en-base",
+    "fact_id": "tkk-foundation",
+    "qid": "Q1646874",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Tekniska högskolan grundades år 1849.",
+    "b": "Helsinki University of Technology was founded in 1849.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1297974998,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1297974998",
+      "title": "Helsinki University of Technology",
+      "matching_source_paragraph": "Helsinki University of Technology (TKK; Finnish: Teknillinen korkeakoulu; Swedish: Tekniska högskolan, HUT in international usage) was a technical university in Finland. It was located in Otaniemi, Espoo in the Helsinki metropolitan area, and it was one of the three universities from which the modern day Aalto University was founded. The university was founded in 1849 by Grand Duke of Finland, Emperor Nicholas I and received university status in 1908. It moved from Helsinki to Otaniemi campus area in 1966. The merger of HUT with two other schools created the Aalto University in 2010, and HUT briefly held the name Aalto University School of Science and Technology before being split into four schools in 2011. "
+    }
+  },
+  {
+    "id": "tkk-foundation-sv-en-rephrase",
+    "fact_id": "tkk-foundation",
+    "qid": "Q1646874",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Tekniska högskolan grundades år 1849.",
+    "b": "The founding year of Helsinki University of Technology was 1849.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1297974998,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1297974998",
+      "title": "Helsinki University of Technology",
+      "matching_source_paragraph": "Helsinki University of Technology (TKK; Finnish: Teknillinen korkeakoulu; Swedish: Tekniska högskolan, HUT in international usage) was a technical university in Finland. It was located in Otaniemi, Espoo in the Helsinki metropolitan area, and it was one of the three universities from which the modern day Aalto University was founded. The university was founded in 1849 by Grand Duke of Finland, Emperor Nicholas I and received university status in 1908. It moved from Helsinki to Otaniemi campus area in 1966. The merger of HUT with two other schools created the Aalto University in 2010, and HUT briefly held the name Aalto University School of Science and Technology before being split into four schools in 2011. "
+    }
+  },
+  {
+    "id": "tkk-foundation-sv-en-context_reorder",
+    "fact_id": "tkk-foundation",
+    "qid": "Q1646874",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "This statement concerns the stored article. Tekniska högskolan grundades år 1849.",
+    "b": "Helsinki University of Technology was founded in 1849. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1297974998,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1297974998",
+      "title": "Helsinki University of Technology",
+      "matching_source_paragraph": "Helsinki University of Technology (TKK; Finnish: Teknillinen korkeakoulu; Swedish: Tekniska högskolan, HUT in international usage) was a technical university in Finland. It was located in Otaniemi, Espoo in the Helsinki metropolitan area, and it was one of the three universities from which the modern day Aalto University was founded. The university was founded in 1849 by Grand Duke of Finland, Emperor Nicholas I and received university status in 1908. It moved from Helsinki to Otaniemi campus area in 1966. The merger of HUT with two other schools created the Aalto University in 2010, and HUT briefly held the name Aalto University School of Science and Technology before being split into four schools in 2011. "
+    }
+  },
+  {
+    "id": "tkk-foundation-sv-en-changed-year",
+    "fact_id": "tkk-foundation",
+    "qid": "Q1646874",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Tekniska högskolan grundades år 1849.",
+    "b": "Helsinki University of Technology was founded in 1850.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1297974998,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1297974998",
+      "title": "Helsinki University of Technology",
+      "matching_source_paragraph": "Helsinki University of Technology (TKK; Finnish: Teknillinen korkeakoulu; Swedish: Tekniska högskolan, HUT in international usage) was a technical university in Finland. It was located in Otaniemi, Espoo in the Helsinki metropolitan area, and it was one of the three universities from which the modern day Aalto University was founded. The university was founded in 1849 by Grand Duke of Finland, Emperor Nicholas I and received university status in 1908. It moved from Helsinki to Otaniemi campus area in 1966. The merger of HUT with two other schools created the Aalto University in 2010, and HUT briefly held the name Aalto University School of Science and Technology before being split into four schools in 2011. "
+    }
+  },
+  {
+    "id": "tkk-foundation-sv-en-changed-name",
+    "fact_id": "tkk-foundation",
+    "qid": "Q1646874",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Tekniska högskolan grundades år 1849.",
+    "b": "Atlantis was founded in 1849.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1297974998,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1297974998",
+      "title": "Helsinki University of Technology",
+      "matching_source_paragraph": "Helsinki University of Technology (TKK; Finnish: Teknillinen korkeakoulu; Swedish: Tekniska högskolan, HUT in international usage) was a technical university in Finland. It was located in Otaniemi, Espoo in the Helsinki metropolitan area, and it was one of the three universities from which the modern day Aalto University was founded. The university was founded in 1849 by Grand Duke of Finland, Emperor Nicholas I and received university status in 1908. It moved from Helsinki to Otaniemi campus area in 1966. The merger of HUT with two other schools created the Aalto University in 2010, and HUT briefly held the name Aalto University School of Science and Technology before being split into four schools in 2011. "
+    }
+  },
+  {
+    "id": "tut-merger-fi-en-base",
+    "fact_id": "tut-merger",
+    "qid": "Q277664",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Tampereen teknillinen yliopisto yhdistyi Tampereen yliopiston kanssa 1. tammikuuta 2019.",
+    "b": "Tampere University of Technology merged with the University of Tampere on 1 January 2019.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303047435,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303047435",
+      "title": "Tampere University of Technology",
+      "matching_source_paragraph": "Tampere University of Technology (TUT) (Finnish: Tampereen teknillinen yliopisto (TTY)) was Finland's second-largest university in engineering sciences. The university was located in Hervanta, a suburb of Tampere. It was merged with the University of Tampere to create the new Tampere University on 1 January 2019."
+    }
+  },
+  {
+    "id": "tut-merger-fi-en-rephrase",
+    "fact_id": "tut-merger",
+    "qid": "Q277664",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Tampereen teknillinen yliopisto yhdistyi Tampereen yliopiston kanssa 1. tammikuuta 2019.",
+    "b": "On 1 January 2019, Tampere University of Technology and the University of Tampere merged.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303047435,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303047435",
+      "title": "Tampere University of Technology",
+      "matching_source_paragraph": "Tampere University of Technology (TUT) (Finnish: Tampereen teknillinen yliopisto (TTY)) was Finland's second-largest university in engineering sciences. The university was located in Hervanta, a suburb of Tampere. It was merged with the University of Tampere to create the new Tampere University on 1 January 2019."
+    }
+  },
+  {
+    "id": "tut-merger-fi-en-context_reorder",
+    "fact_id": "tut-merger",
+    "qid": "Q277664",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "This statement concerns the stored article. Tampereen teknillinen yliopisto yhdistyi Tampereen yliopiston kanssa 1. tammikuuta 2019.",
+    "b": "Tampere University of Technology merged with the University of Tampere on 1 January 2019. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303047435,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303047435",
+      "title": "Tampere University of Technology",
+      "matching_source_paragraph": "Tampere University of Technology (TUT) (Finnish: Tampereen teknillinen yliopisto (TTY)) was Finland's second-largest university in engineering sciences. The university was located in Hervanta, a suburb of Tampere. It was merged with the University of Tampere to create the new Tampere University on 1 January 2019."
+    }
+  },
+  {
+    "id": "tut-merger-fi-en-changed-year",
+    "fact_id": "tut-merger",
+    "qid": "Q277664",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Tampereen teknillinen yliopisto yhdistyi Tampereen yliopiston kanssa 1. tammikuuta 2019.",
+    "b": "Tampere University of Technology merged with the University of Tampere on 1 January 2020.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303047435,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303047435",
+      "title": "Tampere University of Technology",
+      "matching_source_paragraph": "Tampere University of Technology (TUT) (Finnish: Tampereen teknillinen yliopisto (TTY)) was Finland's second-largest university in engineering sciences. The university was located in Hervanta, a suburb of Tampere. It was merged with the University of Tampere to create the new Tampere University on 1 January 2019."
+    }
+  },
+  {
+    "id": "tut-merger-fi-en-changed-name",
+    "fact_id": "tut-merger",
+    "qid": "Q277664",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Tampereen teknillinen yliopisto yhdistyi Tampereen yliopiston kanssa 1. tammikuuta 2019.",
+    "b": "Atlantis merged with the University of Tampere on 1 January 2019.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303047435,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303047435",
+      "title": "Tampere University of Technology",
+      "matching_source_paragraph": "Tampere University of Technology (TUT) (Finnish: Tampereen teknillinen yliopisto (TTY)) was Finland's second-largest university in engineering sciences. The university was located in Hervanta, a suburb of Tampere. It was merged with the University of Tampere to create the new Tampere University on 1 January 2019."
+    }
+  },
+  {
+    "id": "tut-merger-fi-sv-base",
+    "fact_id": "tut-merger",
+    "qid": "Q277664",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Tampereen teknillinen yliopisto yhdistyi Tampereen yliopiston kanssa 1. tammikuuta 2019.",
+    "b": "Tammerfors tekniska universitet slogs samman med Tammerfors universitet den 1 januari 2019.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303047435,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303047435",
+      "title": "Tampere University of Technology",
+      "matching_source_paragraph": "Tampere University of Technology (TUT) (Finnish: Tampereen teknillinen yliopisto (TTY)) was Finland's second-largest university in engineering sciences. The university was located in Hervanta, a suburb of Tampere. It was merged with the University of Tampere to create the new Tampere University on 1 January 2019."
+    }
+  },
+  {
+    "id": "tut-merger-fi-sv-rephrase",
+    "fact_id": "tut-merger",
+    "qid": "Q277664",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Tampereen teknillinen yliopisto yhdistyi Tampereen yliopiston kanssa 1. tammikuuta 2019.",
+    "b": "Den 1 januari 2019 slogs Tammerfors tekniska universitet och Tammerfors universitet samman.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303047435,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303047435",
+      "title": "Tampere University of Technology",
+      "matching_source_paragraph": "Tampere University of Technology (TUT) (Finnish: Tampereen teknillinen yliopisto (TTY)) was Finland's second-largest university in engineering sciences. The university was located in Hervanta, a suburb of Tampere. It was merged with the University of Tampere to create the new Tampere University on 1 January 2019."
+    }
+  },
+  {
+    "id": "tut-merger-fi-sv-context_reorder",
+    "fact_id": "tut-merger",
+    "qid": "Q277664",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "This statement concerns the stored article. Tampereen teknillinen yliopisto yhdistyi Tampereen yliopiston kanssa 1. tammikuuta 2019.",
+    "b": "Tammerfors tekniska universitet slogs samman med Tammerfors universitet den 1 januari 2019. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303047435,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303047435",
+      "title": "Tampere University of Technology",
+      "matching_source_paragraph": "Tampere University of Technology (TUT) (Finnish: Tampereen teknillinen yliopisto (TTY)) was Finland's second-largest university in engineering sciences. The university was located in Hervanta, a suburb of Tampere. It was merged with the University of Tampere to create the new Tampere University on 1 January 2019."
+    }
+  },
+  {
+    "id": "tut-merger-fi-sv-changed-year",
+    "fact_id": "tut-merger",
+    "qid": "Q277664",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Tampereen teknillinen yliopisto yhdistyi Tampereen yliopiston kanssa 1. tammikuuta 2019.",
+    "b": "Tammerfors tekniska universitet slogs samman med Tammerfors universitet den 1 januari 2020.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303047435,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303047435",
+      "title": "Tampere University of Technology",
+      "matching_source_paragraph": "Tampere University of Technology (TUT) (Finnish: Tampereen teknillinen yliopisto (TTY)) was Finland's second-largest university in engineering sciences. The university was located in Hervanta, a suburb of Tampere. It was merged with the University of Tampere to create the new Tampere University on 1 January 2019."
+    }
+  },
+  {
+    "id": "tut-merger-fi-sv-changed-name",
+    "fact_id": "tut-merger",
+    "qid": "Q277664",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Tampereen teknillinen yliopisto yhdistyi Tampereen yliopiston kanssa 1. tammikuuta 2019.",
+    "b": "Atlantis slogs samman med Tammerfors universitet den 1 januari 2019.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303047435,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303047435",
+      "title": "Tampere University of Technology",
+      "matching_source_paragraph": "Tampere University of Technology (TUT) (Finnish: Tampereen teknillinen yliopisto (TTY)) was Finland's second-largest university in engineering sciences. The university was located in Hervanta, a suburb of Tampere. It was merged with the University of Tampere to create the new Tampere University on 1 January 2019."
+    }
+  },
+  {
+    "id": "tut-merger-sv-en-base",
+    "fact_id": "tut-merger",
+    "qid": "Q277664",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Tammerfors tekniska universitet slogs samman med Tammerfors universitet den 1 januari 2019.",
+    "b": "Tampere University of Technology merged with the University of Tampere on 1 January 2019.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303047435,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303047435",
+      "title": "Tampere University of Technology",
+      "matching_source_paragraph": "Tampere University of Technology (TUT) (Finnish: Tampereen teknillinen yliopisto (TTY)) was Finland's second-largest university in engineering sciences. The university was located in Hervanta, a suburb of Tampere. It was merged with the University of Tampere to create the new Tampere University on 1 January 2019."
+    }
+  },
+  {
+    "id": "tut-merger-sv-en-rephrase",
+    "fact_id": "tut-merger",
+    "qid": "Q277664",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Tammerfors tekniska universitet slogs samman med Tammerfors universitet den 1 januari 2019.",
+    "b": "On 1 January 2019, Tampere University of Technology and the University of Tampere merged.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303047435,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303047435",
+      "title": "Tampere University of Technology",
+      "matching_source_paragraph": "Tampere University of Technology (TUT) (Finnish: Tampereen teknillinen yliopisto (TTY)) was Finland's second-largest university in engineering sciences. The university was located in Hervanta, a suburb of Tampere. It was merged with the University of Tampere to create the new Tampere University on 1 January 2019."
+    }
+  },
+  {
+    "id": "tut-merger-sv-en-context_reorder",
+    "fact_id": "tut-merger",
+    "qid": "Q277664",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "This statement concerns the stored article. Tammerfors tekniska universitet slogs samman med Tammerfors universitet den 1 januari 2019.",
+    "b": "Tampere University of Technology merged with the University of Tampere on 1 January 2019. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303047435,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303047435",
+      "title": "Tampere University of Technology",
+      "matching_source_paragraph": "Tampere University of Technology (TUT) (Finnish: Tampereen teknillinen yliopisto (TTY)) was Finland's second-largest university in engineering sciences. The university was located in Hervanta, a suburb of Tampere. It was merged with the University of Tampere to create the new Tampere University on 1 January 2019."
+    }
+  },
+  {
+    "id": "tut-merger-sv-en-changed-year",
+    "fact_id": "tut-merger",
+    "qid": "Q277664",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Tammerfors tekniska universitet slogs samman med Tammerfors universitet den 1 januari 2019.",
+    "b": "Tampere University of Technology merged with the University of Tampere on 1 January 2020.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303047435,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303047435",
+      "title": "Tampere University of Technology",
+      "matching_source_paragraph": "Tampere University of Technology (TUT) (Finnish: Tampereen teknillinen yliopisto (TTY)) was Finland's second-largest university in engineering sciences. The university was located in Hervanta, a suburb of Tampere. It was merged with the University of Tampere to create the new Tampere University on 1 January 2019."
+    }
+  },
+  {
+    "id": "tut-merger-sv-en-changed-name",
+    "fact_id": "tut-merger",
+    "qid": "Q277664",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Tammerfors tekniska universitet slogs samman med Tammerfors universitet den 1 januari 2019.",
+    "b": "Atlantis merged with the University of Tampere on 1 January 2019.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1303047435,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303047435",
+      "title": "Tampere University of Technology",
+      "matching_source_paragraph": "Tampere University of Technology (TUT) (Finnish: Tampereen teknillinen yliopisto (TTY)) was Finland's second-largest university in engineering sciences. The university was located in Hervanta, a suburb of Tampere. It was merged with the University of Tampere to create the new Tampere University on 1 January 2019."
+    }
+  },
+  {
+    "id": "luoma-closure-fi-en-base",
+    "fact_id": "luoma-closure",
+    "qid": "Q4411811",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Luoman rautatieasema suljettiin 27. maaliskuuta 2016.",
+    "b": "Luoma railway station closed on 27 March 2016.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1273909685,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1273909685",
+      "title": "Luoma railway station",
+      "matching_source_paragraph": "Luoma (Finnish) or Bobäck (Swedish) was a station on the VR commuter rail network located in Kirkkonummi, Finland, between the stations of Mankki and Masala. The station had two tracks, with track one serving trains towards Kirkkonummi and track two towards Helsinki. The station was opened in 1932, then named as Nokka. In that time, there was another station named Luoma, located about one kilometer closer to Helsinki. The station was out of use between 1944 and 1956, as the Porkkala Cape served as a Soviet military base and the frontier passed through the station. When the original Luoma station was shut down in 1978, the Nokka station was renamed as Luoma. Because of very low number of passengers, the station was closed a day after neighbouring station Mankki on 27 March 2016."
+    }
+  },
+  {
+    "id": "luoma-closure-fi-en-rephrase",
+    "fact_id": "luoma-closure",
+    "qid": "Q4411811",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Luoman rautatieasema suljettiin 27. maaliskuuta 2016.",
+    "b": "The closure date of Luoma railway station was 27 March 2016.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1273909685,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1273909685",
+      "title": "Luoma railway station",
+      "matching_source_paragraph": "Luoma (Finnish) or Bobäck (Swedish) was a station on the VR commuter rail network located in Kirkkonummi, Finland, between the stations of Mankki and Masala. The station had two tracks, with track one serving trains towards Kirkkonummi and track two towards Helsinki. The station was opened in 1932, then named as Nokka. In that time, there was another station named Luoma, located about one kilometer closer to Helsinki. The station was out of use between 1944 and 1956, as the Porkkala Cape served as a Soviet military base and the frontier passed through the station. When the original Luoma station was shut down in 1978, the Nokka station was renamed as Luoma. Because of very low number of passengers, the station was closed a day after neighbouring station Mankki on 27 March 2016."
+    }
+  },
+  {
+    "id": "luoma-closure-fi-en-context_reorder",
+    "fact_id": "luoma-closure",
+    "qid": "Q4411811",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "This statement concerns the stored article. Luoman rautatieasema suljettiin 27. maaliskuuta 2016.",
+    "b": "Luoma railway station closed on 27 March 2016. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1273909685,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1273909685",
+      "title": "Luoma railway station",
+      "matching_source_paragraph": "Luoma (Finnish) or Bobäck (Swedish) was a station on the VR commuter rail network located in Kirkkonummi, Finland, between the stations of Mankki and Masala. The station had two tracks, with track one serving trains towards Kirkkonummi and track two towards Helsinki. The station was opened in 1932, then named as Nokka. In that time, there was another station named Luoma, located about one kilometer closer to Helsinki. The station was out of use between 1944 and 1956, as the Porkkala Cape served as a Soviet military base and the frontier passed through the station. When the original Luoma station was shut down in 1978, the Nokka station was renamed as Luoma. Because of very low number of passengers, the station was closed a day after neighbouring station Mankki on 27 March 2016."
+    }
+  },
+  {
+    "id": "luoma-closure-fi-en-changed-year",
+    "fact_id": "luoma-closure",
+    "qid": "Q4411811",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Luoman rautatieasema suljettiin 27. maaliskuuta 2016.",
+    "b": "Luoma railway station closed on 27 March 2017.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1273909685,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1273909685",
+      "title": "Luoma railway station",
+      "matching_source_paragraph": "Luoma (Finnish) or Bobäck (Swedish) was a station on the VR commuter rail network located in Kirkkonummi, Finland, between the stations of Mankki and Masala. The station had two tracks, with track one serving trains towards Kirkkonummi and track two towards Helsinki. The station was opened in 1932, then named as Nokka. In that time, there was another station named Luoma, located about one kilometer closer to Helsinki. The station was out of use between 1944 and 1956, as the Porkkala Cape served as a Soviet military base and the frontier passed through the station. When the original Luoma station was shut down in 1978, the Nokka station was renamed as Luoma. Because of very low number of passengers, the station was closed a day after neighbouring station Mankki on 27 March 2016."
+    }
+  },
+  {
+    "id": "luoma-closure-fi-en-changed-name",
+    "fact_id": "luoma-closure",
+    "qid": "Q4411811",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Luoman rautatieasema suljettiin 27. maaliskuuta 2016.",
+    "b": "Atlantis railway station closed on 27 March 2016.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1273909685,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1273909685",
+      "title": "Luoma railway station",
+      "matching_source_paragraph": "Luoma (Finnish) or Bobäck (Swedish) was a station on the VR commuter rail network located in Kirkkonummi, Finland, between the stations of Mankki and Masala. The station had two tracks, with track one serving trains towards Kirkkonummi and track two towards Helsinki. The station was opened in 1932, then named as Nokka. In that time, there was another station named Luoma, located about one kilometer closer to Helsinki. The station was out of use between 1944 and 1956, as the Porkkala Cape served as a Soviet military base and the frontier passed through the station. When the original Luoma station was shut down in 1978, the Nokka station was renamed as Luoma. Because of very low number of passengers, the station was closed a day after neighbouring station Mankki on 27 March 2016."
+    }
+  },
+  {
+    "id": "luoma-closure-fi-sv-base",
+    "fact_id": "luoma-closure",
+    "qid": "Q4411811",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Luoman rautatieasema suljettiin 27. maaliskuuta 2016.",
+    "b": "Bobäcks hållplats stängdes den 27 mars 2016.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1273909685,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1273909685",
+      "title": "Luoma railway station",
+      "matching_source_paragraph": "Luoma (Finnish) or Bobäck (Swedish) was a station on the VR commuter rail network located in Kirkkonummi, Finland, between the stations of Mankki and Masala. The station had two tracks, with track one serving trains towards Kirkkonummi and track two towards Helsinki. The station was opened in 1932, then named as Nokka. In that time, there was another station named Luoma, located about one kilometer closer to Helsinki. The station was out of use between 1944 and 1956, as the Porkkala Cape served as a Soviet military base and the frontier passed through the station. When the original Luoma station was shut down in 1978, the Nokka station was renamed as Luoma. Because of very low number of passengers, the station was closed a day after neighbouring station Mankki on 27 March 2016."
+    }
+  },
+  {
+    "id": "luoma-closure-fi-sv-rephrase",
+    "fact_id": "luoma-closure",
+    "qid": "Q4411811",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Luoman rautatieasema suljettiin 27. maaliskuuta 2016.",
+    "b": "Bobäcks hållplats stängningsdatum var den 27 mars 2016.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1273909685,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1273909685",
+      "title": "Luoma railway station",
+      "matching_source_paragraph": "Luoma (Finnish) or Bobäck (Swedish) was a station on the VR commuter rail network located in Kirkkonummi, Finland, between the stations of Mankki and Masala. The station had two tracks, with track one serving trains towards Kirkkonummi and track two towards Helsinki. The station was opened in 1932, then named as Nokka. In that time, there was another station named Luoma, located about one kilometer closer to Helsinki. The station was out of use between 1944 and 1956, as the Porkkala Cape served as a Soviet military base and the frontier passed through the station. When the original Luoma station was shut down in 1978, the Nokka station was renamed as Luoma. Because of very low number of passengers, the station was closed a day after neighbouring station Mankki on 27 March 2016."
+    }
+  },
+  {
+    "id": "luoma-closure-fi-sv-context_reorder",
+    "fact_id": "luoma-closure",
+    "qid": "Q4411811",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "This statement concerns the stored article. Luoman rautatieasema suljettiin 27. maaliskuuta 2016.",
+    "b": "Bobäcks hållplats stängdes den 27 mars 2016. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1273909685,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1273909685",
+      "title": "Luoma railway station",
+      "matching_source_paragraph": "Luoma (Finnish) or Bobäck (Swedish) was a station on the VR commuter rail network located in Kirkkonummi, Finland, between the stations of Mankki and Masala. The station had two tracks, with track one serving trains towards Kirkkonummi and track two towards Helsinki. The station was opened in 1932, then named as Nokka. In that time, there was another station named Luoma, located about one kilometer closer to Helsinki. The station was out of use between 1944 and 1956, as the Porkkala Cape served as a Soviet military base and the frontier passed through the station. When the original Luoma station was shut down in 1978, the Nokka station was renamed as Luoma. Because of very low number of passengers, the station was closed a day after neighbouring station Mankki on 27 March 2016."
+    }
+  },
+  {
+    "id": "luoma-closure-fi-sv-changed-year",
+    "fact_id": "luoma-closure",
+    "qid": "Q4411811",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Luoman rautatieasema suljettiin 27. maaliskuuta 2016.",
+    "b": "Bobäcks hållplats stängdes den 27 mars 2017.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1273909685,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1273909685",
+      "title": "Luoma railway station",
+      "matching_source_paragraph": "Luoma (Finnish) or Bobäck (Swedish) was a station on the VR commuter rail network located in Kirkkonummi, Finland, between the stations of Mankki and Masala. The station had two tracks, with track one serving trains towards Kirkkonummi and track two towards Helsinki. The station was opened in 1932, then named as Nokka. In that time, there was another station named Luoma, located about one kilometer closer to Helsinki. The station was out of use between 1944 and 1956, as the Porkkala Cape served as a Soviet military base and the frontier passed through the station. When the original Luoma station was shut down in 1978, the Nokka station was renamed as Luoma. Because of very low number of passengers, the station was closed a day after neighbouring station Mankki on 27 March 2016."
+    }
+  },
+  {
+    "id": "luoma-closure-fi-sv-changed-name",
+    "fact_id": "luoma-closure",
+    "qid": "Q4411811",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Luoman rautatieasema suljettiin 27. maaliskuuta 2016.",
+    "b": "Atlantis hållplats stängdes den 27 mars 2016.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1273909685,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1273909685",
+      "title": "Luoma railway station",
+      "matching_source_paragraph": "Luoma (Finnish) or Bobäck (Swedish) was a station on the VR commuter rail network located in Kirkkonummi, Finland, between the stations of Mankki and Masala. The station had two tracks, with track one serving trains towards Kirkkonummi and track two towards Helsinki. The station was opened in 1932, then named as Nokka. In that time, there was another station named Luoma, located about one kilometer closer to Helsinki. The station was out of use between 1944 and 1956, as the Porkkala Cape served as a Soviet military base and the frontier passed through the station. When the original Luoma station was shut down in 1978, the Nokka station was renamed as Luoma. Because of very low number of passengers, the station was closed a day after neighbouring station Mankki on 27 March 2016."
+    }
+  },
+  {
+    "id": "luoma-closure-sv-en-base",
+    "fact_id": "luoma-closure",
+    "qid": "Q4411811",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Bobäcks hållplats stängdes den 27 mars 2016.",
+    "b": "Luoma railway station closed on 27 March 2016.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1273909685,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1273909685",
+      "title": "Luoma railway station",
+      "matching_source_paragraph": "Luoma (Finnish) or Bobäck (Swedish) was a station on the VR commuter rail network located in Kirkkonummi, Finland, between the stations of Mankki and Masala. The station had two tracks, with track one serving trains towards Kirkkonummi and track two towards Helsinki. The station was opened in 1932, then named as Nokka. In that time, there was another station named Luoma, located about one kilometer closer to Helsinki. The station was out of use between 1944 and 1956, as the Porkkala Cape served as a Soviet military base and the frontier passed through the station. When the original Luoma station was shut down in 1978, the Nokka station was renamed as Luoma. Because of very low number of passengers, the station was closed a day after neighbouring station Mankki on 27 March 2016."
+    }
+  },
+  {
+    "id": "luoma-closure-sv-en-rephrase",
+    "fact_id": "luoma-closure",
+    "qid": "Q4411811",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Bobäcks hållplats stängdes den 27 mars 2016.",
+    "b": "The closure date of Luoma railway station was 27 March 2016.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1273909685,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1273909685",
+      "title": "Luoma railway station",
+      "matching_source_paragraph": "Luoma (Finnish) or Bobäck (Swedish) was a station on the VR commuter rail network located in Kirkkonummi, Finland, between the stations of Mankki and Masala. The station had two tracks, with track one serving trains towards Kirkkonummi and track two towards Helsinki. The station was opened in 1932, then named as Nokka. In that time, there was another station named Luoma, located about one kilometer closer to Helsinki. The station was out of use between 1944 and 1956, as the Porkkala Cape served as a Soviet military base and the frontier passed through the station. When the original Luoma station was shut down in 1978, the Nokka station was renamed as Luoma. Because of very low number of passengers, the station was closed a day after neighbouring station Mankki on 27 March 2016."
+    }
+  },
+  {
+    "id": "luoma-closure-sv-en-context_reorder",
+    "fact_id": "luoma-closure",
+    "qid": "Q4411811",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "This statement concerns the stored article. Bobäcks hållplats stängdes den 27 mars 2016.",
+    "b": "Luoma railway station closed on 27 March 2016. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1273909685,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1273909685",
+      "title": "Luoma railway station",
+      "matching_source_paragraph": "Luoma (Finnish) or Bobäck (Swedish) was a station on the VR commuter rail network located in Kirkkonummi, Finland, between the stations of Mankki and Masala. The station had two tracks, with track one serving trains towards Kirkkonummi and track two towards Helsinki. The station was opened in 1932, then named as Nokka. In that time, there was another station named Luoma, located about one kilometer closer to Helsinki. The station was out of use between 1944 and 1956, as the Porkkala Cape served as a Soviet military base and the frontier passed through the station. When the original Luoma station was shut down in 1978, the Nokka station was renamed as Luoma. Because of very low number of passengers, the station was closed a day after neighbouring station Mankki on 27 March 2016."
+    }
+  },
+  {
+    "id": "luoma-closure-sv-en-changed-year",
+    "fact_id": "luoma-closure",
+    "qid": "Q4411811",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Bobäcks hållplats stängdes den 27 mars 2016.",
+    "b": "Luoma railway station closed on 27 March 2017.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1273909685,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1273909685",
+      "title": "Luoma railway station",
+      "matching_source_paragraph": "Luoma (Finnish) or Bobäck (Swedish) was a station on the VR commuter rail network located in Kirkkonummi, Finland, between the stations of Mankki and Masala. The station had two tracks, with track one serving trains towards Kirkkonummi and track two towards Helsinki. The station was opened in 1932, then named as Nokka. In that time, there was another station named Luoma, located about one kilometer closer to Helsinki. The station was out of use between 1944 and 1956, as the Porkkala Cape served as a Soviet military base and the frontier passed through the station. When the original Luoma station was shut down in 1978, the Nokka station was renamed as Luoma. Because of very low number of passengers, the station was closed a day after neighbouring station Mankki on 27 March 2016."
+    }
+  },
+  {
+    "id": "luoma-closure-sv-en-changed-name",
+    "fact_id": "luoma-closure",
+    "qid": "Q4411811",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Bobäcks hållplats stängdes den 27 mars 2016.",
+    "b": "Atlantis railway station closed on 27 March 2016.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1273909685,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1273909685",
+      "title": "Luoma railway station",
+      "matching_source_paragraph": "Luoma (Finnish) or Bobäck (Swedish) was a station on the VR commuter rail network located in Kirkkonummi, Finland, between the stations of Mankki and Masala. The station had two tracks, with track one serving trains towards Kirkkonummi and track two towards Helsinki. The station was opened in 1932, then named as Nokka. In that time, there was another station named Luoma, located about one kilometer closer to Helsinki. The station was out of use between 1944 and 1956, as the Porkkala Cape served as a Soviet military base and the frontier passed through the station. When the original Luoma station was shut down in 1978, the Nokka station was renamed as Luoma. Because of very low number of passengers, the station was closed a day after neighbouring station Mankki on 27 March 2016."
+    }
+  },
+  {
+    "id": "mankki-closure-fi-en-base",
+    "fact_id": "mankki-closure",
+    "qid": "Q6750548",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Mankin rautatieasema suljettiin 27. maaliskuuta 2016.",
+    "b": "Mankki railway station closed on 27 March 2016.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1289996636,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1289996636",
+      "title": "Mankki railway station",
+      "matching_source_paragraph": "Mankki railway station (Finnish: Mankin rautatieasema, Swedish: Mankby hållplats) was a station on the VR commuter rail network located in Espoo, Finland, between the stations of Kauklahti and Luoma. The station had two tracks, with track one serving trains towards Kirkkonummi and the other towards Helsinki. The platform in the direction of Helsinki is a very rare wooden platform. Mankki was the least used station in the Espoo area, with only 60-100 passengers per day before its closure. Because of the very low number of passengers, the station was closed on 27 March 2016."
+    }
+  },
+  {
+    "id": "mankki-closure-fi-en-rephrase",
+    "fact_id": "mankki-closure",
+    "qid": "Q6750548",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Mankin rautatieasema suljettiin 27. maaliskuuta 2016.",
+    "b": "The closure date of Mankki railway station was 27 March 2016.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1289996636,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1289996636",
+      "title": "Mankki railway station",
+      "matching_source_paragraph": "Mankki railway station (Finnish: Mankin rautatieasema, Swedish: Mankby hållplats) was a station on the VR commuter rail network located in Espoo, Finland, between the stations of Kauklahti and Luoma. The station had two tracks, with track one serving trains towards Kirkkonummi and the other towards Helsinki. The platform in the direction of Helsinki is a very rare wooden platform. Mankki was the least used station in the Espoo area, with only 60-100 passengers per day before its closure. Because of the very low number of passengers, the station was closed on 27 March 2016."
+    }
+  },
+  {
+    "id": "mankki-closure-fi-en-context_reorder",
+    "fact_id": "mankki-closure",
+    "qid": "Q6750548",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "This statement concerns the stored article. Mankin rautatieasema suljettiin 27. maaliskuuta 2016.",
+    "b": "Mankki railway station closed on 27 March 2016. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1289996636,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1289996636",
+      "title": "Mankki railway station",
+      "matching_source_paragraph": "Mankki railway station (Finnish: Mankin rautatieasema, Swedish: Mankby hållplats) was a station on the VR commuter rail network located in Espoo, Finland, between the stations of Kauklahti and Luoma. The station had two tracks, with track one serving trains towards Kirkkonummi and the other towards Helsinki. The platform in the direction of Helsinki is a very rare wooden platform. Mankki was the least used station in the Espoo area, with only 60-100 passengers per day before its closure. Because of the very low number of passengers, the station was closed on 27 March 2016."
+    }
+  },
+  {
+    "id": "mankki-closure-fi-en-changed-year",
+    "fact_id": "mankki-closure",
+    "qid": "Q6750548",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Mankin rautatieasema suljettiin 27. maaliskuuta 2016.",
+    "b": "Mankki railway station closed on 27 March 2017.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1289996636,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1289996636",
+      "title": "Mankki railway station",
+      "matching_source_paragraph": "Mankki railway station (Finnish: Mankin rautatieasema, Swedish: Mankby hållplats) was a station on the VR commuter rail network located in Espoo, Finland, between the stations of Kauklahti and Luoma. The station had two tracks, with track one serving trains towards Kirkkonummi and the other towards Helsinki. The platform in the direction of Helsinki is a very rare wooden platform. Mankki was the least used station in the Espoo area, with only 60-100 passengers per day before its closure. Because of the very low number of passengers, the station was closed on 27 March 2016."
+    }
+  },
+  {
+    "id": "mankki-closure-fi-en-changed-name",
+    "fact_id": "mankki-closure",
+    "qid": "Q6750548",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Mankin rautatieasema suljettiin 27. maaliskuuta 2016.",
+    "b": "Atlantis railway station closed on 27 March 2016.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1289996636,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1289996636",
+      "title": "Mankki railway station",
+      "matching_source_paragraph": "Mankki railway station (Finnish: Mankin rautatieasema, Swedish: Mankby hållplats) was a station on the VR commuter rail network located in Espoo, Finland, between the stations of Kauklahti and Luoma. The station had two tracks, with track one serving trains towards Kirkkonummi and the other towards Helsinki. The platform in the direction of Helsinki is a very rare wooden platform. Mankki was the least used station in the Espoo area, with only 60-100 passengers per day before its closure. Because of the very low number of passengers, the station was closed on 27 March 2016."
+    }
+  },
+  {
+    "id": "mankki-closure-fi-sv-base",
+    "fact_id": "mankki-closure",
+    "qid": "Q6750548",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Mankin rautatieasema suljettiin 27. maaliskuuta 2016.",
+    "b": "Mankby hållplats stängdes den 27 mars 2016.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1289996636,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1289996636",
+      "title": "Mankki railway station",
+      "matching_source_paragraph": "Mankki railway station (Finnish: Mankin rautatieasema, Swedish: Mankby hållplats) was a station on the VR commuter rail network located in Espoo, Finland, between the stations of Kauklahti and Luoma. The station had two tracks, with track one serving trains towards Kirkkonummi and the other towards Helsinki. The platform in the direction of Helsinki is a very rare wooden platform. Mankki was the least used station in the Espoo area, with only 60-100 passengers per day before its closure. Because of the very low number of passengers, the station was closed on 27 March 2016."
+    }
+  },
+  {
+    "id": "mankki-closure-fi-sv-rephrase",
+    "fact_id": "mankki-closure",
+    "qid": "Q6750548",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Mankin rautatieasema suljettiin 27. maaliskuuta 2016.",
+    "b": "Mankby hållplats stängningsdatum var den 27 mars 2016.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1289996636,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1289996636",
+      "title": "Mankki railway station",
+      "matching_source_paragraph": "Mankki railway station (Finnish: Mankin rautatieasema, Swedish: Mankby hållplats) was a station on the VR commuter rail network located in Espoo, Finland, between the stations of Kauklahti and Luoma. The station had two tracks, with track one serving trains towards Kirkkonummi and the other towards Helsinki. The platform in the direction of Helsinki is a very rare wooden platform. Mankki was the least used station in the Espoo area, with only 60-100 passengers per day before its closure. Because of the very low number of passengers, the station was closed on 27 March 2016."
+    }
+  },
+  {
+    "id": "mankki-closure-fi-sv-context_reorder",
+    "fact_id": "mankki-closure",
+    "qid": "Q6750548",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "This statement concerns the stored article. Mankin rautatieasema suljettiin 27. maaliskuuta 2016.",
+    "b": "Mankby hållplats stängdes den 27 mars 2016. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1289996636,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1289996636",
+      "title": "Mankki railway station",
+      "matching_source_paragraph": "Mankki railway station (Finnish: Mankin rautatieasema, Swedish: Mankby hållplats) was a station on the VR commuter rail network located in Espoo, Finland, between the stations of Kauklahti and Luoma. The station had two tracks, with track one serving trains towards Kirkkonummi and the other towards Helsinki. The platform in the direction of Helsinki is a very rare wooden platform. Mankki was the least used station in the Espoo area, with only 60-100 passengers per day before its closure. Because of the very low number of passengers, the station was closed on 27 March 2016."
+    }
+  },
+  {
+    "id": "mankki-closure-fi-sv-changed-year",
+    "fact_id": "mankki-closure",
+    "qid": "Q6750548",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Mankin rautatieasema suljettiin 27. maaliskuuta 2016.",
+    "b": "Mankby hållplats stängdes den 27 mars 2017.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1289996636,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1289996636",
+      "title": "Mankki railway station",
+      "matching_source_paragraph": "Mankki railway station (Finnish: Mankin rautatieasema, Swedish: Mankby hållplats) was a station on the VR commuter rail network located in Espoo, Finland, between the stations of Kauklahti and Luoma. The station had two tracks, with track one serving trains towards Kirkkonummi and the other towards Helsinki. The platform in the direction of Helsinki is a very rare wooden platform. Mankki was the least used station in the Espoo area, with only 60-100 passengers per day before its closure. Because of the very low number of passengers, the station was closed on 27 March 2016."
+    }
+  },
+  {
+    "id": "mankki-closure-fi-sv-changed-name",
+    "fact_id": "mankki-closure",
+    "qid": "Q6750548",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Mankin rautatieasema suljettiin 27. maaliskuuta 2016.",
+    "b": "Atlantis hållplats stängdes den 27 mars 2016.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1289996636,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1289996636",
+      "title": "Mankki railway station",
+      "matching_source_paragraph": "Mankki railway station (Finnish: Mankin rautatieasema, Swedish: Mankby hållplats) was a station on the VR commuter rail network located in Espoo, Finland, between the stations of Kauklahti and Luoma. The station had two tracks, with track one serving trains towards Kirkkonummi and the other towards Helsinki. The platform in the direction of Helsinki is a very rare wooden platform. Mankki was the least used station in the Espoo area, with only 60-100 passengers per day before its closure. Because of the very low number of passengers, the station was closed on 27 March 2016."
+    }
+  },
+  {
+    "id": "mankki-closure-sv-en-base",
+    "fact_id": "mankki-closure",
+    "qid": "Q6750548",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Mankby hållplats stängdes den 27 mars 2016.",
+    "b": "Mankki railway station closed on 27 March 2016.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1289996636,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1289996636",
+      "title": "Mankki railway station",
+      "matching_source_paragraph": "Mankki railway station (Finnish: Mankin rautatieasema, Swedish: Mankby hållplats) was a station on the VR commuter rail network located in Espoo, Finland, between the stations of Kauklahti and Luoma. The station had two tracks, with track one serving trains towards Kirkkonummi and the other towards Helsinki. The platform in the direction of Helsinki is a very rare wooden platform. Mankki was the least used station in the Espoo area, with only 60-100 passengers per day before its closure. Because of the very low number of passengers, the station was closed on 27 March 2016."
+    }
+  },
+  {
+    "id": "mankki-closure-sv-en-rephrase",
+    "fact_id": "mankki-closure",
+    "qid": "Q6750548",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Mankby hållplats stängdes den 27 mars 2016.",
+    "b": "The closure date of Mankki railway station was 27 March 2016.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1289996636,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1289996636",
+      "title": "Mankki railway station",
+      "matching_source_paragraph": "Mankki railway station (Finnish: Mankin rautatieasema, Swedish: Mankby hållplats) was a station on the VR commuter rail network located in Espoo, Finland, between the stations of Kauklahti and Luoma. The station had two tracks, with track one serving trains towards Kirkkonummi and the other towards Helsinki. The platform in the direction of Helsinki is a very rare wooden platform. Mankki was the least used station in the Espoo area, with only 60-100 passengers per day before its closure. Because of the very low number of passengers, the station was closed on 27 March 2016."
+    }
+  },
+  {
+    "id": "mankki-closure-sv-en-context_reorder",
+    "fact_id": "mankki-closure",
+    "qid": "Q6750548",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "This statement concerns the stored article. Mankby hållplats stängdes den 27 mars 2016.",
+    "b": "Mankki railway station closed on 27 March 2016. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1289996636,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1289996636",
+      "title": "Mankki railway station",
+      "matching_source_paragraph": "Mankki railway station (Finnish: Mankin rautatieasema, Swedish: Mankby hållplats) was a station on the VR commuter rail network located in Espoo, Finland, between the stations of Kauklahti and Luoma. The station had two tracks, with track one serving trains towards Kirkkonummi and the other towards Helsinki. The platform in the direction of Helsinki is a very rare wooden platform. Mankki was the least used station in the Espoo area, with only 60-100 passengers per day before its closure. Because of the very low number of passengers, the station was closed on 27 March 2016."
+    }
+  },
+  {
+    "id": "mankki-closure-sv-en-changed-year",
+    "fact_id": "mankki-closure",
+    "qid": "Q6750548",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Mankby hållplats stängdes den 27 mars 2016.",
+    "b": "Mankki railway station closed on 27 March 2017.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1289996636,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1289996636",
+      "title": "Mankki railway station",
+      "matching_source_paragraph": "Mankki railway station (Finnish: Mankin rautatieasema, Swedish: Mankby hållplats) was a station on the VR commuter rail network located in Espoo, Finland, between the stations of Kauklahti and Luoma. The station had two tracks, with track one serving trains towards Kirkkonummi and the other towards Helsinki. The platform in the direction of Helsinki is a very rare wooden platform. Mankki was the least used station in the Espoo area, with only 60-100 passengers per day before its closure. Because of the very low number of passengers, the station was closed on 27 March 2016."
+    }
+  },
+  {
+    "id": "mankki-closure-sv-en-changed-name",
+    "fact_id": "mankki-closure",
+    "qid": "Q6750548",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Mankby hållplats stängdes den 27 mars 2016.",
+    "b": "Atlantis railway station closed on 27 March 2016.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1289996636,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1289996636",
+      "title": "Mankki railway station",
+      "matching_source_paragraph": "Mankki railway station (Finnish: Mankin rautatieasema, Swedish: Mankby hållplats) was a station on the VR commuter rail network located in Espoo, Finland, between the stations of Kauklahti and Luoma. The station had two tracks, with track one serving trains towards Kirkkonummi and the other towards Helsinki. The platform in the direction of Helsinki is a very rare wooden platform. Mankki was the least used station in the Espoo area, with only 60-100 passengers per day before its closure. Because of the very low number of passengers, the station was closed on 27 March 2016."
+    }
+  },
+  {
+    "id": "piikkio-last-train-fi-en-base",
+    "fact_id": "piikkio-last-train",
+    "qid": "Q18661302",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Viimeinen juna pysähtyi Piikkiön rautatieasemalla 26. toukokuuta 1979.",
+    "b": "The last train stopped at Piikkiö railway station on 26 May 1979.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1244230229,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1244230229",
+      "title": "Piikkiö railway station",
+      "matching_source_paragraph": "Piikkiön rautatieasema is a railway station in the municipality of Kaarina, Piikkiö, near Turku, Finland. It was opened in 1889. The station building, designed by a Finnish architect Bruno Granholm was built in 1888 and later expanded in 1922. The last train stopped at the station on May 26, 1979. "
+    }
+  },
+  {
+    "id": "piikkio-last-train-fi-en-rephrase",
+    "fact_id": "piikkio-last-train",
+    "qid": "Q18661302",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Viimeinen juna pysähtyi Piikkiön rautatieasemalla 26. toukokuuta 1979.",
+    "b": "On 26 May 1979, the last train stopped at Piikkiö railway station.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1244230229,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1244230229",
+      "title": "Piikkiö railway station",
+      "matching_source_paragraph": "Piikkiön rautatieasema is a railway station in the municipality of Kaarina, Piikkiö, near Turku, Finland. It was opened in 1889. The station building, designed by a Finnish architect Bruno Granholm was built in 1888 and later expanded in 1922. The last train stopped at the station on May 26, 1979. "
+    }
+  },
+  {
+    "id": "piikkio-last-train-fi-en-context_reorder",
+    "fact_id": "piikkio-last-train",
+    "qid": "Q18661302",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "This statement concerns the stored article. Viimeinen juna pysähtyi Piikkiön rautatieasemalla 26. toukokuuta 1979.",
+    "b": "The last train stopped at Piikkiö railway station on 26 May 1979. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1244230229,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1244230229",
+      "title": "Piikkiö railway station",
+      "matching_source_paragraph": "Piikkiön rautatieasema is a railway station in the municipality of Kaarina, Piikkiö, near Turku, Finland. It was opened in 1889. The station building, designed by a Finnish architect Bruno Granholm was built in 1888 and later expanded in 1922. The last train stopped at the station on May 26, 1979. "
+    }
+  },
+  {
+    "id": "piikkio-last-train-fi-en-changed-year",
+    "fact_id": "piikkio-last-train",
+    "qid": "Q18661302",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Viimeinen juna pysähtyi Piikkiön rautatieasemalla 26. toukokuuta 1979.",
+    "b": "The last train stopped at Piikkiö railway station on 26 May 1980.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1244230229,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1244230229",
+      "title": "Piikkiö railway station",
+      "matching_source_paragraph": "Piikkiön rautatieasema is a railway station in the municipality of Kaarina, Piikkiö, near Turku, Finland. It was opened in 1889. The station building, designed by a Finnish architect Bruno Granholm was built in 1888 and later expanded in 1922. The last train stopped at the station on May 26, 1979. "
+    }
+  },
+  {
+    "id": "piikkio-last-train-fi-en-changed-name",
+    "fact_id": "piikkio-last-train",
+    "qid": "Q18661302",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Viimeinen juna pysähtyi Piikkiön rautatieasemalla 26. toukokuuta 1979.",
+    "b": "The last train stopped at Atlantis railway station on 26 May 1979.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1244230229,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1244230229",
+      "title": "Piikkiö railway station",
+      "matching_source_paragraph": "Piikkiön rautatieasema is a railway station in the municipality of Kaarina, Piikkiö, near Turku, Finland. It was opened in 1889. The station building, designed by a Finnish architect Bruno Granholm was built in 1888 and later expanded in 1922. The last train stopped at the station on May 26, 1979. "
+    }
+  },
+  {
+    "id": "piikkio-last-train-fi-sv-base",
+    "fact_id": "piikkio-last-train",
+    "qid": "Q18661302",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Viimeinen juna pysähtyi Piikkiön rautatieasemalla 26. toukokuuta 1979.",
+    "b": "Det sista tåget stannade vid Pikis järnvägsstation den 26 maj 1979.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1244230229,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1244230229",
+      "title": "Piikkiö railway station",
+      "matching_source_paragraph": "Piikkiön rautatieasema is a railway station in the municipality of Kaarina, Piikkiö, near Turku, Finland. It was opened in 1889. The station building, designed by a Finnish architect Bruno Granholm was built in 1888 and later expanded in 1922. The last train stopped at the station on May 26, 1979. "
+    }
+  },
+  {
+    "id": "piikkio-last-train-fi-sv-rephrase",
+    "fact_id": "piikkio-last-train",
+    "qid": "Q18661302",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Viimeinen juna pysähtyi Piikkiön rautatieasemalla 26. toukokuuta 1979.",
+    "b": "Den 26 maj 1979 stannade det sista tåget vid Pikis järnvägsstation.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1244230229,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1244230229",
+      "title": "Piikkiö railway station",
+      "matching_source_paragraph": "Piikkiön rautatieasema is a railway station in the municipality of Kaarina, Piikkiö, near Turku, Finland. It was opened in 1889. The station building, designed by a Finnish architect Bruno Granholm was built in 1888 and later expanded in 1922. The last train stopped at the station on May 26, 1979. "
+    }
+  },
+  {
+    "id": "piikkio-last-train-fi-sv-context_reorder",
+    "fact_id": "piikkio-last-train",
+    "qid": "Q18661302",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "This statement concerns the stored article. Viimeinen juna pysähtyi Piikkiön rautatieasemalla 26. toukokuuta 1979.",
+    "b": "Det sista tåget stannade vid Pikis järnvägsstation den 26 maj 1979. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1244230229,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1244230229",
+      "title": "Piikkiö railway station",
+      "matching_source_paragraph": "Piikkiön rautatieasema is a railway station in the municipality of Kaarina, Piikkiö, near Turku, Finland. It was opened in 1889. The station building, designed by a Finnish architect Bruno Granholm was built in 1888 and later expanded in 1922. The last train stopped at the station on May 26, 1979. "
+    }
+  },
+  {
+    "id": "piikkio-last-train-fi-sv-changed-year",
+    "fact_id": "piikkio-last-train",
+    "qid": "Q18661302",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Viimeinen juna pysähtyi Piikkiön rautatieasemalla 26. toukokuuta 1979.",
+    "b": "Det sista tåget stannade vid Pikis järnvägsstation den 26 maj 1980.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1244230229,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1244230229",
+      "title": "Piikkiö railway station",
+      "matching_source_paragraph": "Piikkiön rautatieasema is a railway station in the municipality of Kaarina, Piikkiö, near Turku, Finland. It was opened in 1889. The station building, designed by a Finnish architect Bruno Granholm was built in 1888 and later expanded in 1922. The last train stopped at the station on May 26, 1979. "
+    }
+  },
+  {
+    "id": "piikkio-last-train-fi-sv-changed-name",
+    "fact_id": "piikkio-last-train",
+    "qid": "Q18661302",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Viimeinen juna pysähtyi Piikkiön rautatieasemalla 26. toukokuuta 1979.",
+    "b": "Det sista tåget stannade vid Atlantis järnvägsstation den 26 maj 1979.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1244230229,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1244230229",
+      "title": "Piikkiö railway station",
+      "matching_source_paragraph": "Piikkiön rautatieasema is a railway station in the municipality of Kaarina, Piikkiö, near Turku, Finland. It was opened in 1889. The station building, designed by a Finnish architect Bruno Granholm was built in 1888 and later expanded in 1922. The last train stopped at the station on May 26, 1979. "
+    }
+  },
+  {
+    "id": "piikkio-last-train-sv-en-base",
+    "fact_id": "piikkio-last-train",
+    "qid": "Q18661302",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "base",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Det sista tåget stannade vid Pikis järnvägsstation den 26 maj 1979.",
+    "b": "The last train stopped at Piikkiö railway station on 26 May 1979.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1244230229,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1244230229",
+      "title": "Piikkiö railway station",
+      "matching_source_paragraph": "Piikkiön rautatieasema is a railway station in the municipality of Kaarina, Piikkiö, near Turku, Finland. It was opened in 1889. The station building, designed by a Finnish architect Bruno Granholm was built in 1888 and later expanded in 1922. The last train stopped at the station on May 26, 1979. "
+    }
+  },
+  {
+    "id": "piikkio-last-train-sv-en-rephrase",
+    "fact_id": "piikkio-last-train",
+    "qid": "Q18661302",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "rephrase",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Det sista tåget stannade vid Pikis järnvägsstation den 26 maj 1979.",
+    "b": "On 26 May 1979, the last train stopped at Piikkiö railway station.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1244230229,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1244230229",
+      "title": "Piikkiö railway station",
+      "matching_source_paragraph": "Piikkiön rautatieasema is a railway station in the municipality of Kaarina, Piikkiö, near Turku, Finland. It was opened in 1889. The station building, designed by a Finnish architect Bruno Granholm was built in 1888 and later expanded in 1922. The last train stopped at the station on May 26, 1979. "
+    }
+  },
+  {
+    "id": "piikkio-last-train-sv-en-context_reorder",
+    "fact_id": "piikkio-last-train",
+    "qid": "Q18661302",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled translation",
+    "slice": "translation_equivalent",
+    "nuisance": "context_reorder",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "This statement concerns the stored article. Det sista tåget stannade vid Pikis järnvägsstation den 26 maj 1979.",
+    "b": "The last train stopped at Piikkiö railway station on 26 May 1979. This statement concerns the stored article.",
+    "expected_review": false,
+    "label_origin": "audit-authored controlled equivalent, no human validation",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1244230229,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1244230229",
+      "title": "Piikkiö railway station",
+      "matching_source_paragraph": "Piikkiön rautatieasema is a railway station in the municipality of Kaarina, Piikkiö, near Turku, Finland. It was opened in 1889. The station building, designed by a Finnish architect Bruno Granholm was built in 1888 and later expanded in 1922. The last train stopped at the station on May 26, 1979. "
+    }
+  },
+  {
+    "id": "piikkio-last-train-sv-en-changed-year",
+    "fact_id": "piikkio-last-train",
+    "qid": "Q18661302",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "year",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Det sista tåget stannade vid Pikis järnvägsstation den 26 maj 1979.",
+    "b": "The last train stopped at Piikkiö railway station on 26 May 1980.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1244230229,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1244230229",
+      "title": "Piikkiö railway station",
+      "matching_source_paragraph": "Piikkiön rautatieasema is a railway station in the municipality of Kaarina, Piikkiö, near Turku, Finland. It was opened in 1889. The station building, designed by a Finnish architect Bruno Granholm was built in 1888 and later expanded in 1922. The last train stopped at the station on May 26, 1979. "
+    }
+  },
+  {
+    "id": "piikkio-last-train-sv-en-changed-name",
+    "fact_id": "piikkio-last-train",
+    "qid": "Q18661302",
+    "family": "railway_sites",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled mutation",
+    "slice": "planted_error",
+    "nuisance": "name",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Det sista tåget stannade vid Pikis järnvägsstation den 26 maj 1979.",
+    "b": "The last train stopped at Atlantis railway station on 26 May 1979.",
+    "expected_review": true,
+    "label_origin": "synthetic changed copy, no human label",
+    "source_ref": {
+      "lang": "en",
+      "rev_id": 1244230229,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1244230229",
+      "title": "Piikkiö railway station",
+      "matching_source_paragraph": "Piikkiön rautatieasema is a railway station in the municipality of Kaarina, Piikkiö, near Turku, Finland. It was opened in 1889. The station building, designed by a Finnish architect Bruno Granholm was built in 1888 and later expanded in 1922. The last train stopped at the station on May 26, 1979. "
+    }
+  },
+  {
+    "id": "budget-percent-fi-en",
+    "fact_id": "budget-percent",
+    "qid": "Q277664",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled numeric formatting",
+    "slice": "translation_equivalent",
+    "nuisance": "decimal_format",
+    "langs": [
+      "fi",
+      "en"
+    ],
+    "a": "Noin 50,0 prosenttia yliopiston budjetista oli ulkoista rahoitusta.",
+    "b": "About 50 percent of the university budget was external funding.",
+    "expected_review": false,
+    "label_origin": "audit-authored numerical equivalent, no human validation",
+    "source_ref": {
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303047435",
+      "matching_source_paragraph": "The university's statutory duty was to pursue research and give the highest education in its field. The research, conducted by some 1,800 staff and faculty members, mostly focused on applied science and often has close ties to many different companies (such as Nokia). Located next to the university campus is a Technology Centre Hermia, including a large Nokia research facility. TUT was one of the only two Finnish universities which operate as foundation. The yearly budget of the university was some 147 million euros. Close to 50% of its budget was external funding. According to Times Higher Education, it ranked 11th in the world, and 4th in Europe, for industry collaboration."
+    }
+  },
+  {
+    "id": "budget-percent-fi-sv",
+    "fact_id": "budget-percent",
+    "qid": "Q277664",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled numeric formatting",
+    "slice": "translation_equivalent",
+    "nuisance": "decimal_format",
+    "langs": [
+      "fi",
+      "sv"
+    ],
+    "a": "Noin 50,0 prosenttia yliopiston budjetista oli ulkoista rahoitusta.",
+    "b": "Ungefär 50 procent av universitetets budget var extern finansiering.",
+    "expected_review": false,
+    "label_origin": "audit-authored numerical equivalent, no human validation",
+    "source_ref": {
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303047435",
+      "matching_source_paragraph": "The university's statutory duty was to pursue research and give the highest education in its field. The research, conducted by some 1,800 staff and faculty members, mostly focused on applied science and often has close ties to many different companies (such as Nokia). Located next to the university campus is a Technology Centre Hermia, including a large Nokia research facility. TUT was one of the only two Finnish universities which operate as foundation. The yearly budget of the university was some 147 million euros. Close to 50% of its budget was external funding. According to Times Higher Education, it ranked 11th in the world, and 4th in Europe, for industry collaboration."
+    }
+  },
+  {
+    "id": "budget-percent-sv-en",
+    "fact_id": "budget-percent",
+    "qid": "Q277664",
+    "family": "education_institutions",
+    "split": "heldout",
+    "source": "S Wikipedia snapshot, controlled numeric formatting",
+    "slice": "translation_equivalent",
+    "nuisance": "decimal_format",
+    "langs": [
+      "sv",
+      "en"
+    ],
+    "a": "Ungefär 50 procent av universitetets budget var extern finansiering.",
+    "b": "About 50 percent of the university budget was external funding.",
+    "expected_review": false,
+    "label_origin": "audit-authored numerical equivalent, no human validation",
+    "source_ref": {
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1303047435",
+      "matching_source_paragraph": "The university's statutory duty was to pursue research and give the highest education in its field. The research, conducted by some 1,800 staff and faculty members, mostly focused on applied science and often has close ties to many different companies (such as Nokia). Located next to the university campus is a Technology Centre Hermia, including a large Nokia research facility. TUT was one of the only two Finnish universities which operate as foundation. The yearly budget of the university was some 147 million euros. Close to 50% of its budget was external funding. According to Times Higher Education, it ranked 11th in the world, and 4th in Europe, for industry collaboration."
+    }
+  }
+]

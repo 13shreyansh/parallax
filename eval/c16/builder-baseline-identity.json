@@ -1,0 +1,20 @@
+{
+  "scope": "Builder-run byte comparison, not independent reviewer certification",
+  "files": {
+    "server/checks.py": {
+      "baseline_sha256": "027a8679bcc0954db7634524136bf772a69995a2dca48333ec4da8347ec0b8f3",
+      "current_sha256": "027a8679bcc0954db7634524136bf772a69995a2dca48333ec4da8347ec0b8f3",
+      "identical": true
+    },
+    "server/db.py": {
+      "baseline_sha256": "866120f7e53dce508ee6f4bcc1e3ff35fef86b51b0fabd5908bd050e7d1915ee",
+      "current_sha256": "866120f7e53dce508ee6f4bcc1e3ff35fef86b51b0fabd5908bd050e7d1915ee",
+      "identical": true
+    },
+    "scripts/ingest.py": {
+      "baseline_sha256": "7cf8d87288ae9f40e8e038f6a7a98035ddd206e78eab6cc4280b3712a2c13dd2",
+      "current_sha256": "7cf8d87288ae9f40e8e038f6a7a98035ddd206e78eab6cc4280b3712a2c13dd2",
+      "identical": true
+    }
+  }
+}

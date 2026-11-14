@@ -1,0 +1,368 @@
+{
+  "label": "Post-seal exploratory diagnosis, not a replacement final run",
+  "failed": 25,
+  "membership_changes": 24,
+  "top1_changes": 2,
+  "sample": [
+    {
+      "query_id": "fi-440-15",
+      "family": "wartime_history",
+      "recorded_original": [
+        "en-7712-99",
+        "en-7712-96",
+        "en-7712-69"
+      ],
+      "recorded_renamed_reversed": [
+        "en-7712-99",
+        "en-7712-69",
+        "en-7712-32"
+      ],
+      "tables": {
+        "candidate_original_index_enabled": [
+          {
+            "id": "en-7712-99",
+            "distance": 0.49576238751591295
+          },
+          {
+            "id": "en-7712-96",
+            "distance": 0.604631250167946
+          },
+          {
+            "id": "en-7712-94",
+            "distance": 0.6079592649461912
+          }
+        ],
+        "candidate_original_index_ignored": [
+          {
+            "id": "en-7712-99",
+            "distance": 0.49576238751591295
+          },
+          {
+            "id": "en-7712-96",
+            "distance": 0.604631250167946
+          },
+          {
+            "id": "en-7712-94",
+            "distance": 0.6079592649461912
+          }
+        ],
+        "candidate_renamed_reversed_index_enabled": [
+          {
+            "id": "en-7712-99",
+            "distance": 0.49576238751591295
+          },
+          {
+            "id": "en-7712-96",
+            "distance": 0.604631250167946
+          },
+          {
+            "id": "en-7712-94",
+            "distance": 0.6079592649461912
+          }
+        ],
+        "candidate_renamed_reversed_index_ignored": [
+          {
+            "id": "en-7712-99",
+            "distance": 0.49576238751591295
+          },
+          {
+            "id": "en-7712-96",
+            "distance": 0.604631250167946
+          },
+          {
+            "id": "en-7712-94",
+            "distance": 0.6079592649461912
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "fi-440-46",
+      "family": "wartime_history",
+      "recorded_original": [
+        "en-7712-59",
+        "en-7712-58",
+        "en-7712-52"
+      ],
+      "recorded_renamed_reversed": [
+        "en-7712-58",
+        "en-7712-59",
+        "en-7712-52"
+      ],
+      "tables": {
+        "candidate_original_index_enabled": [
+          {
+            "id": "en-7712-58",
+            "distance": 0.26535115932897535
+          },
+          {
+            "id": "en-7712-59",
+            "distance": 0.2716076382672483
+          },
+          {
+            "id": "en-7712-52",
+            "distance": 0.2873352001694578
+          }
+        ],
+        "candidate_original_index_ignored": [
+          {
+            "id": "en-7712-58",
+            "distance": 0.26535115932897535
+          },
+          {
+            "id": "en-7712-59",
+            "distance": 0.2716076382672483
+          },
+          {
+            "id": "en-7712-52",
+            "distance": 0.2873352001694578
+          }
+        ],
+        "candidate_renamed_reversed_index_enabled": [
+          {
+            "id": "en-7712-58",
+            "distance": 0.26535115932897535
+          },
+          {
+            "id": "en-7712-59",
+            "distance": 0.2716076382672483
+          },
+          {
+            "id": "en-7712-52",
+            "distance": 0.2873352001694578
+          }
+        ],
+        "candidate_renamed_reversed_index_ignored": [
+          {
+            "id": "en-7712-58",
+            "distance": 0.26535115932897535
+          },
+          {
+            "id": "en-7712-59",
+            "distance": 0.2716076382672483
+          },
+          {
+            "id": "en-7712-52",
+            "distance": 0.2873352001694578
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "fi-440-53",
+      "family": "wartime_history",
+      "recorded_original": [
+        "en-7712-54",
+        "en-7712-18",
+        "en-7712-55"
+      ],
+      "recorded_renamed_reversed": [
+        "en-7712-54",
+        "en-7712-18",
+        "en-7712-39"
+      ],
+      "tables": {
+        "candidate_original_index_enabled": [
+          {
+            "id": "en-7712-54",
+            "distance": 0.5201839555697301
+          },
+          {
+            "id": "en-7712-18",
+            "distance": 0.545412683472613
+          },
+          {
+            "id": "en-7712-39",
+            "distance": 0.7056109265436327
+          }
+        ],
+        "candidate_original_index_ignored": [
+          {
+            "id": "en-7712-54",
+            "distance": 0.5201839555697301
+          },
+          {
+            "id": "en-7712-18",
+            "distance": 0.545412683472613
+          },
+          {
+            "id": "en-7712-39",
+            "distance": 0.7056109265436327
+          }
+        ],
+        "candidate_renamed_reversed_index_enabled": [
+          {
+            "id": "en-7712-54",
+            "distance": 0.5201839555697301
+          },
+          {
+            "id": "en-7712-18",
+            "distance": 0.545412683472613
+          },
+          {
+            "id": "en-7712-39",
+            "distance": 0.7056109265436327
+          }
+        ],
+        "candidate_renamed_reversed_index_ignored": [
+          {
+            "id": "en-7712-54",
+            "distance": 0.5201839555697301
+          },
+          {
+            "id": "en-7712-18",
+            "distance": 0.545412683472613
+          },
+          {
+            "id": "en-7712-39",
+            "distance": 0.7056109265436327
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "fi-440-61",
+      "family": "wartime_history",
+      "recorded_original": [
+        "en-7712-86",
+        "en-7712-55",
+        "en-7712-79"
+      ],
+      "recorded_renamed_reversed": [
+        "en-7712-86",
+        "en-7712-55",
+        "en-7712-56"
+      ],
+      "tables": {
+        "candidate_original_index_enabled": [
+          {
+            "id": "en-7712-86",
+            "distance": 0.5987959052321293
+          },
+          {
+            "id": "en-7712-55",
+            "distance": 0.609942186528049
+          },
+          {
+            "id": "en-7712-56",
+            "distance": 0.6483231598945713
+          }
+        ],
+        "candidate_original_index_ignored": [
+          {
+            "id": "en-7712-86",
+            "distance": 0.5987959052321293
+          },
+          {
+            "id": "en-7712-55",
+            "distance": 0.609942186528049
+          },
+          {
+            "id": "en-7712-56",
+            "distance": 0.6483231598945713
+          }
+        ],
+        "candidate_renamed_reversed_index_enabled": [
+          {
+            "id": "en-7712-86",
+            "distance": 0.5987959052321293
+          },
+          {
+            "id": "en-7712-55",
+            "distance": 0.609942186528049
+          },
+          {
+            "id": "en-7712-56",
+            "distance": 0.6483231598945713
+          }
+        ],
+        "candidate_renamed_reversed_index_ignored": [
+          {
+            "id": "en-7712-86",
+            "distance": 0.5987959052321293
+          },
+          {
+            "id": "en-7712-55",
+            "distance": 0.609942186528049
+          },
+          {
+            "id": "en-7712-56",
+            "distance": 0.6483231598945713
+          }
+        ]
+      }
+    },
+    {
+      "query_id": "fi-440-67",
+      "family": "wartime_history",
+      "recorded_original": [
+        "en-7712-2",
+        "en-7712-65",
+        "en-7712-52"
+      ],
+      "recorded_renamed_reversed": [
+        "en-7712-2",
+        "en-7712-52",
+        "en-7712-37"
+      ],
+      "tables": {
+        "candidate_original_index_enabled": [
+          {
+            "id": "en-7712-2",
+            "distance": 0.3194815781516249
+          },
+          {
+            "id": "en-7712-65",
+            "distance": 0.3845833888999767
+          },
+          {
+            "id": "en-7712-52",
+            "distance": 0.3902922916345227
+          }
+        ],
+        "candidate_original_index_ignored": [
+          {
+            "id": "en-7712-2",
+            "distance": 0.3194815781516249
+          },
+          {
+            "id": "en-7712-65",
+            "distance": 0.3845833888999767
+          },
+          {
+            "id": "en-7712-52",
+            "distance": 0.3902922916345227
+          }
+        ],
+        "candidate_renamed_reversed_index_enabled": [
+          {
+            "id": "en-7712-2",
+            "distance": 0.3194815781516249
+          },
+          {
+            "id": "en-7712-65",
+            "distance": 0.3845833888999767
+          },
+          {
+            "id": "en-7712-52",
+            "distance": 0.3902922916345227
+          }
+        ],
+        "candidate_renamed_reversed_index_ignored": [
+          {
+            "id": "en-7712-2",
+            "distance": 0.3194815781516249
+          },
+          {
+            "id": "en-7712-65",
+            "distance": 0.3845833888999767
+          },
+          {
+            "id": "en-7712-52",
+            "distance": 0.3902922916345227
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -20,7 +20,7 @@ Target recording length: 1:55, allowing five seconds of slack. Use the live site
 
 **1:15–1:40** Open Method & evaluation. In the planted test, change a day, then swap a country name.
 
-"Here is a deliberately altered copy of a real retrieved passage. The date change is caught. The name swap is a known miss. These are synthetic tests, never real Wikipedia edits. On fresh held-out articles the rules caught 18 of 20 planted errors, with no flags on 22 controls. This does not measure real-world contradiction accuracy."
+"Here is an altered copy, never a Wikipedia edit. This date change is caught; a name swap is missed. Our broader family-held-out paired tests caught five of thirty-six planted errors and falsely flagged two of fifty-seven constructed equivalents. These are audit-authored tests, not human labels or general accuracy."
 
 **1:40–1:55** Point to the evaluation result and return to the evidence desk.
 

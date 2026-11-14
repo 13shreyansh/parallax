@@ -1,0 +1,18 @@
+{
+  "requested_at_utc": "2026-11-14T16:13:24.355091+00:00",
+  "role": "fresh model-agent spec/evidence consistency reviewer",
+  "fork_turns": "none",
+  "builder_conversation_provided": false,
+  "independent_human": false,
+  "calibrated_judge": false,
+  "different_model_family_claimed": false,
+  "model_identity": "Parent-default model; exact runtime model identifier not exposed to builder",
+  "input_request": "eval/c16/REVIEW_REQUEST.md",
+  "request_sha256": "b43231a03f3aa4a9d1948c4d18f806ba79ab634d65d2894eec2e6d05bf6135d2",
+  "scope": "Evidence consistency and unsupported-claim refusal, not historical or translation gold labels.",
+  "review_completed_at_utc": "2026-11-14T16:16:05.126316+00:00",
+  "review_report": "eval/c16/REVIEW.md",
+  "review_report_sha256": "278eed4b9dbf0c1e8fd6d1cbb5c52141e5a7a1225a14c28835794edccfe89420",
+  "verdict": "Pass for scoped artifact evidence consistency",
+  "refusals": "No independent certification of baseline-commit equivalence, actual model embeddings/weights, live SQL execution, historical truth, human translation labels or introduction revision."
+}

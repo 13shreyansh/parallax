@@ -1,5 +1,19 @@
 # NPOV Radar
 
+## Judge quick path
+
+| Criterion | Actual evidence and its limit |
+|---|---|
+| Effective and creative use of MariaDB, 20% | [Native vector/SVT schema](schema.sql), [parameterized live queries](server/db.py), [measured product SQL run](eval/database-run.json), [deployed HTTP checks](eval/deployed-regression-checks.json). Native use is verified; exact nearest-neighbor ranking is not guaranteed. |
+| Implementation and scalability, 20% | [Bounded S/M/L results](eval/scale-results.json) and [frozen whole-family audit](eval/c16/REPORT.md). L actually loads 1,000 of 568,416 rows; full-scale quality/concurrency are unproven. |
+| Usefulness for editors, 20% | [Live evidence desk](https://npov-radar.vercel.app), [scoped cited-source example](data/source-evidence.json), [60-pair human annotation queue](eval/ANNOTATING.md). Real flows work; editor utility and general contradiction accuracy have not been established by a user study or human gold set. |
+| Design and demo quality, 20% | [IAB workflow evidence](eval/verification.md), [scoped visual verdict](eval/visual-review.md), [1:55 demo script](DEMO_SCRIPT.md), [five-minute pitch](PITCH_NOTES.md). Public video is not recorded. |
+| Originality, 20% | [Claim-level editorial implementation](src/main.jsx) combines retrieval, provenance, review notes and temporal inspection. No exhaustive prior-art or first-ever claim is made. |
+
+[Independent C-16 artifact review](eval/c16/REVIEW.md) passed scoped consistency checks and explicitly refused unsupported certifications.
+
+**Current limits:** live SQL needs this Mac and its temporary tunnel. The original retrieval proxy favored lexical **8/9**, vector **7/9**. The new [C-16 frozen audit](eval/c16/REPORT.md) found **2/57** false flags on constructed translation-equivalent controls and caught **5/36** planted errors with measured cross-language similarities. These are not human labels or full-pipeline accuracy. "Disagreement introduced at revision X" remains **unproven**, with no introduction revision asserted.
+
 An evidence desk for Wikipedia editors comparing Finland's history in Finnish, English and Swedish. Select an article, inspect related passages and their exact revisions, and prepare a review note. Radar never edits Wikipedia.
 
 [Open the application](https://npov-radar.vercel.app) · [Evaluation ledger](eval/LEDGER.md) · [Two-minute demo](DEMO_SCRIPT.md)
@@ -17,7 +31,7 @@ An evidence desk for Wikipedia editors comparing Finland's history in Finnish, E
 
 ## Evidence and limits
 
-Fresh article held-out synthetic rule tests caught **18/20** constructed errors, with **0/22** negative controls flagged. The misses were country-name swaps. Similarity is fixed at 1 for these edited-copy tests; they isolate the rules and do not test the full retrieval pipeline. Labels come from mutation construction, not people.
+Earlier C-08 article-held-out synthetic rule tests caught **18/20** constructed errors, with **0/22** negative controls flagged. The misses were country-name swaps. Similarity is fixed at 1 for these edited-copy tests; they isolate the rules and do not test the full retrieval pipeline. Labels come from mutation construction, not people.
 
 The weak cross-language date-overlap retrieval proxy found **7/9** held-out targets with vector search and **8/9** with lexical search. This is not a benchmark win. The proxy has only 16 pairs overall and equal dates can describe different events. Nine archived-revision checks pass against the supplied metadata after a UTC correction.
 
@@ -60,6 +74,9 @@ The first import fetches current extracts, interlanguage links and three latest 
 `server/db.py` contains the actual parameterized vector and temporal SQL. The public API exposes only fixed read queries with bounded inputs, not arbitrary SQL or writes. `scripts/start-db.sh` is the build-machine restart command and expects its isolated local runtime under `work/runtime`; it is not a general installer.
 
 ## Reproduce evaluations
+
+C-16 is a separate sealed audit of the unchanged delivered system. Read its [specification](eval/c16/SPEC.md), [family plan](eval/c16/PLAN.json), [results and failures](eval/c16/REPORT.md), and [freeze manifest](eval/c16/FROZEN.json). Replay to a separate directory with `.venv/bin/python scripts/c16_audit.py replay --out work/c16-replay`. The final evidence is not overwritten.
+
 
 ```sh
 .venv/bin/python scripts/prepare-confirmation.py

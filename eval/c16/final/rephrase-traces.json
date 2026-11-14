@@ -1,0 +1,482 @@
+[
+  {
+    "id": "war-start-fi-en-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "wartime_history",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "war-start-fi-en-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "wartime_history",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.9787254929542542,
+    "rephrase_similarity": 0.9359965324401855
+  },
+  {
+    "id": "war-start-fi-sv-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "wartime_history",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "war-start-fi-sv-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "wartime_history",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.9822933673858643,
+    "rephrase_similarity": 0.953612744808197
+  },
+  {
+    "id": "war-start-sv-en-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "wartime_history",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "war-start-sv-en-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "wartime_history",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.995535135269165,
+    "rephrase_similarity": 0.9598655104637146
+  },
+  {
+    "id": "continuation-start-fi-en-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "wartime_history",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "continuation-start-fi-en-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "wartime_history",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.879514217376709,
+    "rephrase_similarity": 0.8621314167976379
+  },
+  {
+    "id": "continuation-start-fi-sv-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "wartime_history",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "continuation-start-fi-sv-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "wartime_history",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.9315226674079895,
+    "rephrase_similarity": 0.9117458462715149
+  },
+  {
+    "id": "continuation-start-sv-en-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "wartime_history",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "continuation-start-sv-en-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "wartime_history",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.9688003063201904,
+    "rephrase_similarity": 0.9442636966705322
+  },
+  {
+    "id": "academy-foundation-fi-en-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "education_institutions",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "academy-foundation-fi-en-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "education_institutions",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.7421389222145081,
+    "rephrase_similarity": 0.7003934979438782
+  },
+  {
+    "id": "academy-foundation-fi-sv-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "education_institutions",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "academy-foundation-fi-sv-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "education_institutions",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.8059462308883667,
+    "rephrase_similarity": 0.7508266568183899
+  },
+  {
+    "id": "academy-foundation-sv-en-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "education_institutions",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "academy-foundation-sv-en-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "education_institutions",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.6692873239517212,
+    "rephrase_similarity": 0.6479199528694153
+  },
+  {
+    "id": "tkk-foundation-fi-en-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "education_institutions",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "tkk-foundation-fi-en-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "education_institutions",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.7442070245742798,
+    "rephrase_similarity": 0.7162535786628723
+  },
+  {
+    "id": "tkk-foundation-fi-sv-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "education_institutions",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "tkk-foundation-fi-sv-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "education_institutions",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.9804072976112366,
+    "rephrase_similarity": 0.9605604410171509
+  },
+  {
+    "id": "tkk-foundation-sv-en-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "education_institutions",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "tkk-foundation-sv-en-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "education_institutions",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.758786141872406,
+    "rephrase_similarity": 0.7371455430984497
+  },
+  {
+    "id": "tut-merger-fi-en-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "education_institutions",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "tut-merger-fi-en-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "education_institutions",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.9196054935455322,
+    "rephrase_similarity": 0.9077775478363037
+  },
+  {
+    "id": "tut-merger-fi-sv-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "education_institutions",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "tut-merger-fi-sv-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "education_institutions",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.8664841651916504,
+    "rephrase_similarity": 0.8543035387992859
+  },
+  {
+    "id": "tut-merger-sv-en-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "education_institutions",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "tut-merger-sv-en-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "education_institutions",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.8230992555618286,
+    "rephrase_similarity": 0.8091775178909302
+  },
+  {
+    "id": "luoma-closure-fi-en-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "railway_sites",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "luoma-closure-fi-en-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "railway_sites",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.7966856360435486,
+    "rephrase_similarity": 0.7553554773330688
+  },
+  {
+    "id": "luoma-closure-fi-sv-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "railway_sites",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "luoma-closure-fi-sv-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "railway_sites",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.8320969343185425,
+    "rephrase_similarity": 0.7361354827880859
+  },
+  {
+    "id": "luoma-closure-sv-en-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "railway_sites",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "luoma-closure-sv-en-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "railway_sites",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.6544454097747803,
+    "rephrase_similarity": 0.641374945640564
+  },
+  {
+    "id": "mankki-closure-fi-en-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "railway_sites",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "mankki-closure-fi-en-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "railway_sites",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.8910860419273376,
+    "rephrase_similarity": 0.8306754231452942
+  },
+  {
+    "id": "mankki-closure-fi-sv-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "railway_sites",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "mankki-closure-fi-sv-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "railway_sites",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.8837357759475708,
+    "rephrase_similarity": 0.830232560634613
+  },
+  {
+    "id": "mankki-closure-sv-en-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "railway_sites",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "mankki-closure-sv-en-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "railway_sites",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.8717637062072754,
+    "rephrase_similarity": 0.8298006057739258
+  },
+  {
+    "id": "piikkio-last-train-fi-en-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "railway_sites",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "piikkio-last-train-fi-en-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "railway_sites",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.9427245855331421,
+    "rephrase_similarity": 0.9193993806838989
+  },
+  {
+    "id": "piikkio-last-train-fi-sv-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "railway_sites",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "piikkio-last-train-fi-sv-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "railway_sites",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.9054288864135742,
+    "rephrase_similarity": 0.89989173412323
+  },
+  {
+    "id": "piikkio-last-train-sv-en-rephrase",
+    "path": "rule_only_similarity_1",
+    "family": "railway_sites",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 1.0,
+    "rephrase_similarity": 1.0
+  },
+  {
+    "id": "piikkio-last-train-sv-en-rephrase",
+    "path": "measured_pair_embedding",
+    "family": "railway_sites",
+    "base_review": false,
+    "rephrase_review": false,
+    "pass": true,
+    "base_similarity": 0.9402846097946167,
+    "rephrase_similarity": 0.9386310577392578
+  }
+]

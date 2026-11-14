@@ -12,3 +12,7 @@ Evaluation: v2 fresh article held-out synthetic tests catch 18/20 edits, no fals
 Chief IAB functional verification passed at 17:39 Helsinki: exact revision links, Yle source, fresh SQL query, 2015 archive, synthetic detection and known miss; mobile 390px no page overflow; keyboard focus visible. Current wording/font and the five UI fixes were recaptured in IAB. Independent reviewer scored all five fixes resolved, no visible regressions from that batch, disposition ship for those fixes. Demo/pitch notes and runtime handoff are complete. Live API still requires this Mac and tunnel. No human expert labels or public video were fabricated.
 
 Browser constraint: this chat lacks IAB. Do not use personal Chrome/Safari/Edge or any external browser workaround. Necessary authorized service connectors and secret-safe CLI are allowed. Ask Chief via bridge for exact browser UI steps.
+
+## C-16 scoped improvement task
+
+C-08 build remains DONE. C-16 MariaDB audit is OPEN pending independent evidence review and publication. Fixed detector/model/thresholds and product corpus are preserved. Frozen whole-family held-out measured pairs: 2/57 equivalent controls flagged, 5/36 planted errors caught. Natural held-out date proxy: vector 3/4, lexical 4/4. Combined rename/reverse insertion changes 25/742 top-three rankings. Temporal introduction remains unproven. Details and sealed failures in eval/c16/. No forms or Discord actions.

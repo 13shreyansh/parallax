@@ -1,0 +1,1064 @@
+{
+  "audit_id": "c16-family-audit-v1",
+  "scored_at_utc": "2026-11-14T16:09:59.279431+00:00",
+  "freeze_sha256": "c3152dfaadbb865cb1304a380b988ee410192ab5fe5e8b53b12c38544d07accd",
+  "product_detector_sha256": "027a8679bcc0954db7634524136bf772a69995a2dca48333ec4da8347ec0b8f3",
+  "controlled_slices": [
+    {
+      "path": "measured_pair_embedding",
+      "axis": "family",
+      "value": "education_institutions",
+      "n": 48,
+      "equivalents": 30,
+      "false_positives": 2,
+      "planted": 18,
+      "caught": 1,
+      "weak_alignments": 0
+    },
+    {
+      "path": "measured_pair_embedding",
+      "axis": "family",
+      "value": "railway_sites",
+      "n": 45,
+      "equivalents": 27,
+      "false_positives": 0,
+      "planted": 18,
+      "caught": 4,
+      "weak_alignments": 0
+    },
+    {
+      "path": "measured_pair_embedding",
+      "axis": "family",
+      "value": "wartime_history",
+      "n": 30,
+      "equivalents": 18,
+      "false_positives": 0,
+      "planted": 12,
+      "caught": 4,
+      "weak_alignments": 0
+    },
+    {
+      "path": "measured_pair_embedding",
+      "axis": "language_pair",
+      "value": "fi-en",
+      "n": 41,
+      "equivalents": 25,
+      "false_positives": 1,
+      "planted": 16,
+      "caught": 4,
+      "weak_alignments": 0
+    },
+    {
+      "path": "measured_pair_embedding",
+      "axis": "language_pair",
+      "value": "fi-sv",
+      "n": 41,
+      "equivalents": 25,
+      "false_positives": 1,
+      "planted": 16,
+      "caught": 2,
+      "weak_alignments": 0
+    },
+    {
+      "path": "measured_pair_embedding",
+      "axis": "language_pair",
+      "value": "sv-en",
+      "n": 41,
+      "equivalents": 25,
+      "false_positives": 0,
+      "planted": 16,
+      "caught": 3,
+      "weak_alignments": 0
+    },
+    {
+      "path": "measured_pair_embedding",
+      "axis": "nuisance",
+      "value": "base",
+      "n": 24,
+      "equivalents": 24,
+      "false_positives": 0,
+      "planted": 0,
+      "caught": 0,
+      "weak_alignments": 0
+    },
+    {
+      "path": "measured_pair_embedding",
+      "axis": "nuisance",
+      "value": "context_reorder",
+      "n": 24,
+      "equivalents": 24,
+      "false_positives": 0,
+      "planted": 0,
+      "caught": 0,
+      "weak_alignments": 0
+    },
+    {
+      "path": "measured_pair_embedding",
+      "axis": "nuisance",
+      "value": "decimal_format",
+      "n": 3,
+      "equivalents": 3,
+      "false_positives": 2,
+      "planted": 0,
+      "caught": 0,
+      "weak_alignments": 0
+    },
+    {
+      "path": "measured_pair_embedding",
+      "axis": "nuisance",
+      "value": "name",
+      "n": 24,
+      "equivalents": 0,
+      "false_positives": 0,
+      "planted": 24,
+      "caught": 0,
+      "weak_alignments": 0
+    },
+    {
+      "path": "measured_pair_embedding",
+      "axis": "nuisance",
+      "value": "rephrase",
+      "n": 24,
+      "equivalents": 24,
+      "false_positives": 0,
+      "planted": 0,
+      "caught": 0,
+      "weak_alignments": 0
+    },
+    {
+      "path": "measured_pair_embedding",
+      "axis": "nuisance",
+      "value": "year",
+      "n": 24,
+      "equivalents": 0,
+      "false_positives": 0,
+      "planted": 24,
+      "caught": 9,
+      "weak_alignments": 0
+    },
+    {
+      "path": "measured_pair_embedding",
+      "axis": "overall",
+      "value": "development",
+      "n": 30,
+      "equivalents": 18,
+      "false_positives": 0,
+      "planted": 12,
+      "caught": 4,
+      "weak_alignments": 0
+    },
+    {
+      "path": "measured_pair_embedding",
+      "axis": "overall",
+      "value": "heldout",
+      "n": 93,
+      "equivalents": 57,
+      "false_positives": 2,
+      "planted": 36,
+      "caught": 5,
+      "weak_alignments": 0
+    },
+    {
+      "path": "measured_pair_embedding",
+      "axis": "source",
+      "value": "S Wikipedia snapshot, controlled mutation",
+      "n": 48,
+      "equivalents": 0,
+      "false_positives": 0,
+      "planted": 48,
+      "caught": 9,
+      "weak_alignments": 0
+    },
+    {
+      "path": "measured_pair_embedding",
+      "axis": "source",
+      "value": "S Wikipedia snapshot, controlled numeric formatting",
+      "n": 3,
+      "equivalents": 3,
+      "false_positives": 2,
+      "planted": 0,
+      "caught": 0,
+      "weak_alignments": 0
+    },
+    {
+      "path": "measured_pair_embedding",
+      "axis": "source",
+      "value": "S Wikipedia snapshot, controlled translation",
+      "n": 72,
+      "equivalents": 72,
+      "false_positives": 0,
+      "planted": 0,
+      "caught": 0,
+      "weak_alignments": 0
+    },
+    {
+      "path": "rule_only_similarity_1",
+      "axis": "family",
+      "value": "education_institutions",
+      "n": 48,
+      "equivalents": 30,
+      "false_positives": 2,
+      "planted": 18,
+      "caught": 6,
+      "weak_alignments": 0
+    },
+    {
+      "path": "rule_only_similarity_1",
+      "axis": "family",
+      "value": "railway_sites",
+      "n": 45,
+      "equivalents": 27,
+      "false_positives": 0,
+      "planted": 18,
+      "caught": 9,
+      "weak_alignments": 0
+    },
+    {
+      "path": "rule_only_similarity_1",
+      "axis": "family",
+      "value": "wartime_history",
+      "n": 30,
+      "equivalents": 18,
+      "false_positives": 0,
+      "planted": 12,
+      "caught": 6,
+      "weak_alignments": 0
+    },
+    {
+      "path": "rule_only_similarity_1",
+      "axis": "language_pair",
+      "value": "fi-en",
+      "n": 41,
+      "equivalents": 25,
+      "false_positives": 1,
+      "planted": 16,
+      "caught": 7,
+      "weak_alignments": 0
+    },
+    {
+      "path": "rule_only_similarity_1",
+      "axis": "language_pair",
+      "value": "fi-sv",
+      "n": 41,
+      "equivalents": 25,
+      "false_positives": 1,
+      "planted": 16,
+      "caught": 7,
+      "weak_alignments": 0
+    },
+    {
+      "path": "rule_only_similarity_1",
+      "axis": "language_pair",
+      "value": "sv-en",
+      "n": 41,
+      "equivalents": 25,
+      "false_positives": 0,
+      "planted": 16,
+      "caught": 7,
+      "weak_alignments": 0
+    },
+    {
+      "path": "rule_only_similarity_1",
+      "axis": "nuisance",
+      "value": "base",
+      "n": 24,
+      "equivalents": 24,
+      "false_positives": 0,
+      "planted": 0,
+      "caught": 0,
+      "weak_alignments": 0
+    },
+    {
+      "path": "rule_only_similarity_1",
+      "axis": "nuisance",
+      "value": "context_reorder",
+      "n": 24,
+      "equivalents": 24,
+      "false_positives": 0,
+      "planted": 0,
+      "caught": 0,
+      "weak_alignments": 0
+    },
+    {
+      "path": "rule_only_similarity_1",
+      "axis": "nuisance",
+      "value": "decimal_format",
+      "n": 3,
+      "equivalents": 3,
+      "false_positives": 2,
+      "planted": 0,
+      "caught": 0,
+      "weak_alignments": 0
+    },
+    {
+      "path": "rule_only_similarity_1",
+      "axis": "nuisance",
+      "value": "name",
+      "n": 24,
+      "equivalents": 0,
+      "false_positives": 0,
+      "planted": 24,
+      "caught": 0,
+      "weak_alignments": 0
+    },
+    {
+      "path": "rule_only_similarity_1",
+      "axis": "nuisance",
+      "value": "rephrase",
+      "n": 24,
+      "equivalents": 24,
+      "false_positives": 0,
+      "planted": 0,
+      "caught": 0,
+      "weak_alignments": 0
+    },
+    {
+      "path": "rule_only_similarity_1",
+      "axis": "nuisance",
+      "value": "year",
+      "n": 24,
+      "equivalents": 0,
+      "false_positives": 0,
+      "planted": 24,
+      "caught": 21,
+      "weak_alignments": 0
+    },
+    {
+      "path": "rule_only_similarity_1",
+      "axis": "overall",
+      "value": "development",
+      "n": 30,
+      "equivalents": 18,
+      "false_positives": 0,
+      "planted": 12,
+      "caught": 6,
+      "weak_alignments": 0
+    },
+    {
+      "path": "rule_only_similarity_1",
+      "axis": "overall",
+      "value": "heldout",
+      "n": 93,
+      "equivalents": 57,
+      "false_positives": 2,
+      "planted": 36,
+      "caught": 15,
+      "weak_alignments": 0
+    },
+    {
+      "path": "rule_only_similarity_1",
+      "axis": "source",
+      "value": "S Wikipedia snapshot, controlled mutation",
+      "n": 48,
+      "equivalents": 0,
+      "false_positives": 0,
+      "planted": 48,
+      "caught": 21,
+      "weak_alignments": 0
+    },
+    {
+      "path": "rule_only_similarity_1",
+      "axis": "source",
+      "value": "S Wikipedia snapshot, controlled numeric formatting",
+      "n": 3,
+      "equivalents": 3,
+      "false_positives": 2,
+      "planted": 0,
+      "caught": 0,
+      "weak_alignments": 0
+    },
+    {
+      "path": "rule_only_similarity_1",
+      "axis": "source",
+      "value": "S Wikipedia snapshot, controlled translation",
+      "n": 72,
+      "equivalents": 72,
+      "false_positives": 0,
+      "planted": 0,
+      "caught": 0,
+      "weak_alignments": 0
+    }
+  ],
+  "natural_retrieval_by_family": [
+    {
+      "family": "wartime_history",
+      "n": 6,
+      "vector_hit_at_3": 6,
+      "lexical_hit_at_3": 6
+    },
+    {
+      "family": "education_institutions",
+      "n": 2,
+      "vector_hit_at_3": 1,
+      "lexical_hit_at_3": 2
+    },
+    {
+      "family": "railway_sites",
+      "n": 2,
+      "vector_hit_at_3": 2,
+      "lexical_hit_at_3": 2
+    }
+  ],
+  "metadata_rename_reorder": {
+    "n": 742,
+    "failed": 25
+  },
+  "rephrase_by_path": [
+    {
+      "path": "rule_only_similarity_1",
+      "n": 24,
+      "flipped": 0
+    },
+    {
+      "path": "measured_pair_embedding",
+      "n": 24,
+      "flipped": 0
+    }
+  ],
+  "natural_query_pool": 742,
+  "natural_scorable_date_proxy": 10,
+  "audit_vector_rows": 1711,
+  "temporal_status": "unproven",
+  "temporal_introduction_revision": null,
+  "failures": [
+    {
+      "id": "war-start-fi-en-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "wartime_history",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "war-start-fi-en-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "wartime_history",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "war-start-fi-sv-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "wartime_history",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "war-start-fi-sv-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "wartime_history",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "war-start-sv-en-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "wartime_history",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "war-start-sv-en-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "wartime_history",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "continuation-start-fi-en-changed-year",
+      "path": "measured_pair_embedding",
+      "family": "wartime_history",
+      "slice": "planted_error",
+      "nuisance": "year",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "continuation-start-fi-en-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "wartime_history",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "continuation-start-fi-en-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "wartime_history",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "continuation-start-fi-sv-changed-year",
+      "path": "measured_pair_embedding",
+      "family": "wartime_history",
+      "slice": "planted_error",
+      "nuisance": "year",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "continuation-start-fi-sv-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "wartime_history",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "continuation-start-fi-sv-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "wartime_history",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "continuation-start-sv-en-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "wartime_history",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "continuation-start-sv-en-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "wartime_history",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "academy-foundation-fi-en-changed-year",
+      "path": "measured_pair_embedding",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "year",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "academy-foundation-fi-en-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "academy-foundation-fi-en-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "academy-foundation-fi-sv-changed-year",
+      "path": "measured_pair_embedding",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "year",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "academy-foundation-fi-sv-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "academy-foundation-fi-sv-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "academy-foundation-sv-en-changed-year",
+      "path": "measured_pair_embedding",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "year",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "academy-foundation-sv-en-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "academy-foundation-sv-en-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "tkk-foundation-fi-en-changed-year",
+      "path": "rule_only_similarity_1",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "year",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "tkk-foundation-fi-en-changed-year",
+      "path": "measured_pair_embedding",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "year",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "tkk-foundation-fi-en-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "tkk-foundation-fi-en-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "tkk-foundation-fi-sv-changed-year",
+      "path": "rule_only_similarity_1",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "year",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "tkk-foundation-fi-sv-changed-year",
+      "path": "measured_pair_embedding",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "year",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "tkk-foundation-fi-sv-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "tkk-foundation-fi-sv-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "tkk-foundation-sv-en-changed-year",
+      "path": "rule_only_similarity_1",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "year",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "tkk-foundation-sv-en-changed-year",
+      "path": "measured_pair_embedding",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "year",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "tkk-foundation-sv-en-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "tkk-foundation-sv-en-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "tut-merger-fi-en-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "tut-merger-fi-en-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "tut-merger-fi-sv-changed-year",
+      "path": "measured_pair_embedding",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "year",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "tut-merger-fi-sv-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "tut-merger-fi-sv-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "tut-merger-sv-en-changed-year",
+      "path": "measured_pair_embedding",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "year",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "tut-merger-sv-en-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "tut-merger-sv-en-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "education_institutions",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "luoma-closure-fi-en-changed-year",
+      "path": "measured_pair_embedding",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "year",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "luoma-closure-fi-en-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "luoma-closure-fi-en-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "luoma-closure-fi-sv-changed-year",
+      "path": "measured_pair_embedding",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "year",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "luoma-closure-fi-sv-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "luoma-closure-fi-sv-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "luoma-closure-sv-en-changed-year",
+      "path": "measured_pair_embedding",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "year",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "luoma-closure-sv-en-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "luoma-closure-sv-en-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "mankki-closure-fi-en-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "mankki-closure-fi-en-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "mankki-closure-fi-sv-changed-year",
+      "path": "measured_pair_embedding",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "year",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "mankki-closure-fi-sv-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "mankki-closure-fi-sv-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "mankki-closure-sv-en-changed-year",
+      "path": "measured_pair_embedding",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "year",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "mankki-closure-sv-en-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "mankki-closure-sv-en-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "piikkio-last-train-fi-en-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "piikkio-last-train-fi-en-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "piikkio-last-train-fi-sv-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "piikkio-last-train-fi-sv-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "piikkio-last-train-sv-en-changed-name",
+      "path": "rule_only_similarity_1",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "piikkio-last-train-sv-en-changed-name",
+      "path": "measured_pair_embedding",
+      "family": "railway_sites",
+      "slice": "planted_error",
+      "nuisance": "name",
+      "predicted": false,
+      "expected": true
+    },
+    {
+      "id": "budget-percent-fi-en",
+      "path": "rule_only_similarity_1",
+      "family": "education_institutions",
+      "slice": "translation_equivalent",
+      "nuisance": "decimal_format",
+      "predicted": true,
+      "expected": false
+    },
+    {
+      "id": "budget-percent-fi-en",
+      "path": "measured_pair_embedding",
+      "family": "education_institutions",
+      "slice": "translation_equivalent",
+      "nuisance": "decimal_format",
+      "predicted": true,
+      "expected": false
+    },
+    {
+      "id": "budget-percent-fi-sv",
+      "path": "rule_only_similarity_1",
+      "family": "education_institutions",
+      "slice": "translation_equivalent",
+      "nuisance": "decimal_format",
+      "predicted": true,
+      "expected": false
+    },
+    {
+      "id": "budget-percent-fi-sv",
+      "path": "measured_pair_embedding",
+      "family": "education_institutions",
+      "slice": "translation_equivalent",
+      "nuisance": "decimal_format",
+      "predicted": true,
+      "expected": false
+    }
+  ],
+  "limits": [
+    "Controlled translations are audit-authored and not human validated.",
+    "Family-heldout does not mean publisher-independent or absent from pretrained model data.",
+    "Natural relevance is only a full-date-overlap proxy; unscorable queries are excluded and counted.",
+    "Paired tests omit retrieval and source verification; rule-only similarity=1 is a stress input.",
+    "Metadata rename/reorder preserves passage embeddings by design.",
+    "Product remains on build Mac and temporary tunnel.",
+    "Previous product retrieval result favored lexical: 8/9 vs vector 7/9."
+  ]
+}

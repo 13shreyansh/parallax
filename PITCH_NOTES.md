@@ -10,7 +10,7 @@ Show the exact revision links and alternative retrieved passages. Explain that "
 
 ## 1:40–2:30 · Why MariaDB matters
 
-Open the SQL inspector and run the live vector query. Passage text, revision metadata and native 384-dimensional vectors sit in the same database. The query limits candidates by topic and language. The small candidate pool is an exact filtered distance calculation; the schema has a native vector index, but do not claim the optimizer uses it for every filtered query.
+Open the SQL inspector and run the live vector query. Passage text, revision metadata and native 384-dimensional vectors sit in the same database. The query limits candidates by topic and language. The schema has a native vector index and native distance calculation. Do not promise exact nearest-neighbor ranking or invariance: the frozen C-16 combined rename/reorder check changed 25/742 top-three rankings.
 
 Open revision history and time travel to 2015. The table is genuinely system-versioned. Archived revisions use real UTC timestamps, and missing periods are not bridged. We retain the text, not just a change count. This view does not prove when a discrepancy appeared, because complete cross-language historical alignment has not been built.
 
@@ -38,3 +38,5 @@ Likely questions:
 - Are the labels human? No. Synthetic construction labels and a small weak date-overlap retrieval proxy; the human sheet is blank.
 - Does it find contradictions? It finds some date/unit review leads. It does not establish general factual contradiction or cite-source truth.
 - What did you build beyond the starters? Claim-level cross-language retrieval, an editorial worklist, scoped source evidence, conservative checks and abstentions, review notes, the live synthetic error lab, and the combined revision workflow. The app was written during the event.
+
+C-16 audit update: whole held-out education/railway families, measured paired tests caught 5/36 planted errors and falsely flagged 2/57 audit-authored equivalents. Held-out natural date proxy favored lexical 4/4 over vector 3/4. Introductory revision of disagreement remains unproven; never name a revision X. These new results do not turn the earlier English-copy 18/20 into cross-language accuracy.
