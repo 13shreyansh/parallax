@@ -114,7 +114,7 @@ def health():
 def home():
     c=db();cur=c.cursor();traces=[];theme=request.args.get('theme','finland-second-world-war');sort=request.args.get('sort','issues')
     themes=run(cur,"SELECT t.*,COUNT(tt.qid) articles FROM theme t JOIN topic_theme tt ON tt.theme=t.slug WHERE t.slug='finland-second-world-war' GROUP BY t.slug,t.title")
-    order='issues DESC,t.distance DESC' if sort!='distance' else '(issues>0) DESC,t.distance DESC'
+    order='issues DESC,t.distance DESC' if sort!='distance' else '(COUNT(CASE WHEN f.shown=1 AND COALESCE(r.dismissed,0)=0 THEN 1 END)>0) DESC,t.distance DESC'
     rows=run(cur,"""SELECT t.qid,t.title,t.titles,t.distance,t.last_changed,t.state,COUNT(CASE WHEN f.shown=1 AND COALESCE(r.dismissed,0)=0 THEN 1 END) issues,
     SUM(CASE WHEN f.check_type='src' AND f.shown=1 AND COALESCE(r.dismissed,0)=0 THEN 1 ELSE 0 END) src,
     SUM(CASE WHEN f.check_type='lang' AND f.shown=1 AND COALESCE(r.dismissed,0)=0 THEN 1 ELSE 0 END) lang,
