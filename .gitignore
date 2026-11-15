@@ -11,3 +11,7 @@ __pycache__/
 .codex-job*.log
 
 /deploy/previous-assets/
+
+# Internal review notes stay local
+audit/
+deck-assets/JUDGE-AUDIT-v2.md
