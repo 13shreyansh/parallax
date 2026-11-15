@@ -15,7 +15,7 @@ def main():
  c.close();batches=[]
  for qid in dict.fromkeys(g['qid'] for g in groups):
   gs=[g for g in groups if g['qid']==qid]
-  for i in range(0,len(gs),8):batches.append(gs[i:i+8])
+  for i in range(0,len(gs),1):batches.append(gs[i:i+1])
  print('Finishing previously queued groups',len(groups),'batches',len(batches),flush=True)
  def work(batch):
   try:process_batch(batch)
