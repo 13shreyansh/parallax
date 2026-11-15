@@ -267,7 +267,8 @@ def grounded_answer(cur,question,hits,write=True):
     key=os.environ.get('GEMINI_API_KEY')
     passages=[h for h in hits if h['kind']=='claim'][:8]+[h for h in hits if h['kind']=='source'][:4]
     if not key or not passages:return None
-    digest=hashlib.sha256(json.dumps([ANSWER_PROMPT,FAST,question.casefold(),[h['id'] for h in passages]]).encode()).hexdigest()
+    # The corpus is fixed between imports, so one stored answer per question; approximate search may order ties differently.
+    digest=hashlib.sha256(json.dumps([ANSWER_PROMPT,FAST,' '.join(question.casefold().split())]).encode()).hexdigest()
     if digest in _answers:return _answers[digest]
     try:
         stored=run(cur,'SELECT payload FROM ask_answer WHERE id=%s',(digest,))
