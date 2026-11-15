@@ -21,10 +21,10 @@ h2{font-size:58px;line-height:68px;font-weight:650;letter-spacing:-.018em;max-wi
 .body{flex:1;min-height:0;margin-top:44px;display:grid;gap:64px;align-items:start}
 p,li{font-size:30px;line-height:44px;text-wrap:pretty}
 strong{font-weight:650}
-.small{font-size:23px;line-height:34px;color:var(--ink-2)}
+.small{font-size:24px;line-height:34px;color:var(--ink-2)}
 .serif{font-family:'Source Serif 4',serif}
 .mono{font-family:'JetBrains Mono',monospace}
-.foot{position:absolute;left:104px;right:104px;bottom:40px;display:flex;justify-content:space-between;align-items:center;font-size:21px;line-height:28px;color:var(--ink-3)}
+.foot{position:absolute;left:104px;right:104px;bottom:40px;display:flex;justify-content:space-between;align-items:center;font-size:23px;line-height:28px;color:var(--ink-3)}
 .foot .brand{display:flex;align-items:center;gap:10px;color:var(--ink-2);font-weight:600}
 .shot{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#fff;box-shadow:0 14px 36px rgba(21,24,30,.10)}
 figure figcaption{margin-top:16px;font-size:23px;line-height:34px;color:var(--ink-2);text-wrap:pretty}
@@ -51,14 +51,16 @@ figure figcaption{margin-top:16px;font-size:23px;line-height:34px;color:var(--in
 .case .pair{margin-top:12px;display:grid;grid-template-columns:auto 1fr;gap:10px 16px;align-items:baseline}
 .case .pair p{font-family:'Source Serif 4',serif;font-size:29px;line-height:40px}
 .case mark{background:none;color:var(--ink);font-weight:600;padding:0 2px;border-bottom:3px solid var(--fact)}.case mark.c-src{border-bottom-color:var(--src)}
-.ask{background:var(--ground);border-radius:10px;padding:36px 40px;align-self:stretch}
+.ask{background:var(--ground);border-radius:10px;padding:36px 40px;align-self:start}
 .ask h3{margin:0;font-size:25px;line-height:34px;font-weight:650;color:var(--ink-2)}
 .ask ul{list-style:none;margin-top:20px}
 .ask li{padding:18px 0;border-top:1px solid var(--line);font-size:29px;line-height:42px}
 .ask li:first-child{border-top:0;padding-top:0}
+.ask .said{display:block;font-size:23px;line-height:32px;font-weight:650;color:var(--ink-2);margin-bottom:4px}
+.ask li{font-size:27px;line-height:39px;padding:16px 0}
 
 /* 3 */
-.s3 .body{grid-template-columns:1130px minmax(0,1fr);gap:64px}
+.s3 .body{display:block}
 .notes{list-style:none;display:flex;flex-direction:column;gap:30px}
 .notes li{font-size:28px;line-height:41px}
 .notes li b{display:block;font-weight:650;margin-bottom:2px}
@@ -66,7 +68,7 @@ figure figcaption{margin-top:16px;font-size:23px;line-height:34px;color:var(--in
 /* 4 */
 .s4 .body{grid-template-columns:minmax(0,.9fr) 1040px;gap:56px}
 .checks{list-style:none}
-.checks li{display:grid;grid-template-columns:34px 1fr;gap:6px 14px;padding:22px 0;border-top:1px solid var(--line-soft)}
+.checks li{display:grid;grid-template-columns:34px 1fr;gap:6px 14px;padding:18px 0;border-top:1px solid var(--line-soft)}
 .checks li:first-child{border-top:0;padding-top:4px}
 .checks .name{font-size:30px;line-height:40px;font-weight:650}
 .checks .name span{font-weight:400;color:var(--ink-3);margin-left:8px}
@@ -99,7 +101,7 @@ figure figcaption{margin-top:16px;font-size:23px;line-height:34px;color:var(--in
 .runs td.n{font-variant-numeric:tabular-nums}
 .statement{font-size:32px;line-height:46px}
 .statement+.statement{margin-top:28px}
-.limits{background:var(--ground);border-radius:10px;padding:36px 40px;align-self:stretch}
+.limits{background:var(--ground);border-radius:10px;padding:36px 40px;align-self:start}
 .limits h3{margin:0;font-size:25px;line-height:34px;font-weight:650;color:var(--ink-2)}
 .limits ul{list-style:none;margin-top:20px}
 .limits li{padding:18px 0;border-top:1px solid var(--line);font-size:28px;line-height:41px}
@@ -108,13 +110,40 @@ figure figcaption{margin-top:16px;font-size:23px;line-height:34px;color:var(--in
 /* 8 */
 .s8 .body{grid-template-columns:minmax(0,1fr) 440px;gap:88px}
 .steps{list-style:none;counter-reset:none;border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.steps li{padding:24px 32px;border-bottom:1px solid var(--line-soft);font-size:29px;line-height:42px}
+.steps li{padding:18px 32px;border-bottom:1px solid var(--line-soft);font-size:29px;line-height:42px}
 .steps li:last-child{border-bottom:0}
 .steps li b{font-weight:650}
 .arch{margin-top:32px;font-size:26px;line-height:39px;color:var(--ink-2)}
 .links{margin-top:36px;display:grid;grid-template-columns:auto 1fr;gap:10px 24px;font-size:28px;line-height:40px}
 .links dt{color:var(--ink-3)}
 .links dd{font-weight:600;color:var(--blue)}
+
+/* 3 flow */
+.flow{list-style:none;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.flow li{display:grid;grid-template-columns:180px minmax(0,1fr) 440px 330px;gap:32px;align-items:center;padding:22px 32px;border-bottom:1px solid var(--line-soft);font-size:26px;line-height:37px}
+.flow li:last-child{border-bottom:0}
+.flow .step{font-size:30px;font-weight:650}
+.flow .how{color:var(--ink-2)}
+.flow .into{font-size:22px;line-height:32px;color:var(--blue);background:var(--blue-tint);border-radius:6px;padding:6px 12px;justify-self:start}
+.flow .num{color:var(--ink-2)}.flow .num strong{color:var(--ink)}
+/* 5 cols */
+.s5 .body{grid-template-columns:1fr 1fr;gap:64px}
+.s5 .code{font-size:24px;line-height:36px;padding:24px 28px;min-height:266px}
+.uses{list-style:disc;margin:26px 0 0 30px}
+.uses li{font-size:27px;line-height:39px;color:var(--ink-2);margin-top:8px}
+.s5 .timing{margin-top:24px;font-size:25px;line-height:36px}
+.s5 .timing strong{color:var(--ink)}
+/* 7 total */
+.runs tbody tr.tot td{font-weight:650}
+.runs tbody tr:last-child td{font-weight:650}
+/* 8 try */
+.try{margin-top:24px;background:var(--ground);border-radius:10px;padding:22px 32px}
+.try h3{margin:0;font-size:25px;line-height:34px;font-weight:650;color:var(--ink-2)}
+.try ol{margin:12px 0 0 34px}
+.try li{font-size:27px;line-height:40px;margin-top:6px}
+.try b{font-weight:650}
+.next{margin-top:26px;font-size:26px;line-height:39px;color:var(--ink-2)}.next b{color:var(--ink);font-weight:650}
+.links{margin-top:22px}
 </style>
 </head>
 <body>
@@ -143,7 +172,7 @@ figure figcaption{margin-top:16px;font-size:23px;line-height:34px;color:var(--in
       </div>
       <div class="case">
         <div class="kind c-fact"><svg class="marker" width="20" height="20" viewBox="0 0 12 12"><rect x="1.5" y="1.5" width="9" height="9" fill="currentColor"/></svg>A number differs</div>
-        <div class="pair"><span class="tag">en</span><p><mark class="c-fact">3,000 tanks</mark> on the Karelian Isthmus by 11 February 1940.</p><span class="tag">fi</span><p><mark class="c-fact">1,558 tanks</mark> on the same day.</p></div>
+        <div class="pair"><span class="tag">fi</span><p>The official Soviet toll: <mark class="c-fact">48,745</mark> dead, 158,863 wounded.</p><span class="tag">en</span><p>The same announcement: <mark class="c-fact">48,475</mark> dead, 158,863 wounded.</p></div>
       </div>
       <div class="case">
         <div class="kind c-src"><svg class="marker" width="20" height="20" viewBox="0 0 12 12"><circle cx="6" cy="6" r="4.5" fill="currentColor"/></svg>A claim is not in its own source</div>
@@ -153,9 +182,10 @@ figure figcaption{margin-top:16px;font-size:23px;line-height:34px;color:var(--in
     <div class="ask">
       <h3>What MariaDB asked for at the booth</h3>
       <ul>
-        <li>For a theme, the articles an expert should fix first.</li>
-        <li>Differences between language versions, loaded wording, and claims their cited source does not support.</li>
-        <li>AI must never edit Wikipedia. It flags, suggests a fix, and makes correcting easy.</li>
+        <li><span class="said">“Top articles per theme”</span>A ranked list: Winter War 50 findings, Continuation War 16, Mannerheim Cross 8.</li>
+        <li><span class="said">“Cross-language discrepancies, NPOV”</span><span class="c-fact">■</span> Wrong fact &nbsp;<span class="c-lang">◆</span> Languages &nbsp;<span class="c-tone">▲</span> Tone</li>
+        <li><span class="said">“Claims the cited source doesn't support”</span><span class="c-src">●</span> Source: the cited page is fetched and read.</li>
+        <li><span class="said">“AI must never edit”</span>It flags and drafts a Talk page note. A person decides.</li>
       </ul>
     </div>
   </div>
@@ -164,56 +194,70 @@ figure figcaption{margin-top:16px;font-size:23px;line-height:34px;color:var(--in
 
 <!-- 3 -->
 <section class="slide s3">
-  <h2>The first screen says who it is for, shows a real finding, and names the database</h2>
+  <h2>One pipeline, and every step lands in a MariaDB table</h2>
+  <p class="lede">A theme is a list of Wikidata items. The same steps run for each article in each language, so a new theme is a new list, not new code.</p>
   <div class="body">
-    <figure><img class="shot" src="../deck-assets/2x/01-home-first-screen-desktop.png" alt="Parallax home screen"></figure>
-    <ul class="notes">
-      <li><b>One finding, straight from the database</b>Swedish Wikipedia says 8,260. The source it cites says 8,400. Both quotes are exact, with their revision and link.</li>
-      <li><b>A ranked list for one theme</b>Winter War has 50 findings, Continuation War 16, Mannerheim Cross 8.</li>
-      <li><b>What was read</b>22 articles in Finnish, Swedish and English: 6,747 claims and 303 cited sources.</li>
-    </ul>
+    <ol class="flow">
+      <li><span class="step">Revisions</span><span class="how">Wikipedia API and the Finnish dump, with each edit's original timestamp kept</span><span class="into mono">revision WITH SYSTEM VERSIONING</span><span class="num"><strong>31,461</strong> revisions since 2001</span></li>
+      <li><span class="step">Claims</span><span class="how">Current text split into sentences with their citations, embedded by multilingual MiniLM</span><span class="into mono">claim.embedding VECTOR(384)</span><span class="num"><strong>6,747</strong> claims in 68 article versions: fi, sv, en, and de, ru on Winter War</span></li>
+      <li><span class="step">Sources</span><span class="how">Each cited page fetched, with an Internet Archive fallback, cut into passages and embedded</span><span class="into mono">source_chunk VECTOR(384)</span><span class="num"><strong>303</strong> of 1,543 sources read · <strong>20,963</strong> passages</span></li>
+      <li><span class="step">Checks</span><span class="how">VEC_DISTANCE_COSINE finds the closest peer sentences and source passages. Gemini 3.8 Flash nominates; Gemini 4 Argon confirms; every quote must match the text exactly.</span><span class="into mono">flag</span><span class="num"><strong>80</strong> findings shown</span></li>
+    </ol>
   </div>
-  <div class="foot"><span class="brand">Parallax</span><span>3 / 8</span></div>
+  <div class="foot"><span class="brand">Parallax</span><span>Today: 1 theme, 22 articles. Cost and time per article at larger scale not yet measured · 3 / 8</span></div>
 </section>
 
 <!-- 4 -->
 <section class="slide s4">
   <h2>Four checks, in the order an editor can act on them</h2>
+  <p class="lede">Counts across all 22 articles. Shown: Winter War, sentences paired across languages by vector search.</p>
   <div class="body">
     <ul class="checks">
-      <li><svg class="marker c-fact" width="22" height="22" viewBox="0 0 12 12"><rect x="1.5" y="1.5" width="9" height="9" fill="currentColor"/></svg><div class="name c-fact">Wrong fact<span>11 findings</span></div><div class="what">A date, number or name differs between versions: 29 or 28 November; 3,000 or 1,558 tanks.</div></li>
+      <li><svg class="marker c-fact" width="22" height="22" viewBox="0 0 12 12"><rect x="1.5" y="1.5" width="9" height="9" fill="currentColor"/></svg><div class="name c-fact">Wrong fact<span>11 findings</span></div><div class="what">A date, number or name differs between versions, such as 29 or 28 November.</div></li>
       <li><svg class="marker c-src" width="22" height="22" viewBox="0 0 12 12"><circle cx="6" cy="6" r="4.5" fill="currentColor"/></svg><div class="name c-src">Source<span>4 findings</span></div><div class="what">The cited page was fetched and read. It does not say this, or says otherwise.</div></li>
       <li><svg class="marker c-tone" width="22" height="22" viewBox="0 0 12 12"><path d="m6 1 5.2 9H.8Z" fill="currentColor"/></svg><div class="name c-tone">Tone<span>3 findings</span></div><div class="what">Loaded wording in the narrator's voice, such as “continued to lie”, with a neutral rewrite in the same language.</div></li>
-      <li><svg class="marker c-lang" width="22" height="22" viewBox="0 0 12 12"><path d="M6 0.8 11.2 6 6 11.2.8 6Z" fill="currentColor"/></svg><div class="name c-lang">Coverage gaps<span>62 findings</span></div><div class="what">A claim one version has and another lacks. Often a fair difference, so these are grouped and closed by default.</div></li>
+      <li><svg class="marker c-lang" width="22" height="22" viewBox="0 0 12 12"><path d="M6 0.8 11.2 6 6 11.2.8 6Z" fill="currentColor"/></svg><div class="name c-lang">Languages<span>62 coverage gaps</span></div><div class="what">A claim one version has and another lacks. Often a fair difference, so these are grouped and closed by default.</div></li>
     </ul>
-    <figure><img class="shot" src="../deck-assets/2x/crop-article-reading.png" alt="Winter War: findings grouped by severity across Finnish, Swedish and English"><figcaption>Winter War opens on its four wrong facts. Sentences are aligned across the three versions, with the differing words underlined.</figcaption></figure>
+    <figure><img class="shot" src="../deck-assets/2x/crop-article-reading.png" alt="Winter War: findings grouped by severity across Finnish, Swedish and English"><figcaption>Winter War opens on its four wrong facts, with the differing words underlined.</figcaption></figure>
   </div>
-  <div class="foot"><span class="brand">Parallax</span><span>80 findings shown across the theme, each confirmed in a separate blind review · 4 / 8</span></div>
+  <div class="foot"><span class="brand">Parallax</span><span>80 findings shown, each confirmed by a second AI model that did not see the verdict · 4 / 8</span></div>
 </section>
 
 <!-- 5 -->
 <section class="slide s5">
-  <h2>MariaDB holds the vectors, the history, and the proof</h2>
+  <h2>MariaDB does the retrieval and the time travel, live on every page</h2>
   <div class="body">
-    <div>
-      <div class="code">claim.embedding <b>VECTOR(384)</b> NOT NULL,
-<b>VECTOR INDEX</b> claim_cosine (embedding) M=16 DISTANCE=cosine
-ORDER BY <b>VEC_DISTANCE_COSINE</b>(embedding, …) LIMIT 3</div>
-      <div class="code">CREATE TABLE revision ( … ) <b>WITH SYSTEM VERSIONING</b>
-SELECT … FROM revision
-<b>FOR SYSTEM_TIME AS OF</b> TIMESTAMP '2015-06-01 23:59:59'</div>
-      <div class="facts">
-        <p><strong>6,747</strong> claims and <strong>20,963</strong> source passages stored as vectors, to pair sentences across languages and find the source passage closest to a claim.</p>
-        <p><strong>31,461</strong> revisions in a system-versioned table. The time bar asks for an article as of any date since 2001.</p>
-      </div>
-      <p class="timing">Measured on the live site, 15 Nov: sentence alignment 2.7 ms · an article as of a date in five languages 5.3 ms · search across every vector 167 ms. MariaDB 11.8.9.</p>
+    <div class="col">
+      <div class="track"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Vector search</div>
+      <div class="code">embedding <b>VECTOR(384)</b> NOT NULL,
+<b>VECTOR INDEX</b> (embedding) M=16 DISTANCE=cosine
+
+SELECT … FROM source_chunk
+ORDER BY <b>VEC_DISTANCE_COSINE</b>(embedding, …)
+LIMIT 5</div>
+      <ul class="uses">
+        <li>Pairs each sentence with its closest sentence in the other languages.</li>
+        <li>Finds the passage of the cited page closest to a claim.</li>
+        <li>Retrieves the passages a question in Ask is answered from.</li>
+      </ul>
+      <p class="timing"><strong>27,710</strong> vectors. Closest source passage <strong>1.4 ms</strong> · sentence alignment <strong>2.7 ms</strong> · search across every vector <strong>167 ms</strong></p>
     </div>
-    <div class="stack">
-      <figure><div class="crop" style="height:399px"><img src="../deck-assets/2x/crop-sql-rows-narrow.png" alt="SQL panel with returned rows"></div></figure>
-      <figure><div class="crop" style="height:244px"><img src="../deck-assets/2x/crop-sql-schema-narrow.png" alt="SQL panel with live schema"></div><figcaption>“Show the SQL” is on every page: the statement that just ran, the rows it returned, and the table definitions as MariaDB reports them.</figcaption></figure>
+    <div class="col">
+      <div class="track"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l3 2"/></svg>System-versioned tables</div>
+      <div class="code">CREATE TABLE revision (…) <b>WITH SYSTEM VERSIONING</b>
+SET <b>system_versioning_insert_history</b>=1
+
+SELECT text FROM revision
+<b>FOR SYSTEM_TIME AS OF</b> '2015-06-01 23:59:59'</div>
+      <ul class="uses">
+        <li>History is loaded with Wikipedia's own edit times, so “as of” means the real date.</li>
+        <li>The time bar opens an article as it read on a past day. Winter War goes back to 29 Nov 2001.</li>
+        <li>“When this got in” finds the first revision with a sentence's exact wording.</li>
+      </ul>
+      <p class="timing"><strong>31,461</strong> revisions. An article as of a date, in all its language versions, <strong>5.3 ms</strong></p>
     </div>
   </div>
-  <div class="foot"><span class="brand">Parallax</span><span>5 / 8</span></div>
+  <div class="foot"><span class="brand">Parallax</span><span>Measured on the live site, 15 Nov, MariaDB 11.8.9. “Show the SQL” on every page shows the statement, its rows and its time · 5 / 8</span></div>
 </section>
 
 <!-- 6 -->
@@ -223,7 +267,7 @@ SELECT … FROM revision
     <figure>
       <div class="track"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Vector search, then a grounded answer</div>
       <img class="shot" src="../deck-assets/2x/crop-ask-answer.png" alt="Ask: Was Finland allied with Germany? A cited two-sentence answer">
-      <figcaption>The answer is written only from the retrieved rows, in the language of the question. Each statement links to the passage it rests on, and the answer is stored in MariaDB. If the passages do not answer the question, it says so.</figcaption>
+      <figcaption>Vector search retrieves Wikipedia passages in 61 ms; the answer is written only from them, in the language of the question, and stored in MariaDB. Each statement links to its passage. If nothing close is found, it says so.</figcaption>
     </figure>
     <figure>
       <div class="track"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l3 2"/></svg>System-versioned history</div>
@@ -236,26 +280,28 @@ SELECT … FROM revision
 
 <!-- 7 -->
 <section class="slide s7">
-  <h2>Measured, and plain about its limits</h2>
+  <h2>Measured on held-out sets, and plain about its limits</h2>
   <div class="body">
     <div>
-      <p class="statement">On the latest held-out test, the checks caught <strong>40 of 40</strong> planted errors and raised <strong>0</strong> false flags on 40 clean passages.</p>
+      <p class="statement">Errors planted into copies of real passages, in three sets from <strong>disjoint articles</strong>, each frozen before it ran, each with 40 clean passages.</p>
       <table class="runs">
-        <thead><tr><th>Held-out run</th><th>Planted errors caught</th><th>False flags</th></tr></thead>
+        <thead><tr><th>Planted error</th><th>Set 1</th><th>Set 2</th><th>Set 3</th></tr></thead>
         <tbody>
-          <tr><td>First, earlier prompt</td><td class="n">32 of 40</td><td class="n">0 of 40</td></tr>
-          <tr><td>Second, earlier prompt</td><td class="n">34 of 40</td><td class="n">0 of 40</td></tr>
-          <tr><td>Third, revised prompt</td><td class="n">40 of 40</td><td class="n">0 of 40</td></tr>
+          <tr><td>Wrong date · wrong number</td><td class="n">16 of 16</td><td class="n">16 of 16</td><td class="n">16 of 16</td></tr>
+          <tr><td>Loaded wording · unsupported by source</td><td class="n">16 of 16</td><td class="n">16 of 16</td><td class="n">16 of 16</td></tr>
+          <tr><td>Dropped sentence</td><td class="n">0 of 8</td><td class="n">2 of 8</td><td class="n">8 of 8</td></tr>
+          <tr class="tot"><td>Caught · false flags</td><td class="n">32 · 0</td><td class="n">34 · 0</td><td class="n">40 · 0</td></tr>
         </tbody>
       </table>
-      <p class="small" style="margin-top:14px">Every earlier miss was a dropped sentence. The third run also uses larger number changes.</p>
-      <p class="statement" style="margin-top:34px">A blind review confirmed <strong>44 of 60</strong> randomly sampled flags across the theme. Only findings it confirmed one by one are shown: <strong>80</strong> today.</p>
+      <p class="small" style="margin-top:14px">Set 3 followed a coverage fix developed on Winter War only, and uses larger number changes, so it is not directly comparable.</p>
+      <p class="statement" style="margin-top:30px">On real findings, a separate AI model, given the articles and sources but not the verdicts, confirmed <strong>44 of 60</strong> random flags (73%). Only flags it confirmed are shown: <strong>80</strong> today.</p>
     </div>
     <div class="limits">
       <h3>Where it stops today</h3>
       <ul>
         <li>One theme: 22 articles on Finland in the Second World War, of which 7 have findings.</li>
         <li>303 of 1,543 cited sources could be read, about 20%. Claims cited to books are marked “not checked”.</li>
+        <li>Test labels come from planted edits. No historian has labelled real findings yet.</li>
         <li>A coverage gap can be a fair choice for a different audience. A person decides.</li>
       </ul>
     </div>
@@ -265,7 +311,7 @@ SELECT … FROM revision
 
 <!-- 8 -->
 <section class="slide s8">
-  <h2>It never edits Wikipedia</h2>
+  <h2>It never edits Wikipedia. Try it in 30 seconds.</h2>
   <div class="body">
     <div>
       <ol class="steps">
@@ -273,7 +319,15 @@ SELECT … FROM revision
         <li><b>It shows the evidence.</b> Exact quotes, the revision, the cited source, and the edit that introduced the wording.</li>
         <li><b>It writes the Talk page note.</b> In the article's own language, with both quotes and links, ready to paste. The editor decides.</li>
       </ol>
-      <p class="arch">MariaDB 11.8 on one server holds the claims, vectors, sources and revisions, and a small Python API reads them. Gemini Flash writes only the one-sentence answer on demand, and that answer is then stored in MariaDB.</p>
+      <div class="try">
+        <h3>On the live site</h3>
+        <ol>
+          <li>Open <b>Review Winter War</b> and read the four wrong facts side by side.</li>
+          <li>Open the <b>Tone</b> finding and copy the note for editors.</li>
+          <li>Drag the <b>time bar</b> to 2015, then open <b>Show the SQL</b>.</li>
+        </ol>
+      </div>
+      <p class="next"><b>Next:</b> more themes through the same pipeline, more cited sources read (today books and unreachable pages stay unchecked), and a historian labelling real findings.</p>
       <dl class="links"><dt>Live</dt><dd>parallax-gamma-red.vercel.app</dd><dt>Code</dt><dd>github.com/13shreyansh/parallax</dd></dl>
     </div>
     <figure><div class="crop" style="height:770px"><img src="../deck-assets/2x/crop-tone-rail.png" alt="A tone finding with a suggested neutral wording and the note button" style="object-fit:cover;object-position:top;height:770px"></div></figure>
