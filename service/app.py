@@ -1,5 +1,5 @@
 """Parallax's database-backed API. No snapshots or local fallback in the product."""
-import os,json,time,datetime,re,hmac,threading
+import os,json,time,datetime,decimal,re,hmac,threading
 from urllib.parse import urlparse
 from collections import defaultdict,deque
 from flask import Flask,request,jsonify,send_from_directory
@@ -19,13 +19,40 @@ def source_title(title,url):
     host=urlparse(url or '').hostname
     return 'Source at '+host.removeprefix('www.') if host else 'Cited source'
 
+def preview(rows,limit=5):
+    # The first rows the database returned, trimmed for display; vectors and whole articles are not echoed.
+    out=[]
+    for r in rows[:limit]:
+        o={}
+        for k,v in r.items():
+            if k in ('embedding','citations','wikitext') or isinstance(v,(bytes,bytearray)):continue
+            if isinstance(v,float):v=round(v,4)
+            elif isinstance(v,decimal.Decimal):v=float(v)
+            elif isinstance(v,(datetime.datetime,datetime.date)):v=v.strftime('%Y-%m-%d %H:%M')
+            elif isinstance(v,str) and len(v)>160:v=v[:160].rstrip()+'…'
+            o[k]=v
+        out.append(o)
+    return out
+
+def shown_sql(sql):
+    return re.sub(r"VEC_FromText\('\[([^\]]*)\]'\)",lambda m:"VEC_FromText('[… %d floats, the question as a vector …]')"%(m.group(1).count(',')+1),sql)
+
 def run(cur,sql,args=(),traces=None,label=None):
     t=time.perf_counter();cur.execute(sql,args);rows=cur.fetchall()
-    if traces is not None:traces.append({'name':label,'sql':cur.mogrify(sql,args),'rows':len(rows),'ms':round((time.perf_counter()-t)*1000,2)})
+    if traces is not None:traces.append({'name':label,'sql':shown_sql(cur.mogrify(sql,args)),'rows':len(rows),'ms':round((time.perf_counter()-t)*1000,2),'result':preview(rows)})
     return rows
 
+_schema=None
+def schema_trace(cur,traces):
+    # The live table definitions, read from the database once per process.
+    global _schema
+    if _schema is None:
+        try:_schema={'name':'Schema','schema':True,'rows':None,'ms':None,'result':[],'sql':'\n\n'.join(run(cur,'SHOW CREATE TABLE '+t)[0]['Create Table']+';' for t in ['claim','source_chunk','revision'])}
+        except Exception:return traces
+    traces.append(_schema);return traces
+
 def counts(cur):
-    sql="""SELECT (SELECT COUNT(DISTINCT qid) FROM readable_claim) articles,(SELECT title FROM theme WHERE slug='finland-second-world-war') theme_title,(SELECT COUNT(*) FROM theme WHERE slug='finland-second-world-war') themes,(SELECT COUNT(*) FROM article WHERE qid IN (SELECT DISTINCT qid FROM readable_claim)) versions,(SELECT COUNT(*) FROM readable_claim) claims,(SELECT COUNT(DISTINCT s.id) FROM cited_source s JOIN claim_source cs ON cs.source_id=s.id JOIN readable_claim cl ON cl.id=cs.claim_id) sources,(SELECT COUNT(DISTINCT s.id) FROM cited_source s JOIN claim_source cs ON cs.source_id=s.id JOIN readable_claim cl ON cl.id=cs.claim_id WHERE s.status='Read') sources_read,(SELECT COUNT(*) FROM revision FOR SYSTEM_TIME ALL) revisions,(SELECT COUNT(*) FROM published_flag f LEFT JOIN editor_reviews r ON r.flag_id=f.id WHERE f.shown=1 AND COALESCE(r.dismissed,0)=0) flags,(SELECT COUNT(*) FROM editor_reviews WHERE dismissed=1) dismissed,(SELECT COALESCE(SUM(copies),0) FROM note_copies) copied,(SELECT MAX(checked_at) FROM flag) updated_at"""
+    sql="""SELECT (SELECT COUNT(DISTINCT qid) FROM readable_claim) articles,(SELECT title FROM theme WHERE slug='finland-second-world-war') theme_title,(SELECT COUNT(*) FROM theme WHERE slug='finland-second-world-war') themes,(SELECT COUNT(*) FROM article WHERE qid IN (SELECT DISTINCT qid FROM readable_claim)) versions,(SELECT COUNT(*) FROM readable_claim) claims,(SELECT COUNT(*) FROM source_chunk) passages,(SELECT COUNT(DISTINCT s.id) FROM cited_source s JOIN claim_source cs ON cs.source_id=s.id JOIN readable_claim cl ON cl.id=cs.claim_id) sources,(SELECT COUNT(DISTINCT s.id) FROM cited_source s JOIN claim_source cs ON cs.source_id=s.id JOIN readable_claim cl ON cl.id=cs.claim_id WHERE s.status='Read') sources_read,(SELECT COUNT(*) FROM revision FOR SYSTEM_TIME ALL) revisions,(SELECT COUNT(*) FROM published_flag f LEFT JOIN editor_reviews r ON r.flag_id=f.id WHERE f.shown=1 AND COALESCE(r.dismissed,0)=0) flags,(SELECT COUNT(*) FROM editor_reviews WHERE dismissed=1) dismissed,(SELECT COALESCE(SUM(copies),0) FROM note_copies) copied,(SELECT MAX(checked_at) FROM flag) updated_at"""
     return run(cur,sql)[0]
 
 def flag_rows(cur,qid=None):
@@ -59,7 +86,8 @@ def verified_absence(version,flags,revision_id):
 @app.before_request
 def access():
     token=os.environ.get('PARALLAX_BRIDGE_TOKEN')
-    public=request.path in ['/','/ask','/method','/favicon.svg','/api/parallax'] or request.path.startswith(('/a/','/assets/','/fonts/'))
+    # Only the bridge may call the internal endpoints; every other path is a page, a file or a designed not-found.
+    public=request.path not in ['/health','/home','/article','/search','/examples','/review','/copied']
     if token and not public and not hmac.compare_digest(request.headers.get('X-Parallax-Token',''),token):return jsonify(error='Access denied'),403
     if request.method=='POST':
         if request.content_type!='application/json':return jsonify(error='Use JSON'),415
@@ -72,7 +100,9 @@ def access():
 def error(e):
     # Never return connection details, prompts, credentials or a traceback.
     from werkzeug.exceptions import HTTPException
-    if isinstance(e,HTTPException):return jsonify(error='This page could not be found.'),e.code
+    if isinstance(e,HTTPException):
+        if e.code==404 and request.method=='GET' and not request.path.startswith(('/api/','/assets/','/fonts/')):return send_from_directory(ROOT/'frontend','index.html'),404
+        return jsonify(error='This page could not be found.'),e.code
     app.logger.error('Parallax request failed: %s',type(e).__name__)
     return jsonify(error='The database did not answer. Try again in a moment.'),503
 
@@ -96,7 +126,14 @@ def asset(name):return send_from_directory(ROOT/'frontend/assets',name)
 def font(name):return send_from_directory(ROOT/'frontend/fonts',name)
 
 @app.get('/favicon.svg')
+@app.get('/favicon.ico')
 def favicon():return send_from_directory(ROOT/'frontend','favicon.svg')
+
+@app.get('/og.png')
+def social_image():return send_from_directory(ROOT/'frontend','og.png')
+
+@app.get('/robots.txt')
+def robots():return 'User-agent: *\nAllow: /\n',200,{'Content-Type':'text/plain; charset=utf-8'}
 
 @app.route('/api/parallax',methods=['GET','POST'])
 def browser_api():
@@ -125,7 +162,11 @@ def home():
     for r in rows:r['titles']=unpack(r['titles'])
     qids={r['qid']:i for i,r in enumerate(rows)};fs=[f for f in flag_rows(cur) if f['qid'] in qids and not f['dismissed'] and f.get('source') and f['check'] in ['src','fact','lang'] and len(f['source'].get('passage',''))<=220 and all(len(v['text'])<=220 for v in ([f['versions'][f['language']]] if f['check']=='src' else f.get('versions',{}).values()))]
     fs.sort(key=lambda f:(0 if f['check']=='src' and f['verdict']=='Contradicted' else 1 if f['check']=='fact' else 2,qids[f['qid']]))
-    if fs:fs[0]['article_title']=next((r['title'] for r in rows if r['qid']==fs[0]['qid']),'')
+    if fs:
+        fs[0]['article_title']=next((r['title'] for r in rows if r['qid']==fs[0]['qid']),'')
+        # The retrieval behind the finding shown on the first screen, run now.
+        traces.insert(0,None);evidence=[];run(cur,SOURCE_SQL,(fs[0]['claim_id'],fs[0]['claim_id']),evidence,'Closest source passage');traces[0]=evidence[0]
+    schema_trace(cur,traces)
     top=max(rows,key=lambda r:r['issues'],default=None)
     result={'themes':themes,'theme':theme,'sort':sort,'articles':rows[:10],'article_total':len(rows),'top':{'qid':top['qid'],'title':top['title'],'issues':top['issues']} if top else None,'example':fs[0] if fs else None,'counts':counts(cur),'queries':traces};c.close();return jsonify(result)
 
@@ -174,6 +215,7 @@ def article():
                 if r:v['asof_revision']=r['rev_id']
     unread=run(cur,"SELECT id,lang,text,title,url,status FROM (SELECT s.id,cl.lang,LEFT(cl.text,80) text,s.title,s.url,s.status,ROW_NUMBER() OVER (PARTITION BY s.id ORDER BY cl.lang,cl.ordinal) source_row FROM readable_claim cl JOIN claim_source cs ON cs.claim_id=cl.id JOIN cited_source s ON s.id=cs.source_id WHERE cl.qid=%s AND s.status<>'Read') unique_sources WHERE source_row=1",(qid,))
     claim_counts={r['lang']:r['n'] for r in run(cur,'SELECT lang,COUNT(*) n FROM readable_claim WHERE qid=%s GROUP BY lang',(qid,))}
+    schema_trace(cur,traces)
     a.update(flags=fs,groups=groups,history=history,queries=traces,selected_claim_id=anchor,asof_revisions={r['lang']:r['rev_id'] for r in past},unread=unread,asof=asof,claim_counts=claim_counts,claim_count=sum(claim_counts.values()))
     c.close();return jsonify(a)
 
@@ -206,6 +248,7 @@ def search():
             valid_ids={r['id'] for r in run(cur,'SELECT id FROM readable_claim WHERE qid=%s',(best['qid'],))};cleaned=readable_groups([{**gs[0],'versions':unpack(gs[0]['versions'])}],valid_ids);group=cleaned[0] if cleaned else {'id':best['id'],'versions':{best['lang']:best}};flags=[f for f in flag_rows(cur,best['qid']) if f['group_id']==group['id'] and not f['dismissed']]
         else:group={'id':best['id'],'versions':{best['lang']:best}}
         topic=article_meta(cur,best['qid'])
+    schema_trace(cur,traces)
     result={'question':question,'hits':hits,'group':group,'flags':flags,'topic':topic,'queries':traces,'counts':counts(cur)};c.close();return jsonify(result)
 
 @app.get('/method')

@@ -54,3 +54,40 @@
 .check-chip:hover:not(:disabled):not([aria-pressed='true']){border-color:var(--ink-3)}
 @media(max-width:699px){.severity-row,.gaps-toggle{padding-left:8px;height:auto;min-height:44px;flex-wrap:wrap;row-gap:0}.gaps-note{white-space:normal;margin-left:0;flex-basis:100%;padding-bottom:6px}}
 @media(max-width:699px){.check-chips{gap:4px;margin-left:0;width:100%}.check-chips .check-chip{padding:0 6px;font-size:12px;gap:4px;flex:1 1 auto;min-width:0}}
+
+/* Home first screen: what it is, one live finding, and where the data lives. */
+.home{padding:36px 24px 0;max-width:1328px;margin:0 auto}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,460px);gap:56px;align-items:start}
+.hero h1{font-size:34px;line-height:42px;font-weight:650;letter-spacing:-.018em;max-width:27ch}.hero h1 span{display:block}
+.hero-problem{margin-top:16px;max-width:54ch;font-size:17px;line-height:27px;color:var(--ink-2)}
+.hero-promise{margin-top:12px;max-width:54ch;font-size:15px;line-height:24px;color:var(--ink);font-weight:500}
+.hero-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:28px;min-height:44px}
+.hero-actions .primary{height:44px;padding:0 20px}
+.hero-actions .quiet{height:44px;padding:0 16px;font-size:14px}
+.hero-actions .placeholder{width:268px;background:var(--sunk)}
+.hero-finding h2{font-size:13px;line-height:20px;font-weight:600;color:var(--ink-2);margin-bottom:8px}
+.hero-finding-summary{margin-top:12px}
+.hero-finding-verdict{display:flex;gap:4px;align-items:center;margin-top:8px}
+.hero-finding-skeleton{height:372px;border-radius:8px;background:var(--sunk);animation:pulse 1.2s ease-in-out infinite}
+.proof-strip{display:flex;align-items:center;gap:0 12px;flex-wrap:wrap;margin-top:32px;padding:12px 16px;background:var(--ground);border:1px solid var(--line-soft);border-radius:8px;font-size:14px;line-height:22px;color:var(--ink-2);min-height:48px}
+.proof-strip>svg{color:var(--ink-3);flex-shrink:0}
+.proof-strip strong{color:var(--ink);font-weight:600}
+.proof-strip>span+span::before{content:'';display:inline-block;width:1px;height:14px;background:var(--line);margin-right:12px;vertical-align:-2px}
+.home-main{margin-top:32px}
+.ranked-title{font-size:22px;line-height:30px;font-weight:600;letter-spacing:-.005em}
+.unknown-article .quiet{margin-top:16px;display:inline-flex;text-decoration:none;color:var(--ink)}
+@media(max-width:1099px){.hero{grid-template-columns:minmax(0,1fr);gap:32px}.hero-finding{max-width:560px}.hero-finding-skeleton{height:320px}}
+@media(max-width:699px){.home{padding:24px 16px 0}.hero h1{font-size:26px;line-height:33px;max-width:none}.hero-problem{font-size:16px;line-height:25px}.hero-actions{flex-direction:column;align-items:stretch;gap:8px;margin-top:20px}.hero-actions .primary{white-space:normal;text-align:center;height:auto;min-height:48px;padding:10px 16px}.hero-actions .quiet{justify-content:center}.proof-strip{margin-top:32px;flex-direction:column;align-items:flex-start;gap:4px}.proof-strip>svg{display:none}.proof-strip>span+span::before{display:none}.home-main{margin-top:32px}.ranked-title{font-size:20px;line-height:27px}}
+/* SQL drawer: the statement, then the rows it returned. */
+@media(min-width:700px){.sql-drawer{height:min(460px,72vh)}}
+.sql-body{flex:1;min-height:0;display:flex;flex-direction:column;gap:8px;margin:12px 0}
+.sql-drawer .sql-body pre{margin:0;flex:0 1 auto;max-height:132px}
+.sql-drawer .sql-body.schema pre{flex:1;max-height:none}
+.sql-result{flex:1 1 0;min-height:96px;overflow:auto;background:#fff;border:1px solid var(--line);border-radius:8px;scrollbar-color:#c4c8d1 transparent;scrollbar-width:thin}
+.sql-result table{border-collapse:collapse;width:100%;font-family:'JetBrains Mono Variable',monospace;font-size:12px;line-height:18px}
+.sql-result th{position:sticky;top:0;background:var(--ground);text-align:left;font-weight:600;color:var(--ink-2);padding:6px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+.sql-result td{padding:6px 12px;border-bottom:1px solid var(--line-soft);color:var(--ink-2);vertical-align:top;white-space:nowrap;max-width:220px;overflow:hidden;text-overflow:ellipsis}
+.sql-result td.text{white-space:normal;min-width:320px;max-width:560px;color:var(--ink)}
+.sql-result .numeric{text-align:right;color:var(--blue);font-weight:600}
+.sql-result tr:last-child td{border-bottom:0}
+@media(max-width:699px){.hero h1 span{display:inline}}
