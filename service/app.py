@@ -213,7 +213,8 @@ def method():
     for f in fs:
         if not f['dismissed'] and f['check'] not in examples:examples[f['check']]=f
     evaluations={r['name']:unpack(r['payload']) for r in run(cur,'SELECT * FROM evaluation')}
-    result={'counts':counts(cur),'examples':examples,'evaluation':evaluations,'models':['gemini-3.8-flash','gemini-4-argon'],'database':run(cur,'SELECT VERSION() version')[0]['version']};c.close();return jsonify(result)
+    top=run(cur,"SELECT t.qid,t.title FROM topic t JOIN topic_theme tt ON tt.qid=t.qid WHERE tt.theme='finland-second-world-war' AND t.distance IS NOT NULL ORDER BY t.distance DESC LIMIT 1")
+    result={'counts':counts(cur),'examples':examples,'evaluation':evaluations,'top_article':top[0] if top else None,'models':['gemini-3.8-flash','gemini-4-argon'],'database':run(cur,'SELECT VERSION() version')[0]['version']};c.close();return jsonify(result)
 
 @app.get('/examples')
 def examples():
