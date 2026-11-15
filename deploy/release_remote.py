@@ -11,6 +11,11 @@ if '--stdin-env' in sys.argv:env.update({k:v for k,v in json.load(sys.stdin).ite
 # Retain hashed assets for tabs opened on the previous release.
 assets=ROOT/'deploy/previous-assets';assets.mkdir(exist_ok=True)
 names=subprocess.check_output(['docker','ps','--filter','label=io.parallax.owner=mariadb-junction','--filter','label=io.parallax.release','--format','{{.Names}}'],text=True).splitlines()
+# A credential added after the first container was created lives on the running releases; carry it forward.
+for running in names:
+ for pair in inspected(running)['Config']['Env']:
+  k,v=pair.split('=',1)
+  if k in ['GEMINI_API_KEY'] and not env.get(k):env[k]=v
 for previous in ['parallax-api',*names]:
  command(['docker','cp',previous+':/app/frontend/assets/.',str(assets)],stdout=subprocess.DEVNULL)
 command(['docker','compose','-p','parallax','-f',str(ROOT/'deploy/compose.yml'),'build','api'],env={**os.environ,'PARALLAX_COMMIT':sha},stdout=subprocess.DEVNULL)
