@@ -10,6 +10,7 @@ from pipeline.presentation import readable,readable_groups
 
 app=Flask(__name__)
 app.config['MAX_CONTENT_LENGTH']=4096
+app.json.sort_keys=False  # result rows keep the column order of their SELECT
 _encoder=None;_encoder_lock=threading.Lock();_limits=defaultdict(deque)
 
 def unpack(value):return json.loads(value) if isinstance(value,str) else value
@@ -29,7 +30,7 @@ def preview(rows,limit=5):
             if isinstance(v,float):v=round(v,4)
             elif isinstance(v,decimal.Decimal):v=float(v)
             elif isinstance(v,(datetime.datetime,datetime.date)):v=v.strftime('%Y-%m-%d %H:%M')
-            elif isinstance(v,str) and len(v)>160:v=v[:160].rstrip()+'…'
+            elif isinstance(v,str) and len(v)>240:v=v[:240].rstrip()+'…'
             o[k]=v
         out.append(o)
     return out
