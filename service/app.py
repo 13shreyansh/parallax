@@ -24,7 +24,7 @@ def run(cur,sql,args=(),traces=None,label=None):
     return rows
 
 def counts(cur):
-    sql="""SELECT (SELECT COUNT(DISTINCT qid) FROM claim) articles,(SELECT COUNT(*) FROM theme WHERE slug='finland-second-world-war') themes,(SELECT COUNT(*) FROM article WHERE qid IN (SELECT DISTINCT qid FROM claim)) versions,(SELECT COUNT(*) FROM claim) claims,(SELECT COUNT(DISTINCT s.id) FROM cited_source s JOIN claim_source cs ON cs.source_id=s.id JOIN claim cl ON cl.id=cs.claim_id) sources,(SELECT COUNT(DISTINCT s.id) FROM cited_source s JOIN claim_source cs ON cs.source_id=s.id JOIN claim cl ON cl.id=cs.claim_id WHERE s.status='Read') sources_read,(SELECT COUNT(*) FROM revision FOR SYSTEM_TIME ALL) revisions,(SELECT COUNT(*) FROM published_flag f LEFT JOIN editor_reviews r ON r.flag_id=f.id WHERE f.shown=1 AND COALESCE(r.dismissed,0)=0) flags,(SELECT COUNT(*) FROM editor_reviews WHERE dismissed=1) dismissed,(SELECT COALESCE(SUM(copies),0) FROM note_copies) copied,(SELECT MAX(checked_at) FROM flag) updated_at"""
+    sql="""SELECT (SELECT COUNT(DISTINCT qid) FROM claim) articles,(SELECT title FROM theme WHERE slug='finland-second-world-war') theme_title,(SELECT COUNT(*) FROM theme WHERE slug='finland-second-world-war') themes,(SELECT COUNT(*) FROM article WHERE qid IN (SELECT DISTINCT qid FROM claim)) versions,(SELECT COUNT(*) FROM claim) claims,(SELECT COUNT(DISTINCT s.id) FROM cited_source s JOIN claim_source cs ON cs.source_id=s.id JOIN claim cl ON cl.id=cs.claim_id) sources,(SELECT COUNT(DISTINCT s.id) FROM cited_source s JOIN claim_source cs ON cs.source_id=s.id JOIN claim cl ON cl.id=cs.claim_id WHERE s.status='Read') sources_read,(SELECT COUNT(*) FROM revision FOR SYSTEM_TIME ALL) revisions,(SELECT COUNT(*) FROM published_flag f LEFT JOIN editor_reviews r ON r.flag_id=f.id WHERE f.shown=1 AND COALESCE(r.dismissed,0)=0) flags,(SELECT COUNT(*) FROM editor_reviews WHERE dismissed=1) dismissed,(SELECT COALESCE(SUM(copies),0) FROM note_copies) copied,(SELECT MAX(checked_at) FROM flag) updated_at"""
     return run(cur,sql)[0]
 
 def flag_rows(cur,qid=None):
@@ -221,10 +221,11 @@ def review():
     c=writer_db();cur=c.cursor()
     lookup=db();available=run(lookup.cursor(),'SELECT id FROM published_flag WHERE id=%s',(fid,));lookup.close()
     if not available:c.close();return jsonify(error='This finding is not available.'),404
+    c.begin()
     cur.execute('INSERT INTO editor_reviews VALUES (%s,%s,%s,UTC_TIMESTAMP()) ON DUPLICATE KEY UPDATE reason=VALUES(reason),dismissed=VALUES(dismissed),reviewed_at=VALUES(reviewed_at)',(fid,reason if dismissed else None,dismissed))
     run_id=request.headers.get('X-Parallax-Test-Run');run_id=run_id if run_id and re.fullmatch(r'[0-9a-f-]{36}',run_id) else None
     cur.execute('INSERT INTO review_write_marker VALUES (%s,%s,UTC_TIMESTAMP()) ON DUPLICATE KEY UPDATE run_id=VALUES(run_id),reviewed_at=VALUES(reviewed_at)',(fid,run_id))
-    result=run(cur,'SELECT * FROM editor_reviews WHERE flag_id=%s',(fid,))[0];result['write_run']=run_id;c.close();return jsonify(result)
+    result=run(cur,'SELECT * FROM editor_reviews WHERE flag_id=%s',(fid,))[0];result['write_run']=run_id;c.commit();c.close();return jsonify(result)
 
 @app.post('/copied')
 def copied():
