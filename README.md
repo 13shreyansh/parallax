@@ -38,7 +38,7 @@ The browser shows the resulting evidence. A model output cannot silently modify 
 | MariaDB | Implemented. Native vector retrieval and system-versioned article history form the core review path. | `pipeline/`, `service/` and `deploy/` |
 | Gemini API | Implemented. Candidate generation and independent confirmation over retrieved evidence. | The finding pipeline and linked evaluation |
 | Codex | Used during development, debugging and verification. It is a development tool, not an autonomous Wikipedia editor. | Repository implementation and test history |
-| CRACI | **Planned, not implemented.** Run the existing build and Python tests on CRACI CI. | Acceptance plan below |
+| CRACI | Implemented. GitHub Actions runs the build, JavaScript regressions and Python tests on CRACI runners. | `.github/workflows/sponsor-ci.yml` and receipts below |
 
 Technology-prize registration records intent. It does not establish completed eligibility for a planned integration.
 
@@ -80,11 +80,13 @@ A blind AI-labelled check found 44/60 before later filtering. It is not expert-l
 
 Retrieval can miss evidence. Unavailable citations remain unchecked. Translation and editorial context require human judgement. A successful seeded test does not establish accuracy across Wikipedia.
 
-## Next integration, after implementation approval
+## CRACI verification
 
-CRACI will run the repository's real checks in a GitHub Actions job with `runs-on: craci`. Completion requires a successful CRACI-backed run, linked logs and a deliberate failing-test check that blocks the job. No CRACI workflow or successful sponsor run is claimed today.
+The workflow runs `npm run build`, the JavaScript regressions and the Python unit suite on `runs-on: craci`. It uses a clean Python 3.12 environment and a dedicated pinned test dependency list, without downloading embedding models or making provider calls.
 
-The current application architecture above describes implemented components. This CI addition is planned and does not change the review algorithm.
+[Successful CRACI run](https://github.com/13shreyansh/parallax/actions/runs/43686118041) completed all 40 Python checks, seven JavaScript checks and the frontend build. A separate unmerged control branch adds a deliberately failing regression. Its [CRACI run failed](https://github.com/13shreyansh/parallax/actions/runs/43686559541), demonstrating that a regression blocks the job. The failing control is not part of the application branch.
+
+Both runs have recorded CRACI runner identities in `artifacts/sponsors/craci.json`. These are measured execution receipts, not evidence of a prize award. No application runtime or review algorithm changed for this CI integration.
 
 ## Repository guide
 

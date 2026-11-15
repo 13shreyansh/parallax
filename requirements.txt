@@ -5,3 +5,7 @@ pyarrow==26.0.1
 requests==2.34.2
 sentence-transformers==6.3.0
 waitress==3.0.2
+
+mwparserfromhell==0.7.2
+trafilatura==2.3.1
+PyMuPDF==1.26.5
