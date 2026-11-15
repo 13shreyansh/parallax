@@ -93,10 +93,10 @@ def valid_flag(flag,payload):
 def store_judge(group_id,result):
     c=db();cur=c.cursor();cur.execute('REPLACE INTO judgment VALUES (%s,%s,%s,%s,%s,%s,%s)',(digest([group_id,result['model'],result['input_sha256']]),group_id,result['model'],result['prompt_version'],result['checked_at'].replace('T',' ').replace('Z',''),result['input_sha256'],json.dumps(result,ensure_ascii=False)));c.close()
 
-def process_batch(groups):
+def process_batch(groups,precision_prompt=PRECISION_PROMPT,version=VERSION):
     inputs=[evidence(g) for g in groups]
     articles=full_articles(groups[0]['qid'])
-    first=judge(FAST,RECALL_PROMPT,{'groups':inputs},version=VERSION)
+    first=judge(FAST,RECALL_PROMPT,{'groups':inputs},version=version)
     for payload in inputs:payload['full_article_text']=articles
     byid={g['id']:g for g in groups};inputs_byid={g['id']:g for g in inputs}
     outputs=[]
@@ -114,7 +114,7 @@ def process_batch(groups):
             payload=evidence(group,full=True);payload['second_pass']=True
             payload['investigate_checks']=list(dict.fromkeys(f['check'] for f in candidates))
             # No first-pass summaries, verdicts or reasons are supplied to the reviewer.
-            second=judge(STRONG,PRECISION_PROMPT,{'groups':[payload]},namespace='rechecks',version=VERSION,context={'full_article_text':articles});store_judge(gid,second)
+            second=judge(STRONG,precision_prompt,{'groups':[payload]},namespace='rechecks',version=version,context={'full_article_text':articles});store_judge(gid,second)
             payload['full_article_text']=articles
             answers=second['answer'].get('groups',[])
             if answers:
@@ -127,7 +127,7 @@ def process_batch(groups):
                     if not valid_flag(f,payload):continue
                     if f['language'] in ['fi','sv','en']:
                         # Strong pass supplies final presentation text; all quotes remain fetched literals.
-                        f['id']=digest([gid,f['claim_id'],f['check'],f['verdict']])[:32];f['group_id']=gid;f['qid']=group['qid'];f['models']=[FAST,STRONG];f['prompt_version']=VERSION;f['checked_at']=now();f['history']=None
+                        f['id']=digest([gid,f['claim_id'],f['check'],f['verdict']])[:32];f['group_id']=gid;f['qid']=group['qid'];f['models']=[FAST,STRONG];f['prompt_version']=version;f['checked_at']=now();f['history']=None
                         f['current_confirmed']=True
                         f['versions']=strong_versions
                         if not set(f['marks']).issubset({v['claim_id'] for v in strong_versions.values()}):continue
@@ -135,7 +135,7 @@ def process_batch(groups):
                         agreed.append(f)
         c=db();cur=c.cursor()
         if agreed:versions=agreed[0]['versions']
-        cur.execute('REPLACE INTO claim_group VALUES (%s,%s,%s,%s,%s,%s)',(gid,group['qid'],group['anchor_id'],group['ordinal'],json.dumps(versions,ensure_ascii=False),json.dumps({'prompt_version':VERSION,'first_pass':first['checked_at'],'candidate_flags':len(candidates),'agreed_flags':len(agreed)})))
+        cur.execute('REPLACE INTO claim_group VALUES (%s,%s,%s,%s,%s,%s)',(gid,group['qid'],group['anchor_id'],group['ordinal'],json.dumps(versions,ensure_ascii=False),json.dumps({'prompt_version':version,'first_pass':first['checked_at'],'candidate_flags':len(candidates),'agreed_flags':len(agreed)})))
         for lang,v in versions.items():cur.execute('UPDATE claim SET gloss=%s WHERE id=%s',(v.get('gloss'),v['claim_id']))
         for f in agreed:
             cur.execute('INSERT INTO flag VALUES (%s,%s,%s,%s,%s,%s,%s,0,%s) ON DUPLICATE KEY UPDATE payload=VALUES(payload),checked_at=VALUES(checked_at)',(f['id'],f['qid'],gid,f['claim_id'],f['check'],f['verdict'],json.dumps(f,ensure_ascii=False),f['checked_at'].replace('T',' ').replace('Z','')))

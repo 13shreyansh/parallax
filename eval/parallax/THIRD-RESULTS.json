@@ -1,0 +1,58 @@
+{
+  "measured_at": "2026-11-15T01:02:53Z",
+  "prompt_version": "parallax-v5",
+  "scope": "Third disjoint article families, independently source-labeled before detector output. Controlled passage copies; eight real fi/sv counterparts preserve citation text. Date perturbation +10 years; numeric perturbation doubles then adds7 to make approximate values materially different. Not full-article population accuracy.",
+  "errors": 40,
+  "controls": 40,
+  "caught": 40,
+  "false_flags": 0,
+  "complete": true,
+  "checks": {
+    "src": {
+      "errors": 8,
+      "controls": 8,
+      "caught": 8,
+      "false_flags": 0
+    },
+    "fact": {
+      "errors": 16,
+      "controls": 16,
+      "caught": 16,
+      "false_flags": 0
+    },
+    "lang": {
+      "errors": 8,
+      "controls": 8,
+      "caught": 8,
+      "false_flags": 0
+    },
+    "tone": {
+      "errors": 8,
+      "controls": 8,
+      "caught": 8,
+      "false_flags": 0
+    }
+  },
+  "by_error_type": {
+    "wrong_date": {
+      "caught": 8,
+      "errors": 8
+    },
+    "wrong_number": {
+      "caught": 8,
+      "errors": 8
+    },
+    "dropped_sentence": {
+      "caught": 8,
+      "errors": 8
+    },
+    "loaded_wording": {
+      "caught": 8,
+      "errors": 8
+    },
+    "unsupported_claim": {
+      "caught": 8,
+      "errors": 8
+    }
+  }
+}

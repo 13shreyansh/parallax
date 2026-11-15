@@ -51,6 +51,10 @@ def include_unrepresented(groups,claims):
 
 def comparison_language(lang):return 'fi' if lang=='sv' else 'sv'
 
+def verified_absence(version,flags,revision_id):
+    return revision_id is not None and any(f['claim_id']==version.get('claim_id',version.get('id')) and f.get('history',{}).get('material_absence_verified') and f['history'].get('before_revision')==revision_id for f in flags)
+
+
 @app.before_request
 def access():
     token=os.environ.get('PARALLAX_BRIDGE_TOKEN')
@@ -161,7 +165,7 @@ def article():
                 r=versions.get(lang);passage=indexes[lang].match(v['text']) if r else None
                 v['asof_present']=bool(passage);v['asof_text']=passage
                 v['asof_match']='exact' if passage==normalize(v['text']) else 'similar' if passage else 'not found'
-                v['asof_absence_verified']=any(f['claim_id']==v.get('claim_id',v.get('id')) and f.get('history',{}).get('material_absence_verified') and asof<str(f['history']['entered_at'])[:10] for f in fs)
+                v['asof_absence_verified']=verified_absence(v,fs,r['rev_id'] if r else None)
                 if r:v['asof_revision']=r['rev_id']
     unread=run(cur,"SELECT id,lang,text,title,url,status FROM (SELECT s.id,cl.lang,LEFT(cl.text,80) text,s.title,s.url,s.status,ROW_NUMBER() OVER (PARTITION BY s.id ORDER BY cl.lang,cl.ordinal) source_row FROM claim cl JOIN claim_source cs ON cs.claim_id=cl.id JOIN cited_source s ON s.id=cs.source_id WHERE cl.qid=%s AND s.status<>'Read') unique_sources WHERE source_row=1",(qid,))
     claim_counts={r['lang']:r['n'] for r in run(cur,'SELECT lang,COUNT(*) n FROM claim WHERE qid=%s GROUP BY lang',(qid,))}

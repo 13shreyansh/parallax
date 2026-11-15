@@ -48,7 +48,7 @@ def setup(allcases,database='parallax_eval',include_title=False):
    texts=chunks(source['text']);vs=model.encode(texts,batch_size=64,normalize_embeddings=True,show_progress_bar=False)
    cur.executemany('REPLACE INTO source_chunk VALUES (%s,%s,%s,%s,%s)',[(digest([sid,i,t])[:32],sid,i,t,np.asarray(v,dtype='<f4').tobytes()) for i,(t,v) in enumerate(zip(texts,vs))]);loaded.add(sid)
   versions={'en':case['text']}
-  if case['counterpart']:versions[case['counterpart']['lang']]=case['counterpart']['text']
+  if case['counterpart']:versions[case['counterpart']['lang']]=case['counterpart'].get('wikitext',case['counterpart']['text'])
   for lang,text in versions.items():
    # These are explicitly controlled article-passage copies, never full-article accuracy claims.
    wt=text+(f'<ref>{{{{cite web|url={url}|title=Source}}}}</ref>' if text and lang=='en' else '')
@@ -61,6 +61,7 @@ def setup(allcases,database='parallax_eval',include_title=False):
     for cl,v in zip(claims,vs):
      cur.execute('REPLACE INTO claim VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)',(cl['id'],qid,lang,cl['rev_id'],cl['ordinal'],cl['section'],cl['text'],json.dumps(cl['citations']),None,np.asarray(v,dtype='<f4').tobytes()))
      if lang=='en':cur.execute('REPLACE INTO claim_source VALUES (%s,%s)',(cl['id'],sid))
+     elif any(url in ref['urls'] for ref in cl['citations']):cur.execute('REPLACE INTO claim_source VALUES (%s,%s)',(cl['id'],sid))
   groups=build_groups(qid)
   # Test the modified assertion rather than counting unrelated flags on the unchanged clause.
   if case['planted'] and case['kind']=='unsupported_claim':groups=[g for g in groups if any('funding from the Swedish Academy' in r['text'] and r['id']==g['anchor_id'] for rs in g['candidates'].values() for r in rs)]

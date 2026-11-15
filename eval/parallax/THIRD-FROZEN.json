@@ -1,0 +1,1758 @@
+{
+  "frozen_at": "2026-11-15T01:00:40Z",
+  "prompt_version": "parallax-v5",
+  "recall_sha256": "c9f7c0c709bdb0b6a2d16486fa697615377ca7da2684808da844141ba669f257",
+  "precision_sha256": "1ff8a31400f3d6ec8df9d898e269b9ef3e62f6358db8afc6e15df61e204ef71f",
+  "pipeline_sha256": "deda759b350dd4d1faeb677ec2809b458eb06cd9eb5b941e97c18282489b16c4",
+  "harness_sha256": "f2a6d4b7766b3975dc2a69d1ee9d8a72645facfef10ef2ee9201bfa8c903a755",
+  "case_sha256": "a854f57b5aa0bd5d9144a959b14905e5531e6038857c254aa512de23d9ab737d",
+  "errors": 40,
+  "controls": 40,
+  "scope": "Third disjoint article families, independently source-labeled before detector output. Controlled passage copies; eight real fi/sv counterparts preserve citation text. Date perturbation +10 years; numeric perturbation doubles then adds7 to make approximate values materially different. Not full-article population accuracy.",
+  "case_metadata": [
+    {
+      "id": "0c304a964162d756403ec0d709159a7c",
+      "qid": "T0c304a964162d756403ec0",
+      "original_id": "c68571489c42b3200504ab825914b485",
+      "kind": "loaded_wording",
+      "planted": false,
+      "text": "the BBC commissioned a genetic survey of the British Isles by a team from University College London led by Professor David Goldstein for its programme 'Blood of the Vikings'.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q339271",
+        "title": "Danelaw",
+        "lang": "en",
+        "rev_id": 1380379807,
+        "page_id": 64946
+      },
+      "construction": "Exact excerpt; source identifies commissioner, survey, UCL, Goldstein and programme. Unsupported commissioning year excluded.",
+      "source_url": "https://news.bbc.co.uk/1/hi/england/1689955.stm",
+      "source_sha256": "f16f4313112c7a2e6e2004868afc29182e234a08d99967c17f96d9273a2bb379"
+    },
+    {
+      "id": "6e62a2ed243373f827627130683b802b",
+      "qid": "T6e62a2ed243373f8276271",
+      "original_id": "3410693f763f8cac7d54b95a8859cd19_7f93c468",
+      "kind": "unsupported_claim",
+      "planted": true,
+      "text": "Estlander served on the Helsinki City Council from 1912 to 1914. The cited source attributes this to funding from the Swedish Academy.",
+      "changed": [
+        "funding from the Swedish Academy"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q5720020",
+        "title": "Ernst Estlander",
+        "lang": "en",
+        "rev_id": 1354803491,
+        "page_id": 43995379
+      },
+      "construction": "Intact additional claim with its own same-URL citation; office, city and tenure match.",
+      "source_url": "https://www.olympedia.org/athletes/61948",
+      "source_sha256": "4ab1d574dd3615327d4cc5d19eb3fb8b5040838df7e63de1e78142c980ea0bdc"
+    },
+    {
+      "id": "65a5ea78e6f5a92978a732660cc8c043",
+      "qid": "T65a5ea78e6f5a92978a732",
+      "original_id": "e063a40525b6f2bea27bad2ff5cf01b0",
+      "kind": "wrong_date",
+      "planted": true,
+      "text": "The modern development of Ludic as a written language began during Perestroika in 1999",
+      "changed": [
+        "1999"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q33918",
+        "title": "Ludic language",
+        "lang": "en",
+        "rev_id": 1347906024,
+        "page_id": 1161621
+      },
+      "construction": "Exact supported excerpt; excludes later details about the journal and dialect.",
+      "source_url": "https://core.ac.uk/download/pdf/78566507.pdf",
+      "source_sha256": "8ba30429b15c6d7e862e0be97bed7e042ce3dba1455c0baa1b0bf1c165777dd9"
+    },
+    {
+      "id": "dc51deb0809b395be441acd8b0f6f917",
+      "qid": "Tdc51deb0809b395be441ac",
+      "original_id": "3410693f763f8cac7d54b95a8859cd19_afcc9260",
+      "kind": "unsupported_claim",
+      "planted": true,
+      "text": "He became docent in legal history in 1902 and extraordinary professor in 1908, holding the chair until 1937. The cited source attributes this to funding from the Swedish Academy.",
+      "changed": [
+        "funding from the Swedish Academy"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q5720020",
+        "title": "Ernst Estlander",
+        "lang": "en",
+        "rev_id": 1354803491,
+        "page_id": 43995379
+      },
+      "construction": "Intact additional claim with its own same-URL citation; offices and tenure are explicit. Subject is Ernst Estlander.",
+      "source_url": "https://www.olympedia.org/athletes/61948",
+      "source_sha256": "4ab1d574dd3615327d4cc5d19eb3fb8b5040838df7e63de1e78142c980ea0bdc"
+    },
+    {
+      "id": "e87cbcf37f5aca49bef15a003c71399b",
+      "qid": "Te87cbcf37f5aca49bef15a",
+      "original_id": "635ae66333a416ace94d3415436a2917",
+      "kind": "loaded_wording",
+      "planted": true,
+      "text": "The utterly magnificent and unquestionably brilliant achievement was this: Suomela failed to get reelected but said she's planning to run in the next election.",
+      "changed": [
+        "utterly magnificent",
+        "unquestionably brilliant"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q29894038",
+        "title": "Iiris Suomela",
+        "lang": "en",
+        "rev_id": 1357686877,
+        "page_id": 62672059
+      },
+      "construction": "Exact excerpt; both loss of her seat and stated intention to contest the next election are explicit. Year excluded.",
+      "source_url": "https://www.is.fi/politiikka/art-2000009513537.html",
+      "source_sha256": "c85eb868b416fbda3a412703dbc284812c1d153376ca41825d921e2a56a922c5"
+    },
+    {
+      "id": "87c98089ada98399b497926910a74683",
+      "qid": "T87c98089ada98399b49792",
+      "original_id": "812e7522cb976a0c0f581e59f10b454a",
+      "kind": "dropped_sentence",
+      "planted": true,
+      "text": "",
+      "changed": [
+        "Eduskunnan jätettyään Jaskari toimi yrittäjänä, kunnes hänet kesäkuussa 2021 nimitettiin Suomen Yrittäjien elinkeinopolitiikasta vastaavaksi johtajaksi."
+      ],
+      "counterpart": {
+        "lang": "fi",
+        "claim_id": "ce675860f699c6f132a7d5214a69a937",
+        "page_id": 12882,
+        "rev_id": 23820037,
+        "text": "Eduskunnan jätettyään Jaskari toimi yrittäjänä, kunnes hänet kesäkuussa 2021 nimitettiin Suomen Yrittäjien elinkeinopolitiikasta vastaavaksi johtajaksi.",
+        "wikitext": "Eduskunnan jätettyään Jaskari toimi yrittäjänä, kunnes hänet kesäkuussa 2021 nimitettiin Suomen Yrittäjien elinkeinopolitiikasta vastaavaksi johtajaksi.<ref>{{Verkkoviite | Osoite=https://www.aamulehti.fi/tampere/art-2000008081068.html | Nimeke=Entinen kansanedustaja ja elinkeinoelämän tamperelaisvaikuttaja Harri Jaskari nimitettiin Suomen Yrittäjien elinkeinopoliittiseksi johtajaksi | Tekijä=Paronen, Ruska | Ajankohta=24.6.2021 | Julkaisu=Aamulehti | Julkaisupaikka=Tampere | Julkaisija=Sanoma Media Finland Oy | Viitattu=25.6.2021 }}</ref>"
+      },
+      "article": {
+        "qid": "Q5880671",
+        "title": "Harri Jaskari",
+        "lang": "en",
+        "rev_id": 1234242860,
+        "page_id": 75022082
+      },
+      "construction": "Exact excerpt; unsupported appointment month is excluded.",
+      "source_url": "https://www.aamulehti.fi/tampere/art-2000008081068.html",
+      "source_sha256": "459694b1e04b32e8b2eaeace7c55baa8743be79564c39dc320ac064e5f880d6f"
+    },
+    {
+      "id": "8a389f94a99988aca1ef9c72d160bd18",
+      "qid": "T8a389f94a99988aca1ef9c",
+      "original_id": "c49bc6444e75286476693f431265d7f3",
+      "kind": "wrong_number",
+      "planted": false,
+      "text": "Koski was elected to the parliament in 2015, gaining 3,102 votes in the elections.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q16300064",
+        "title": "Susanna Koski",
+        "lang": "en",
+        "rev_id": 1362132879,
+        "page_id": 49649000
+      },
+      "construction": "Intact claim; official 2015 parliamentary election table lists Koski among elected candidates with 3102 votes.",
+      "source_url": "http://tulospalvelu.vaalit.fi/E-2015/fi/val10.html",
+      "source_sha256": "27fc73d4732828b5d016dbedba858d996f3cf11304463784adcbc8fc6721a7b1"
+    },
+    {
+      "id": "7d63976622db130486e8be6312eff2f5",
+      "qid": "T7d63976622db130486e8be",
+      "original_id": "ef5d50892acbb47ac20f7b6656854c82_8c56290f",
+      "kind": "unsupported_claim",
+      "planted": true,
+      "text": "He applied for the professorship of aesthetics and modern literature in 1910, but was beaten to it by Yrjö Hirn. The cited source attributes this to funding from the Swedish Academy.",
+      "changed": [
+        "funding from the Swedish Academy"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q1422570",
+        "title": "Werner Söderhjelm",
+        "lang": "en",
+        "rev_id": 1334600037,
+        "page_id": 55306616
+      },
+      "construction": "Intact additional claim with its own same-URL citation; application, post, successful candidate and year match. Subject is Werner Söderhjelm.",
+      "source_url": "http://375humanistia.helsinki.fi/en/werner-soderhjelm/the-philologist-and-literary-historian-who-became-finlands-ambassador-to-sweden",
+      "source_sha256": "315c149d253030472e80f0b128e55d39390c87f67434c8c385b1b2c90cc7d9a9"
+    },
+    {
+      "id": "9dc1221f2e33c54d16266ba67cf0d8e5",
+      "qid": "T9dc1221f2e33c54d16266b",
+      "original_id": "812e7522cb976a0c0f581e59f10b454a",
+      "kind": "dropped_sentence",
+      "planted": false,
+      "text": "After leaving the Parliament, Jaskari worked as an entrepreneur until he was appointed Director of Business Policy of the Finnish Entrepreneurs' Association",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q5880671",
+        "title": "Harri Jaskari",
+        "lang": "en",
+        "rev_id": 1234242860,
+        "page_id": 75022082
+      },
+      "construction": "Exact excerpt; unsupported appointment month is excluded.",
+      "source_url": "https://www.aamulehti.fi/tampere/art-2000008081068.html",
+      "source_sha256": "459694b1e04b32e8b2eaeace7c55baa8743be79564c39dc320ac064e5f880d6f"
+    },
+    {
+      "id": "a6f78eda29c69ece2d43558534506cc0",
+      "qid": "Ta6f78eda29c69ece2d4355",
+      "original_id": "715ee870d12f86a4b03b24aa4c39a141",
+      "kind": "wrong_date",
+      "planted": false,
+      "text": "The fortress was founded by Erik Axelsson Tott in 1475",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q251272",
+        "title": "Olavinlinna",
+        "lang": "en",
+        "rev_id": 1370630435,
+        "page_id": 274286
+      },
+      "construction": "Exact excerpt; source identifies Olavinlinna's construction beginning under Tott in 1475. Retain Olavinlinna as the contextual subject.",
+      "source_url": "https://yle.fi/a/74-20170841",
+      "source_sha256": "316d87871bdd84bfa9b623773ec22a7dd2f8842049e375918aab86f559f4783a"
+    },
+    {
+      "id": "dab524ddff4bcad6a5ce8d4bd40301bb",
+      "qid": "Tdab524ddff4bcad6a5ce8d",
+      "original_id": "0e3ceb781f5def5a062dd11b5741ca0c_84694053",
+      "kind": "unsupported_claim",
+      "planted": false,
+      "text": "When open war broke out between his brothers, King Valdemar and Duke Magnus, Bengt sided with Magnus.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q817212",
+        "title": "Bengt Birgersson",
+        "lang": "en",
+        "rev_id": 1379238760,
+        "page_id": 5735737
+      },
+      "construction": "Intact additional claim with its own same-URL citation; source explicitly describes siding with Magnus during the brothers' open conflict.",
+      "source_url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18481",
+      "source_sha256": "ce472d31af130accdf0736bebb3c449c8b865e8b188f4e67cfe3ce407bd291b9"
+    },
+    {
+      "id": "9b61ebfd56243b3fac8b4b0547e82f4a",
+      "qid": "T9b61ebfd56243b3fac8b4b",
+      "original_id": "e063a40525b6f2bea27bad2ff5cf01b0",
+      "kind": "wrong_date",
+      "planted": false,
+      "text": "The modern development of Ludic as a written language began during Perestroika in 1989",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q33918",
+        "title": "Ludic language",
+        "lang": "en",
+        "rev_id": 1347906024,
+        "page_id": 1161621
+      },
+      "construction": "Exact supported excerpt; excludes later details about the journal and dialect.",
+      "source_url": "https://core.ac.uk/download/pdf/78566507.pdf",
+      "source_sha256": "8ba30429b15c6d7e862e0be97bed7e042ce3dba1455c0baa1b0bf1c165777dd9"
+    },
+    {
+      "id": "7033904499ff6d77cbd933c573ce66ae",
+      "qid": "T7033904499ff6d77cbd933",
+      "original_id": "18b444e1aa3e3a48d58db344d3f3b2b2_10e1fcb1",
+      "kind": "unsupported_claim",
+      "planted": false,
+      "text": "In 1989 he was elected secretary-general of the International Telecommunication Union in the conference held in Nice, France.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q6204313",
+        "title": "Pekka Tarjanne",
+        "lang": "en",
+        "rev_id": 1378402665,
+        "page_id": 71495566
+      },
+      "construction": "Intact additional claim with its own same-URL citation; office, election, location and year are explicit. Subject is Pekka Tarjanne.",
+      "source_url": "https://www.itu.int/en/history/Pages/ElectedOfficialBio.aspx?off=38",
+      "source_sha256": "8b32276d8fd4505025571f3417b9a7d02fbb815272475a569a60cef8b11eb461"
+    },
+    {
+      "id": "4d44822fd7e930b498a7854d8e82840d",
+      "qid": "T4d44822fd7e930b498a785",
+      "original_id": "0e3ceb781f5def5a062dd11b5741ca0c_76085597",
+      "kind": "unsupported_claim",
+      "planted": true,
+      "text": "Bengt Birgersson (1254 – 25 May 1291) was the youngest son of Birger Jarl. The cited source attributes this to funding from the Swedish Academy.",
+      "changed": [
+        "funding from the Swedish Academy"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q817212",
+        "title": "Bengt Birgersson",
+        "lang": "en",
+        "rev_id": 1379238760,
+        "page_id": 5735737
+      },
+      "construction": "Intact additional claim with its own same-URL citation; dates and youngest-son relationship are explicit.",
+      "source_url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18481",
+      "source_sha256": "ce472d31af130accdf0736bebb3c449c8b865e8b188f4e67cfe3ce407bd291b9"
+    },
+    {
+      "id": "a63713ade358472c91ea1a41b72c54a3",
+      "qid": "Ta63713ade358472c91ea1a",
+      "original_id": "c49bc6444e75286476693f431265d7f3",
+      "kind": "wrong_number",
+      "planted": true,
+      "text": "Koski was elected to the parliament in 2015, gaining 6211 votes in the elections.",
+      "changed": [
+        "6211"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q16300064",
+        "title": "Susanna Koski",
+        "lang": "en",
+        "rev_id": 1362132879,
+        "page_id": 49649000
+      },
+      "construction": "Intact claim; official 2015 parliamentary election table lists Koski among elected candidates with 3102 votes.",
+      "source_url": "http://tulospalvelu.vaalit.fi/E-2015/fi/val10.html",
+      "source_sha256": "27fc73d4732828b5d016dbedba858d996f3cf11304463784adcbc8fc6721a7b1"
+    },
+    {
+      "id": "8e9145aeede8f560c5306b43f0f0ebf3",
+      "qid": "T8e9145aeede8f560c5306b",
+      "original_id": "f8366b51f98967ad344968d3257df7bd",
+      "kind": "dropped_sentence",
+      "planted": false,
+      "text": "Borgåbladet and Östra Nyland were amalgamated into the new newspaper Östnyland.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q3364582",
+        "title": "Borgåbladet",
+        "lang": "en",
+        "rev_id": 1327211591,
+        "page_id": 1686892
+      },
+      "construction": "Exact excerpt; source entry is Borgåbladet and explicitly identifies the merger. January is excluded.",
+      "source_url": "https://www.uppslagsverket.fi/sv/sok/view-170045-Borgaabladet",
+      "source_sha256": "980ecf4124ffbd1b55b85b2cc96958d52f401a25ea4c1b8cf6e73aef35d2a89c"
+    },
+    {
+      "id": "30b36603a91ceaf4375dde7a639c99aa",
+      "qid": "T30b36603a91ceaf4375dde",
+      "original_id": "4dc6a8b5cfb45a47fc6f45d304c96c64",
+      "kind": "wrong_number",
+      "planted": true,
+      "text": "Orpo Cabinet is aiming for 200007 new people to become part of the workforce through, among other things, social security reforms and labor market reforms.",
+      "changed": [
+        "200007"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q119560876",
+        "title": "Orpo cabinet",
+        "lang": "en",
+        "rev_id": 1384295010,
+        "page_id": 74070136
+      },
+      "construction": "Intact claim; workforce target and means are explicit.",
+      "source_url": "https://yle.fi/a/74-20037253",
+      "source_sha256": "2d252c2a78b5be3f37fd9a4ae46e668b9f4ee1b74d72b299c9fec076265867fb"
+    },
+    {
+      "id": "dcbc0d97ba09d3b2b9d00cbb6167c47b",
+      "qid": "Tdcbc0d97ba09d3b2b9d00c",
+      "original_id": "4dc6a8b5cfb45a47fc6f45d304c96c64_29a7bbf1",
+      "kind": "loaded_wording",
+      "planted": true,
+      "text": "The utterly magnificent and unquestionably brilliant achievement was this: Under the coalition deal, the Government has plans to tighten the rules for getting permanent residence and citizenship.",
+      "changed": [
+        "utterly magnificent",
+        "unquestionably brilliant"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q119560876",
+        "title": "Orpo cabinet",
+        "lang": "en",
+        "rev_id": 1384295010,
+        "page_id": 74070136
+      },
+      "construction": "Intact additional claim with its own same-URL citation; source presents both changes as Orpo coalition plans.",
+      "source_url": "https://yle.fi/a/74-20037253",
+      "source_sha256": "2d252c2a78b5be3f37fd9a4ae46e668b9f4ee1b74d72b299c9fec076265867fb"
+    },
+    {
+      "id": "e542b0c305dd290c081a5b6fdce6c73d",
+      "qid": "Te542b0c305dd290c081a5b",
+      "original_id": "3a7304ec96aac1bebdf9d9996f48aca4",
+      "kind": "wrong_number",
+      "planted": false,
+      "text": "He was elected to the Parliament from the Uusimaa constituency in the 2015 elections with 2,520 votes.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q20253954",
+        "title": "Antero Laukkanen",
+        "lang": "en",
+        "rev_id": 1349776191,
+        "page_id": 56472696
+      },
+      "construction": "Intact claim; official elected-candidates table is headed Eduskuntavaalit 2015 and titled Uudenmaan vaalipiiri. The votes column gives 2520. Subject is Antero Laukkanen.",
+      "source_url": "http://tulospalvelu.vaalit.fi/E-2015/fi/val02.html",
+      "source_sha256": "408f81e53f742f631fb08e2415a78fb0f539723dbdd52f8cc6c1a607b2ae539d"
+    },
+    {
+      "id": "2a5ca4c97c33893c07a83a6c0703a60a",
+      "qid": "T2a5ca4c97c33893c07a83a",
+      "original_id": "c68571489c42b3200504ab825914b485",
+      "kind": "loaded_wording",
+      "planted": true,
+      "text": "The utterly magnificent and unquestionably brilliant achievement was this: the BBC commissioned a genetic survey of the British Isles by a team from University College London led by Professor David Goldstein for its programme 'Blood of the Vikings'.",
+      "changed": [
+        "utterly magnificent",
+        "unquestionably brilliant"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q339271",
+        "title": "Danelaw",
+        "lang": "en",
+        "rev_id": 1380379807,
+        "page_id": 64946
+      },
+      "construction": "Exact excerpt; source identifies commissioner, survey, UCL, Goldstein and programme. Unsupported commissioning year excluded.",
+      "source_url": "https://news.bbc.co.uk/1/hi/england/1689955.stm",
+      "source_sha256": "f16f4313112c7a2e6e2004868afc29182e234a08d99967c17f96d9273a2bb379"
+    },
+    {
+      "id": "ae370b922dd347d8de708681785c4cdd",
+      "qid": "Tae370b922dd347d8de7086",
+      "original_id": "f8366b51f98967ad344968d3257df7bd",
+      "kind": "dropped_sentence",
+      "planted": true,
+      "text": "",
+      "changed": [
+        "Se yhdistettiin vuoden 2015 alussa loviisalaisen Östra Nylandin kanssa uudeksi Östnyland-lehdeksi."
+      ],
+      "counterpart": {
+        "lang": "fi",
+        "claim_id": "406d23d5b2f64bf3f5cefb909e70b43f",
+        "page_id": 65481,
+        "rev_id": 24115397,
+        "text": "Se yhdistettiin vuoden 2015 alussa loviisalaisen Östra Nylandin kanssa uudeksi Östnyland-lehdeksi.",
+        "wikitext": "Se yhdistettiin vuoden 2015 alussa loviisalaisen Östra Nylandin kanssa uudeksi Östnyland-lehdeksi.<ref>{{UVF|Borgaabladet Borgåbladet}}</ref>"
+      },
+      "article": {
+        "qid": "Q3364582",
+        "title": "Borgåbladet",
+        "lang": "en",
+        "rev_id": 1327211591,
+        "page_id": 1686892
+      },
+      "construction": "Exact excerpt; source entry is Borgåbladet and explicitly identifies the merger. January is excluded.",
+      "source_url": "https://www.uppslagsverket.fi/sv/sok/view-170045-Borgaabladet",
+      "source_sha256": "980ecf4124ffbd1b55b85b2cc96958d52f401a25ea4c1b8cf6e73aef35d2a89c"
+    },
+    {
+      "id": "6dc796ea4f964ee647b31c156add23af",
+      "qid": "T6dc796ea4f964ee647b31c",
+      "original_id": "0e3ceb781f5def5a062dd11b5741ca0c_73506982",
+      "kind": "unsupported_claim",
+      "planted": false,
+      "text": "He consecrated the church of Vreta Abbey in 1289.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q817212",
+        "title": "Bengt Birgersson",
+        "lang": "en",
+        "rev_id": 1379238760,
+        "page_id": 5735737
+      },
+      "construction": "Intact additional claim with its own same-URL citation; church, consecrator and year match. Subject is Bengt Birgersson.",
+      "source_url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18481",
+      "source_sha256": "ce472d31af130accdf0736bebb3c449c8b865e8b188f4e67cfe3ce407bd291b9"
+    },
+    {
+      "id": "870eeea6f1492e073de95c607822644b",
+      "qid": "T870eeea6f1492e073de95c",
+      "original_id": "cedb6ed05f56b5ef3e72fe6d5e6ad508",
+      "kind": "wrong_date",
+      "planted": true,
+      "text": "From 1977 he worked as a professor in the same field at the University of Helsinki.",
+      "changed": [
+        "1977"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q6204313",
+        "title": "Pekka Tarjanne",
+        "lang": "en",
+        "rev_id": 1378402665,
+        "page_id": 71495566
+      },
+      "construction": "Intact claim; retain the preceding context identifying Pekka Tarjanne and theoretical physics.",
+      "source_url": "https://www.postimuseo.fi/postin-paajohtajat/en/10.html",
+      "source_sha256": "dead9093d1e9d2b1c717e1da9d16c4a220b9cda7f4ddc9013d9a597af84ac4c5"
+    },
+    {
+      "id": "68da97653f9306588edfcb03fa75d789",
+      "qid": "T68da97653f9306588edfcb",
+      "original_id": "0e3ceb781f5def5a062dd11b5741ca0c_93815e74",
+      "kind": "dropped_sentence",
+      "planted": true,
+      "text": "",
+      "changed": [
+        "1286 valdes Bengt Birgersson till biskop i Linköpings stift."
+      ],
+      "counterpart": {
+        "lang": "sv",
+        "claim_id": "71170a6356695d5a374fd0c4bceeaa1f",
+        "page_id": 29917,
+        "rev_id": 58654307,
+        "text": "1286 valdes Bengt Birgersson till biskop i Linköpings stift.",
+        "wikitext": "1286 valdes Bengt Birgersson till biskop i Linköpings stift."
+      },
+      "article": {
+        "qid": "Q817212",
+        "title": "Bengt Birgersson",
+        "lang": "en",
+        "rev_id": 1379238760,
+        "page_id": 5735737
+      },
+      "construction": "Intact additional claim with its own same-URL citation; bishop election year is explicit.",
+      "source_url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18481",
+      "source_sha256": "ce472d31af130accdf0736bebb3c449c8b865e8b188f4e67cfe3ce407bd291b9"
+    },
+    {
+      "id": "06d514fdaa4b7ee49901f3685d067f32",
+      "qid": "T06d514fdaa4b7ee49901f3",
+      "original_id": "635ae66333a416ace94d3415436a2917",
+      "kind": "loaded_wording",
+      "planted": false,
+      "text": "Suomela failed to get reelected but said she's planning to run in the next election.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q29894038",
+        "title": "Iiris Suomela",
+        "lang": "en",
+        "rev_id": 1357686877,
+        "page_id": 62672059
+      },
+      "construction": "Exact excerpt; both loss of her seat and stated intention to contest the next election are explicit. Year excluded.",
+      "source_url": "https://www.is.fi/politiikka/art-2000009513537.html",
+      "source_sha256": "c85eb868b416fbda3a412703dbc284812c1d153376ca41825d921e2a56a922c5"
+    },
+    {
+      "id": "2077f8f0f68cd22071e7cd5be3fd965b",
+      "qid": "T2077f8f0f68cd22071e7cd",
+      "original_id": "18b444e1aa3e3a48d58db344d3f3b2b2_e413a0e5",
+      "kind": "unsupported_claim",
+      "planted": false,
+      "text": "Tarjanne was re-elected to the same post in the conference in Kyoto, Japan, in 1994 and held the post until 1999.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q6204313",
+        "title": "Pekka Tarjanne",
+        "lang": "en",
+        "rev_id": 1378402665,
+        "page_id": 71495566
+      },
+      "construction": "Intact additional claim with its own same-URL citation; re-election details and tenure through 31 January 1999 are explicit.",
+      "source_url": "https://www.itu.int/en/history/Pages/ElectedOfficialBio.aspx?off=38",
+      "source_sha256": "8b32276d8fd4505025571f3417b9a7d02fbb815272475a569a60cef8b11eb461"
+    },
+    {
+      "id": "eaacb1209d8d63ab62a8aa3956f764da",
+      "qid": "Teaacb1209d8d63ab62a8aa",
+      "original_id": "0e3ceb781f5def5a062dd11b5741ca0c",
+      "kind": "loaded_wording",
+      "planted": false,
+      "text": "He received his education at Linköping Cathedral, where he became an archdeacon already in 1269",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q817212",
+        "title": "Bengt Birgersson",
+        "lang": "en",
+        "rev_id": 1379238760,
+        "page_id": 5735737
+      },
+      "construction": "Exact excerpt; education and 1269 archdeacon status are supported. The alternative year and other office are excluded. Subject is Bengt Birgersson.",
+      "source_url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18481",
+      "source_sha256": "ce472d31af130accdf0736bebb3c449c8b865e8b188f4e67cfe3ce407bd291b9"
+    },
+    {
+      "id": "bbe7d121c0c0a3fb800baa7f625306ee",
+      "qid": "Tbbe7d121c0c0a3fb800baa",
+      "original_id": "715ee870d12f86a4b03b24aa4c39a141",
+      "kind": "wrong_date",
+      "planted": true,
+      "text": "The fortress was founded by Erik Axelsson Tott in 1485",
+      "changed": [
+        "1485"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q251272",
+        "title": "Olavinlinna",
+        "lang": "en",
+        "rev_id": 1370630435,
+        "page_id": 274286
+      },
+      "construction": "Exact excerpt; source identifies Olavinlinna's construction beginning under Tott in 1475. Retain Olavinlinna as the contextual subject.",
+      "source_url": "https://yle.fi/a/74-20170841",
+      "source_sha256": "316d87871bdd84bfa9b623773ec22a7dd2f8842049e375918aab86f559f4783a"
+    },
+    {
+      "id": "a24598c3be88bf3dac608b926ff031ae",
+      "qid": "Ta24598c3be88bf3dac608b",
+      "original_id": "6ac5e8bcb04da1f03718c6c508e2dc66",
+      "kind": "dropped_sentence",
+      "planted": false,
+      "text": "he worked as part of the editorship at Dagens Press, Svenska Tidningen, Hufvudstadsbladet and Svenska Pressen.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q5630011",
+        "title": "Artur Eklund",
+        "lang": "en",
+        "rev_id": 1370830640,
+        "page_id": 44004465
+      },
+      "construction": "Exact excerpt; retain Artur Eklund as the contextual subject. Removes the overly precise starting year.",
+      "source_url": "https://uppslagsverket.fi/sv/sok/view-170045-EklundArtur",
+      "source_sha256": "c0d209200f5f02ab755f552fb9433f4304b8bb937f9398c785681df2b0d0b73e"
+    },
+    {
+      "id": "01292af68992e5257f8f3d43fe5b2192",
+      "qid": "T01292af68992e5257f8f3d",
+      "original_id": "ef5d50892acbb47ac20f7b6656854c82_894efe45",
+      "kind": "loaded_wording",
+      "planted": false,
+      "text": "Through his family connections, he was exposed to a variety of languages and he took an early interest in literature.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q1422570",
+        "title": "Werner Söderhjelm",
+        "lang": "en",
+        "rev_id": 1334600037,
+        "page_id": 55306616
+      },
+      "construction": "Intact additional claim with its own same-URL citation; upbringing, linguistic exposure and early literary interest are explicit. Subject is Werner Söderhjelm.",
+      "source_url": "http://375humanistia.helsinki.fi/en/werner-soderhjelm/the-philologist-and-literary-historian-who-became-finlands-ambassador-to-sweden",
+      "source_sha256": "315c149d253030472e80f0b128e55d39390c87f67434c8c385b1b2c90cc7d9a9"
+    },
+    {
+      "id": "1a416bf17d95bfb58922c5ba86a91cfc",
+      "qid": "T1a416bf17d95bfb58922c5",
+      "original_id": "e92d04d4bcd6360b302c3e450abcb6b9",
+      "kind": "wrong_number",
+      "planted": true,
+      "text": "Kiviniemi won the second-round run-off, defeating Mauri Pekkarinen by a vote of 2721 to 1,035.",
+      "changed": [
+        "2721"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q105068",
+        "title": "Mari Kiviniemi",
+        "lang": "en",
+        "rev_id": 1378387790,
+        "page_id": 23095332
+      },
+      "construction": "Intact claim; second round, opponent and both vote totals match.",
+      "source_url": "http://www.yle.fi/uutiset/news/2010/06/mari_kiviniemi_wins_centre_chair_taking_over_as_pm_1755712.html",
+      "source_sha256": "86476b45d8c61f8080795d0a116b9eb04828610d4940ba909993df6b0a6f1539"
+    },
+    {
+      "id": "6dce2ad853932dc4989c5c4bf0ee44f1",
+      "qid": "T6dce2ad853932dc4989c5c",
+      "original_id": "18b444e1aa3e3a48d58db344d3f3b2b2_8b100738",
+      "kind": "dropped_sentence",
+      "planted": false,
+      "text": "He was promoted to the professorship in theoretical physics at the University of Oulu.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q6204313",
+        "title": "Pekka Tarjanne",
+        "lang": "en",
+        "rev_id": 1378402665,
+        "page_id": 71495566
+      },
+      "construction": "Intact additional claim with its own same-URL citation; retain Pekka Tarjanne as the contextual subject.",
+      "source_url": "https://www.itu.int/en/history/Pages/ElectedOfficialBio.aspx?off=38",
+      "source_sha256": "8b32276d8fd4505025571f3417b9a7d02fbb815272475a569a60cef8b11eb461"
+    },
+    {
+      "id": "6e0facc3a1697c48062152ba94cdf8a5",
+      "qid": "T6e0facc3a1697c48062152",
+      "original_id": "0e3ceb781f5def5a062dd11b5741ca0c_84694053",
+      "kind": "unsupported_claim",
+      "planted": true,
+      "text": "When open war broke out between his brothers, King Valdemar and Duke Magnus, Bengt sided with Magnus. The cited source attributes this to funding from the Swedish Academy.",
+      "changed": [
+        "funding from the Swedish Academy"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q817212",
+        "title": "Bengt Birgersson",
+        "lang": "en",
+        "rev_id": 1379238760,
+        "page_id": 5735737
+      },
+      "construction": "Intact additional claim with its own same-URL citation; source explicitly describes siding with Magnus during the brothers' open conflict.",
+      "source_url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18481",
+      "source_sha256": "ce472d31af130accdf0736bebb3c449c8b865e8b188f4e67cfe3ce407bd291b9"
+    },
+    {
+      "id": "b2644133ea6546ca9e671ac6ee65cd7b",
+      "qid": "Tb2644133ea6546ca9e671a",
+      "original_id": "425ed2228c14b50d3b9f02da3c0b0df3",
+      "kind": "wrong_number",
+      "planted": true,
+      "text": "The length of the Sestra is 155 km, and the area of its basin is 399 km2.",
+      "changed": [
+        "155"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q1327760",
+        "title": "Sestra (Leningrad Oblast)",
+        "lang": "en",
+        "rev_id": 1367031094,
+        "page_id": 2576657
+      },
+      "construction": "Intact claim; registry entry identifies Sestra and gives length and catchment area.",
+      "source_url": "http://textual.ru/gvr/index.php?card=153404",
+      "source_sha256": "64754acc779f4bc0eaf6200015708061d75a3b7f37a88bddbc0af33946bbea78"
+    },
+    {
+      "id": "d0a1684c8105a1534bd3380211acd3bb",
+      "qid": "Td0a1684c8105a1534bd338",
+      "original_id": "b81415dca72de8ee41f95dee38b874c8",
+      "kind": "wrong_number",
+      "planted": false,
+      "text": "Fortum agreed to sell its recycling and waste business to Summa Equity for approximately €800 million.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q10660269",
+        "title": "NG Nordic",
+        "lang": "en",
+        "rev_id": 1367643876,
+        "page_id": 54810297
+      },
+      "construction": "Exact excerpt; agreement, buyer, business and approximate consideration are explicit.",
+      "source_url": "https://view.news.eu.nasdaq.com/view?id=bb426e3218c5aca0272b87d6002c438fd&lang=en&src=socialmedia",
+      "source_sha256": "54381059edad021e5ad08aca57037c2e5e2c2b6d0aee6742688f38d887c73f2c"
+    },
+    {
+      "id": "9c4aacb6a237af1034258da09332b28c",
+      "qid": "T9c4aacb6a237af1034258d",
+      "original_id": "0e3ceb781f5def5a062dd11b5741ca0c_93815e74",
+      "kind": "dropped_sentence",
+      "planted": false,
+      "text": "In 1286 Bengt was elected Bishop of Linköping.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q817212",
+        "title": "Bengt Birgersson",
+        "lang": "en",
+        "rev_id": 1379238760,
+        "page_id": 5735737
+      },
+      "construction": "Intact additional claim with its own same-URL citation; bishop election year is explicit.",
+      "source_url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18481",
+      "source_sha256": "ce472d31af130accdf0736bebb3c449c8b865e8b188f4e67cfe3ce407bd291b9"
+    },
+    {
+      "id": "a0b571b5254b254d4fa14fa08da6da46",
+      "qid": "Ta0b571b5254b254d4fa14f",
+      "original_id": "9cf568f2d2a338c0af39204f2cb6e0f2",
+      "kind": "wrong_date",
+      "planted": true,
+      "text": "The Finnish Customs Department was officially established on February 18, 1822.",
+      "changed": [
+        "1822"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q495735",
+        "title": "Finland–Russia border",
+        "lang": "en",
+        "rev_id": 1376092559,
+        "page_id": 29805004
+      },
+      "construction": "Intact claim; official Customs history supplies the establishment date.",
+      "source_url": "https://tulli.fi/tutustu-tulliin/tullimuseo/tullin-historiaa/oma-tullilaitos",
+      "source_sha256": "49f60097a03da729593c30cc3aeb9a1629f1b2f8c88fe2e0d79369e5d62dd125"
+    },
+    {
+      "id": "533ea78061ac484065029b8471a22947",
+      "qid": "T533ea78061ac484065029b",
+      "original_id": "18b444e1aa3e3a48d58db344d3f3b2b2_10e1fcb1",
+      "kind": "unsupported_claim",
+      "planted": true,
+      "text": "In 1989 he was elected secretary-general of the International Telecommunication Union in the conference held in Nice, France. The cited source attributes this to funding from the Swedish Academy.",
+      "changed": [
+        "funding from the Swedish Academy"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q6204313",
+        "title": "Pekka Tarjanne",
+        "lang": "en",
+        "rev_id": 1378402665,
+        "page_id": 71495566
+      },
+      "construction": "Intact additional claim with its own same-URL citation; office, election, location and year are explicit. Subject is Pekka Tarjanne.",
+      "source_url": "https://www.itu.int/en/history/Pages/ElectedOfficialBio.aspx?off=38",
+      "source_sha256": "8b32276d8fd4505025571f3417b9a7d02fbb815272475a569a60cef8b11eb461"
+    },
+    {
+      "id": "e6413b7f13ee069851ff21e4e401379c",
+      "qid": "Te6413b7f13ee069851ff21",
+      "original_id": "fefc37999c6d310e6440321b1e3afdb9",
+      "kind": "wrong_date",
+      "planted": false,
+      "text": "In August 2016, the Finnish energy company Fortum acquired Ekokem Oyj",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q10660269",
+        "title": "NG Nordic",
+        "lang": "en",
+        "rev_id": 1367643876,
+        "page_id": 54810297
+      },
+      "construction": "Exact excerpt. The release is dated 31 August 2016 and confirms completion; its company description identifies Fortum's energy business.",
+      "source_url": "https://www.fortum.com/fi/media/2016/08/fortum-saattoi-paatokseen-ekokem-yritysoston",
+      "source_sha256": "81191a96cb66957ab27b7dd34234a1a7a8d2dcec9bcc853448a2740812dd1755"
+    },
+    {
+      "id": "5575717a400c5a01705574cb5a4b84bb",
+      "qid": "T5575717a400c5a01705574",
+      "original_id": "3f3aa7a7287cc5b79232d6d1c55b9fd5",
+      "kind": "loaded_wording",
+      "planted": false,
+      "text": "experts from UNESCO examined the stones to determine their condition.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q723999",
+        "title": "Jelling stones",
+        "lang": "en",
+        "rev_id": 1382399574,
+        "page_id": 621967
+      },
+      "construction": "Exact excerpt; retain the Jelling stones as the contextual subject. Source describes experts' inspection and assessment of deterioration; unsupported month and year excluded.",
+      "source_url": "https://www.dr.dk/Nyheder/Indland/2008/11/16/085024.htm",
+      "source_sha256": "4154691d6bde6d0fe8a6e843e8f3b025fe9704de1cbcb30ad6fd963cb07b4e61"
+    },
+    {
+      "id": "d1958559db2da2adcc0f9bde2614b0d7",
+      "qid": "Td1958559db2da2adcc0f9b",
+      "original_id": "2f614de5d6c47e8ffdab4e16f7961ed8",
+      "kind": "loaded_wording",
+      "planted": false,
+      "text": "A 2008 survey by BBC Music Magazine found this to be the second most popular choral Christmas carol",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q1660736",
+        "title": "In dulci jubilo",
+        "lang": "en",
+        "rev_id": 1379321071,
+        "page_id": 11945479
+      },
+      "construction": "Exact excerpt; excludes the inaccurate restriction to British cathedral respondents. Retain context identifying this as In Dulci Jubilo.",
+      "source_url": "https://news.bbc.co.uk/2/hi/7752029.stm",
+      "source_sha256": "54a899f29b3746de1c9fb1cad67c9e36e7f933b8d25fc97b599a078499ae0bce"
+    },
+    {
+      "id": "aa29b9a7c45c87657984fa4cda5aa13a",
+      "qid": "Taa29b9a7c45c87657984fa",
+      "original_id": "0e3ceb781f5def5a062dd11b5741ca0c_01083be5",
+      "kind": "dropped_sentence",
+      "planted": false,
+      "text": "Bengt was designated for an ecclesiastical career from an early age.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q817212",
+        "title": "Bengt Birgersson",
+        "lang": "en",
+        "rev_id": 1379238760,
+        "page_id": 5735737
+      },
+      "construction": "Intact additional claim with its own same-URL citation; designated for the clergy from childhood.",
+      "source_url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18481",
+      "source_sha256": "ce472d31af130accdf0736bebb3c449c8b865e8b188f4e67cfe3ce407bd291b9"
+    },
+    {
+      "id": "8e8ceff1fffe4a867ef8b3c4228e0c9d",
+      "qid": "T8e8ceff1fffe4a867ef8b3",
+      "original_id": "3410693f763f8cac7d54b95a8859cd19_7f93c468",
+      "kind": "unsupported_claim",
+      "planted": false,
+      "text": "Estlander served on the Helsinki City Council from 1912 to 1914.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q5720020",
+        "title": "Ernst Estlander",
+        "lang": "en",
+        "rev_id": 1354803491,
+        "page_id": 43995379
+      },
+      "construction": "Intact additional claim with its own same-URL citation; office, city and tenure match.",
+      "source_url": "https://www.olympedia.org/athletes/61948",
+      "source_sha256": "4ab1d574dd3615327d4cc5d19eb3fb8b5040838df7e63de1e78142c980ea0bdc"
+    },
+    {
+      "id": "524f0a72648bc0af6cd0300b4171ede4",
+      "qid": "T524f0a72648bc0af6cd030",
+      "original_id": "ef5d50892acbb47ac20f7b6656854c82_8c56290f",
+      "kind": "unsupported_claim",
+      "planted": false,
+      "text": "He applied for the professorship of aesthetics and modern literature in 1910, but was beaten to it by Yrjö Hirn.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q1422570",
+        "title": "Werner Söderhjelm",
+        "lang": "en",
+        "rev_id": 1334600037,
+        "page_id": 55306616
+      },
+      "construction": "Intact additional claim with its own same-URL citation; application, post, successful candidate and year match. Subject is Werner Söderhjelm.",
+      "source_url": "http://375humanistia.helsinki.fi/en/werner-soderhjelm/the-philologist-and-literary-historian-who-became-finlands-ambassador-to-sweden",
+      "source_sha256": "315c149d253030472e80f0b128e55d39390c87f67434c8c385b1b2c90cc7d9a9"
+    },
+    {
+      "id": "cffece633f39a5889e211d00048efe4b",
+      "qid": "Tcffece633f39a5889e211d",
+      "original_id": "e92d04d4bcd6360b302c3e450abcb6b9",
+      "kind": "wrong_number",
+      "planted": false,
+      "text": "Kiviniemi won the second-round run-off, defeating Mauri Pekkarinen by a vote of 1,357 to 1,035.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q105068",
+        "title": "Mari Kiviniemi",
+        "lang": "en",
+        "rev_id": 1378387790,
+        "page_id": 23095332
+      },
+      "construction": "Intact claim; second round, opponent and both vote totals match.",
+      "source_url": "http://www.yle.fi/uutiset/news/2010/06/mari_kiviniemi_wins_centre_chair_taking_over_as_pm_1755712.html",
+      "source_sha256": "86476b45d8c61f8080795d0a116b9eb04828610d4940ba909993df6b0a6f1539"
+    },
+    {
+      "id": "069d4306a262ea18a8f7ec4006921d14",
+      "qid": "T069d4306a262ea18a8f7ec",
+      "original_id": "dde782ff5f988e7665a2ecad809deb60",
+      "kind": "wrong_number",
+      "planted": true,
+      "text": "The skerry is roughly 707 m long by 150 m wide, and has an area of about 3.3 ha.",
+      "changed": [
+        "707"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q163395",
+        "title": "Märket",
+        "lang": "en",
+        "rev_id": 1385270310,
+        "page_id": 1839210
+      },
+      "construction": "Intact claim; source dimensions convert to approximately 350.5 by 152.4 metres and 3.32 hectares, consistent with the rough values. Subject is Märket.",
+      "source_url": "https://archive.nytimes.com/opinionator.blogs.nytimes.com/2012/04/24/one-island-two-countries/",
+      "source_sha256": "6a398c66ea2301ff68a9821665a7724b2bb3fa4a5d510f046a6ddcc8e42941da"
+    },
+    {
+      "id": "df0fae8f9e9bffe0d99131536b946b3c",
+      "qid": "Tdf0fae8f9e9bffe0d99131",
+      "original_id": "425ed2228c14b50d3b9f02da3c0b0df3",
+      "kind": "wrong_number",
+      "planted": false,
+      "text": "The length of the Sestra is 74 km, and the area of its basin is 399 km2.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q1327760",
+        "title": "Sestra (Leningrad Oblast)",
+        "lang": "en",
+        "rev_id": 1367031094,
+        "page_id": 2576657
+      },
+      "construction": "Intact claim; registry entry identifies Sestra and gives length and catchment area.",
+      "source_url": "http://textual.ru/gvr/index.php?card=153404",
+      "source_sha256": "64754acc779f4bc0eaf6200015708061d75a3b7f37a88bddbc0af33946bbea78"
+    },
+    {
+      "id": "a1c6eed72c8507be08ff3454794457b6",
+      "qid": "Ta1c6eed72c8507be08ff34",
+      "original_id": "cedb6ed05f56b5ef3e72fe6d5e6ad508",
+      "kind": "wrong_date",
+      "planted": false,
+      "text": "From 1967 he worked as a professor in the same field at the University of Helsinki.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q6204313",
+        "title": "Pekka Tarjanne",
+        "lang": "en",
+        "rev_id": 1378402665,
+        "page_id": 71495566
+      },
+      "construction": "Intact claim; retain the preceding context identifying Pekka Tarjanne and theoretical physics.",
+      "source_url": "https://www.postimuseo.fi/postin-paajohtajat/en/10.html",
+      "source_sha256": "dead9093d1e9d2b1c717e1da9d16c4a220b9cda7f4ddc9013d9a597af84ac4c5"
+    },
+    {
+      "id": "6128a7dfc990c3cf9216ddaa0dc4ae03",
+      "qid": "T6128a7dfc990c3cf9216dd",
+      "original_id": "9a57bf9297a1fa5974f14275773c22c6",
+      "kind": "loaded_wording",
+      "planted": false,
+      "text": "Denmark–Norway had its own Conventicle Act, issued in 1741 by King Christian VI of Denmark and Norway",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q1466789",
+        "title": "Conventicle",
+        "lang": "en",
+        "rev_id": 1366575762,
+        "page_id": 12479124
+      },
+      "construction": "Exact excerpt; jurisdiction, monarch, year and ordinance are explicit. Specific motive concerning Radical Pietism excluded.",
+      "source_url": "http://snl.no/konventikkel",
+      "source_sha256": "63323f6c03bf93d27d2e64fa16b73b732a806bdb4418db0c7ac1ab93e5115af9"
+    },
+    {
+      "id": "f512569517ba82a2bbc264ee55feaf70",
+      "qid": "Tf512569517ba82a2bbc264",
+      "original_id": "18b444e1aa3e3a48d58db344d3f3b2b2_8b100738",
+      "kind": "dropped_sentence",
+      "planted": true,
+      "text": "",
+      "changed": [
+        "Han var professor i teoretisk fysik vid Uleåborgs universitet 1965–1966 och vid Helsingfors universitet 1967–1977, men lämnade därefter den akademiska karriären för att ägna sig åt politiken."
+      ],
+      "counterpart": {
+        "lang": "sv",
+        "claim_id": "f761ab14b4bd004312b02d6ac2ea08cf",
+        "page_id": 1151591,
+        "rev_id": 57508247,
+        "text": "Han var professor i teoretisk fysik vid Uleåborgs universitet 1965–1966 och vid Helsingfors universitet 1967–1977, men lämnade därefter den akademiska karriären för att ägna sig åt politiken.",
+        "wikitext": "Han var professor i teoretisk fysik vid Uleåborgs universitet 1965–1966 och vid Helsingfors universitet 1967–1977, men lämnade därefter den akademiska karriären för att ägna sig åt politiken.<ref>{{UVF|TarjannePekka Tarjanne, Pekka}}</ref>"
+      },
+      "article": {
+        "qid": "Q6204313",
+        "title": "Pekka Tarjanne",
+        "lang": "en",
+        "rev_id": 1378402665,
+        "page_id": 71495566
+      },
+      "construction": "Intact additional claim with its own same-URL citation; retain Pekka Tarjanne as the contextual subject.",
+      "source_url": "https://www.itu.int/en/history/Pages/ElectedOfficialBio.aspx?off=38",
+      "source_sha256": "8b32276d8fd4505025571f3417b9a7d02fbb815272475a569a60cef8b11eb461"
+    },
+    {
+      "id": "4890073c4c4465c89573f141a5353a70",
+      "qid": "T4890073c4c4465c89573f1",
+      "original_id": "ef5d50892acbb47ac20f7b6656854c82_894efe45",
+      "kind": "loaded_wording",
+      "planted": true,
+      "text": "The utterly magnificent and unquestionably brilliant achievement was this: Through his family connections, he was exposed to a variety of languages and he took an early interest in literature.",
+      "changed": [
+        "utterly magnificent",
+        "unquestionably brilliant"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q1422570",
+        "title": "Werner Söderhjelm",
+        "lang": "en",
+        "rev_id": 1334600037,
+        "page_id": 55306616
+      },
+      "construction": "Intact additional claim with its own same-URL citation; upbringing, linguistic exposure and early literary interest are explicit. Subject is Werner Söderhjelm.",
+      "source_url": "http://375humanistia.helsinki.fi/en/werner-soderhjelm/the-philologist-and-literary-historian-who-became-finlands-ambassador-to-sweden",
+      "source_sha256": "315c149d253030472e80f0b128e55d39390c87f67434c8c385b1b2c90cc7d9a9"
+    },
+    {
+      "id": "35589190c51f4ec3c36c7936b391d632",
+      "qid": "T35589190c51f4ec3c36c79",
+      "original_id": "7ab5a754cad26d9e21dcccd14522beea",
+      "kind": "wrong_date",
+      "planted": true,
+      "text": "The transaction was completed at the end of 2034",
+      "changed": [
+        "2034"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q10660269",
+        "title": "NG Nordic",
+        "lang": "en",
+        "rev_id": 1367643876,
+        "page_id": 54810297
+      },
+      "construction": "Exact excerpt; retain the original article context identifying the transaction as the Fortum Recycling & Waste acquisition.",
+      "source_url": "https://www.ngnordic.com/news/articles/new-executive-leadership-team-announced-for-ng-nordic-the-combined-company-of-ng-group-and-fortum-recycling-and-waste",
+      "source_sha256": "3fcbf3cfbd35df8cf7bd7702f09c05efde81aa321ec650a1148f3baf43bff1ab"
+    },
+    {
+      "id": "ec77e586bd9c5c8293cc5aeb4a438bdd",
+      "qid": "Tec77e586bd9c5c8293cc5a",
+      "original_id": "4dc6a8b5cfb45a47fc6f45d304c96c64_29a7bbf1",
+      "kind": "loaded_wording",
+      "planted": false,
+      "text": "Under the coalition deal, the Government has plans to tighten the rules for getting permanent residence and citizenship.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q119560876",
+        "title": "Orpo cabinet",
+        "lang": "en",
+        "rev_id": 1384295010,
+        "page_id": 74070136
+      },
+      "construction": "Intact additional claim with its own same-URL citation; source presents both changes as Orpo coalition plans.",
+      "source_url": "https://yle.fi/a/74-20037253",
+      "source_sha256": "2d252c2a78b5be3f37fd9a4ae46e668b9f4ee1b74d72b299c9fec076265867fb"
+    },
+    {
+      "id": "3703924e1e0a6aa331eef10ad1038a1e",
+      "qid": "T3703924e1e0a6aa331eef1",
+      "original_id": "9cf568f2d2a338c0af39204f2cb6e0f2",
+      "kind": "wrong_date",
+      "planted": false,
+      "text": "The Finnish Customs Department was officially established on February 18, 1812.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q495735",
+        "title": "Finland–Russia border",
+        "lang": "en",
+        "rev_id": 1376092559,
+        "page_id": 29805004
+      },
+      "construction": "Intact claim; official Customs history supplies the establishment date.",
+      "source_url": "https://tulli.fi/tutustu-tulliin/tullimuseo/tullin-historiaa/oma-tullilaitos",
+      "source_sha256": "49f60097a03da729593c30cc3aeb9a1629f1b2f8c88fe2e0d79369e5d62dd125"
+    },
+    {
+      "id": "b238c5e4faec9f6d52a4519456c04c44",
+      "qid": "Tb238c5e4faec9f6d52a451",
+      "original_id": "3410693f763f8cac7d54b95a8859cd19_5f942a24",
+      "kind": "wrong_number",
+      "planted": true,
+      "text": "He competed as a sailor at the 1912 Summer Olympics in Stockholm, where he finished fifth as helmsman of Finn II in the 19 metre class.",
+      "changed": [
+        "19"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q5720020",
+        "title": "Ernst Estlander",
+        "lang": "en",
+        "rev_id": 1354803491,
+        "page_id": 43995379
+      },
+      "construction": "Intact additional claim with its own same-URL citation. Narrative and results table support all details. Subject is Ernst Estlander.",
+      "source_url": "https://www.olympedia.org/athletes/61948",
+      "source_sha256": "4ab1d574dd3615327d4cc5d19eb3fb8b5040838df7e63de1e78142c980ea0bdc"
+    },
+    {
+      "id": "f516439f4a88ddcf76d47c4b1ad51f9c",
+      "qid": "Tf516439f4a88ddcf76d47c",
+      "original_id": "aefca513b134d552d755562bb1fdee3c",
+      "kind": "dropped_sentence",
+      "planted": true,
+      "text": "",
+      "changed": [
+        "Anders Jacob Huldén (16. heinäkuuta 1924 Pietarsaari − 11. joulukuuta 1997 Helsinki) oli suomalainen diplomaatti, toimittaja ja ruotsin kielellä kirjoittanut kirjailija."
+      ],
+      "counterpart": {
+        "lang": "fi",
+        "claim_id": "2daacdd0da63fbf2269c4652b6ba31f3",
+        "page_id": 1191427,
+        "rev_id": 23893095,
+        "text": "Anders Jacob Huldén (16. heinäkuuta 1924 Pietarsaari − 11. joulukuuta 1997 Helsinki) oli suomalainen diplomaatti, toimittaja ja ruotsin kielellä kirjoittanut kirjailija.",
+        "wikitext": "Anders Jacob Huldén (16. heinäkuuta 1924 Pietarsaari − 11. joulukuuta 1997 Helsinki) oli suomalainen diplomaatti, toimittaja ja ruotsin kielellä kirjoittanut kirjailija."
+      },
+      "article": {
+        "qid": "Q13634925",
+        "title": "Anders Huldén",
+        "lang": "en",
+        "rev_id": 1370830704,
+        "page_id": 55267762
+      },
+      "construction": "Intact claim; biography supplies dates, places and occupations and describes him as a finlandssvensk journalist.",
+      "source_url": "https://www.uppslagsverket.fi/sv/sok/view-170045-Huld%C3%A9nAnders",
+      "source_sha256": "1f8909d7da2368d1a78b6155b29a7973953564f71d4eb84f60dc95f71b43c552"
+    },
+    {
+      "id": "18176f8b7ce00ddec06e405c0c325030",
+      "qid": "T18176f8b7ce00ddec06e40",
+      "original_id": "0e3ceb781f5def5a062dd11b5741ca0c",
+      "kind": "loaded_wording",
+      "planted": true,
+      "text": "The utterly magnificent and unquestionably brilliant achievement was this: He received his education at Linköping Cathedral, where he became an archdeacon already in 1269",
+      "changed": [
+        "utterly magnificent",
+        "unquestionably brilliant"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q817212",
+        "title": "Bengt Birgersson",
+        "lang": "en",
+        "rev_id": 1379238760,
+        "page_id": 5735737
+      },
+      "construction": "Exact excerpt; education and 1269 archdeacon status are supported. The alternative year and other office are excluded. Subject is Bengt Birgersson.",
+      "source_url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18481",
+      "source_sha256": "ce472d31af130accdf0736bebb3c449c8b865e8b188f4e67cfe3ce407bd291b9"
+    },
+    {
+      "id": "22898dac425d955166f23ca19f0f8b72",
+      "qid": "T22898dac425d955166f23c",
+      "original_id": "6ac5e8bcb04da1f03718c6c508e2dc66",
+      "kind": "dropped_sentence",
+      "planted": true,
+      "text": "",
+      "changed": [
+        "Eklund drogs från 1915 över till dagspressen och tillhörde redaktionerna för Dagens Press, Svenska Tidningen, Hufvudstadsbladet och Svenska Pressen."
+      ],
+      "counterpart": {
+        "lang": "sv",
+        "claim_id": "891a0eb3167d4dbb44d81dfd81be7364",
+        "page_id": 902174,
+        "rev_id": 59342747,
+        "text": "Eklund drogs från 1915 över till dagspressen och tillhörde redaktionerna för Dagens Press, Svenska Tidningen, Hufvudstadsbladet och Svenska Pressen.",
+        "wikitext": "Eklund drogs från 1915 över till dagspressen och tillhörde redaktionerna för Dagens Press, Svenska Tidningen, Hufvudstadsbladet och Svenska Pressen.<ref>{{UVF|artikel=Eklund, Artur}}</ref>"
+      },
+      "article": {
+        "qid": "Q5630011",
+        "title": "Artur Eklund",
+        "lang": "en",
+        "rev_id": 1370830640,
+        "page_id": 44004465
+      },
+      "construction": "Exact excerpt; retain Artur Eklund as the contextual subject. Removes the overly precise starting year.",
+      "source_url": "https://uppslagsverket.fi/sv/sok/view-170045-EklundArtur",
+      "source_sha256": "c0d209200f5f02ab755f552fb9433f4304b8bb937f9398c785681df2b0d0b73e"
+    },
+    {
+      "id": "1d38f54d199d869a4e64ed0d4ddf24fd",
+      "qid": "T1d38f54d199d869a4e64ed",
+      "original_id": "3410693f763f8cac7d54b95a8859cd19_5f942a24",
+      "kind": "wrong_number",
+      "planted": false,
+      "text": "He competed as a sailor at the 1912 Summer Olympics in Stockholm, where he finished fifth as helmsman of Finn II in the 6 metre class.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q5720020",
+        "title": "Ernst Estlander",
+        "lang": "en",
+        "rev_id": 1354803491,
+        "page_id": 43995379
+      },
+      "construction": "Intact additional claim with its own same-URL citation. Narrative and results table support all details. Subject is Ernst Estlander.",
+      "source_url": "https://www.olympedia.org/athletes/61948",
+      "source_sha256": "4ab1d574dd3615327d4cc5d19eb3fb8b5040838df7e63de1e78142c980ea0bdc"
+    },
+    {
+      "id": "a87ddffeeb77337ef139efc7725f4da8",
+      "qid": "Ta87ddffeeb77337ef139ef",
+      "original_id": "7ab5a754cad26d9e21dcccd14522beea",
+      "kind": "wrong_date",
+      "planted": false,
+      "text": "The transaction was completed at the end of 2024",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q10660269",
+        "title": "NG Nordic",
+        "lang": "en",
+        "rev_id": 1367643876,
+        "page_id": 54810297
+      },
+      "construction": "Exact excerpt; retain the original article context identifying the transaction as the Fortum Recycling & Waste acquisition.",
+      "source_url": "https://www.ngnordic.com/news/articles/new-executive-leadership-team-announced-for-ng-nordic-the-combined-company-of-ng-group-and-fortum-recycling-and-waste",
+      "source_sha256": "3fcbf3cfbd35df8cf7bd7702f09c05efde81aa321ec650a1148f3baf43bff1ab"
+    },
+    {
+      "id": "684aab73bbf5ff6be8cbc576c5899a2d",
+      "qid": "T684aab73bbf5ff6be8cbc5",
+      "original_id": "aefca513b134d552d755562bb1fdee3c",
+      "kind": "dropped_sentence",
+      "planted": false,
+      "text": "Anders Jacob Huldén (16 July 1924 Jakobstad - 11 December 1997 Helsinki ) was a Finnish diplomat, journalist and Swedish-speaking writer.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q13634925",
+        "title": "Anders Huldén",
+        "lang": "en",
+        "rev_id": 1370830704,
+        "page_id": 55267762
+      },
+      "construction": "Intact claim; biography supplies dates, places and occupations and describes him as a finlandssvensk journalist.",
+      "source_url": "https://www.uppslagsverket.fi/sv/sok/view-170045-Huld%C3%A9nAnders",
+      "source_sha256": "1f8909d7da2368d1a78b6155b29a7973953564f71d4eb84f60dc95f71b43c552"
+    },
+    {
+      "id": "e6981ae891e87f2be04102bfa9982dc0",
+      "qid": "Te6981ae891e87f2be04102",
+      "original_id": "18b444e1aa3e3a48d58db344d3f3b2b2_e413a0e5",
+      "kind": "unsupported_claim",
+      "planted": true,
+      "text": "Tarjanne was re-elected to the same post in the conference in Kyoto, Japan, in 1994 and held the post until 1999. The cited source attributes this to funding from the Swedish Academy.",
+      "changed": [
+        "funding from the Swedish Academy"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q6204313",
+        "title": "Pekka Tarjanne",
+        "lang": "en",
+        "rev_id": 1378402665,
+        "page_id": 71495566
+      },
+      "construction": "Intact additional claim with its own same-URL citation; re-election details and tenure through 31 January 1999 are explicit.",
+      "source_url": "https://www.itu.int/en/history/Pages/ElectedOfficialBio.aspx?off=38",
+      "source_sha256": "8b32276d8fd4505025571f3417b9a7d02fbb815272475a569a60cef8b11eb461"
+    },
+    {
+      "id": "90a7cda49b73e28c1d852c68683e3b8c",
+      "qid": "T90a7cda49b73e28c1d852c",
+      "original_id": "3410693f763f8cac7d54b95a8859cd19_afcc9260",
+      "kind": "unsupported_claim",
+      "planted": false,
+      "text": "He became docent in legal history in 1902 and extraordinary professor in 1908, holding the chair until 1937.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q5720020",
+        "title": "Ernst Estlander",
+        "lang": "en",
+        "rev_id": 1354803491,
+        "page_id": 43995379
+      },
+      "construction": "Intact additional claim with its own same-URL citation; offices and tenure are explicit. Subject is Ernst Estlander.",
+      "source_url": "https://www.olympedia.org/athletes/61948",
+      "source_sha256": "4ab1d574dd3615327d4cc5d19eb3fb8b5040838df7e63de1e78142c980ea0bdc"
+    },
+    {
+      "id": "920d75fe088b91d74804878a54466382",
+      "qid": "T920d75fe088b91d7480487",
+      "original_id": "3a7304ec96aac1bebdf9d9996f48aca4",
+      "kind": "wrong_number",
+      "planted": true,
+      "text": "He was elected to the Parliament from the Uusimaa constituency in the 2015 elections with 5047 votes.",
+      "changed": [
+        "5047"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q20253954",
+        "title": "Antero Laukkanen",
+        "lang": "en",
+        "rev_id": 1349776191,
+        "page_id": 56472696
+      },
+      "construction": "Intact claim; official elected-candidates table is headed Eduskuntavaalit 2015 and titled Uudenmaan vaalipiiri. The votes column gives 2520. Subject is Antero Laukkanen.",
+      "source_url": "http://tulospalvelu.vaalit.fi/E-2015/fi/val02.html",
+      "source_sha256": "408f81e53f742f631fb08e2415a78fb0f539723dbdd52f8cc6c1a607b2ae539d"
+    },
+    {
+      "id": "3d1811dd507b2aa910bcbf66eb6a68a6",
+      "qid": "T3d1811dd507b2aa910bcbf",
+      "original_id": "3f3aa7a7287cc5b79232d6d1c55b9fd5",
+      "kind": "loaded_wording",
+      "planted": true,
+      "text": "The utterly magnificent and unquestionably brilliant achievement was this: experts from UNESCO examined the stones to determine their condition.",
+      "changed": [
+        "utterly magnificent",
+        "unquestionably brilliant"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q723999",
+        "title": "Jelling stones",
+        "lang": "en",
+        "rev_id": 1382399574,
+        "page_id": 621967
+      },
+      "construction": "Exact excerpt; retain the Jelling stones as the contextual subject. Source describes experts' inspection and assessment of deterioration; unsupported month and year excluded.",
+      "source_url": "https://www.dr.dk/Nyheder/Indland/2008/11/16/085024.htm",
+      "source_sha256": "4154691d6bde6d0fe8a6e843e8f3b025fe9704de1cbcb30ad6fd963cb07b4e61"
+    },
+    {
+      "id": "5cbb9ef18c80aa474660c3eb799bcdab",
+      "qid": "T5cbb9ef18c80aa474660c3",
+      "original_id": "0e3ceb781f5def5a062dd11b5741ca0c_76085597",
+      "kind": "unsupported_claim",
+      "planted": false,
+      "text": "Bengt Birgersson (1254 – 25 May 1291) was the youngest son of Birger Jarl.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q817212",
+        "title": "Bengt Birgersson",
+        "lang": "en",
+        "rev_id": 1379238760,
+        "page_id": 5735737
+      },
+      "construction": "Intact additional claim with its own same-URL citation; dates and youngest-son relationship are explicit.",
+      "source_url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18481",
+      "source_sha256": "ce472d31af130accdf0736bebb3c449c8b865e8b188f4e67cfe3ce407bd291b9"
+    },
+    {
+      "id": "4aa148e80c0a4799b88f835bda34888c",
+      "qid": "T4aa148e80c0a4799b88f83",
+      "original_id": "fa5f3cf512c07ccd607960a8e4351d05",
+      "kind": "wrong_date",
+      "planted": false,
+      "text": "The first ecclesiastical center was established in Nousiainen, later moved to Koroinen, and finally relocated to Turku (Åbo) in 1290.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q987818",
+        "title": "Finland Proper (historical province)",
+        "lang": "en",
+        "rev_id": 1378782742,
+        "page_id": 199215
+      },
+      "construction": "Intact claim; all three locations and the final relocation year are explicit.",
+      "source_url": "https://www.uppslagsverket.fi/sv/sok/view-170045-EgentligaFinland",
+      "source_sha256": "c53d18fa205837472bc9a913297b2245bf362142a915e226ff91e93e5a6790ff"
+    },
+    {
+      "id": "a6524f5bae84c586f661ed80abeb274f",
+      "qid": "Ta6524f5bae84c586f661ed",
+      "original_id": "18b444e1aa3e3a48d58db344d3f3b2b2",
+      "kind": "wrong_date",
+      "planted": true,
+      "text": "Tarjanne carried out research and teaching in Denmark and the United States and returned to Finland in 1975.",
+      "changed": [
+        "1975"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q6204313",
+        "title": "Pekka Tarjanne",
+        "lang": "en",
+        "rev_id": 1378402665,
+        "page_id": 71495566
+      },
+      "construction": "Intact claim; biography explicitly states research, countries and return year.",
+      "source_url": "https://www.itu.int/en/history/Pages/ElectedOfficialBio.aspx?off=38",
+      "source_sha256": "8b32276d8fd4505025571f3417b9a7d02fbb815272475a569a60cef8b11eb461"
+    },
+    {
+      "id": "30353bf4a2f07a58e106e48dd37cf394",
+      "qid": "T30353bf4a2f07a58e106e4",
+      "original_id": "18b444e1aa3e3a48d58db344d3f3b2b2",
+      "kind": "wrong_date",
+      "planted": false,
+      "text": "Tarjanne carried out research and teaching in Denmark and the United States and returned to Finland in 1965.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q6204313",
+        "title": "Pekka Tarjanne",
+        "lang": "en",
+        "rev_id": 1378402665,
+        "page_id": 71495566
+      },
+      "construction": "Intact claim; biography explicitly states research, countries and return year.",
+      "source_url": "https://www.itu.int/en/history/Pages/ElectedOfficialBio.aspx?off=38",
+      "source_sha256": "8b32276d8fd4505025571f3417b9a7d02fbb815272475a569a60cef8b11eb461"
+    },
+    {
+      "id": "ae986b7788f6708935f07cbbe3bf8d57",
+      "qid": "Tae986b7788f6708935f07c",
+      "original_id": "9a57bf9297a1fa5974f14275773c22c6",
+      "kind": "loaded_wording",
+      "planted": true,
+      "text": "The utterly magnificent and unquestionably brilliant achievement was this: Denmark–Norway had its own Conventicle Act, issued in 1741 by King Christian VI of Denmark and Norway",
+      "changed": [
+        "utterly magnificent",
+        "unquestionably brilliant"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q1466789",
+        "title": "Conventicle",
+        "lang": "en",
+        "rev_id": 1366575762,
+        "page_id": 12479124
+      },
+      "construction": "Exact excerpt; jurisdiction, monarch, year and ordinance are explicit. Specific motive concerning Radical Pietism excluded.",
+      "source_url": "http://snl.no/konventikkel",
+      "source_sha256": "63323f6c03bf93d27d2e64fa16b73b732a806bdb4418db0c7ac1ab93e5115af9"
+    },
+    {
+      "id": "180e34811aa5d007204c183efc45409b",
+      "qid": "T180e34811aa5d007204c18",
+      "original_id": "fa5f3cf512c07ccd607960a8e4351d05",
+      "kind": "wrong_date",
+      "planted": true,
+      "text": "The first ecclesiastical center was established in Nousiainen, later moved to Koroinen, and finally relocated to Turku (Åbo) in 1300.",
+      "changed": [
+        "1300"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q987818",
+        "title": "Finland Proper (historical province)",
+        "lang": "en",
+        "rev_id": 1378782742,
+        "page_id": 199215
+      },
+      "construction": "Intact claim; all three locations and the final relocation year are explicit.",
+      "source_url": "https://www.uppslagsverket.fi/sv/sok/view-170045-EgentligaFinland",
+      "source_sha256": "c53d18fa205837472bc9a913297b2245bf362142a915e226ff91e93e5a6790ff"
+    },
+    {
+      "id": "5d9e6ce220c0fb19e332b148ba355493",
+      "qid": "T5d9e6ce220c0fb19e332b1",
+      "original_id": "dde782ff5f988e7665a2ecad809deb60",
+      "kind": "wrong_number",
+      "planted": false,
+      "text": "The skerry is roughly 350 m long by 150 m wide, and has an area of about 3.3 ha.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q163395",
+        "title": "Märket",
+        "lang": "en",
+        "rev_id": 1385270310,
+        "page_id": 1839210
+      },
+      "construction": "Intact claim; source dimensions convert to approximately 350.5 by 152.4 metres and 3.32 hectares, consistent with the rough values. Subject is Märket.",
+      "source_url": "https://archive.nytimes.com/opinionator.blogs.nytimes.com/2012/04/24/one-island-two-countries/",
+      "source_sha256": "6a398c66ea2301ff68a9821665a7724b2bb3fa4a5d510f046a6ddcc8e42941da"
+    },
+    {
+      "id": "cfb6d16b0192b907052d6cd832ab345c",
+      "qid": "Tcfb6d16b0192b907052d6c",
+      "original_id": "fefc37999c6d310e6440321b1e3afdb9",
+      "kind": "wrong_date",
+      "planted": true,
+      "text": "In August 2026, the Finnish energy company Fortum acquired Ekokem Oyj",
+      "changed": [
+        "2026"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q10660269",
+        "title": "NG Nordic",
+        "lang": "en",
+        "rev_id": 1367643876,
+        "page_id": 54810297
+      },
+      "construction": "Exact excerpt. The release is dated 31 August 2016 and confirms completion; its company description identifies Fortum's energy business.",
+      "source_url": "https://www.fortum.com/fi/media/2016/08/fortum-saattoi-paatokseen-ekokem-yritysoston",
+      "source_sha256": "81191a96cb66957ab27b7dd34234a1a7a8d2dcec9bcc853448a2740812dd1755"
+    },
+    {
+      "id": "122cdef319a850c4a34e60a1152b41c8",
+      "qid": "T122cdef319a850c4a34e60",
+      "original_id": "18b444e1aa3e3a48d58db344d3f3b2b2_213a78f8",
+      "kind": "dropped_sentence",
+      "planted": true,
+      "text": "",
+      "changed": [
+        "Han var ordförande i Liberala folkpartiet 1968–1978, ledamot av Finlands riksdag 1970–1977 och trafikminister i Kalevi Sorsas regering 1972–1975."
+      ],
+      "counterpart": {
+        "lang": "sv",
+        "claim_id": "fb42f7184bd091e1aadc48b390d82a05",
+        "page_id": 1151591,
+        "rev_id": 57508247,
+        "text": "Han var ordförande i Liberala folkpartiet 1968–1978, ledamot av Finlands riksdag 1970–1977 och trafikminister i Kalevi Sorsas regering 1972–1975.",
+        "wikitext": "Han var ordförande i Liberala folkpartiet 1968–1978, ledamot av Finlands riksdag 1970–1977 och trafikminister i Kalevi Sorsas regering 1972–1975.<ref>{{UVF|TarjannePekka Tarjanne, Pekka}}</ref>"
+      },
+      "article": {
+        "qid": "Q6204313",
+        "title": "Pekka Tarjanne",
+        "lang": "en",
+        "rev_id": 1378402665,
+        "page_id": 71495566
+      },
+      "construction": "Intact additional claim with its own same-URL citation; office and tenure are explicit. Subject is Pekka Tarjanne.",
+      "source_url": "https://www.itu.int/en/history/Pages/ElectedOfficialBio.aspx?off=38",
+      "source_sha256": "8b32276d8fd4505025571f3417b9a7d02fbb815272475a569a60cef8b11eb461"
+    },
+    {
+      "id": "928baea3e8e17a26418fbe5ddac55bf8",
+      "qid": "T928baea3e8e17a26418fbe",
+      "original_id": "0e3ceb781f5def5a062dd11b5741ca0c_73506982",
+      "kind": "unsupported_claim",
+      "planted": true,
+      "text": "He consecrated the church of Vreta Abbey in 1289. The cited source attributes this to funding from the Swedish Academy.",
+      "changed": [
+        "funding from the Swedish Academy"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q817212",
+        "title": "Bengt Birgersson",
+        "lang": "en",
+        "rev_id": 1379238760,
+        "page_id": 5735737
+      },
+      "construction": "Intact additional claim with its own same-URL citation; church, consecrator and year match. Subject is Bengt Birgersson.",
+      "source_url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18481",
+      "source_sha256": "ce472d31af130accdf0736bebb3c449c8b865e8b188f4e67cfe3ce407bd291b9"
+    },
+    {
+      "id": "4b26048832476ad07b27de1880e5eac3",
+      "qid": "T4b26048832476ad07b27de",
+      "original_id": "2f614de5d6c47e8ffdab4e16f7961ed8",
+      "kind": "loaded_wording",
+      "planted": true,
+      "text": "The utterly magnificent and unquestionably brilliant achievement was this: A 2008 survey by BBC Music Magazine found this to be the second most popular choral Christmas carol",
+      "changed": [
+        "utterly magnificent",
+        "unquestionably brilliant"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q1660736",
+        "title": "In dulci jubilo",
+        "lang": "en",
+        "rev_id": 1379321071,
+        "page_id": 11945479
+      },
+      "construction": "Exact excerpt; excludes the inaccurate restriction to British cathedral respondents. Retain context identifying this as In Dulci Jubilo.",
+      "source_url": "https://news.bbc.co.uk/2/hi/7752029.stm",
+      "source_sha256": "54a899f29b3746de1c9fb1cad67c9e36e7f933b8d25fc97b599a078499ae0bce"
+    },
+    {
+      "id": "8e9c05e5cf941d753603a3cfd1e91af4",
+      "qid": "T8e9c05e5cf941d753603a3",
+      "original_id": "b81415dca72de8ee41f95dee38b874c8",
+      "kind": "wrong_number",
+      "planted": true,
+      "text": "Fortum agreed to sell its recycling and waste business to Summa Equity for approximately €1607 million.",
+      "changed": [
+        "1607"
+      ],
+      "counterpart": null,
+      "article": {
+        "qid": "Q10660269",
+        "title": "NG Nordic",
+        "lang": "en",
+        "rev_id": 1367643876,
+        "page_id": 54810297
+      },
+      "construction": "Exact excerpt; agreement, buyer, business and approximate consideration are explicit.",
+      "source_url": "https://view.news.eu.nasdaq.com/view?id=bb426e3218c5aca0272b87d6002c438fd&lang=en&src=socialmedia",
+      "source_sha256": "54381059edad021e5ad08aca57037c2e5e2c2b6d0aee6742688f38d887c73f2c"
+    },
+    {
+      "id": "e0a11df3dfe6358cac01910b35e3c0a1",
+      "qid": "Te0a11df3dfe6358cac0191",
+      "original_id": "4dc6a8b5cfb45a47fc6f45d304c96c64",
+      "kind": "wrong_number",
+      "planted": false,
+      "text": "Orpo Cabinet is aiming for 100,000 new people to become part of the workforce through, among other things, social security reforms and labor market reforms.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q119560876",
+        "title": "Orpo cabinet",
+        "lang": "en",
+        "rev_id": 1384295010,
+        "page_id": 74070136
+      },
+      "construction": "Intact claim; workforce target and means are explicit.",
+      "source_url": "https://yle.fi/a/74-20037253",
+      "source_sha256": "2d252c2a78b5be3f37fd9a4ae46e668b9f4ee1b74d72b299c9fec076265867fb"
+    },
+    {
+      "id": "7325fecb95eb775fcf0282962303df41",
+      "qid": "T7325fecb95eb775fcf0282",
+      "original_id": "18b444e1aa3e3a48d58db344d3f3b2b2_213a78f8",
+      "kind": "dropped_sentence",
+      "planted": false,
+      "text": "He served as the chairman of the Liberal Party from 1968 to 1978.",
+      "changed": [],
+      "counterpart": null,
+      "article": {
+        "qid": "Q6204313",
+        "title": "Pekka Tarjanne",
+        "lang": "en",
+        "rev_id": 1378402665,
+        "page_id": 71495566
+      },
+      "construction": "Intact additional claim with its own same-URL citation; office and tenure are explicit. Subject is Pekka Tarjanne.",
+      "source_url": "https://www.itu.int/en/history/Pages/ElectedOfficialBio.aspx?off=38",
+      "source_sha256": "8b32276d8fd4505025571f3417b9a7d02fbb815272475a569a60cef8b11eb461"
+    },
+    {
+      "id": "ad9b4d32736c0795dc471593eaecffa2",
+      "qid": "Tad9b4d32736c0795dc4715",
+      "original_id": "0e3ceb781f5def5a062dd11b5741ca0c_01083be5",
+      "kind": "dropped_sentence",
+      "planted": true,
+      "text": "",
+      "changed": [
+        "Hänet määrättiin jo lapsena hengelliseen säätyyn, vuonna 1269 hänestä tuli Linköpingin arkkiteini."
+      ],
+      "counterpart": {
+        "lang": "fi",
+        "claim_id": "302169bb8a7a4f5892b6e6b5c27aac1d",
+        "page_id": 1049078,
+        "rev_id": 21855853,
+        "text": "Hänet määrättiin jo lapsena hengelliseen säätyyn, vuonna 1269 hänestä tuli Linköpingin arkkiteini.",
+        "wikitext": "Hänet määrättiin jo lapsena hengelliseen säätyyn, vuonna 1269 hänestä tuli Linköpingin arkkiteini.<ref>{{Kirjaviite| Tekijä=Heikinheimo, Ilmari (toim.)| Vuosi= 1955 | Nimike= Suomen elämäkerrasto| Julkaisija = Werner Söderström Osakeyhtiö| Julkaisupaikka=Helsinki| Sivut=580}}</ref>"
+      },
+      "article": {
+        "qid": "Q817212",
+        "title": "Bengt Birgersson",
+        "lang": "en",
+        "rev_id": 1379238760,
+        "page_id": 5735737
+      },
+      "construction": "Intact additional claim with its own same-URL citation; designated for the clergy from childhood.",
+      "source_url": "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=18481",
+      "source_sha256": "ce472d31af130accdf0736bebb3c449c8b865e8b188f4e67cfe3ce407bd291b9"
+    }
+  ]
+}

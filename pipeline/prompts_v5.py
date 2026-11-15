@@ -1,0 +1,6 @@
+"""Language coverage clarification, developed only on Winter War controlled copies."""
+from .prompts import PRECISION_PROMPT
+VERSION='parallax-v5'
+PRECISION_PROMPT=PRECISION_PROMPT+'''
+COVERAGE EVIDENCE: A full_article_text key identifies an existing version that has been supplied completely. If its value contains only a heading or is empty, it contains no factual coverage. This differs from a language key not supplied at all, whose coverage is unknown. A substantive sourced claim present in another supplied version and absent from that complete version can be a Missing flag. For a language-coverage verdict, presence and absence are established from the supplied articles; an uncited existing-language claim does not make its textual presence unknowable. Source verification remains separate. Never label an uncited claim Supported, and never suggest importing it without a working supporting citation. If no supporting source is available, suggestion must be null. Return the exact marked existing-language claim and identify the missing version. Do not discard material coverage omissions merely because they do not constitute a contradiction. Optional detail and whole-document checks retain all preceding safeguards.
+'''

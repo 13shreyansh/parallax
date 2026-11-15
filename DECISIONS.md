@@ -15,3 +15,9 @@ Revision dates describe exact wording unless a material boundary has been separa
 ## Hosting
 
 Vercel rejected further builds at its account-wide 100-deployment daily limit. The new Parallax project's promoted routing rule serves its verified frontend and API from the isolated VPS. The served HTML records the actual release commit, separately from the older Vercel build record. Existing projects and Traefik/SSH configuration were not changed.
+
+## Coverage prompt v5 and third held-out run
+
+The v4 run (32/40) and second disjoint run (34/40) remain held out and are never reused as development data. Version5 clarifies that a supplied complete empty article has no coverage, while an absent language key is unknown, and that textual coverage is distinct from supporting-source verification. Development used three Winter War passage pairs and three clean controls only:2/3 omissions caught,0/3 clean flags. The prompt was then frozen before the third run.
+
+The third article families were reserved separately before labeling. A blind gpt-6-astra pass labeled40 source-supported controls before any detector output. Their exact excerpts, literal source passages and real English citation URLs were verified mechanically. The third run caught40/40 planted errors with0/40 false flags. It retains the first two measurements. Its numeric perturbation is double plus7 rather than plus7, because small perturbations can remain compatible with approximate figures; date changes are plus10 years. This changed severity limits comparisons across rounds. Eight dropped passages retain actual Finnish/Swedish counterpart citation text; a supporting-source suggestion is still forbidden without a readable supporting document. Published v4 findings remain independently reviewed; the latest evaluation validates the clarified v5 coverage prompt, not a retroactive v5 rerun of every published finding.
