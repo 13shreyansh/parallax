@@ -1,39 +1,99 @@
 # Parallax
 
-Live: https://parallax-gamma-red.vercel.app
+Review Wikipedia claims against their cited sources and other language editions. Keep the evidence beside the sentence.
 
-A review desk for Wikipedia editors. Parallax compares claims in Finnish, Swedish and English with their own cited sources and with the other language versions. It flags passages for a person to review and prepares a neutral Talk-page note. It never edits Wikipedia.
+[Open Parallax](https://parallax-gamma-red.vercel.app) · [Evaluation](eval/parallax/EVALUATION.md) · [Data licences](DATA_LICENSE.md)
 
-The active theme contains 22 sponsor-linked topics on Finland in the Second World War. Winter War also has German and Russian comparison columns. Product findings come from real current Wikipedia revisions and fetched sources; planted errors are kept in an isolated evaluation database.
+Built by Shreyansh, team The CS Guy, for Junction 2026's MariaDB challenge, Wikipedia Through Time.
 
-## How it works
+## What you can do
 
-- Sponsor S provides article/Wikidata links; M supplies Finnish history. Wikipedia APIs supply current cited wikitext and available revisions.
-- Each claim keeps its section, revision and citation links. Readable cited pages are extracted, chunked, embedded with multilingual MiniLM and stored in native MariaDB VECTOR columns.
-- MariaDB cosine retrieval selects source passages and cross-language claims. Gemini 3.8 Flash nominates candidates; Gemini 4 Argon confirms them against the actual source and peer articles. Literal evidence gates reject invented quotes.
-- Unreachable URLs are retried through Internet Archive and Context.dev. Books and unreachable sources remain explicitly unchecked.
-- Revision history lives in MariaDB system-versioned tables. Entry dates describe exact wording, with historical source support explicitly unknown.
+Choose a topic, compare Finnish, Swedish and English coverage, and inspect a finding with its article passage, source passage and revision history. A reviewer can see why the system raised a concern before deciding whether it deserves attention. Parallax never edits Wikipedia.
 
-## Hosting
+The useful distinction is between a supported finding, an unresolved concern and a source the system could not check. An unreadable book does not become evidence of a contradiction. Cross-language differences are leads for review, not proof that an edition is wrong.
 
-The new `parallax` Vercel project routes the frontend and public API to the isolated VPS service at `https://parallax.72.61.22.106.sslip.io`. MariaDB 11.8 has networking disabled; the API connects through a private socket. Read and review-write accounts are separate. API writes use `/tmp`; persistent database data uses named volumes. The old `npov-radar` Vercel project remains untouched.
+## How it works today
 
-## Development
+```mermaid
+flowchart LR
+    W[Wikipedia revisions and cited sources] --> P[Python ingestion pipeline]
+    P --> E[MiniLM embeddings]
+    E --> D[MariaDB native VECTOR search]
+    P --> H[System-versioned revision tables]
+    D --> G[Gemini candidate findings]
+    G --> C[Independent confirmation and literal quote checks]
+    H --> A[Flask review API]
+    C --> A
+    A --> U[React review workspace]
+```
 
-```sh
+MariaDB stores the evidence and its history. Native VECTOR cosine retrieval finds related passages; system-versioned tables preserve earlier revision states. MiniLM produces retrieval embeddings. Gemini proposes candidate issues and a separate confirmation step checks them. Literal quote validation prevents the interface from presenting model-invented quotations as source text.
+
+The browser shows the resulting evidence. A model output cannot silently modify an article or substitute for a human editorial decision.
+
+## Sponsors and model roles
+
+| Service | Current use | What to inspect |
+| --- | --- | --- |
+| MariaDB | Implemented. Native vector retrieval and system-versioned article history form the core review path. | `pipeline/`, `service/` and `deploy/` |
+| Gemini API | Implemented. Candidate generation and independent confirmation over retrieved evidence. | The finding pipeline and linked evaluation |
+| Codex | Used during development, debugging and verification. It is a development tool, not an autonomous Wikipedia editor. | Repository implementation and test history |
+| CRACI | **Planned, not implemented.** Run the existing build and Python tests on CRACI CI. | Acceptance plan below |
+
+Technology-prize registration records intent. It does not establish completed eligibility for a planned integration.
+
+## Run locally
+
+Use Node.js for the Vite frontend and a Python virtual environment for the API. Supply provider credentials through the process environment or your secret manager. Never commit credentials.
+
+```bash
 npm ci
+npm run dev
+```
+
+The Vite development proxy sends `/api/parallax` to `127.0.0.1:18808` by default. `PARALLAX_DEV_API` selects another API origin. The UI needs an initialized API and MariaDB dataset; the frontend command alone does not create either.
+
+After configuring the dataset and credentials, start the API in a second terminal:
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python -m service.app
+```
+
+The Python dependencies are in `requirements.txt` and `deploy/requirements-api.txt`. The API entry point is `service/app.py`; deployment material lives in `deploy/`. Configure MariaDB and initialize the ingestion pipeline before starting the API. This repository does not offer a verified one-command database bootstrap.
+
+## Verify a change
+
+```bash
 npm run build
 .venv/bin/python -m unittest discover -s tests
 ```
 
-Pipeline entry points live in `pipeline/`; the hosted API is `service/app.py`; deployment files are in `deploy/`. Local data, model caches and credentials are ignored. Never place keys in source files or public assets. `DESIGN-DIRECTION.md` is the binding UI specification.
+For a real review check, open the live workspace, load an article, inspect the cited passage and compare its history. Wait for the article and source text to load before taking screenshots. Older video and review-race scripts contain superseded shared-review interactions; they are not current acceptance proof.
 
-## Measurement
+## Evidence and limits
 
-Three disjoint controlled held-out runs caught **32/40 (80%)**, **34/40 (85%)**, then **40/40 (100%)** planted errors, each with **0/40 false flags**. The third uses a coverage prompt developed only on Winter War copies and larger numeric perturbations. These are controlled passage tests, not full-article population accuracy; clean controls mostly do not measure multilingual false flags.
+The prepared collection covers 22 topics, measured in the project dataset. Controlled planted-change runs detected 32/40, 34/40 and 40/40 changes, each with 0/40 false flags on its paired controls. These are separate measured runs with changing prompts and edit conditions, not three independent estimates of population accuracy.
 
-A blind gpt-6-astra review confirmed **44/60 (73.3%)** sampled flags from the then-published theme population. The public list was subsequently restricted to independently confirmed findings; 73.3% describes the pre-curation sample, not post-filter precision. It currently has 80 published flags, 50 on Winter War. All quoted versions in those findings were checked against the actual rendered Wikipedia revisions. The reading/search view has 6,747 verified prose claims; 227 incomplete or nonprose extraction records remain archived and are excluded. See [the evaluation record](eval/parallax/EVALUATION.md) for frozen cases, prompt hashes, earlier measurements and limitations.
+A blind AI-labelled check found 44/60 before later filtering. It is not expert-labelled precision for the current filtered product. Read the [evaluation protocol and results](eval/parallax/EVALUATION.md) before reusing any score.
 
-The browser acceptance test runs against the deployed URL at 1440×900 and 390×844, checks real source evidence, language fixes, temporal queries, clipboard equality and persisted editor reviews, then restores its own writes. Run `node scripts/video-e2e.mjs`. `scripts/review-race.mjs` verifies that a delayed read cannot undo a saved review. Screenshots are saved to `screenshots/parallax/` and `artifacts/e2e/`.
+Retrieval can miss evidence. Unavailable citations remain unchecked. Translation and editorial context require human judgement. A successful seeded test does not establish accuracy across Wikipedia.
 
-Wikipedia text is attributed and linked to its revision under CC BY-SA 4.0. Source excerpts retain their source links.
+## Next integration, after implementation approval
+
+CRACI will run the repository's real checks in a GitHub Actions job with `runs-on: craci`. Completion requires a successful CRACI-backed run, linked logs and a deliberate failing-test check that blocks the job. No CRACI workflow or successful sponsor run is claimed today.
+
+The current application architecture above describes implemented components. This CI addition is planned and does not change the review algorithm.
+
+## Repository guide
+
+| Path | Purpose |
+| --- | --- |
+| `pipeline/` | Ingestion, retrieval and finding generation |
+| `service/app.py` | Review API |
+| `deploy/` | API dependencies and deployment configuration |
+| `tests/` | Python regression checks |
+| `eval/parallax/` | Recorded evaluation and its limitations |
+
+Wikipedia text and external sources retain their original licences. See [DATA_LICENSE.md](DATA_LICENSE.md) for attribution and reuse conditions.
