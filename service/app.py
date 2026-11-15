@@ -6,7 +6,8 @@ from collections import defaultdict,deque
 from flask import Flask,request,jsonify,send_from_directory
 from pipeline.common import db,ROOT,FAST
 from pipeline.check import ALIGN_SQL,SOURCE_SQL
-from pipeline.text import normalize,HistoricalIndex
+from pipeline.text import normalize,HistoricalIndex,words
+import difflib
 from pipeline.presentation import readable,readable_groups
 
 app=Flask(__name__)
@@ -94,6 +95,16 @@ def tidy(passage):
         if close!=-1 and (opened==-1 or close<opened):passage=passage[close+2:]
         else:break
     return re.sub(r'\s+',' ',re.sub(r'\[\[|\]\]|\{\{|\}\}|\ufffc',' ',passage)).strip()
+
+def closest_sentence(article,claim):
+    # Whole sentences only: a full stop after a day number ("28. marraskuuta") does not end a Finnish sentence.
+    needle=normalize(claim);folded=needle.casefold();tokens=words(needle);best=None;score=.62
+    for sentence in re.split(r'(?<=[.!?])(?<!\d\.)\s+(?=[^\Wa-zåäö_])|(?<=[a-zåäö)\]"”][.!?])\s+(?=\d)',normalize(article,strict=True)):
+        sentence=sentence.strip()
+        if len(sentence)<20 or '\ufffc' in sentence or len(tokens&words(sentence))<min(3,len(tokens)):continue
+        ratio=difflib.SequenceMatcher(None,folded,sentence.casefold(),autojunk=False).ratio()
+        if ratio>=score:best,score=sentence,ratio
+    return best
 
 def stamp(value):
     return str(value).replace('T',' ').rstrip('Z')[:19]
@@ -312,7 +323,7 @@ def entry():
     for side,at in [('before',history['before_at']),('after',history['entered_at'])]:
         sql,args=temporal_query([{'lang':lang,'page_id':page[0]['page_id']}],stamp(at))
         found=run(cur,sql,args,traces,'The day before' if side=='before' else 'The edit')
-        passage=HistoricalIndex(found[0]['text']).match(claim[0]['text']) if found else None
+        passage=closest_sentence(found[0]['text'],claim[0]['text']) if found else None
         sides[side]={'revision':found[0]['rev_id'] if found else None,'at':at,'text':tidy(passage) if readable(passage) else None}
     c.close();return jsonify(entry={'language':lang,**sides},queries=traces)
 
