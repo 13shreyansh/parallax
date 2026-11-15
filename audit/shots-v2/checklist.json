@@ -1,0 +1,200 @@
+[
+ [
+  "d",
+  "1 home loads <2s, findings first",
+  "PASS",
+  "1500 ms; findings column 50,16,8,3,1,1,1,0,0,0"
+ ],
+ [
+  "d",
+  "2 first screen names user, problem, MariaDB",
+  "PASS",
+  "{\"h1\":true,\"problem\":true,\"cta\":true,\"strip\":true}"
+ ],
+ [
+  "d",
+  "13a no page overflow: home",
+  "PASS",
+  ""
+ ],
+ [
+  "d",
+  "3 main button opens article leading with a wrong fact or source error",
+  "PASS",
+  "Q134949; first group \"Wrong fact 4\""
+ ],
+ [
+  "d",
+  "4 one count of findings",
+  "PASS",
+  "header \"50 findings\", tab 50, rail \"1 of 50\""
+ ],
+ [
+  "d",
+  "13b no page overflow: article",
+  "PASS",
+  ""
+ ],
+ [
+  "d",
+  "5 a chip shows only that check; again shows all",
+  "PASS",
+  "only: Wrong fact (3 rows); all: 9 rows"
+ ],
+ [
+  "d",
+  "6 first five findings: headline never credits a language whose cell says no match",
+  "PASS",
+  "5 checked"
+ ],
+ [
+  "d",
+  "7 SQL on every page, rows shown, no 0-row tab",
+  "PASS",
+  "/ [Closest source passage:5r Ranked articles:5r Schema:ddl]; /a/Q134949 [Aligned claims:3r As of today:5r Schema:ddl]; /a/Q2152516 [Aligned claims:3r Closest source passage:3r As of today:3r Schema:ddl]; /ask [Closest claims and source texts:5r Schema:ddl]"
+ ],
+ [
+  "d",
+  "7b SQL enabled on an article with no findings",
+  "PASS",
+  ""
+ ],
+ [
+  "d",
+  "8 before/after shows changed words, no wiki markup",
+  "PASS",
+  "removed \"stress\", added \"lie\"; markup residue in 2015 view: 0"
+ ],
+ [
+  "d",
+  "9 copied note links to the submitted URL",
+  "PASS",
+  "https://parallax-gamma-red.vercel.app"
+ ],
+ [
+  "d",
+  "10 suggested questions and the brief's question give a cited answer or a useful redirect",
+  "PASS",
+  "✓ How many Soviet soldiers died in the Winter War? → According to Finnish Wikipedia, Russian and Soviet literature has presented figures such as 200,000–300,000 fa || ✓ Kuinka monta ruotsalaista vapaaehtoista taisteli talvisodassa? → Ruotsinkielisen Wikipedian mukaan talvisotaan osallistui noin 9 500 ruotsalaista vapaaehtoista, joista 8 260 k || ✓ När slutade vinterkriget? → Enligt Svenska Wikipedia trädde freden i kraft och avslutade vinterkriget den 13 mars, och enligt Talvisodan t || ✓ When did the Winter War start? → According to English Wikipedia's article on the Mannerheim Line, the Winter War began in November 1939.5 Histo || ✓ 2015 question → Read Mannerheim Line as of 31 Dec 2015"
+ ],
+ [
+  "d",
+  "13c no page overflow: ask",
+  "PASS",
+  ""
+ ],
+ [
+  "d",
+  "11 method: best current number first, short",
+  "PASS",
+  "169 words in the section; no \"317\"; no overflow"
+ ],
+ [
+  "d",
+  "12 unknown address shows a designed page",
+  "PASS",
+  "status 404"
+ ],
+ [
+  "d",
+  "13 console clean",
+  "PASS",
+  "2 expected message(s): the 404 page's own status and the blocked copy counter write"
+ ],
+ [
+  "d",
+  "13d no overlapping table header labels at 1440",
+  "PASS",
+  "0 overlaps"
+ ],
+ [
+  "m",
+  "1 home loads <2s, findings first",
+  "PASS",
+  "959 ms; findings column 50,16,8,3,1,1,1,0,0,0"
+ ],
+ [
+  "m",
+  "2 first screen names user, problem, MariaDB",
+  "PASS",
+  "{\"h1\":true,\"problem\":true,\"cta\":true,\"strip\":false} (strip is below the fold on phone)"
+ ],
+ [
+  "m",
+  "13a no page overflow: home",
+  "PASS",
+  ""
+ ],
+ [
+  "m",
+  "3 main button opens article leading with a wrong fact or source error",
+  "PASS",
+  "Q134949; first group \"Wrong fact 4\""
+ ],
+ [
+  "m",
+  "4 one count of findings",
+  "PASS",
+  "header \"50 findings\", tab 50, rail \"1 of 50\""
+ ],
+ [
+  "m",
+  "13b no page overflow: article",
+  "PASS",
+  ""
+ ],
+ [
+  "m",
+  "5 a chip shows only that check; again shows all",
+  "PASS",
+  "only: Wrong fact (3 rows); all: 9 rows"
+ ],
+ [
+  "m",
+  "7 SQL on every page, rows shown, no 0-row tab",
+  "PASS",
+  "/ [Closest source passage:5r Ranked articles:5r Schema:ddl]; /a/Q134949 [Aligned claims:3r As of today:5r Schema:ddl]; /a/Q2152516 [Aligned claims:3r Closest source passage:3r As of today:3r Schema:ddl]; /ask [Closest claims and source texts:5r Schema:ddl]"
+ ],
+ [
+  "m",
+  "7b SQL enabled on an article with no findings",
+  "PASS",
+  ""
+ ],
+ [
+  "m",
+  "8 before/after shows changed words, no wiki markup",
+  "PASS",
+  "removed \"stress\", added \"lie\"; markup residue in 2015 view: 0"
+ ],
+ [
+  "m",
+  "10 suggested questions and the brief's question give a cited answer or a useful redirect",
+  "PASS",
+  "✓ How many Soviet soldiers died in the Winter War? → Estimates vary, with Mannerheim estimating 200,000 Soviet soldiers killed according to Finnish Wikipedia, whil || ✓ Kuinka monta ruotsalaista vapaaehtoista taisteli talvisodassa? → Ruotsinkielisen Wikipedian mukaan talvisotaan osallistui noin 9 500 ruotsalaista vapaaehtoista, joista 8 260 k || ✓ När slutade vinterkriget? → Enligt Svenska Wikipedia trädde freden i kraft och avslutade vinterkriget den 13 mars, och enligt Talvisodan t || ✓ When did the Winter War start? → According to English Wikipedia's article on the Mannerheim Line, the Winter War began in November 1939, while  || ✓ 2015 question → Read Mannerheim Line as of 31 Dec 2015"
+ ],
+ [
+  "m",
+  "13c no page overflow: ask",
+  "PASS",
+  ""
+ ],
+ [
+  "m",
+  "11 method: best current number first, short",
+  "PASS",
+  "169 words in the section; no \"317\"; no overflow"
+ ],
+ [
+  "m",
+  "12 unknown address shows a designed page",
+  "PASS",
+  "status 404"
+ ],
+ [
+  "m",
+  "13 console clean",
+  "PASS",
+  "1 expected message(s): the 404 page's own status"
+ ]
+]
