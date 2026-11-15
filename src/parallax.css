@@ -107,3 +107,14 @@
 .history-hint .quiet{margin-top:12px;display:inline-flex;text-decoration:none;color:var(--ink)}
 .no-search-result .history-hint{margin-bottom:24px}
 @media(max-width:699px){.answer-text{font-size:18px;line-height:27px}.cite{min-width:22px;height:22px;line-height:22px;border-radius:11px}}
+
+/* When this got in: the sentence on each side of the edit. */
+.entry-diff{margin:12px 0;border:1px solid var(--line);border-radius:8px;background:#fff;overflow:hidden}
+.entry-diff.loading{height:96px;background:var(--sunk);border-color:transparent;animation:pulse 1.2s ease-in-out infinite}
+.entry-side{padding:10px 14px}
+.entry-side+.entry-side{border-top:1px solid var(--line-soft)}
+.entry-side .quote{margin-top:4px;font-size:15px;line-height:24px}
+.entry-side .absent{margin-top:4px}
+.entry-diff del{color:var(--ink-3);text-decoration:line-through;text-decoration-color:var(--src)}
+.entry-diff ins{text-decoration:none;background:var(--blue-tint);box-shadow:0 1px 0 var(--blue);border-radius:2px}
+.entry-diff>.small{padding:0 14px 10px}

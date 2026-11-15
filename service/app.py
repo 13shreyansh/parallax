@@ -85,6 +85,19 @@ def include_unrepresented(groups,claims):
             groups.append({'id':claim['id'],'anchor_id':claim['id'],'ordinal':claim['ordinal'],'versions':{claim['lang']:{**claim,'claim_id':claim['id']}},'checks':{'state':'pending'},'flags':[]})
     return groups
 
+def tidy(passage):
+    # Historical wikitext can leave the tail of a caption or a heading marker on a matched sentence.
+    if not passage:return passage
+    passage=re.sub(r'={2,}\s*[^=\n]{1,80}?\s*={2,}',' ',passage)
+    while True:
+        close,opened=passage.find(']]'),passage.find('[[')
+        if close!=-1 and (opened==-1 or close<opened):passage=passage[close+2:]
+        else:break
+    return re.sub(r'\s+',' ',re.sub(r'\[\[|\]\]|\{\{|\}\}|\ufffc',' ',passage)).strip()
+
+def stamp(value):
+    return str(value).replace('T',' ').rstrip('Z')[:19]
+
 def comparison_language(lang):return 'fi' if lang=='sv' else 'sv'
 
 def verified_absence(version,flags,revision_id):
@@ -95,7 +108,7 @@ def verified_absence(version,flags,revision_id):
 def access():
     token=os.environ.get('PARALLAX_BRIDGE_TOKEN')
     # Only the bridge may call the internal endpoints; every other path is a page, a file or a designed not-found.
-    public=request.path not in ['/health','/home','/article','/search','/answer','/examples','/review','/copied']
+    public=request.path not in ['/health','/home','/article','/search','/answer','/entry','/examples','/review','/copied']
     if token and not public and not hmac.compare_digest(request.headers.get('X-Parallax-Token',''),token):return jsonify(error='Access denied'),403
     if request.method=='POST':
         if request.content_type!='application/json':return jsonify(error='Use JSON'),415
@@ -146,7 +159,7 @@ def robots():return 'User-agent: *\nAllow: /\n',200,{'Content-Type':'text/plain;
 @app.route('/api/parallax',methods=['GET','POST'])
 def browser_api():
     mode=request.args.get('mode','home')
-    allowed={'GET':{'health','home','article','search','answer','method','examples'},'POST':{'copied'}}  # reviews stay in the reader's browser; nobody can dismiss a finding for everyone
+    allowed={'GET':{'health','home','article','search','answer','entry','method','examples'},'POST':{'copied'}}  # reviews stay in the reader's browser; nobody can dismiss a finding for everyone
     if mode not in allowed[request.method]:return jsonify(error='This action is not available.'),405
     return app.view_functions[mode]()
 
@@ -217,7 +230,7 @@ def article():
             for lang,v in g['versions'].items():
                 r=versions.get(lang);passage=indexes[lang].match(v['text']) if r else None
                 if not readable(passage):passage=None
-                v['asof_present']=bool(passage);v['asof_text']=passage
+                v['asof_present']=bool(passage);v['asof_text']=tidy(passage)
                 v['asof_match']='exact' if passage==normalize(v['text']) else 'similar' if passage else 'not found'
                 v['asof_absence_verified']=verified_absence(v,fs,r['rev_id'] if r else None)
                 if r:v['asof_revision']=r['rev_id']
@@ -286,6 +299,22 @@ def history_hint(cur,question):
     today=datetime.datetime.now(datetime.timezone.utc).date();asof=min(datetime.date(year,12,31),today)
     if not span['earliest'] or span['earliest'].date()>asof:return None
     return {'qid':best[0]['qid'],'title':best[0]['title'],'year':year,'asof':asof.isoformat(),'revisions':span['revisions']}
+
+@app.get('/entry')
+def entry():
+    # The sentence on each side of the edit that introduced a finding's wording, read from the versioned table.
+    c=db();cur=c.cursor();traces=[];rows=run(cur,'SELECT qid,claim_id,payload FROM published_flag WHERE id=%s',(request.args.get('flag',''),))
+    if not rows:c.close();return jsonify(error='This finding is not available.'),404
+    flag=unpack(rows[0]['payload']);history=flag.get('history') or {};lang=flag.get('language')
+    claim=run(cur,'SELECT text FROM claim WHERE id=%s',(rows[0]['claim_id'],));page=run(cur,'SELECT page_id FROM article WHERE qid=%s AND lang=%s',(rows[0]['qid'],lang))
+    if not (claim and page and history.get('entered_at') and history.get('before_at')):c.close();return jsonify(entry=None)
+    sides={}
+    for side,at in [('before',history['before_at']),('after',history['entered_at'])]:
+        sql,args=temporal_query([{'lang':lang,'page_id':page[0]['page_id']}],stamp(at))
+        found=run(cur,sql,args,traces,'The day before' if side=='before' else 'The edit')
+        passage=HistoricalIndex(found[0]['text']).match(claim[0]['text']) if found else None
+        sides[side]={'revision':found[0]['rev_id'] if found else None,'at':at,'text':tidy(passage) if readable(passage) else None}
+    c.close();return jsonify(entry={'language':lang,**sides},queries=traces)
 
 @app.get('/search')
 def search():
