@@ -12,6 +12,7 @@ for(const width of [1440,390]){
  if(width===390){await p.getByRole('button',{name:'5 languages',exact:true}).click();await expect(p.getByRole('button',{name:'fi',exact:true})).toHaveAttribute('aria-pressed','true');await expect(p.locator('.claim-cell.mobile-current .article-quote').first()).toBeVisible();}
  const reduced=await p.evaluate(()=>[...document.querySelectorAll('.rail-container,.sql-drawer,.article-reading')].map(e=>getComputedStyle(e).transitionDuration));
  if(width===1440){await p.getByRole('button',{name:'5 languages',exact:true}).click();await p.addStyleTag({content:'body{filter:grayscale(1)}'});await p.screenshot({path:'screenshots/parallax/04b-article-greyscale-desktop.png'});}
+ const methodData=await(await p.request.get(base+'/api/parallax?mode=method')).json();await p.goto(base+'/a/'+methodData.top_article.qid+'?show=all');await p.locator('.claim-row').first().waitFor();await p.locator('.claim-row').first().click();await expect(p.getByRole('button',{name:'Next flagged claim',exact:true})).toHaveCount(0);
  results.push({width,errors,keyboard_flags:flags,font_families:fonts,reduced_motion_durations:reduced,overflow:await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth)});expect(errors).toEqual([]);await context.close();
 }
 await browser.close();await fs.writeFile('artifacts/verification/extra-ui.json',JSON.stringify(results,null,2));console.log(results);
