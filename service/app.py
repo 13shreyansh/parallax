@@ -112,9 +112,9 @@ def health():
 
 @app.get('/home')
 def home():
-    c=db();cur=c.cursor();traces=[];theme=request.args.get('theme','finland-second-world-war');sort=request.args.get('sort','distance')
+    c=db();cur=c.cursor();traces=[];theme=request.args.get('theme','finland-second-world-war');sort=request.args.get('sort','issues')
     themes=run(cur,"SELECT t.*,COUNT(tt.qid) articles FROM theme t JOIN topic_theme tt ON tt.theme=t.slug WHERE t.slug='finland-second-world-war' GROUP BY t.slug,t.title")
-    order='issues DESC,t.distance DESC' if sort=='issues' else 't.distance DESC,issues DESC'
+    order='issues DESC,t.distance DESC' if sort!='distance' else '(issues>0) DESC,t.distance DESC'
     rows=run(cur,"""SELECT t.qid,t.title,t.titles,t.distance,t.last_changed,t.state,COUNT(CASE WHEN f.shown=1 AND COALESCE(r.dismissed,0)=0 THEN 1 END) issues,
     SUM(CASE WHEN f.check_type='src' AND f.shown=1 AND COALESCE(r.dismissed,0)=0 THEN 1 ELSE 0 END) src,
     SUM(CASE WHEN f.check_type='lang' AND f.shown=1 AND COALESCE(r.dismissed,0)=0 THEN 1 ELSE 0 END) lang,
@@ -126,7 +126,8 @@ def home():
     qids={r['qid']:i for i,r in enumerate(rows)};fs=[f for f in flag_rows(cur) if f['qid'] in qids and not f['dismissed'] and f.get('source') and f['check'] in ['src','fact','lang'] and len(f['source'].get('passage',''))<=220 and all(len(v['text'])<=220 for v in ([f['versions'][f['language']]] if f['check']=='src' else f.get('versions',{}).values()))]
     fs.sort(key=lambda f:(0 if f['check']=='src' and f['verdict']=='Contradicted' else 1 if f['check']=='fact' else 2,qids[f['qid']]))
     if fs:fs[0]['article_title']=next((r['title'] for r in rows if r['qid']==fs[0]['qid']),'')
-    result={'themes':themes,'theme':theme,'sort':sort,'articles':rows[:10],'example':fs[0] if fs else None,'counts':counts(cur),'queries':traces};c.close();return jsonify(result)
+    top=max(rows,key=lambda r:r['issues'],default=None)
+    result={'themes':themes,'theme':theme,'sort':sort,'articles':rows[:10],'article_total':len(rows),'top':{'qid':top['qid'],'title':top['title'],'issues':top['issues']} if top else None,'example':fs[0] if fs else None,'counts':counts(cur),'queries':traces};c.close();return jsonify(result)
 
 @app.get('/article')
 def article():
@@ -147,7 +148,7 @@ def article():
     # Actually run the three inspection queries for the current selected claim.
     requested_group=next((g for g in groups if g['id']==requested_claim or any(v.get('claim_id',v.get('id'))==requested_claim for v in g['versions'].values())),None) if requested_claim else None
     requested_version=next((v for v in requested_group['versions'].values() if v.get('claim_id',v.get('id'))==requested_claim),None) if requested_group else None
-    anchor=selected['claim_id'] if selected else requested_version.get('claim_id',requested_version.get('id')) if requested_version else requested_group['anchor_id'] if requested_group else groups[0]['anchor_id'] if groups else None
+    anchor=selected['claim_id'] if selected else requested_version.get('claim_id',requested_version.get('id')) if requested_version else requested_group['anchor_id'] if requested_group else groups[0]['anchor_id'] if groups else next((r['id'] for r in run(cur,'SELECT id FROM readable_claim WHERE qid=%s ORDER BY FIELD(lang,\'en\',\'fi\',\'sv\',\'de\',\'ru\'),ordinal LIMIT 1',(qid,))),None)
     if anchor:
         anchor_language=run(cur,'SELECT lang FROM claim WHERE id=%s',(anchor,))[0]['lang']
         run(cur,ALIGN_SQL,(anchor,qid,comparison_language(anchor_language)),traces,'Aligned claims')
