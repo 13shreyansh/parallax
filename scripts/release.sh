@@ -9,3 +9,5 @@ COPYFILE_DISABLE=1 tar -czf /tmp/parallax-release-source.tgz --exclude='deploy/p
 scp -q /tmp/parallax-release-source.tgz root@72.61.22.106:/opt/parallax/release-source.tgz
 ssh -o BatchMode=yes root@72.61.22.106 'tar -xzf /opt/parallax/release-source.tgz -C /opt/parallax/source'
 ssh -o BatchMode=yes root@72.61.22.106 python3 /opt/parallax/source/deploy/release_remote.py "$(cat work/parallax/deploy-commit.txt)"
+# Keep the live release and the one before it; older ones only hold memory.
+ssh -o BatchMode=yes root@72.61.22.106 "docker ps --filter label=io.parallax.release --format '{{.CreatedAt}} {{.Names}}' | sort -r | tail -n +3 | awk '{print \$NF}' | xargs -r docker rm -f >/dev/null"
