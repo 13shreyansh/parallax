@@ -18,6 +18,7 @@ RUN python -c "from sentence_transformers import SentenceTransformer; m=Sentence
 COPY pipeline/__init__.py pipeline/common.py pipeline/check.py pipeline/prompts.py pipeline/embeddings.py pipeline/text.py /app/pipeline/
 COPY service/ /app/service/
 COPY --from=frontend /front/dist /app/frontend/
+COPY deploy/previous-assets/ /app/frontend/assets/
 RUN mkdir -p /app/work/parallax
 ENV HF_HUB_OFFLINE=1 PARALLAX_BIND=0.0.0.0 PARALLAX_PORT=18808 PARALLAX_DB_SOCKET=/run/mysqld/mysqld.sock PARALLAX_WORK_DIR=/tmp/parallax
 USER 10001:999

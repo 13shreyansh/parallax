@@ -1,15 +1,19 @@
 """Freeze a reproducible random sample without detector judgments or explanations."""
-import json,random,pathlib,hashlib
+import json,random,pathlib,hashlib,argparse,gzip
 from .common import db,WORK,now
 
 def main():
- c=db();cur=c.cursor();cur.execute('SELECT * FROM flag WHERE shown=1 ORDER BY id');seen=set();population=[]
- for r in cur.fetchall():
+ parser=argparse.ArgumentParser();parser.add_argument('--hosted');parser.add_argument('--directory',default='blind-real');args=parser.parse_args()
+ c=db();cur=c.cursor()
+ if args.hosted:rows=json.loads(gzip.open(args.hosted,'rt').read())
+ else:cur.execute('SELECT * FROM published_flag ORDER BY id');rows=cur.fetchall()
+ seen=set();population=[]
+ for r in rows:
   key=(r['claim_id'],r['check_type'],r['verdict'])
   if key in seen:continue
   seen.add(key);population.append(r)
  if len(population)<60:raise RuntimeError('Fewer than 60 unique shown flags')
- seed='parallax-blind-2026-11-15-01-16';sample=random.Random(seed).sample(population,60);out=WORK/'blind-real';out.mkdir(exist_ok=True)
+ seed='parallax-final-blind-2026-11-15-02-20' if args.hosted else 'parallax-blind-2026-11-15-01-16';sample=random.Random(seed).sample(population,60);out=WORK/args.directory;out.mkdir(exist_ok=True)
  manifest={'seed':seed,'sampled_at':now(),'population':len(population),'sample_size':60,'mapping':{},'article_files':{},'source_files':{}}
  for i,r in enumerate(sample,1):
   f=json.loads(r['payload']);case={'case':i,'check_type':f['check'],'language':f['language'],'claim':f['versions'][f['language']]['text'],'versions':{l:{'text':v['text'],'rev_id':v['rev_id']} for l,v in f['versions'].items()},'cited_sources':[]}

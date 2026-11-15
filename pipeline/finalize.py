@@ -43,7 +43,7 @@ def finalize_row(row):
     c.close()
 
 def main():
-    c=db();cur=c.cursor();cur.execute("SELECT * FROM flag WHERE JSON_EXTRACT(payload,'$.current_confirmed')=true ORDER BY shown DESC,qid<>'Q134949',id");rows=cur.fetchall();c.close()
+    c=db();cur=c.cursor();cur.execute("SELECT * FROM flag WHERE id IN (SELECT flag_id FROM independent_review WHERE confirmed=1) AND JSON_EXTRACT(payload,'$.current_confirmed')=true ORDER BY shown DESC,qid<>'Q134949',id");rows=cur.fetchall();c.close()
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:list(pool.map(finalize_row,rows))
 
 if __name__=='__main__':main()

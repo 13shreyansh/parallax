@@ -17,7 +17,8 @@ QUERIES={
  'flag':'SELECT * FROM flag',
  'revision':'SELECT lang,page_id,qid,rev_id,title,text,comment,row_start,row_end FROM revision FOR SYSTEM_TIME ALL',
  'evaluation':'SELECT * FROM evaluation',
- 'quality_exclusion':'SELECT * FROM quality_exclusion'}
+ 'quality_exclusion':'SELECT * FROM quality_exclusion',
+ 'independent_review':'SELECT * FROM independent_review'}
 def encode(o):
  if isinstance(o,(datetime.datetime,datetime.date)):return {'$datetime':o.isoformat()}
  if isinstance(o,bytes):return {'$bytes':base64.b64encode(o).decode()}

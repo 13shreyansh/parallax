@@ -1,0 +1,59 @@
+{
+  "measured_at": "2026-11-14T23:50:23Z",
+  "prompt_version": "parallax-v4",
+  "scope": "Fresh article families disjoint from the first evaluated set. Controlled passage copies with article titles, actual sources and eight original fi/sv counterparts; 12 intact controls and 28 exact supported excerpts. This is not full-article population accuracy.",
+  "errors": 40,
+  "controls": 40,
+  "caught": 34,
+  "false_flags": 0,
+  "complete": true,
+  "checks": {
+    "src": {
+      "errors": 8,
+      "controls": 8,
+      "caught": 8,
+      "false_flags": 0
+    },
+    "fact": {
+      "errors": 16,
+      "controls": 16,
+      "caught": 16,
+      "false_flags": 0
+    },
+    "lang": {
+      "errors": 8,
+      "controls": 8,
+      "caught": 2,
+      "false_flags": 0
+    },
+    "tone": {
+      "errors": 8,
+      "controls": 8,
+      "caught": 8,
+      "false_flags": 0
+    }
+  },
+  "by_error_type": {
+    "wrong_date": {
+      "caught": 8,
+      "errors": 8
+    },
+    "wrong_number": {
+      "caught": 8,
+      "errors": 8
+    },
+    "dropped_sentence": {
+      "caught": 2,
+      "errors": 8
+    },
+    "loaded_wording": {
+      "caught": 8,
+      "errors": 8
+    },
+    "unsupported_claim": {
+      "caught": 8,
+      "errors": 8
+    }
+  },
+  "classification_note": "Planted categories determine the row; the source check may catch a wrong fact. Controls are source-supported passages, mostly single-language; this does not measure clean multilingual article-pair false-positive rates."
+}

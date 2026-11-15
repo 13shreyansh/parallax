@@ -1,27 +1,31 @@
 """New article families, reserved before labels or detector output."""
-import json,re,random,concurrent.futures
+import json,re,random,concurrent.futures,argparse
 from .common import WORK,ROOT,digest,now
 from .extract import split_claims
 from .sources import fetch_source,book_preview
 
 def main():
+ parser=argparse.ArgumentParser();parser.add_argument('--round',default='fresh');args=parser.parse_args();third=args.round=='third';seed=2026111510 if third else 2026111506
  old=json.loads((ROOT/'eval/parallax/FROZEN.json').read_text());excluded={x['article']['qid'] for x in old['case_metadata']}
- manifest=json.loads((WORK/'manifest.json').read_text());eligible=[r for r in manifest if 'finland-second-world-war' not in r['themes'] and r['qid'] not in excluded];random.Random(2026111506).shuffle(eligible)
+ if third:excluded.update(x['article']['qid'] for x in json.loads((ROOT/'eval/parallax/FRESH-FROZEN.json').read_text())['case_metadata'])
+ manifest=json.loads((WORK/'manifest.json').read_text());eligible=[r for r in manifest if 'finland-second-world-war' not in r['themes'] and r['qid'] not in excluded];random.Random(seed).shuffle(eligible)
  candidates=[];seen=set()
  for topic in eligible:
   a=topic['versions']['en'];path=WORK/'articles'/f'en-{a["page_id"]}.json'
   if not path.exists():continue
   article=json.loads(path.read_text())
+  article_candidates=0
   for cl in split_claims(article):
    urls=[u for ref in cl['citations'] for u in ref['urls'] if not book_preview(u) and 'wikipedia.org' not in u and 'web.archive.org' not in u]
    if not urls or not 70<=len(cl['text'])<=450 or not re.search(r'\b\d{2,4}\b',cl['text']):continue
    url=urls[0]
    if url in seen:continue
    seen.add(url);candidates.append({'id':digest(['fresh-heldout',cl['id']])[:32],'article':{k:article[k] for k in ['qid','title','lang','rev_id','page_id']},'claim':cl,'url':url})
-   if len(candidates)>=300:break
+   article_candidates+=1
+   if len(candidates)>=300 or third and article_candidates>=5:break
   if len(candidates)>=300:break
- directory=WORK/'eval-fresh';directory.mkdir(exist_ok=True)
- reservation={'created_at':now(),'seed':2026111506,'excluded_previous_article_families':sorted(excluded),'heldout_qids':sorted({x['article']['qid'] for x in candidates}),'detector_output_seen':False}
+ directory=WORK/('eval-third' if third else 'eval-fresh');directory.mkdir(exist_ok=True)
+ reservation={'created_at':now(),'seed':seed,'excluded_previous_article_families':sorted(excluded),'heldout_qids':sorted({x['article']['qid'] for x in candidates}),'detector_output_seen':False}
  (directory/'reservation.json').write_text(json.dumps(reservation,indent=2));queue=[]
  def work(case):
   path=directory/f'{case["id"]}.json'
