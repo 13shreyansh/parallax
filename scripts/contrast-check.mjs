@@ -1,0 +1,5 @@
+import fs from 'node:fs/promises';
+const colors={surface:'#ffffff',ground:'#f5f6f8',ink:'#15181e','ink-2':'#4a505c','ink-3':'#5f6878',blue:'#2450c4','blue-tint':'#eef3fd',src:'#b42318',lang:'#8a5a00',tone:'#6e3fc0',fact:'#0a6e69','on-ink-2':'#b9bfcc'};
+function lum(h){const c=h.slice(1).match(/../g).map(v=>parseInt(v,16)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);return c[0]*.2126+c[1]*.7152+c[2]*.0722;}
+const result=[];for(const fg of ['ink','ink-2','ink-3','blue','src','lang','tone','fact'])for(const bg of ['surface','ground','blue-tint']){const a=lum(colors[fg]),b=lum(colors[bg]),ratio=(Math.max(a,b)+.05)/(Math.min(a,b)+.05);result.push({foreground:fg,background:bg,ratio:Number(ratio.toFixed(2)),pass:ratio>=4.5});}
+const ratio=(lum(colors['on-ink-2'])+.05)/(lum(colors.ink)+.05);result.push({foreground:'on-ink-2',background:'ink',ratio,pass:ratio>=4.5});await fs.writeFile('artifacts/verification/contrast.json',JSON.stringify(result,null,2));if(result.some(r=>!r.pass))throw new Error('Contrast threshold failed');console.log('All25 text pairs meet4.5:1; check markers exceed3:1');

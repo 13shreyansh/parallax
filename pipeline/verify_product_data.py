@@ -21,6 +21,6 @@ def main():
     if v.get('asof_text'):
      revision=stored.get(lang);assert revision and revision['rev_id']==v['asof_revision'] and normalize(v['asof_text']) in normalize(revision['text'])
   history.append({'date':day,'database_ms':query['ms'],'revision_ids':result['asof_revisions'],'returned_text_matches':True})
- cur.execute('SELECT COUNT(*) claims FROM claim');claims=cur.fetchone()['claims'];cur.execute('SELECT COUNT(*) flags FROM published_flag');count=cur.fetchone()['flags'];assert method['counts']['claims']==claims and method['counts']['flags']==count
+ cur.execute('SELECT COUNT(*) claims FROM readable_claim');claims=cur.fetchone()['claims'];cur.execute('SELECT COUNT(*) flags FROM published_flag');count=cur.fetchone()['flags'];assert method['counts']['claims']==claims and method['counts']['flags']==count
  out={'public_origin':BASE,'health':requests.get(BASE+'/api/parallax?mode=health').json(),'quotes':checks,'historical_dates':history,'counts_match_sql':True,'counts':method['counts']};(ROOT/'artifacts/verification/data.json').write_text(json.dumps(out,default=str,indent=2));print(json.dumps({'quotes':len(checks),'dates':history,'counts':method['counts']},default=str));c.close()
 if __name__=='__main__':main()

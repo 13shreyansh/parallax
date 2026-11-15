@@ -6,6 +6,7 @@ from flask import Flask,request,jsonify,send_from_directory
 from pipeline.common import db,ROOT
 from pipeline.check import ALIGN_SQL,SOURCE_SQL
 from pipeline.text import normalize,HistoricalIndex
+from pipeline.presentation import readable,readable_groups
 
 app=Flask(__name__)
 app.config['MAX_CONTENT_LENGTH']=4096
@@ -24,7 +25,7 @@ def run(cur,sql,args=(),traces=None,label=None):
     return rows
 
 def counts(cur):
-    sql="""SELECT (SELECT COUNT(DISTINCT qid) FROM claim) articles,(SELECT title FROM theme WHERE slug='finland-second-world-war') theme_title,(SELECT COUNT(*) FROM theme WHERE slug='finland-second-world-war') themes,(SELECT COUNT(*) FROM article WHERE qid IN (SELECT DISTINCT qid FROM claim)) versions,(SELECT COUNT(*) FROM claim) claims,(SELECT COUNT(DISTINCT s.id) FROM cited_source s JOIN claim_source cs ON cs.source_id=s.id JOIN claim cl ON cl.id=cs.claim_id) sources,(SELECT COUNT(DISTINCT s.id) FROM cited_source s JOIN claim_source cs ON cs.source_id=s.id JOIN claim cl ON cl.id=cs.claim_id WHERE s.status='Read') sources_read,(SELECT COUNT(*) FROM revision FOR SYSTEM_TIME ALL) revisions,(SELECT COUNT(*) FROM published_flag f LEFT JOIN editor_reviews r ON r.flag_id=f.id WHERE f.shown=1 AND COALESCE(r.dismissed,0)=0) flags,(SELECT COUNT(*) FROM editor_reviews WHERE dismissed=1) dismissed,(SELECT COALESCE(SUM(copies),0) FROM note_copies) copied,(SELECT MAX(checked_at) FROM flag) updated_at"""
+    sql="""SELECT (SELECT COUNT(DISTINCT qid) FROM readable_claim) articles,(SELECT title FROM theme WHERE slug='finland-second-world-war') theme_title,(SELECT COUNT(*) FROM theme WHERE slug='finland-second-world-war') themes,(SELECT COUNT(*) FROM article WHERE qid IN (SELECT DISTINCT qid FROM readable_claim)) versions,(SELECT COUNT(*) FROM readable_claim) claims,(SELECT COUNT(DISTINCT s.id) FROM cited_source s JOIN claim_source cs ON cs.source_id=s.id JOIN readable_claim cl ON cl.id=cs.claim_id) sources,(SELECT COUNT(DISTINCT s.id) FROM cited_source s JOIN claim_source cs ON cs.source_id=s.id JOIN readable_claim cl ON cl.id=cs.claim_id WHERE s.status='Read') sources_read,(SELECT COUNT(*) FROM revision FOR SYSTEM_TIME ALL) revisions,(SELECT COUNT(*) FROM published_flag f LEFT JOIN editor_reviews r ON r.flag_id=f.id WHERE f.shown=1 AND COALESCE(r.dismissed,0)=0) flags,(SELECT COUNT(*) FROM editor_reviews WHERE dismissed=1) dismissed,(SELECT COALESCE(SUM(copies),0) FROM note_copies) copied,(SELECT MAX(checked_at) FROM flag) updated_at"""
     return run(cur,sql)[0]
 
 def flag_rows(cur,qid=None):
@@ -137,9 +138,10 @@ def article():
     all_claims=request.args.get('all')=='1'
     gs=run(cur,'SELECT * FROM claim_group WHERE qid=%s'+('' if all_claims else ' AND id IN (SELECT group_id FROM published_flag WHERE qid=%s)')+' ORDER BY ordinal',(qid,) if all_claims else (qid,qid))
     groups=[{**g,'versions':unpack(g['versions']),'checks':unpack(g['checks'])} for g in gs]
+    groups=readable_groups(groups)
     for g in groups:g['flags']=[f['id'] for f in fs if f['group_id']==g['id']]
     if all_claims:
-        claims=run(cur,'SELECT id,lang,section,text,rev_id,gloss,ordinal FROM claim WHERE qid=%s ORDER BY FIELD(lang,\'en\',\'fi\',\'sv\',\'de\',\'ru\'),ordinal',(qid,))
+        claims=run(cur,'SELECT id,lang,section,text,rev_id,gloss,ordinal FROM readable_claim WHERE qid=%s ORDER BY FIELD(lang,\'en\',\'fi\',\'sv\',\'de\',\'ru\'),ordinal',(qid,))
         include_unrepresented(groups,claims)
     # Actually run the three inspection queries for the current selected claim.
     requested_group=next((g for g in groups if g['id']==requested_claim or any(v.get('claim_id',v.get('id'))==requested_claim for v in g['versions'].values())),None) if requested_claim else None
@@ -163,12 +165,13 @@ def article():
         for g in groups:
             for lang,v in g['versions'].items():
                 r=versions.get(lang);passage=indexes[lang].match(v['text']) if r else None
+                if not readable(passage):passage=None
                 v['asof_present']=bool(passage);v['asof_text']=passage
                 v['asof_match']='exact' if passage==normalize(v['text']) else 'similar' if passage else 'not found'
                 v['asof_absence_verified']=verified_absence(v,fs,r['rev_id'] if r else None)
                 if r:v['asof_revision']=r['rev_id']
-    unread=run(cur,"SELECT id,lang,text,title,url,status FROM (SELECT s.id,cl.lang,LEFT(cl.text,80) text,s.title,s.url,s.status,ROW_NUMBER() OVER (PARTITION BY s.id ORDER BY cl.lang,cl.ordinal) source_row FROM claim cl JOIN claim_source cs ON cs.claim_id=cl.id JOIN cited_source s ON s.id=cs.source_id WHERE cl.qid=%s AND s.status<>'Read') unique_sources WHERE source_row=1",(qid,))
-    claim_counts={r['lang']:r['n'] for r in run(cur,'SELECT lang,COUNT(*) n FROM claim WHERE qid=%s GROUP BY lang',(qid,))}
+    unread=run(cur,"SELECT id,lang,text,title,url,status FROM (SELECT s.id,cl.lang,LEFT(cl.text,80) text,s.title,s.url,s.status,ROW_NUMBER() OVER (PARTITION BY s.id ORDER BY cl.lang,cl.ordinal) source_row FROM readable_claim cl JOIN claim_source cs ON cs.claim_id=cl.id JOIN cited_source s ON s.id=cs.source_id WHERE cl.qid=%s AND s.status<>'Read') unique_sources WHERE source_row=1",(qid,))
+    claim_counts={r['lang']:r['n'] for r in run(cur,'SELECT lang,COUNT(*) n FROM readable_claim WHERE qid=%s GROUP BY lang',(qid,))}
     a.update(flags=fs,groups=groups,history=history,queries=traces,selected_claim_id=anchor,asof_revisions={r['lang']:r['rev_id'] for r in past},unread=unread,asof=asof,claim_counts=claim_counts,claim_count=sum(claim_counts.values()))
     c.close();return jsonify(a)
 
@@ -185,7 +188,7 @@ def search():
     c=db();cur=c.cursor();traces=[]
     cur.execute('SET SESSION mhnsw_ef_search=128')
     sql="""SELECT 'claim' kind,h.id,h.qid,h.lang,h.section,h.text,h.distance,NULL source_id,NULL url,NULL archive_url FROM
-    (SELECT id,qid,lang,section,text,VEC_DISTANCE_COSINE(embedding,VEC_FromText(%s)) distance FROM claim WHERE lang IN ('fi','sv','en') ORDER BY distance LIMIT 18) h
+    (SELECT id,qid,lang,section,text,VEC_DISTANCE_COSINE(embedding,VEC_FromText(%s)) distance FROM readable_claim WHERE lang IN ('fi','sv','en') ORDER BY distance LIMIT 18) h
     UNION ALL SELECT 'source' kind,h.id,NULL qid,JSON_UNQUOTE(JSON_EXTRACT(s.metadata,'$.language')) lang,s.title section,h.text,h.distance,h.source_id,s.url,s.archive_url FROM
     (SELECT id,source_id,text,VEC_DISTANCE_COSINE(embedding,VEC_FromText(%s)) distance FROM source_chunk ORDER BY distance LIMIT 18) h
     JOIN cited_source s ON s.id=h.source_id WHERE s.status='Read' ORDER BY distance LIMIT 36"""

@@ -15,7 +15,7 @@ WORKDIR /app
 COPY deploy/requirements-api.txt /tmp/requirements-api.txt
 RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu && pip install --no-cache-dir -r /tmp/requirements-api.txt
 RUN python -c "from sentence_transformers import SentenceTransformer; m=SentenceTransformer('sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2',cache_folder='/models'); assert m.get_sentence_embedding_dimension()==384"
-COPY pipeline/__init__.py pipeline/common.py pipeline/check.py pipeline/prompts.py pipeline/embeddings.py pipeline/text.py /app/pipeline/
+COPY pipeline/__init__.py pipeline/common.py pipeline/check.py pipeline/prompts.py pipeline/embeddings.py pipeline/text.py pipeline/presentation.py /app/pipeline/
 COPY service/ /app/service/
 COPY --from=frontend /front/dist /app/frontend/
 COPY deploy/previous-assets/ /app/frontend/assets/

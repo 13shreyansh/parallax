@@ -5,6 +5,7 @@ CREATE TABLE IF NOT EXISTS topic (qid VARCHAR(24) PRIMARY KEY, title VARCHAR(255
 CREATE TABLE IF NOT EXISTS topic_theme (qid VARCHAR(24), theme VARCHAR(80), PRIMARY KEY(qid,theme));
 CREATE TABLE IF NOT EXISTS article (qid VARCHAR(24),lang CHAR(2),page_id BIGINT,rev_id BIGINT,title VARCHAR(255),revised_at DATETIME,wikitext MEDIUMTEXT,origin VARCHAR(100),PRIMARY KEY(qid,lang));
 CREATE TABLE IF NOT EXISTS claim (id CHAR(32) PRIMARY KEY,qid VARCHAR(24),lang CHAR(2),rev_id BIGINT,ordinal INT,section VARCHAR(500),text TEXT,citations JSON,gloss TEXT,embedding VECTOR(384) NOT NULL,KEY(qid,lang),VECTOR INDEX claim_cosine(embedding) M=16 DISTANCE=cosine);
+CREATE OR REPLACE VIEW readable_claim AS SELECT * FROM claim WHERE text NOT LIKE '%|%' AND text NOT LIKE '%{{%' AND text NOT LIKE '%[[%';
 CREATE TABLE IF NOT EXISTS cited_source (id CHAR(32) PRIMARY KEY,url TEXT,title TEXT,status VARCHAR(40),archive_url TEXT,text MEDIUMTEXT,read_at DATETIME,content_sha256 CHAR(64),metadata JSON);
 CREATE TABLE IF NOT EXISTS source_chunk (id CHAR(32) PRIMARY KEY,source_id CHAR(32),ordinal INT,text TEXT,embedding VECTOR(384) NOT NULL,KEY(source_id),VECTOR INDEX source_cosine(embedding) M=16 DISTANCE=cosine);
 CREATE TABLE IF NOT EXISTS claim_source (claim_id CHAR(32),source_id CHAR(32),PRIMARY KEY(claim_id,source_id));
