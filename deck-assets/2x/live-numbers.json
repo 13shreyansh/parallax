@@ -1,0 +1,198 @@
+{
+ "counts": {
+  "articles": 22,
+  "theme_title": "Finland in the Second World War",
+  "themes": 1,
+  "versions": 68,
+  "claims": 6747,
+  "passages": 20963,
+  "sources": 1543,
+  "sources_read": 303,
+  "revisions": 31461,
+  "flags": 80,
+  "dismissed": 0,
+  "copied": "0",
+  "updated_at": "Sun, 15 Nov 2026 01:17:45 GMT"
+ },
+ "home_queries": [
+  [
+   "Closest source passage",
+   5,
+   1.37
+  ],
+  [
+   "Ranked articles",
+   22,
+   37.95
+  ],
+  [
+   "Schema",
+   null,
+   null
+  ]
+ ],
+ "articles": [
+  [
+   "Winter War",
+   50
+  ],
+  [
+   "Continuation War",
+   16
+  ],
+  [
+   "Mannerheim Cross",
+   8
+  ],
+  [
+   "Driftwood theory",
+   3
+  ],
+  [
+   "Lapland War",
+   1
+  ],
+  [
+   "Detachment Kuhlmey",
+   1
+  ],
+  [
+   "Finnish Democratic Republic",
+   1
+  ],
+  [
+   "Lapplandsender",
+   0
+  ],
+  [
+   "Hjalmar Siilasvuo",
+   0
+  ],
+  [
+   "Swedish Volunteer Battalion",
+   0
+  ]
+ ],
+ "article_queries": [
+  [
+   "Aligned claims",
+   3,
+   2.68
+  ],
+  [
+   "Closest source passage",
+   0,
+   0.8
+  ],
+  [
+   "As of today",
+   5,
+   5.29
+  ],
+  [
+   "Schema",
+   null,
+   null
+  ]
+ ],
+ "article_history": {
+  "revisions": 14726,
+  "earliest": "Thu, 29 Nov 2001 02:07:08 GMT",
+  "latest": "Fri, 13 Nov 2026 10:39:22 GMT"
+ },
+ "search_queries": [
+  [
+   "Closest claims and source texts",
+   36,
+   167.49
+  ],
+  [
+   "Schema",
+   null,
+   null
+  ]
+ ],
+ "answer": {
+  "answerable": true,
+  "sentences": [
+   {
+    "text": "According to Swedish Wikipedia and Finnish Wikipedia, Finland was not allied with Germany de jure because no formal alliance treaty was concluded between them.",
+    "cites": [
+     5,
+     7
+    ]
+   },
+   {
+    "text": "However, both sources state that Finland was allied with Germany de facto, as it fought using German resources and weapons, provided its territory for German use, and placed troops under German command.",
+    "cites": [
+     4,
+     5,
+     7
+    ]
+   }
+  ],
+  "passages": [
+   {
+    "n": 4,
+    "id": "6f4a96f9261613c7f914b91739a6bbb0",
+    "kind": "claim",
+    "lang": "fi",
+    "label": "Finnish Wikipedia, Continuation War",
+    "href": "https://fi.wikipedia.org/w/index.php?oldid=24333541"
+   },
+   {
+    "n": 5,
+    "id": "7317d10fe36e345a0ad4c1663c2d0735",
+    "kind": "claim",
+    "lang": "sv",
+    "label": "Swedish Wikipedia, Continuation War",
+    "href": "https://sv.wikipedia.org/w/index.php?oldid=59682771"
+   },
+   {
+    "n": 7,
+    "id": "5a0dfd3751b0530fbcad98be243a5a6f",
+    "kind": "claim",
+    "lang": "fi",
+    "label": "Finnish Wikipedia, Continuation War",
+    "href": "https://fi.wikipedia.org/w/index.php?oldid=24333541"
+   }
+  ],
+  "model": "gemini-3.8-flash",
+  "written_at": "2026-11-15T02:58:19Z"
+ },
+ "eval": {
+  "blind_real": {
+   "confirmed": 44,
+   "sample_size": 60
+  },
+  "blind_real_early": {
+   "confirmed": 53,
+   "sample_size": 60
+  },
+  "planted": {
+   "caught": 32,
+   "errors": 40,
+   "false_flags": 0,
+   "controls": 40
+  },
+  "planted_fresh": {
+   "caught": 34,
+   "errors": 40,
+   "false_flags": 0,
+   "controls": 40
+  },
+  "planted_third": {
+   "caught": 40,
+   "errors": 40,
+   "false_flags": 0,
+   "controls": 40
+  }
+ },
+ "database": "11.8.9-MariaDB-ubu2404",
+ "flags_total": 80,
+ "health": {
+  "ok": true,
+  "database": "11.8.9-MariaDB-ubu2404",
+  "commit": "885da142c795adac98212038034eb5c26ba99705"
+ }
+}
