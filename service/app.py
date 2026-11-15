@@ -99,7 +99,7 @@ def tidy(passage):
 def closest_sentence(article,claim):
     # Whole sentences only: a full stop after a day number ("28. marraskuuta") does not end a Finnish sentence.
     needle=normalize(claim);folded=needle.casefold();tokens=words(needle);best=None;score=.62
-    for sentence in re.split(r'(?<=[.!?])(?<!\d\.)\s+(?=[^\Wa-zåäö_])|(?<=[a-zåäö)\]"”][.!?])\s+(?=\d)',normalize(article,strict=True)):
+    for sentence in re.split(r'(?<=[.!?])\s+(?=[^\Wa-zåäö_]|["“(])',normalize(article,strict=True)):
         sentence=sentence.strip()
         if len(sentence)<20 or '\ufffc' in sentence or len(tokens&words(sentence))<min(3,len(tokens)):continue
         ratio=difflib.SequenceMatcher(None,folded,sentence.casefold(),autojunk=False).ratio()
