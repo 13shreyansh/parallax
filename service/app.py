@@ -201,7 +201,7 @@ def search():
     if best and best['distance']<=.45:
         gs=run(cur,'SELECT g.* FROM claim_group g WHERE anchor_id=%s OR JSON_SEARCH(versions,\'one\',%s,NULL,\'$.*.claim_id\') IS NOT NULL ORDER BY (SELECT COUNT(*) FROM published_flag f WHERE f.group_id=g.id) DESC,g.ordinal LIMIT 1',(best['id'],best['id']))
         if gs:
-            group={**gs[0],'versions':unpack(gs[0]['versions'])};flags=[f for f in flag_rows(cur,best['qid']) if f['group_id']==group['id'] and not f['dismissed']]
+            cleaned=readable_groups([{**gs[0],'versions':unpack(gs[0]['versions'])}]);group=cleaned[0] if cleaned else {'id':best['id'],'versions':{best['lang']:best}};flags=[f for f in flag_rows(cur,best['qid']) if f['group_id']==group['id'] and not f['dismissed']]
         else:group={'id':best['id'],'versions':{best['lang']:best}}
         topic=article_meta(cur,best['qid'])
     result={'question':question,'hits':hits,'group':group,'flags':flags,'topic':topic,'queries':traces,'counts':counts(cur)};c.close();return jsonify(result)
