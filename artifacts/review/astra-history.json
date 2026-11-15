@@ -1,0 +1,36 @@
+[
+  {
+    "width": 1440,
+    "history": [
+      {
+        "asof": "2012-11-27",
+        "revision": 12362314,
+        "absenceVerified": true
+      },
+      {
+        "asof": "2012-11-20",
+        "revision": 12251585,
+        "absenceVerified": false
+      }
+    ],
+    "supportQuotes": 4,
+    "nyt": []
+  },
+  {
+    "width": 390,
+    "history": [
+      {
+        "asof": "2012-11-27",
+        "revision": 12362314,
+        "absenceVerified": true
+      },
+      {
+        "asof": "2012-11-20",
+        "revision": 12251585,
+        "absenceVerified": false
+      }
+    ],
+    "supportQuotes": 4,
+    "nyt": []
+  }
+]

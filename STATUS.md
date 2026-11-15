@@ -10,7 +10,7 @@ DONE:
 - VPS MariaDB 11.8.9 and API are running; HTTPS health verified. All active vectors, source passages and 14,726 revisions imported.
 - Read-only container import and Unix-socket authentication bugs fixed and regression checked.
 - Home and Winter War are live. Ask, Method and time travel are hidden until verified.
-NUMBERS: measured held-out 32/40 planted errors caught (80%), 0/40 false flags; dropped sentences 0/8. Blind gpt-6-astra review confirmed 53/60 (88.3% precision); six false and one uncertain were hidden, including mirrored counterparts. Previous baseline measured 5/36. Winter War has 67 unique publication-ready flags after quality exclusions. The first hosted snapshot had 12, then was refreshed to 77 before review.
+NUMBERS: measured held-out 32/40 planted errors caught (80%), 0/40 false flags; dropped sentences 0/8. Blind gpt-6-astra review confirmed 53/60 (88.3% precision); six false and one uncertain were hidden, including mirrored counterparts. Previous baseline measured 5/36. The theme now has publication-ready flags with generated editor notes; exact live counts are queried from the hosted database. The first hosted snapshot had 12, then was refreshed to 77 before review.
 SCREENSHOTS: artifacts/e2e/core-home-1440.png; artifacts/e2e/core-home-390.png; artifacts/e2e/core-source-390.png
 REVIEW: blind evidence precision measured 53/60; separate spec and build passes pending.
 NEXT: release core screens, then verify each remaining feature and redeploy.
@@ -102,3 +102,10 @@ Rauhanteon j√§lkeen Kallio murtui ruumiillisesti ja henkisesti. Puoli vuotta my√
 
 ## Job 05 live milestone, 01:22 Helsinki
 Core release 4fe4330 verified public at https://parallax-gamma-red.vercel.app. VPS HTTPS health reports that exact commit. Deployed Chromium core flow passed at 1440x900 and 390px with zero console errors and no horizontal overflow. Phone evidence-sheet screenshots now wait for the animation to finish. Source-backed language fixes and Gemini-generated editor notes are stored. The next release applies independent review exclusions and fixes a slow temporal lookup (qid scanned all historical bodies; versioned primary-key branches seek each language page).
+
+## Job 05 expanded release, 01:56 Helsinki
+Expanded release 72f655a428eb80dcd37d5b541c091910325aebc4 passed the deployed read flow on the VPS and the staged Vercel routing alias at 1440x900 and 390px, with zero console errors and no page overflow. The Vercel project route was promoted to proxy its verified VPS frontend and API; the original Vercel build remains aa7c19e because the account hit its 100-deploy daily limit. No purchase or other project configuration was changed. Public propagation and a repeat on the public URL are being checked.
+
+Fresh independently labeled, disjoint article-family controlled test: measured 34/40 errors caught (85%), 0/40 false flags, including 2/8 dropped sentences. First held-out remains 32/40 (80%), 0/40 false flags. Neither result reaches the 90% recall target. Prompts were frozen before each measurement; the results are not relabeled as development performance.
+
+Source-recovery counts above concern cited URL records: 67 Read / 61 unreachable / 8 book-preview URLs before, 110 Read / 20 unreachable / 8 book-preview URLs after. A separate current count finds 550 offline book reference records on Winter War; these remain Book, not checked.

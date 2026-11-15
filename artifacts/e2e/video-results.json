@@ -1,0 +1,33 @@
+{
+  "run": "07006677-c064-4c71-9e52-8723c296f0f8",
+  "base": "https://parallax-gamma-red.vercel.app",
+  "results": [
+    {
+      "width": 1440,
+      "commit": "5d848a465f0b50bfbd2b1a8c87e31b3312c1d532",
+      "errors": [],
+      "overflow": false,
+      "clipboard_matches": true,
+      "review_persisted_in_second_context": true,
+      "source": "65c3491c5d1f63e938fe4b3e32617dc9",
+      "language_fix": "0e4e4c2a931f53c6324bac69a15dda37"
+    },
+    {
+      "width": 390,
+      "commit": "5d848a465f0b50bfbd2b1a8c87e31b3312c1d532",
+      "errors": [],
+      "overflow": false,
+      "clipboard_matches": true,
+      "review_persisted_in_second_context": true,
+      "source": "65c3491c5d1f63e938fe4b3e32617dc9",
+      "language_fix": "0e4e4c2a931f53c6324bac69a15dda37"
+    }
+  ],
+  "copies": {
+    "65c3491c5d1f63e938fe4b3e32617dc9": 3
+  },
+  "cleanup": {
+    "restored": true,
+    "run": "07006677-c064-4c71-9e52-8723c296f0f8"
+  }
+}

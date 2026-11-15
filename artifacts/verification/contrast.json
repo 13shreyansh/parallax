@@ -1,0 +1,152 @@
+[
+  {
+    "foreground": "ink",
+    "background": "surface",
+    "ratio": 17.78,
+    "pass": true
+  },
+  {
+    "foreground": "ink",
+    "background": "ground",
+    "ratio": 16.44,
+    "pass": true
+  },
+  {
+    "foreground": "ink",
+    "background": "blue-tint",
+    "ratio": 15.98,
+    "pass": true
+  },
+  {
+    "foreground": "ink-2",
+    "background": "surface",
+    "ratio": 8.1,
+    "pass": true
+  },
+  {
+    "foreground": "ink-2",
+    "background": "ground",
+    "ratio": 7.49,
+    "pass": true
+  },
+  {
+    "foreground": "ink-2",
+    "background": "blue-tint",
+    "ratio": 7.28,
+    "pass": true
+  },
+  {
+    "foreground": "ink-3",
+    "background": "surface",
+    "ratio": 5.62,
+    "pass": true
+  },
+  {
+    "foreground": "ink-3",
+    "background": "ground",
+    "ratio": 5.2,
+    "pass": true
+  },
+  {
+    "foreground": "ink-3",
+    "background": "blue-tint",
+    "ratio": 5.05,
+    "pass": true
+  },
+  {
+    "foreground": "blue",
+    "background": "surface",
+    "ratio": 6.95,
+    "pass": true
+  },
+  {
+    "foreground": "blue",
+    "background": "ground",
+    "ratio": 6.43,
+    "pass": true
+  },
+  {
+    "foreground": "blue",
+    "background": "blue-tint",
+    "ratio": 6.25,
+    "pass": true
+  },
+  {
+    "foreground": "src",
+    "background": "surface",
+    "ratio": 6.57,
+    "pass": true
+  },
+  {
+    "foreground": "src",
+    "background": "ground",
+    "ratio": 6.08,
+    "pass": true
+  },
+  {
+    "foreground": "src",
+    "background": "blue-tint",
+    "ratio": 5.91,
+    "pass": true
+  },
+  {
+    "foreground": "lang",
+    "background": "surface",
+    "ratio": 5.93,
+    "pass": true
+  },
+  {
+    "foreground": "lang",
+    "background": "ground",
+    "ratio": 5.48,
+    "pass": true
+  },
+  {
+    "foreground": "lang",
+    "background": "blue-tint",
+    "ratio": 5.33,
+    "pass": true
+  },
+  {
+    "foreground": "tone",
+    "background": "surface",
+    "ratio": 6.7,
+    "pass": true
+  },
+  {
+    "foreground": "tone",
+    "background": "ground",
+    "ratio": 6.19,
+    "pass": true
+  },
+  {
+    "foreground": "tone",
+    "background": "blue-tint",
+    "ratio": 6.02,
+    "pass": true
+  },
+  {
+    "foreground": "fact",
+    "background": "surface",
+    "ratio": 6.09,
+    "pass": true
+  },
+  {
+    "foreground": "fact",
+    "background": "ground",
+    "ratio": 5.63,
+    "pass": true
+  },
+  {
+    "foreground": "fact",
+    "background": "blue-tint",
+    "ratio": 5.48,
+    "pass": true
+  },
+  {
+    "foreground": "on-ink-2",
+    "background": "ink",
+    "ratio": 9.639575564925334,
+    "pass": true
+  }
+]

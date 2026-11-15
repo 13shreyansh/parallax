@@ -1,0 +1,22 @@
+{
+  "russian": {
+    "fonts": [
+      {
+        "familyName": "Source Serif 4",
+        "postScriptName": "SourceSerif4-Regular",
+        "isCustomFont": true,
+        "glyphCount": 143
+      }
+    ]
+  },
+  "interface": {
+    "fonts": [
+      {
+        "familyName": "Commissioner Thin",
+        "postScriptName": "CommissionerThin-Regular_Regular",
+        "isCustomFont": true,
+        "glyphCount": 101
+      }
+    ]
+  }
+}

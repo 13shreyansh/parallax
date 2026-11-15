@@ -1,0 +1,81 @@
+[
+  {
+    "width": 1440,
+    "top": {
+      "distance": 55.23466825829705,
+      "fact": "0",
+      "issues": 0,
+      "lang": "0",
+      "last_changed": "Sat, 14 Nov 2026 08:46:44 GMT",
+      "qid": "Q2152516",
+      "src": "0",
+      "state": "checked",
+      "title": "Lapplandsender",
+      "titles": {
+        "en": "Lapplandsender",
+        "fi": "Lapplandsender",
+        "sv": "Lapplandsender"
+      },
+      "tone": "0"
+    },
+    "headers": [
+      {
+        "text": "Source",
+        "left": 637.046875,
+        "right": 674.953125,
+        "width": 37.90625
+      },
+      {
+        "text": "Languages",
+        "left": 683.015625,
+        "right": 741,
+        "width": 57.984375
+      },
+      {
+        "text": "Tone",
+        "left": 754.390625,
+        "right": 781.59375,
+        "width": 27.203125
+      },
+      {
+        "text": "Fact",
+        "left": 812.078125,
+        "right": 835.921875,
+        "width": 23.84375
+      }
+    ],
+    "gaps": [
+      8.0625,
+      13.390625,
+      30.484375
+    ],
+    "cta": {
+      "text": "See it on Lapplandsender",
+      "href": "/a/Q2152516"
+    }
+  },
+  {
+    "width": 390,
+    "top": {
+      "distance": 55.23466825829705,
+      "fact": "0",
+      "issues": 0,
+      "lang": "0",
+      "last_changed": "Sat, 14 Nov 2026 08:46:44 GMT",
+      "qid": "Q2152516",
+      "src": "0",
+      "state": "checked",
+      "title": "Lapplandsender",
+      "titles": {
+        "en": "Lapplandsender",
+        "fi": "Lapplandsender",
+        "sv": "Lapplandsender"
+      },
+      "tone": "0"
+    },
+    "cta": {
+      "text": "See it on Lapplandsender",
+      "href": "/a/Q2152516"
+    }
+  }
+]

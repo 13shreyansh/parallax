@@ -1,0 +1,40 @@
+[
+  {
+    "width": 1440,
+    "errors": [],
+    "keyboard_flags": [
+      "f40eb0b435257480ee545ddb41055325",
+      "d01b486e3a68475c65f93a1a8f4d0549",
+      "c004998aa35e70661f65b7b6949ba1c5"
+    ],
+    "font_families": {
+      "russian": "\"Source Serif 4 Variable\", serif",
+      "ui": "\"Commissioner Variable\", system-ui, sans-serif",
+      "loaded": "loading"
+    },
+    "reduced_motion_durations": [
+      "0s",
+      "0s"
+    ],
+    "overflow": false
+  },
+  {
+    "width": 390,
+    "errors": [],
+    "keyboard_flags": [
+      "f40eb0b435257480ee545ddb41055325",
+      "d01b486e3a68475c65f93a1a8f4d0549",
+      "c004998aa35e70661f65b7b6949ba1c5"
+    ],
+    "font_families": {
+      "russian": "\"Source Serif 4 Variable\", serif",
+      "ui": "\"Commissioner Variable\", system-ui, sans-serif",
+      "loaded": "loading"
+    },
+    "reduced_motion_durations": [
+      "0s",
+      "0s"
+    ],
+    "overflow": false
+  }
+]

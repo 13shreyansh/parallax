@@ -1,0 +1,127 @@
+{
+  "recorded_at": "2026-11-15T02:13:48.795471+00:00",
+  "base": "https://parallax-gamma-red.vercel.app",
+  "health": {
+    "commit": "ba39c49307811b0b900edcd3e636aefaca72c87a",
+    "database": "11.8.9-MariaDB-ubu2404",
+    "ok": true
+  },
+  "sql": "SELECT (SELECT COUNT(DISTINCT qid) FROM readable_claim) articles,(SELECT title FROM theme WHERE slug='finland-second-world-war') theme_title,(SELECT COUNT(*) FROM theme WHERE slug='finland-second-world-war') themes,(SELECT COUNT(*) FROM article WHERE qid IN (SELECT DISTINCT qid FROM readable_claim)) versions,(SELECT COUNT(*) FROM readable_claim) claims,(SELECT COUNT(DISTINCT s.id) FROM cited_source s JOIN claim_source cs ON cs.source_id=s.id JOIN readable_claim cl ON cl.id=cs.claim_id) sources,(SELECT COUNT(DISTINCT s.id) FROM cited_source s JOIN claim_source cs ON cs.source_id=s.id JOIN readable_claim cl ON cl.id=cs.claim_id WHERE s.status='Read') sources_read,(SELECT COUNT(*) FROM revision FOR SYSTEM_TIME ALL) revisions,(SELECT COUNT(*) FROM published_flag f LEFT JOIN editor_reviews r ON r.flag_id=f.id WHERE f.shown=1 AND COALESCE(r.dismissed,0)=0) flags,(SELECT COUNT(*) FROM editor_reviews WHERE dismissed=1) dismissed,(SELECT COALESCE(SUM(copies),0) FROM note_copies) copied,(SELECT MAX(checked_at) FROM flag) updated_at",
+  "sql_result": {
+    "counts": {
+      "articles": "22",
+      "theme_title": "Finland in the Second World War",
+      "themes": "1",
+      "versions": "68",
+      "claims": "6747",
+      "sources": "1543",
+      "sources_read": "303",
+      "revisions": "31461",
+      "flags": "80",
+      "dismissed": "0",
+      "copied": "0",
+      "updated_at": "2026-11-15 01:17:45"
+    },
+    "schema_privileges": [
+      {
+        "GRANTEE": "'parallax_read'@'localhost'",
+        "PRIVILEGE_TYPE": "SELECT",
+        "TABLE_SCHEMA": "parallax"
+      }
+    ],
+    "table_privileges": [
+      {
+        "GRANTEE": "'parallax_writer'@'localhost'",
+        "PRIVILEGE_TYPE": "SELECT",
+        "TABLE_SCHEMA": "parallax",
+        "TABLE_NAME": "review_write_marker"
+      },
+      {
+        "GRANTEE": "'parallax_writer'@'localhost'",
+        "PRIVILEGE_TYPE": "INSERT",
+        "TABLE_SCHEMA": "parallax",
+        "TABLE_NAME": "review_write_marker"
+      },
+      {
+        "GRANTEE": "'parallax_writer'@'localhost'",
+        "PRIVILEGE_TYPE": "UPDATE",
+        "TABLE_SCHEMA": "parallax",
+        "TABLE_NAME": "review_write_marker"
+      },
+      {
+        "GRANTEE": "'parallax_writer'@'localhost'",
+        "PRIVILEGE_TYPE": "SELECT",
+        "TABLE_SCHEMA": "parallax",
+        "TABLE_NAME": "flag"
+      },
+      {
+        "GRANTEE": "'parallax_writer'@'localhost'",
+        "PRIVILEGE_TYPE": "SELECT",
+        "TABLE_SCHEMA": "parallax",
+        "TABLE_NAME": "note_copies"
+      },
+      {
+        "GRANTEE": "'parallax_writer'@'localhost'",
+        "PRIVILEGE_TYPE": "INSERT",
+        "TABLE_SCHEMA": "parallax",
+        "TABLE_NAME": "note_copies"
+      },
+      {
+        "GRANTEE": "'parallax_writer'@'localhost'",
+        "PRIVILEGE_TYPE": "UPDATE",
+        "TABLE_SCHEMA": "parallax",
+        "TABLE_NAME": "note_copies"
+      },
+      {
+        "GRANTEE": "'parallax_writer'@'localhost'",
+        "PRIVILEGE_TYPE": "SELECT",
+        "TABLE_SCHEMA": "parallax",
+        "TABLE_NAME": "editor_reviews"
+      },
+      {
+        "GRANTEE": "'parallax_writer'@'localhost'",
+        "PRIVILEGE_TYPE": "INSERT",
+        "TABLE_SCHEMA": "parallax",
+        "TABLE_NAME": "editor_reviews"
+      },
+      {
+        "GRANTEE": "'parallax_writer'@'localhost'",
+        "PRIVILEGE_TYPE": "UPDATE",
+        "TABLE_SCHEMA": "parallax",
+        "TABLE_NAME": "editor_reviews"
+      }
+    ],
+    "database_network": "none",
+    "database_ports": {},
+    "database_arguments": [
+      "--skip-networking",
+      "--innodb-buffer-pool-size=384M"
+    ],
+    "groups": {
+      "total": "4616",
+      "checked": "4616"
+    },
+    "judgments": {
+      "total": "8874"
+    },
+    "raw_claims": {
+      "total": "6974"
+    }
+  },
+  "api_counts": {
+    "articles": 22,
+    "claims": 6747,
+    "copied": "0",
+    "dismissed": 0,
+    "flags": 80,
+    "revisions": 31461,
+    "sources": 1543,
+    "sources_read": 303,
+    "theme_title": "Finland in the Second World War",
+    "themes": 1,
+    "updated_at": "Sun, 15 Nov 2026 01:17:45 GMT",
+    "versions": 68
+  },
+  "counts_match": true,
+  "local_api_stopped": true
+}

@@ -1,0 +1,172 @@
+[
+  {
+    "width": 1440,
+    "errors": [],
+    "commit": "ba39c49307811b0b900edcd3e636aefaca72c87a",
+    "health": {
+      "commit": "ba39c49307811b0b900edcd3e636aefaca72c87a",
+      "database": "11.8.9-MariaDB-ubu2404",
+      "ok": true
+    },
+    "homeCounts": {
+      "articles": 22,
+      "claims": 6747,
+      "copied": "0",
+      "dismissed": 0,
+      "flags": 80,
+      "revisions": 31461,
+      "sources": 1543,
+      "sources_read": 303,
+      "theme_title": "Finland in the Second World War",
+      "themes": 1,
+      "updated_at": "Sun, 15 Nov 2026 01:17:45 GMT",
+      "versions": 68
+    },
+    "claimCounts": {
+      "de": 532,
+      "en": 600,
+      "fi": 535,
+      "ru": 668,
+      "sv": 158
+    },
+    "uniqueClaimCounts": {
+      "en": 600,
+      "fi": 535,
+      "sv": 158,
+      "de": 532,
+      "ru": 668
+    },
+    "allRaw": [],
+    "domRaw": [],
+    "search": [
+      {
+        "q": "Hur många svenska frivilliga deltog i vinterkriget?",
+        "claimHits": 18,
+        "badHits": [],
+        "badVersions": [],
+        "counts": 6747
+      },
+      {
+        "q": "When did the Winter War end?",
+        "claimHits": 18,
+        "badHits": [],
+        "badVersions": [],
+        "counts": 6747
+      },
+      {
+        "q": "Finnish tanks in the Winter War",
+        "claimHits": 18,
+        "badHits": [],
+        "badVersions": [],
+        "counts": 6747
+      },
+      {
+        "q": "Mannerheim line map",
+        "claimHits": 18,
+        "badHits": [],
+        "badVersions": [],
+        "counts": 6747
+      }
+    ],
+    "methodCounts": {
+      "articles": 22,
+      "claims": 6747,
+      "copied": "0",
+      "dismissed": 0,
+      "flags": 80,
+      "revisions": 31461,
+      "sources": 1543,
+      "sources_read": 303,
+      "theme_title": "Finland in the Second World War",
+      "themes": 1,
+      "updated_at": "Sun, 15 Nov 2026 01:17:45 GMT",
+      "versions": 68
+    },
+    "overflow": false
+  },
+  {
+    "width": 390,
+    "errors": [],
+    "commit": "ba39c49307811b0b900edcd3e636aefaca72c87a",
+    "health": {
+      "commit": "ba39c49307811b0b900edcd3e636aefaca72c87a",
+      "database": "11.8.9-MariaDB-ubu2404",
+      "ok": true
+    },
+    "homeCounts": {
+      "articles": 22,
+      "claims": 6747,
+      "copied": "0",
+      "dismissed": 0,
+      "flags": 80,
+      "revisions": 31461,
+      "sources": 1543,
+      "sources_read": 303,
+      "theme_title": "Finland in the Second World War",
+      "themes": 1,
+      "updated_at": "Sun, 15 Nov 2026 01:17:45 GMT",
+      "versions": 68
+    },
+    "claimCounts": {
+      "de": 532,
+      "en": 600,
+      "fi": 535,
+      "ru": 668,
+      "sv": 158
+    },
+    "uniqueClaimCounts": {
+      "en": 600,
+      "fi": 535,
+      "sv": 158,
+      "de": 532,
+      "ru": 668
+    },
+    "allRaw": [],
+    "domRaw": [],
+    "search": [
+      {
+        "q": "Hur många svenska frivilliga deltog i vinterkriget?",
+        "claimHits": 18,
+        "badHits": [],
+        "badVersions": [],
+        "counts": 6747
+      },
+      {
+        "q": "When did the Winter War end?",
+        "claimHits": 18,
+        "badHits": [],
+        "badVersions": [],
+        "counts": 6747
+      },
+      {
+        "q": "Finnish tanks in the Winter War",
+        "claimHits": 18,
+        "badHits": [],
+        "badVersions": [],
+        "counts": 6747
+      },
+      {
+        "q": "Mannerheim line map",
+        "claimHits": 18,
+        "badHits": [],
+        "badVersions": [],
+        "counts": 6747
+      }
+    ],
+    "methodCounts": {
+      "articles": 22,
+      "claims": 6747,
+      "copied": "2",
+      "dismissed": 0,
+      "flags": 80,
+      "revisions": 31461,
+      "sources": 1543,
+      "sources_read": 303,
+      "theme_title": "Finland in the Second World War",
+      "themes": 1,
+      "updated_at": "Sun, 15 Nov 2026 01:17:45 GMT",
+      "versions": 68
+    },
+    "overflow": false
+  }
+]

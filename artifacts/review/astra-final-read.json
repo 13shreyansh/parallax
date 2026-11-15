@@ -1,0 +1,620 @@
+[
+  {
+    "width": 1440,
+    "commit": "ba39c49307811b0b900edcd3e636aefaca72c87a",
+    "health": {
+      "commit": "ba39c49307811b0b900edcd3e636aefaca72c87a",
+      "database": "11.8.9-MariaDB-ubu2404",
+      "ok": true
+    }
+  },
+  {
+    "width": 1440,
+    "name": "home",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 1440,
+    "name": "home-issues",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 1440,
+    "test": "home",
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "examples": [
+      "enHow many Soviet soldiers died in the Winter War?",
+      "fiKuinka monta ruotsalaista vapaaehtoista taisteli talvisodassa?",
+      "svNär slutade vinterkriget?"
+    ]
+  },
+  {
+    "width": 1440,
+    "name": "examples",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 1440,
+    "name": "example-result",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 1440,
+    "test": "examples",
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "name": "article-source",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 1440,
+    "railAfterJ": {
+      "scrollTop": 0,
+      "head": 120,
+      "top": 104
+    }
+  },
+  {
+    "width": 1440,
+    "name": "next-flag",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 1440,
+    "test": "source",
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "test": "mobile-controls",
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "name": "filters-none",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 1440,
+    "test": "filters",
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "name": "unflagged-direct",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 1440,
+    "test": "unflagged-direct",
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "name": "ask-source",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 1440,
+    "sourceHitLinks": [
+      {
+        "link": "https://svenskafrivilliga.com/",
+        "lang": "sv",
+        "title": "Svenska frivilliga i Finland 1939-1944distance 0.22"
+      },
+      {
+        "link": "https://web.archive.org/web/20191019031427/http://www.finlandsfrivilliga.se/historik.html",
+        "lang": "sv",
+        "title": "SFM - Historikdistance 0.24"
+      },
+      {
+        "link": "https://svenskafrivilliga.com/",
+        "lang": "sv",
+        "title": "Svenska frivilliga i Finland 1939-1944distance 0.25"
+      },
+      {
+        "link": "https://svenskafrivilliga.com/",
+        "lang": "sv",
+        "title": "Svenska frivilliga i Finland 1939-1944distance 0.26"
+      },
+      {
+        "link": "https://svenskafrivilliga.com/",
+        "lang": "sv",
+        "title": "Svenska frivilliga i Finland 1939-1944distance 0.27"
+      },
+      {
+        "link": "https://parallax-gamma-red.vercel.app/a/Q134949?show=all",
+        "lang": "sv",
+        "title": "svWikipediaIntroductiondistance 0.27"
+      },
+      {
+        "link": "https://web.archive.org/web/20191019031427/http://www.finlandsfrivilliga.se/historik.html",
+        "lang": "sv",
+        "title": "SFM - Historikdistance 0.27"
+      },
+      {
+        "link": "https://svenskafrivilliga.com/",
+        "lang": "sv",
+        "title": "Svenska frivilliga i Finland 1939-1944distance 0.27"
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "test": "ask-source",
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "name": "ask-unflagged",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 1440,
+    "unflaggedAsk": {
+      "q": "När slutade vinterkriget?",
+      "href": "/a/Q134949?show=all&claim=0f6337f2d2334a4fe81b6f0a88b365b1",
+      "quote": "Nimitys talvisota tuli käyttöön vasta jatkosodan aikana, muun muassa ylipäällikkö Mannerheimin päiväkäskyssä n:o 1 kesäkuussa 1941, ja Risto Rytin radiopuheessa 26. kesäkuuta 1941, mutta ei vakiintunut heti.",
+      "selected": "Nimitys talvisota tuli käyttöön vasta jatkosodan aikana, muun muassa ylipäällikkö Mannerheimin päiväkäskyssä n:o 1 kesäkuussa 1941, ja Risto Rytin radiopuheessa 26. kesäkuuta 1941, mutta ei vakiintunut heti.\n\nThe name Winter War came into use only during the Continuation War, including Commander-in-Chief Mannerheim's order of the day No. 1 in June 1941, and Risto Ryti's radio speech on 26 June 1941, but was not established immediately.\n\nTalvisodan alku päivä päivältä (vinterkrigets början dag för dag)\n\nThe beginning of the Winter War day by day\n\nIt began with a Soviet invasion of Finland on 30 November 1939, three months after the outbreak of World War II, and ended three and a half months later with the Moscow Peace Treaty on 13 March 1940."
+    }
+  },
+  {
+    "width": 1440,
+    "test": "ask-unflagged",
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "name": "ask-empty",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 1440,
+    "test": "ask-negative",
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "name": "unknown",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 1440,
+    "test": "unknown",
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "name": "date-failure",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 1440,
+    "test": "date-failure",
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "name": "method",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 1440,
+    "name": "method-accuracy",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 1440,
+    "evaluationLink": "https://github.com/13shreyansh/parallax/blob/parallax/eval/parallax/EVALUATION.md"
+  },
+  {
+    "width": 1440,
+    "test": "method",
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "errors": [
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "width": 390,
+    "commit": "ba39c49307811b0b900edcd3e636aefaca72c87a",
+    "health": {
+      "commit": "ba39c49307811b0b900edcd3e636aefaca72c87a",
+      "database": "11.8.9-MariaDB-ubu2404",
+      "ok": true
+    }
+  },
+  {
+    "width": 390,
+    "name": "home",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 390,
+    "name": "home-issues",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 390,
+    "test": "home",
+    "pass": true
+  },
+  {
+    "width": 390,
+    "examples": [
+      "enHow many Soviet soldiers died in the Winter War?",
+      "fiKuinka monta ruotsalaista vapaaehtoista taisteli talvisodassa?",
+      "svNär slutade vinterkriget?"
+    ]
+  },
+  {
+    "width": 390,
+    "name": "examples",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 390,
+    "name": "example-result",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 390,
+    "test": "examples",
+    "pass": true
+  },
+  {
+    "width": 390,
+    "name": "article-source",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 390,
+    "railAfterJ": {
+      "scrollTop": 0,
+      "head": 125.28125,
+      "top": 117.28125
+    }
+  },
+  {
+    "width": 390,
+    "name": "next-flag",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 390,
+    "test": "source",
+    "pass": true
+  },
+  {
+    "width": 390,
+    "railTargets": [
+      {
+        "label": "Previous flag",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "label": "Next flag",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "label": "Close reading",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "label": "Copy note for editors",
+        "w": 358,
+        "h": 44
+      },
+      {
+        "label": "Read the note first",
+        "w": 127.109375,
+        "h": 44
+      },
+      {
+        "label": "Not an issue",
+        "w": 71.6875,
+        "h": 44
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "name": "date-sheet",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 390,
+    "dateButton": {
+      "x": 282,
+      "y": 770,
+      "width": 92,
+      "height": 44
+    },
+    "toolbarTargets": [
+      {
+        "label": "Flagged claims 38",
+        "w": 178.5,
+        "h": 44
+      },
+      {
+        "label": "All claims 1,293",
+        "w": 177.5,
+        "h": 44
+      },
+      {
+        "label": "Source3",
+        "w": 80.765625,
+        "h": 44
+      },
+      {
+        "label": "Languages40",
+        "w": 109.015625,
+        "h": 44
+      },
+      {
+        "label": "Tone3",
+        "w": 70.0625,
+        "h": 44
+      },
+      {
+        "label": "Wrong fact4",
+        "w": 104.390625,
+        "h": 44
+      },
+      {
+        "label": "+2 languages",
+        "w": 175,
+        "h": 44
+      },
+      {
+        "label": "Show the SQL",
+        "w": 175,
+        "h": 44
+      },
+      {
+        "label": "fi",
+        "w": 119.65625,
+        "h": 44
+      },
+      {
+        "label": "sv",
+        "w": 119.671875,
+        "h": 44
+      },
+      {
+        "label": "en",
+        "w": 118.671875,
+        "h": 44
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "test": "mobile-controls",
+    "pass": true
+  },
+  {
+    "width": 390,
+    "name": "filters-none",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 390,
+    "test": "filters",
+    "pass": true
+  },
+  {
+    "width": 390,
+    "name": "unflagged-direct",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 390,
+    "test": "unflagged-direct",
+    "pass": true
+  },
+  {
+    "width": 390,
+    "name": "ask-source",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 390,
+    "sourceHitLinks": [
+      {
+        "link": "https://svenskafrivilliga.com/",
+        "lang": "sv",
+        "title": "Svenska frivilliga i Finland 1939-1944distance 0.22"
+      },
+      {
+        "link": "https://web.archive.org/web/20191019031427/http://www.finlandsfrivilliga.se/historik.html",
+        "lang": "sv",
+        "title": "SFM - Historikdistance 0.24"
+      },
+      {
+        "link": "https://svenskafrivilliga.com/",
+        "lang": "sv",
+        "title": "Svenska frivilliga i Finland 1939-1944distance 0.25"
+      },
+      {
+        "link": "https://svenskafrivilliga.com/",
+        "lang": "sv",
+        "title": "Svenska frivilliga i Finland 1939-1944distance 0.26"
+      },
+      {
+        "link": "https://svenskafrivilliga.com/",
+        "lang": "sv",
+        "title": "Svenska frivilliga i Finland 1939-1944distance 0.27"
+      },
+      {
+        "link": "https://parallax-gamma-red.vercel.app/a/Q134949?show=all",
+        "lang": "sv",
+        "title": "svWikipediaIntroductiondistance 0.27"
+      },
+      {
+        "link": "https://web.archive.org/web/20191019031427/http://www.finlandsfrivilliga.se/historik.html",
+        "lang": "sv",
+        "title": "SFM - Historikdistance 0.27"
+      },
+      {
+        "link": "https://svenskafrivilliga.com/",
+        "lang": "sv",
+        "title": "Svenska frivilliga i Finland 1939-1944distance 0.27"
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "test": "ask-source",
+    "pass": true
+  },
+  {
+    "width": 390,
+    "name": "ask-unflagged",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 390,
+    "unflaggedAsk": {
+      "q": "När slutade vinterkriget?",
+      "href": "/a/Q134949?show=all&claim=0f6337f2d2334a4fe81b6f0a88b365b1",
+      "quote": "Nimitys talvisota tuli käyttöön vasta jatkosodan aikana, muun muassa ylipäällikkö Mannerheimin päiväkäskyssä n:o 1 kesäkuussa 1941, ja Risto Rytin radiopuheessa 26. kesäkuuta 1941, mutta ei vakiintunut heti.",
+      "selected": "Nimitys talvisota tuli käyttöön vasta jatkosodan aikana, muun muassa ylipäällikkö Mannerheimin päiväkäskyssä n:o 1 kesäkuussa 1941, ja Risto Rytin radiopuheessa 26. kesäkuuta 1941, mutta ei vakiintunut heti.\n\nThe name Winter War came into use only during the Continuation War, including Commander-in-Chief Mannerheim's order of the day No. 1 in June 1941, and Risto Ryti's radio speech on 26 June 1941, but was not established immediately."
+    }
+  },
+  {
+    "width": 390,
+    "test": "ask-unflagged",
+    "pass": true
+  },
+  {
+    "width": 390,
+    "name": "ask-empty",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 390,
+    "test": "ask-negative",
+    "pass": true
+  },
+  {
+    "width": 390,
+    "name": "unknown",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 390,
+    "test": "unknown",
+    "pass": true
+  },
+  {
+    "width": 390,
+    "name": "date-failure",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 390,
+    "test": "date-failure",
+    "pass": true
+  },
+  {
+    "width": 390,
+    "name": "method",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 390,
+    "name": "method-accuracy",
+    "overflow": false,
+    "missingLang": 0,
+    "internals": false
+  },
+  {
+    "width": 390,
+    "evaluationLink": "https://github.com/13shreyansh/parallax/blob/parallax/eval/parallax/EVALUATION.md"
+  },
+  {
+    "width": 390,
+    "test": "method",
+    "pass": true
+  },
+  {
+    "width": 390,
+    "errors": [
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  }
+]
