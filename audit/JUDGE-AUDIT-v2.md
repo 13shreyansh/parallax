@@ -109,4 +109,4 @@ Avoid the Language distance sort and the "other close passages" list.
 - Behaviour with many judges at once. Stored answers help, but I ran no load test.
 - The Codex end-to-end scripts (`scripts/video-e2e.mjs`, `scripts/review-race.mjs`). They test the shared "Not an issue" write, which I removed on purpose, and the old labels, so they will fail if re-run. I did not update them.
 - The design detector reports 53 advisory notes, all font sizes, colours and radii outside the documented scale; 18 are in styles I added. No structural findings. I left them.
-- The GitHub repository is 13 commits behind the live site, plus Codex's leftover commit; I have not pushed.
+- The GitHub repository is 21 commits behind the live site (Codex's unpushed work and mine); I have not pushed.

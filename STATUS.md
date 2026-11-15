@@ -13,7 +13,7 @@ NUMBERS: held-out planted errors 40/40 caught, 0/40 false flags (measured, lates
 SCREENSHOTS: audit/shots-v2/d-home.png; audit/shots-v2/m-home.png; audit/shots-v2/d-entry-diff.png
 REVIEW: self re-review only, 14 of 14 automated checks pass at both widths; no separate reviewer ran. The design detector reports 53 advisory notes on sizes, colours and radii outside the documented scale, none structural.
 NEXT: record the video from the list in audit/JUDGE-AUDIT-v2.md; show scale beyond one theme if any time remains.
-NEEDS DECISION: push the 14 local commits to GitHub (the Method page links to the repository, which is behind the live site)?
+NEEDS DECISION: push the 21 local commits to GitHub (the Method page links to the repository, which is behind the live site)?
 BLOCKED: none
 
 ## Spec gaps I filled
