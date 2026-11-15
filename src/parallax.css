@@ -34,3 +34,5 @@
 .claim-cell[data-check=src]{--arrive-tint:#fde7e3}.claim-cell[data-check=lang]{--arrive-tint:#fbefc9}.claim-cell[data-check=tone]{--arrive-tint:#eee6fb}.claim-cell[data-check=fact]{--arrive-tint:#d9f0ee}.claim-cell.claim-arrived .article-quote{animation:claim-arrive 700ms ease-out}@keyframes claim-arrive{from{background:var(--arrive-tint,var(--blue-tint))}to{background:transparent}}
 
 .empty-search-examples { display:flex; flex-direction:column; align-items:flex-start; gap:8px; margin-top:16px; }
+
+.article-page { overflow-anchor:none; }
