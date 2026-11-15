@@ -118,3 +118,6 @@
 .entry-diff del{color:var(--ink-3);text-decoration:line-through;text-decoration-color:var(--src)}
 .entry-diff ins{text-decoration:none;background:var(--blue-tint);box-shadow:0 1px 0 var(--blue);border-radius:2px}
 .entry-diff>.small{padding:0 14px 10px}
+/* Leave room for the severity heading above a row scrolled into view. */
+@media(min-width:1351px){.claim-row{scroll-margin-top:230px}}
+@media(min-width:700px) and (max-width:1350px){.claim-row{scroll-margin-top:276px}}
