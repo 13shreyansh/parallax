@@ -58,7 +58,13 @@ def counts(cur):
 
 def flag_rows(cur,qid=None):
     rows=run(cur,"SELECT f.*,r.reason,r.dismissed,r.reviewed_at,COALESCE(n.copies,0) copied_count FROM published_flag f LEFT JOIN claim_group g ON g.id=f.group_id LEFT JOIN editor_reviews r ON r.flag_id=f.id LEFT JOIN note_copies n ON n.flag_id=f.id WHERE f.shown=1"+(' AND f.qid=%s' if qid else '')+" ORDER BY g.ordinal,FIELD(f.check_type,'src','lang','tone','fact'),f.id",(qid,) if qid else ())
-    return [{**unpack(r['payload']),'dismissed':bool(r['dismissed']),'review_reason':r['reason'],'reviewed_at':r['reviewed_at'],'copied_count':r['copied_count']} for r in rows]
+    return [{**note_link(unpack(r['payload'])),'dismissed':bool(r['dismissed']),'review_reason':r['reason'],'reviewed_at':r['reviewed_at'],'copied_count':r['copied_count']} for r in rows]
+
+PUBLIC_URL=os.environ.get('PARALLAX_PUBLIC_URL','https://parallax-gamma-red.vercel.app')
+def note_link(payload):
+    # Notes were written with an earlier address; point editors at the public one.
+    if payload.get('note'):payload['note']=re.sub(r'https://parallax-[a-z0-9-]+\.vercel\.app',PUBLIC_URL,payload['note'])
+    return payload
 
 def article_meta(cur,qid):
     rows=run(cur,'SELECT * FROM topic WHERE qid=%s',(qid,))
@@ -139,7 +145,7 @@ def robots():return 'User-agent: *\nAllow: /\n',200,{'Content-Type':'text/plain;
 @app.route('/api/parallax',methods=['GET','POST'])
 def browser_api():
     mode=request.args.get('mode','home')
-    allowed={'GET':{'health','home','article','search','method','examples'},'POST':{'review','copied'}}
+    allowed={'GET':{'health','home','article','search','method','examples'},'POST':{'copied'}}  # reviews stay in the reader's browser; nobody can dismiss a finding for everyone
     if mode not in allowed[request.method]:return jsonify(error='This action is not available.'),405
     return app.view_functions[mode]()
 
@@ -258,7 +264,7 @@ def method():
     for f in fs:
         if not f['dismissed'] and f['check'] not in examples:examples[f['check']]=f
     evaluations={r['name']:unpack(r['payload']) for r in run(cur,'SELECT * FROM evaluation')}
-    top=run(cur,"SELECT t.qid,t.title FROM topic t JOIN topic_theme tt ON tt.qid=t.qid WHERE tt.theme='finland-second-world-war' AND t.distance IS NOT NULL ORDER BY t.distance DESC LIMIT 1")
+    top=run(cur,"SELECT t.qid,t.title FROM topic t JOIN topic_theme tt ON tt.qid=t.qid LEFT JOIN published_flag f ON f.qid=t.qid WHERE tt.theme='finland-second-world-war' AND t.distance IS NOT NULL GROUP BY t.qid,t.title,t.distance ORDER BY COUNT(f.id) DESC,t.distance DESC LIMIT 1")
     result={'counts':counts(cur),'examples':examples,'evaluation':evaluations,'top_article':top[0] if top else None,'models':['gemini-3.8-flash','gemini-4-argon'],'database':run(cur,'SELECT VERSION() version')[0]['version']};c.close();return jsonify(result)
 
 @app.get('/examples')
