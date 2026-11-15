@@ -1,3 +1,9 @@
+Implement the README sponsor additions without touching the Junction portal or submitted descriptions.
+Use isolated feature work and preserve the current live product until verification passes.
+Add real CRACI CI.
+Require regression tests, real provider receipts and deployed desktop/mobile acceptance.
+Publish only after independent spec and quality review; keep secrets out of files and logs.
+
 Goal: fix Parallax from a MariaDB judge's point of view.
 Scope: Home first screen, review order, SQL proof, Method accuracy, Ask answers, edit history; no new data.
 Acceptance: the re-review checklist passes on the deployed URL at 1440x900 and 390 px.
