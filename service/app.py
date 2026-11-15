@@ -6,6 +6,7 @@ from collections import defaultdict,deque
 from flask import Flask,request,jsonify,send_from_directory
 from pipeline.common import db,ROOT,FAST
 from pipeline.check import ALIGN_SQL,SOURCE_SQL
+SHOWN_ALIGN_SQL='SELECT id,lang,section,text,rev_id,VEC_DISTANCE_COSINE(embedding,(SELECT embedding FROM claim WHERE id=%s)) distance FROM claim WHERE id IN ({}) ORDER BY distance'
 from pipeline.text import normalize,HistoricalIndex,words
 import difflib
 from pipeline.presentation import readable,readable_groups
@@ -108,6 +109,11 @@ def closest_sentence(article,claim):
 
 def stamp(value):
     return str(value).replace('T',' ').rstrip('Z')[:19]
+
+def shown_peers(groups,anchor):
+    cid=lambda v:v.get('claim_id',v.get('id'))
+    shown=next((g for g in groups if g['anchor_id']==anchor or any(cid(v)==anchor for v in g['versions'].values())),None)
+    return [cid(v) for v in shown['versions'].values() if cid(v)!=anchor] if shown else []
 
 def comparison_language(lang):return 'fi' if lang=='sv' else 'sv'
 
@@ -224,7 +230,10 @@ def article():
     anchor=selected['claim_id'] if selected else requested_version.get('claim_id',requested_version.get('id')) if requested_version else requested_group['anchor_id'] if requested_group else groups[0]['anchor_id'] if groups else next((r['id'] for r in run(cur,'SELECT id FROM readable_claim WHERE qid=%s ORDER BY FIELD(lang,\'en\',\'fi\',\'sv\',\'de\',\'ru\'),ordinal LIMIT 1',(qid,))),None)
     if anchor:
         anchor_language=run(cur,'SELECT lang FROM claim WHERE id=%s',(anchor,))[0]['lang']
-        run(cur,ALIGN_SQL,(anchor,qid,comparison_language(anchor_language)),traces,'Aligned claims')
+        peers=shown_peers(groups,anchor)
+        # Show the alignment the page displays: the paired versions, with their vector distance to the selected claim.
+        if peers:run(cur,SHOWN_ALIGN_SQL.format(','.join(['%s']*len(peers))),(anchor,*peers),traces,'Aligned claims')
+        else:run(cur,ALIGN_SQL,(anchor,qid,comparison_language(anchor_language)),traces,'Aligned claims')
         run(cur,SOURCE_SQL,(anchor,anchor),traces,'Closest source passage')
     date=None
     if asof:
