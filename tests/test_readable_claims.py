@@ -9,3 +9,7 @@ class ReadableClaims(unittest.TestCase):
   g={'id':'a','versions':{'en':{'text':'A real claim.'},'ru':{'text':'thumb|caption'}}}
   result=readable_groups([g]);self.assertEqual(result[0]['versions'],{'en':{'text':'A real claim.'}})
   self.assertEqual(g['versions']['ru']['text'],'thumb|caption')
+
+ def test_plain_text_with_dropped_template_values_requires_rendered_proof(self):
+  g={'id':'a','versions':{'en':{'claim_id':'bad','text':'The army advanced 10 to past the line.'},'fi':{'claim_id':'good','text':'The complete verified sentence.'}}}
+  self.assertEqual(set(readable_groups([g],{'good'})[0]['versions']),{'fi'})

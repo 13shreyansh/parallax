@@ -9,6 +9,8 @@ QUERIES={
  'topic_theme':"SELECT * FROM topic_theme WHERE theme='finland-second-world-war'",
  'article':"SELECT * FROM article WHERE qid IN (SELECT qid FROM topic_theme WHERE theme='finland-second-world-war')",
  'claim':'SELECT * FROM claim',
+ 'claim_rendering':'SELECT * FROM claim_rendering',
+ 'flag_rendering':'SELECT * FROM flag_rendering',
  'cited_source':'SELECT * FROM cited_source WHERE id IN (SELECT cs.source_id FROM claim_source cs JOIN claim cl ON cl.id=cs.claim_id)',
  'source_chunk':"SELECT * FROM source_chunk WHERE source_id IN (SELECT cs.source_id FROM claim_source cs JOIN claim cl ON cl.id=cs.claim_id) AND source_id IN (SELECT id FROM cited_source WHERE status='Read')",
  'claim_source':'SELECT cs.* FROM claim_source cs JOIN claim cl ON cl.id=cs.claim_id',

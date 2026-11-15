@@ -36,3 +36,5 @@
 .empty-search-examples { display:flex; flex-direction:column; align-items:flex-start; gap:8px; margin-top:16px; }
 
 .article-page { overflow-anchor:none; }
+
+.table-head>span:nth-child(n+5):nth-child(-n+8){font-size:12px;padding-left:0;padding-right:0}

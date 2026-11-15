@@ -1,6 +1,6 @@
 """Load the private export through the container's Unix socket, without public SQL."""
 import gzip,json,subprocess,sys,base64,pathlib
-TABLES={'theme','topic','topic_theme','article','claim','cited_source','source_chunk','claim_source','claim_group','judgment','flag','revision','evaluation','quality_exclusion','independent_review'}
+TABLES={'theme','topic','topic_theme','article','claim','cited_source','source_chunk','claim_source','claim_group','judgment','flag','revision','evaluation','quality_exclusion','independent_review','claim_rendering','flag_rendering'}
 def lit(v):
  if v is None:return 'NULL'
  if isinstance(v,bool):return '1' if v else '0'

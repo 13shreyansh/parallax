@@ -1,15 +1,15 @@
 """Rendered-word matching without fetching or model inference."""
 import re,html,difflib
 from collections import Counter,defaultdict
-def normalize(text):
+def normalize(text,strict=False):
     text=re.sub(r'<!--.*?-->',' ',text,flags=re.S)
     text=re.sub(r'<ref\b[^>]*?/\s*>|<ref\b[^>]*>.*?</ref\s*>',' ',text,flags=re.I|re.S)
     def template(m):
         p=m.group()[2:-2].split('|');name=p[0].strip().lower()
-        if name in ('convert','cvt','val','num'):return ' '.join(p[1:3])
+        if name in ('convert','cvt','val','num'):return '\ufffc' if strict else ' '.join(p[1:3])
         if name in ('nowrap','nobr','small','lang','lang-fi','lang-sv','lang-en'):return p[-1]
         if name in ('snd','spaced ndash','ndash'):return '–'
-        return ' '
+        return '\ufffc' if strict else ' '
     for _ in range(15):
         updated=re.sub(r'\{\{[^{}]*\}\}',template,text)
         if updated==text:break
@@ -24,8 +24,8 @@ def words(text):
 
 class HistoricalIndex:
     def __init__(self,text):
-        self.text=normalize(text)
-        self.sentences=[s.strip() for s in re.split(r'(?<=[.!?])\s+',self.text) if len(s.strip())>20]
+        self.text=normalize(text,strict=True)
+        self.sentences=[s.strip() for s in re.split(r'(?<=[.!?])\s+',self.text) if len(s.strip())>20 and '\ufffc' not in s]
         self.tokens=[words(s) for s in self.sentences];self.index=defaultdict(set)
         for i,tokens in enumerate(self.tokens):
             for token in tokens:self.index[token].add(i)

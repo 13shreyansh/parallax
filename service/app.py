@@ -138,7 +138,8 @@ def article():
     all_claims=request.args.get('all')=='1'
     gs=run(cur,'SELECT * FROM claim_group WHERE qid=%s'+('' if all_claims else ' AND id IN (SELECT group_id FROM published_flag WHERE qid=%s)')+' ORDER BY ordinal',(qid,) if all_claims else (qid,qid))
     groups=[{**g,'versions':unpack(g['versions']),'checks':unpack(g['checks'])} for g in gs]
-    groups=readable_groups(groups)
+    valid_ids={r['id'] for r in run(cur,'SELECT id FROM readable_claim WHERE qid=%s',(qid,))}
+    groups=readable_groups(groups,valid_ids)
     for g in groups:g['flags']=[f['id'] for f in fs if f['group_id']==g['id']]
     if all_claims:
         claims=run(cur,'SELECT id,lang,section,text,rev_id,gloss,ordinal FROM readable_claim WHERE qid=%s ORDER BY FIELD(lang,\'en\',\'fi\',\'sv\',\'de\',\'ru\'),ordinal',(qid,))
@@ -190,7 +191,7 @@ def search():
     sql="""SELECT 'claim' kind,h.id,h.qid,h.lang,h.section,h.text,h.distance,NULL source_id,NULL url,NULL archive_url FROM
     (SELECT id,qid,lang,section,text,VEC_DISTANCE_COSINE(embedding,VEC_FromText(%s)) distance FROM readable_claim WHERE lang IN ('fi','sv','en') ORDER BY distance LIMIT 18) h
     UNION ALL SELECT 'source' kind,h.id,NULL qid,JSON_UNQUOTE(JSON_EXTRACT(s.metadata,'$.language')) lang,s.title section,h.text,h.distance,h.source_id,s.url,s.archive_url FROM
-    (SELECT id,source_id,text,VEC_DISTANCE_COSINE(embedding,VEC_FromText(%s)) distance FROM source_chunk ORDER BY distance LIMIT 18) h
+    (SELECT id,source_id,text,VEC_DISTANCE_COSINE(embedding,VEC_FromText(%s)) distance FROM source_chunk WHERE source_id IN (SELECT cs.source_id FROM claim_source cs JOIN readable_claim cl ON cl.id=cs.claim_id) ORDER BY distance LIMIT 18) h
     JOIN cited_source s ON s.id=h.source_id WHERE s.status='Read' ORDER BY distance LIMIT 36"""
     hits=run(cur,sql,(json.dumps(vec),json.dumps(vec)),traces,'Closest claims and source texts');claim_hits=[h for h in hits if h['kind']=='claim'];best=next(iter(claim_hits),None);group=None;flags=[];topic=None
     if claim_hits:
@@ -201,7 +202,7 @@ def search():
     if best and best['distance']<=.45:
         gs=run(cur,'SELECT g.* FROM claim_group g WHERE anchor_id=%s OR JSON_SEARCH(versions,\'one\',%s,NULL,\'$.*.claim_id\') IS NOT NULL ORDER BY (SELECT COUNT(*) FROM published_flag f WHERE f.group_id=g.id) DESC,g.ordinal LIMIT 1',(best['id'],best['id']))
         if gs:
-            cleaned=readable_groups([{**gs[0],'versions':unpack(gs[0]['versions'])}]);group=cleaned[0] if cleaned else {'id':best['id'],'versions':{best['lang']:best}};flags=[f for f in flag_rows(cur,best['qid']) if f['group_id']==group['id'] and not f['dismissed']]
+            valid_ids={r['id'] for r in run(cur,'SELECT id FROM readable_claim WHERE qid=%s',(best['qid'],))};cleaned=readable_groups([{**gs[0],'versions':unpack(gs[0]['versions'])}],valid_ids);group=cleaned[0] if cleaned else {'id':best['id'],'versions':{best['lang']:best}};flags=[f for f in flag_rows(cur,best['qid']) if f['group_id']==group['id'] and not f['dismissed']]
         else:group={'id':best['id'],'versions':{best['lang']:best}}
         topic=article_meta(cur,best['qid'])
     result={'question':question,'hits':hits,'group':group,'flags':flags,'topic':topic,'queries':traces,'counts':counts(cur)};c.close();return jsonify(result)
